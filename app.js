@@ -27,7 +27,7 @@ const bancos = {
                         gastos: 6, 
                         seguro: "A DEFINIR", 
                         baseCalculo: 1000000, 
-                        descripcion: "Financiación ajustada por UVA para vehículos 0km.",
+                        descripcion: "Segundo testeo en v1.0.5",
                         plazos: [{m:12, c:98091}, {m:18, c:70230}, {m:24, c:56438}, {m:36, c:42918}, {m:48, c:36423}, {m:60, c:32728}] 
                     },
                     { 
