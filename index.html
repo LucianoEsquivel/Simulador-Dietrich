@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Créditos - Dietrich</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#333333">
+    <link rel="apple-touch-icon" href="img/icon-192.png">
+</head>
+<body>
+
+    <div id="btn-novedades" onclick="toggleNovedades()">
+        <span class="campana-icon">🔔</span>
+        <div class="punto-rojo"></div>
+    </div>
+
+    <div id="panel-lateral" class="modal-novedades hidden">
+    <div class="modal-contenedor">
+        <div class="panel-header">
+            <h3>Novedades y Circulares</h3>
+            <button class="btn-cerrar-panel" onclick="toggleNovedades()">✕ CERRAR</button>
+        </div>
+        
+        <div class="modal-cuerpo">
+            <div class="seccion-texto">
+                <h4>📢 COMUNICADOS DEL MES</h4>
+                <div class="contenido-comunicado">
+                    <p><strong>Actualización Marzo 2026:</strong></p>
+                    <p>Se informa a toda la red de ventas que han ingresado las nuevas tasas para el banco Santander. Es vital prestar atención a los nuevos coeficientes de Pickups ya que sufrieron una baja del 2%.</p>
+                    <ul>
+                        <li>✅ <strong>Ford Ranger:</strong> LTV ajustado al 80% en planes UVA.</li>
+                        <li>✅ <strong>Volkswagen:</strong> Se mantiene tasa 0% en Polo por 12 meses.</li>
+                        <li>✅ <strong>ICBC:</strong> Nueva línea Everest con beneficios en patentamiento.</li>
+                    </ul>
+                    <p>Ante cualquier duda con la carga de los gastos iniciales, consultar el instructivo de Sellos e Impuestos actualizado en la intranet.</p>
+                </div>
+            </div>
+
+            <hr class="divisor">
+
+            <div class="seccion-descargas">
+                <h4>📂 CIRCULARES PDF</h4>
+                <div class="lista-pdfs">
+                    <a href="pdf/circular-santander.pdf" target="_blank" class="btn-pdf-full">📄 Circular Santander Río</a>
+                    <a href="pdf/circular-icbc.pdf" target="_blank" class="btn-pdf-full">📄 Circular Banco ICBC</a>
+                    <a href="pdf/circular-vw.pdf" target="_blank" class="btn-pdf-full">📄 Circular VW Financial</a>
+                    <a href="pdf/circular-galicia.pdf" target="_blank" class="btn-pdf-full">📄 Circular Banco Galicia</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <header class="main-header">
+        <img src="img/dietrich.png" alt="Dietrich" class="logo-dietrich">
+    </header>
+
+    <nav id="navegacion-fija" class="hidden">
+        <div class="contenedor-nav">
+            <button id="btn-volver-fijo" onclick="manejadorVolver()">
+                <span class="flecha">←</span> VOLVER
+            </button>
+        </div>
+    </nav>
+
+    <main>
+
+        <section id="vista-inicio" class="active">
+            <div class="contenedor-home-pc">
+                <h2 class="titulo-seccion">¿Cómo desea simular?</h2>
+                <div class="grid-inicio">
+                    <div class="card-inicio bg-auto" onclick="mostrarSeccionMarcas()">
+                        <span>POR MARCA</span>
+                    </div>
+                    <div class="card-inicio bg-banco" onclick="mostrarSeccionBancos()">
+                        <span>POR BANCO</span>
+                    </div>
+                </div>
+                <button class="btn-comparador-principal" onclick="irAComparador()">
+                    COMPARADOR DE TASAS
+                </button>
+                <p class="footer-interno">Simulador exclusivo para uso interno - Grupo Dietrich 2026</p>
+            </div>
+        </section>
+
+        <section id="vista-marcas" class="hidden">
+            <h2 class="titulo-seccion">Seleccione la Marca</h2>
+            <div class="contenedor-horizontal-marcas">
+                <div class="card-marca" onclick="seleccionarMarca('ford')">
+                    <img src="img/ford.png" alt="Ford">
+                    <span>FORD</span>
+                </div>
+                <div class="card-marca" onclick="seleccionarMarca('vw')">
+                    <img src="img/volkswagen.png" alt="Volkswagen">
+                    <span>Volkswagen</span>
+                </div>
+                <div class="card-marca" onclick="seleccionarMarca('audi')">
+                    <img src="img/audi.png" alt="Audi">
+                    <span>AUDI</span>
+                </div>
+                <div class="card-marca" onclick="seleccionarMarca('byd')">
+                    <img src="img/byd.png" alt="BYD">
+                    <span>BYD</span>
+                </div>
+                <div class="card-marca" onclick="seleccionarMarca('kia')">
+                    <img src="img/kia.png" alt="KIA">
+                    <span>KIA</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="vista-bancos" class="hidden">
+            <h2 class="titulo-seccion">Seleccione una entidad</h2>
+            <div class="grid-bancos">
+                <div class="card-banco santander" onclick="mostrarCategorias('santander')">
+                    <span class="nombre-banco"> SANTANDER RIO</span>
+                </div>
+                <div class="card-banco icbc" onclick="mostrarCategorias('icbc')">
+                    <span class="nombre-banco">ICBC</span>
+                </div>
+                <div class="card-banco vw" onclick="mostrarCategorias('vw_financial')">
+                    <span class="nombre-banco">Volkswagen Financiera</span>
+                </div>
+                <div class="card-banco galicia" onclick="mostrarCategorias('galicia')">
+                    <span class="nombre-banco">GALICIA</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="vista-financiaciones" class="hidden">
+            <h2 id="nombre-banco-seleccionado" class="titulo-seccion"></h2>
+            <div id="lista-financiaciones"></div>
+        </section>
+
+        <section id="vista-calculo" class="hidden">
+                    <h2 id="nombre-financiacion-seleccionada" class="titulo-seccion"></h2>
+
+
+                    <div class="info-extra-plan">
+                        <p><strong>Información de la tasa:</strong> <span id="texto-informativo-dinamico">-- Acá puedes agregar el texto sobre impuestos o tipo de vehículo --</span></p>
+                    </div>
+
+                    <div class="contenedor-calculo">
+                        
+                        <div class="columna-inputs">
+                            <div class="formulario-card">
+                                <div class="input-group">
+                                    <label>Precio de Lista</label>
+                                    <input type="text" id="precio-lista" placeholder="$ 0">
+                                </div>
+                                <div class="input-group">
+                                    <label>Precio de Venta</label>
+                                    <input type="text" id="precio" placeholder="$ 0">
+                                </div>
+                                <div class="input-group">
+                                    <label>Anticipo</label>
+                                    <input type="text" id="anticipo" placeholder="$ 0">
+                                </div>
+                                <div id="grupo-cotizacion" class="input-group" style="display:none;">
+                                    <label>Cotización Dólar</label>
+                                    <input type="number" id="cotizacion-dolar" value="1000">
+                                </div>
+                            </div>
+
+                            <div id="resultado-cuotas" class="cuadro-resultados">
+                                </div>
+                        </div>
+
+                        <div id="ficha-tecnica">
+                            </div>
+
+                    </div>
+                    
+                    <button id="btn-generar-pdf" class="btn-pdf-descarga" onclick="descargarPDF()">
+                        <span>📄 DESCARGAR COTIZACIÓN (PDF)</span>
+                    </button>
+        </section>
+
+        <section id="vista-comparador" class="hidden">
+            <div id="wrapper-comparador">
+                <h2 class="titulo-seccion">Comparador de Tasas</h2>
+                <div class="formulario" style="margin-bottom: 25px;">
+                    <div class="input-group">
+                        <label>Monto a Financiar (Total)</label>
+                        <input type="text" id="comp-monto" placeholder="$ 0">
+                    </div>
+                </div>
+                <div class="comparador-split">
+    <div id="columna-1" class="col-comparar">
+        <p class="label-col">Financiacion A</p>
+        <div class="selectores-comp">
+            <select id="select-banco-1" onchange="actualizarCategoriasComp(1)"></select>
+            <select id="select-cat-1" onchange="actualizarPlanesComp(1)"></select>
+            <select id="select-plan-1" onchange="calcularComparacion()"></select>
+        </div>
+        <div id="res-1" class="res-col"></div>
+    </div>
+
+    <div id="columna-2" class="col-comparar">
+        <p class="label-col">Financiacion B</p>
+        <div class="selectores-comp">
+            <select id="select-banco-2" onchange="actualizarCategoriasComp(2)"></select>
+            <select id="select-cat-2" onchange="actualizarPlanesComp(2)"></select>
+            <select id="select-plan-2" onchange="calcularComparacion()"></select>
+        </div>
+        <div id="res-2" class="res-col"></div>
+    </div>
+</div>
+            </div>
+        </section>
+
+
+        <a href="https://wa.me/+5492804006499" class="btn-whatsapp" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            <span>Consultas</span>
+        </a>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="app.js"></script> 
+    <script>
+        if ('serviceWorker' in navigator) {
+         window.addEventListener('load', () => {
+             navigator.serviceWorker.register('./sw.js')
+                .then(reg => console.log('Service Worker registrado con éxito', reg))
+                .catch(err => console.warn('Error al registrar el Service Worker', err));
+        });
+     }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "Simulador F&I Dietrich",
+  "short_name": "F&I Dietrich",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f7f9",
+  "theme_color": "#333333",
+  "description": "Herramienta integral de simulación y comparación de créditos para la red Dietrich.",
+  "icons": [
+    {
+      "src": "img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

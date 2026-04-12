@@ -1,0 +1,1086 @@
+/* ==========================================================================
+   1. ESTILOS GLOBALES Y LAYOUT
+   ========================================================================== */
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; /* Tipografía del sistema (moderna y rápida) */
+    background-color: #f4f7f9; /* [AJUSTE] Color de fondo de la app (Gris claro) */
+    padding: 0; margin: 0;     /* [NO TOCAR] Elimina espacios externos por defecto */
+    color: #333;               /* [AJUSTE] Color principal del texto */
+    line-height: 1.5;          /* [AJUSTE] Espaciado entre renglones (Legibilidad) */
+}
+
+main { 
+    width: 100%;               /* [NO TOCAR] Ocupa todo el ancho disponible */
+    max-width: 1100px;         /* [AJUSTE] Ancho máximo en PC (Evita que se estire demasiado) */
+    margin: 0 auto;            /* [NO TOCAR] Centra la app horizontalmente */
+    padding: 20px;             /* [AJUSTE] Margen interno (Aire entre borde y contenido) */
+    box-sizing: border-box;    /* [NO TOCAR] Mantiene el ancho fijo aunque sumes padding */
+}
+
+/* Clases de utilidad para mostrar/ocultar secciones mediante JavaScript */
+.hidden { display: none !important; } /* [NO TOCAR] Esconde pantallas (Interruptor OFF) */
+.active { display: block; }            /* [NO TOCAR] Muestra pantallas (Interruptor ON) */
+/* ==========================================================================
+   2. HEADER (ENCABEZADO)
+   ========================================================================== */
+.main-header {
+    background-color: #333333; /* Identidad Dietrich: Negro/Gris oscuro */
+    padding: 25px 20px; 
+    text-align: center; 
+    border-bottom: 4px solid #1a1a1a;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-bottom: 25px;
+}
+
+.logo-dietrich {
+    max-width: 220px;
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    filter: brightness(1.5); /* Aumenta la visibilidad del logo sobre el fondo oscuro */
+}
+
+.titulo-seccion {
+    color: #000000; 
+    text-align: center; 
+    font-size: 1.3em; 
+    font-weight: 800;
+    margin-bottom: 25px; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   3. NOTIFICACIONES (CAMPANA FLOTANTE Y PANEL)
+   ========================================================================== */
+
+/* Botón flotante de la campana (Esquina superior derecha) */
+#btn-novedades {
+    position: absolute; /* Posicionamiento fijo en la pantalla */
+    top: 25px;  
+    right: 20px; 
+    width: 55px; height: 55px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 50%; /* Círculo perfecto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1500; /* Asegura que esté por encima de otros elementos */ 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Sombra sutil para destacar la campana */
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Transición con un toque de rebote para hacerla más atractiva */
+}
+
+#btn-novedades:hover {
+    transform: scale(1.1); /* Efecto de crecimiento al pasar el mouse */
+    background-color: #000;
+}
+
+#btn-novedades:hover .campana-icon {
+    filter: brightness(0) invert(1); /* Cambia el emoji/icono a blanco */
+}
+
+.campana-icon { font-size: 1.5em; }
+
+/* Punto rojo de alerta de novedades */
+.punto-rojo {
+    width: 12px; height: 12px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 5px; right: 5px;
+}
+
+/* Panel Lateral (Modal de Novedades) */
+.modal-novedades {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6); /* Fondo oscuro semitransparente */
+    z-index: 2000;
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+}
+
+.modal-contenedor {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    animation: slideIn 0.3s ease-out; /* Animación de entrada desde la derecha */
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+.panel-header {
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-cerrar-panel {
+    background: #000; color: #fff; border: 1px solid #555;
+    padding: 8px 12px; border-radius: 6px;
+    cursor: pointer; font-weight: bold; font-size: 0.75em;
+}
+
+.modal-cuerpo {
+    padding: 25px;
+    overflow-y: auto; /* Permite scroll interno si el texto es largo */
+    flex-grow: 1;
+}
+
+/* Estilos de contenido dentro del Modal */
+.seccion-texto h4, .seccion-descargas h4 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.contenido-comunicado p { margin-bottom: 12px; font-size: 0.95em; color: #444; }
+
+.btn-pdf-full {
+    display: block;
+    padding: 15px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+
+.btn-pdf-full:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* ==========================================================================
+   4. VISTA INICIO (HOME) - BOTONES PRINCIPALES
+   ========================================================================== */
+
+/* Contenedor de "POR MARCAS" y "POR BANCOS" */
+.grid-inicio { 
+    display: grid !important; /* [NO TOCAR] Usa Grid para organizar los botones principales */
+    grid-template-columns: 1fr 1fr !important; /* Mantiene 2 columnas incluso en móviles */
+    gap: 20px; 
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+/* Estilo base para los botones cuadrados de la Home */
+.card-inicio {
+    position: relative; /* Necesario para posicionar las marcas de agua dentro de la tarjeta */
+    height: 160px; /* Tamaño cuadrado ideal para PC y móvil */
+    background-color: #ffffff; /* Fondo blanco para resaltar el texto y las marcas de agua */
+    border: 2px solid #000000; 
+    border-radius: 20px; /* Bordes redondeados para un look más amigable */
+    display: flex; /* Flexbox para centrar el contenido */
+    align-items: center; /* Centra verticalmente el texto */
+    justify-content: center; /* Centra horizontalmente el texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
+    overflow: hidden; /* Evita que las marcas de agua se salgan de la tarjeta */
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); /* Transición suave para hover */
+}
+
+.card-inicio span { /* El texto dentro de cada tarjeta */
+    font-weight: 900; 
+    font-size: 1.1em; /* Texto grande y en negrita para máxima legibilidad */
+    color: #000; 
+    text-transform: uppercase; /* Texto en mayúsculas para un impacto visual fuerte */
+    z-index: 2; /* Asegura que el texto esté por encima de la imagen de fondo */
+}
+
+/* Marcas de agua (Siluetas de auto y banco) */
+.card-inicio::before { /* Pseudo-elemento para la marca de agua */
+    content: ""; /* Necesario para que el pseudo-elemento exista */
+    position: absolute; /* Posicionamiento absoluto dentro de la tarjeta */
+    /* FIJAMOS EL CENTRO: Evita que el logo salte al hacer hover */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 60%; 
+    height: 60%;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro de la tarjeta */
+    background-size: contain; /* Ajusta el tamaño del logo para que se vea bien sin distorsionarse */
+    opacity: 0.1; 
+    filter: grayscale(100%);
+    z-index: 1; /* Asegura que la marca de agua esté detrás del texto */
+    transition: 0.3s ease; /* Transición suave para opacidad y escala */
+}
+
+.bg-auto::before  { background-image: url('img/auto.png'); } /* Cada tarjeta tiene su propia imagen de fondo definida por su clase específica */
+.bg-banco::before { background-image: url('img/banco.png'); } /* Cada tarjeta tiene su propia imagen de fondo definida por su clase específica */
+
+/* Efecto sobre la tarjeta completa */
+.card-inicio:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); 
+}
+
+/* Efecto sobre el logo de fondo: solo crece, no se desplaza */
+.card-inicio:hover::before { 
+    opacity: 0.2; 
+    /* Mantenemos el translate original y solo sumamos el scale */
+    transform: translate(-50%, -50%) scale(1.1); 
+}
+
+/* Botón Comparador de Tasas (Estilo Ancho Completo) */
+.btn-comparador-principal {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    padding: 22px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.1em;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block; 
+    transition: 0.3s;
+}
+
+.btn-comparador-principal:hover {
+    background-color: #333333;
+    transform: scale(1.01);
+}
+/* ==========================================================================
+   5. VISTA SELECCIÓN DE MARCAS (FORD, VW, BYD, KIA, AUDI)
+   ========================================================================== */
+
+/* Contenedor que agrupa los 5 botones */
+.contenedor-horizontal-marcas {
+    display: flex;
+    flex-wrap: wrap;       /* Permite que bajen si la pantalla es chica */
+    justify-content: center; 
+    gap: 20px;             /* Espacio entre cada marca */
+    padding: 20px 10px;
+    width: 100%;
+    max-width: 900px;      /* Ancho máximo para que no se desparramen en PC */
+    margin: 0 auto;
+}
+
+/* La tarjeta individual de cada marca */
+.card-marca {
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    width: 160px;          /* Tamaño cuadrado prolijo */
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+/* El logo dentro del botón (Aquí es donde achicamos esos logos gigantes) */
+.card-marca img {
+    width: 80px;           /* Forzamos el tamaño del logo */
+    height: auto;
+    margin-bottom: 12px;
+    filter: grayscale(100%); /* Estética sobria Dietrich */
+    transition: 0.3s;
+}
+
+/* Texto debajo del logo */
+.card-marca span {
+    font-weight: 900;
+    font-size: 0.9em;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* --- EFECTOS HOVER --- */
+.card-marca:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-marca:hover img {
+    filter: grayscale(0%); /* El logo recupera su color original al señalarlo */
+    transform: scale(1.1);  /* Crece un poquito el logo */
+}
+
+/* ==========================================================================
+   6. VISTA SELECCIÓN DE BANCO (LOGOS ANCLADOS ABAJO-IZQUIERDA)
+   ========================================================================== */
+
+.grid-bancos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 15px 0;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.card-banco {
+    height: 125px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.nombre-banco {
+    font-weight: 900;
+    font-size: 1.15em;
+    color: #000;
+    z-index: 2;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+/* --- REGLA MAESTRA DE LOGOS --- */
+.card-banco::after {
+    content: "";
+    position: absolute;
+    left: -10px; 
+    bottom: -15px; 
+    width: 90px;
+    height: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.15; 
+    filter: grayscale(100%) brightness(0.8);
+    z-index: 1;
+    
+    /* CLAVE: El logo crece desde su esquina inferior izquierda */
+    transform-origin: bottom left; 
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Imágenes */
+.santander::after { background-image: url('img/santander.png'); }
+.icbc::after      { background-image: url('img/icbc.png'); }
+.vw::after        { background-image: url('img/volkswagen.png'); }
+.galicia::after   { background-image: url('img/galicia.png'); width: 100px; height: 100px; transform-origin: bottom left; /* Asegura que respete el mismo eje de crecimiento que los demás */ }
+
+/* --- EFECTOS HOVER (ESTÁTICO Y COLORIDO) --- */
+.card-banco:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card-banco:hover::after {
+    opacity: 0.4; 
+    filter: grayscale(0%) brightness(1); /* Recupera el color */
+    
+    /* NO movemos left ni bottom, solo escalamos desde el origen fijo */
+    transform: scale(1.5); 
+}
+
+/* Colores en el texto */
+.santander:hover .nombre-banco { color: #ec111a; }
+.icbc:hover .nombre-banco      { color: #6b0206; }
+.vw:hover .nombre-banco        { color: #001e50; }
+.galicia:hover .nombre-banco   { color: #ff6600; }
+
+/* ==========================================================================
+   7. SUB-CATEGORIAS Y LÍNEAS DE CRÉDITO (UNIFICACIÓN TOTAL)
+   ========================================================================== */
+
+/* 1. Contenedor: Asegura que los botones se alineen en fila (BYD, Ford, Bancos) */
+#lista-financiaciones, 
+.contenedor-tarjetas-subcat { 
+    display: flex !important; 
+    flex-direction: row !important; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    width: 100%;
+    max-width: 950px; 
+    margin: 20px auto; 
+    padding: 10px;
+}
+
+/* 2. Tarjeta Estándar: Diseño base para Marcas de Agua y Botones de Planes */
+.card-sub-categoria, 
+.btn-banco { 
+    flex: 0 1 210px; 
+    min-width: 200px;
+    height: 130px; 
+    background: white !important; 
+    border: 2px solid #000 !important; 
+    border-radius: 18px !important; 
+    display: flex !important; 
+    align-items: center !important; 
+    justify-content: center !important; 
+    position: relative; 
+    overflow: hidden; 
+    cursor: pointer; 
+    margin: 10px !important; 
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-decoration: none;
+    color: #000 !important;
+}
+
+/* 3. Estilo del Texto (Mayúsculas y Negrita Dietrich) */
+.card-sub-categoria span,
+.btn-banco {
+    font-weight: 900 !important; 
+    font-size: 0.9em !important; 
+    z-index: 2; 
+    text-align: center; 
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+/* 4. Regla Maestra de Marcas de Agua (Logo de fondo) */
+.card-sub-categoria::after { 
+    content: ""; 
+    position: absolute; 
+    width: 80%; height: 80%; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    opacity: 0.12; 
+    filter: grayscale(100%) brightness(0); /* Silueta negra sutil */
+    z-index: 1; 
+    transition: 0.4s;
+}
+
+/* 5. Listado de Logos (Se activan por la clase del botón) */
+.cat-general::after    { background-image: url('img/santander.png'); }
+.cat-prendarios::after { background-image: url('img/galicia.png'); }
+.cat-minorista::after, 
+.cat-comercial::after  { background-image: url('img/ford.png'); }
+.cat-volkswagen::after { background-image: url('img/volkswagen.png'); }
+.cat-audi::after       { background-image: url('img/audi.png'); }
+.cat-kia::after        { background-image: url('img/kia.png'); }
+.cat-byd::after        { background-image: url('img/byd.png'); }
+
+/* 6. Efectos Hover */
+.card-sub-categoria:hover,
+.btn-banco:hover { 
+    transform: translateY(-5px) !important;
+    background-color: #fcfcfc !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1) !important;
+}
+
+.card-sub-categoria:hover::after {
+    opacity: 0.22; /* El logo se nota un poco más al señalar */
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* ==========================================================================
+   8. GRILLA DE PLANES (LÍNEAS DE CRÉDITO FINALES)
+   ========================================================================== */
+
+/* Contenedor que genera la grilla de los planes */
+.grid-planes-pc {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important; 
+    gap: 15px !important;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* El botón del plan individual (Ej: Línea UVA 9.9%) */
+.btn-banco {
+    width: 100% !important; /* Ocupa el ancho de su celda en la grilla */
+    min-height: 100px !important;
+    padding: 20px !important;
+    background-color: #ffffff !important;
+    border: 2px solid #000000 !important;
+    border-radius: 15px !important;
+    color: #000000 !important;
+    font-weight: 800 !important;
+    font-size: 0.9em !important;
+    text-transform: uppercase !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05) !important;
+}
+
+/* Efecto al pasar el mouse */
+.btn-banco:hover {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2) !important;
+}
+
+/* Ajuste para el texto dentro del botón */
+.btn-banco span {
+    display: block;
+    width: 100%;
+}
+
+/* ==========================================================================
+   9. VISTA DE CÁLCULO (SISTEMA DE DOS COLUMNAS - FINAL)
+   ========================================================================== */
+
+/* Barrita superior */
+.info-extra-plan {
+    width: 100%; 
+    max-width: 1000px;
+    margin: 0 auto 25px auto;
+    background: #f8f9fa;
+    border-left: 6px solid #343a40;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+/* El contenedor que separa Inputs de Ficha Técnica */
+.contenedor-calculo {
+    display: grid !important;
+    grid-template-columns: 45% 50% !important; /* Proporción ideal */
+    gap: 5%;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+/* --- TARJETA DE INPUTS (Calculadora y ahora Comparador) --- */
+.formulario-card {
+    background: #fff;
+    padding: 25px;
+    border: 1px solid #dee2e6;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+/* ESTILO DE LABELS UNIFICADO (Calculadora y Comparador) */
+.formulario-card label,
+#vista-comparador .formulario label {
+    font-weight: 800 !important;
+    font-size: 0.75em !important;
+    text-transform: uppercase !important;
+    color: #666 !important;
+    letter-spacing: 0.5px !important;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* ESTILO UNIFICADO DE INPUTS: Calculadora + Monto Comparador */
+.formulario-card input, 
+#vista-comparador .formulario input#comp-monto {
+    width: 100% !important; 
+    padding: 15px !important; 
+    border: 2px solid #343a40 !important; 
+    border-radius: 12px !important;
+    font-size: 1.4em !important; 
+    font-weight: 800 !important;
+    color: #000 !important;
+    text-align: center !important; 
+    box-sizing: border-box !important; 
+    transition: 0.3s ease;
+    background-color: #ffffff !important;
+}
+
+.formulario-card input:focus,
+#vista-comparador .formulario input#comp-monto:focus {
+    border-color: #000 !important;
+    background-color: #f8f9fa !important;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0,0,0,0.05) !important;
+    transform: translateY(-2px); 
+}
+
+/* Estilo de cada grupo (Label + Input) en la card */
+.formulario-card .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+/* --- CUADRO DE RESULTADOS (Abajo de los inputs) --- */
+.cuadro-resultados {
+    margin-top: 25px;
+    background: #ffffff !important;
+    border: 2px solid #343a40 !important;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.cuadro-resultados::before {
+    content: "RESULTADOS DE SIMULACIÓN";
+    display: block;
+    background: #343a40;
+    color: #fff;
+    padding: 12px;
+    font-weight: 800;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+.cuadro-resultados table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.cuadro-resultados th {
+    background: #f8f9fa;
+    color: #666;
+    font-size: 0.65em;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.cuadro-resultados td {
+    padding: 12px 5px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.85em;
+    text-align: center;
+}
+
+/* --- FICHA TÉCNICA (Derecha) --- */
+#ficha-tecnica {
+    background: #fff;
+    border: 1px solid #343a40;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#ficha-tecnica table { width: 100%; border-collapse: collapse; }
+
+#ficha-tecnica th {
+    background: #343a40;
+    color: #fff;
+    padding: 12px;
+    font-size: 0.75em;
+    text-transform: uppercase;
+}
+
+#ficha-tecnica td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+.fila-error-anticipo {
+    background-color: #ec7d7d !important;
+}
+
+.fila-error-anticipo td {
+    color: #c00;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .contenedor-calculo { grid-template-columns: 1fr !important; }
+}
+
+/* ==========================================================================
+   10. COMPARADOR DE TASAS (DISEÑO XL AMPLIADO - SIN SUPERPOSICIÓN)
+   ========================================================================== */
+
+#wrapper-comparador { 
+    max-width: 98%; /* Ocupa casi todo el ancho de la pantalla para dar espacio */
+    margin: 0 auto; 
+    padding: 10px; 
+}
+
+/* 1. Tarjeta de Monto Maestro */
+.monto-maestro-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #dee2e6;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.monto-maestro-container label {
+    display: block; 
+    font-weight: 800; 
+    font-size: 1.1em; 
+    text-transform: uppercase; 
+    margin-bottom: 10px; 
+    color: #444;
+}
+
+.monto-maestro-container input {
+    width: 80%; 
+    padding: 15px; 
+    border: 3px solid #343a40;
+    border-radius: 12px; 
+    font-size: 2.2em; /* Monto muy legible */
+    font-weight: 900;
+    text-align: center; 
+}
+
+/* 2. Grid de Comparación (Rectángulos más grandes) */
+.comparador-split {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 15px; /* Reducimos el espacio entre rectángulos para ganar ancho interno */
+}
+
+.col-comparar {
+    background: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.label-col {
+    background: #343a40;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+/* 3. Selectores */
+.selectores-comp {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selectores-comp select {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+/* 4. Tabla de Resultados (Corrección de encabalgamiento) */
+.res-col { 
+    padding: 0 10px 20px 10px; /* Menos margen lateral para ganar espacio de tabla */
+}
+
+.mini-ficha-tecnica {
+    border: 2.5px solid #343a40; 
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.tabla-info-comp {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto !important; /* CLAVE: Permite que las columnas crezcan si el número es largo */
+}
+
+.tabla-info-comp th {
+    background: #343a40;
+    color: #fff;
+    font-size: 0.7em; /* Encabezados legibles pero compactos */
+    padding: 12px 5px;
+    text-transform: uppercase;
+}
+
+.tabla-info-comp td {
+    padding: 18px 4px; /* Más aire vertical entre filas */
+    font-size: 1.1em;    /* Letra grande para gente mayor */
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+/* Plazo (12 m, 24 m) */
+.tabla-info-comp td strong {
+    font-size: 1.2em;
+    color: #000;
+}
+
+/* Columna CUOTA (Verde Dietrich XL) */
+.cuota-resaltada-comp {
+    color: #1e4d2b !important; 
+    font-weight: 900 !important;
+    font-size: 1.25em !important; 
+    white-space: nowrap; /* Evita que el número se parta en dos renglones */
+}
+
+/* Celda de Gastos (Pesos y Porcentaje) */
+.tabla-info-comp td div:first-child {
+    font-weight: 800;
+    font-size: 1.05em; 
+}
+
+.tabla-info-comp td div:last-child {
+    font-size: 0.8em; 
+    color: #666;
+}
+
+/* 5. Ajuste para pantallas no tan anchas (Evita que se pisen) */
+@media (max-width: 1100px) {
+    .comparador-split { 
+        grid-template-columns: 1fr !important; /* Se apilan para que no se pisen los datos */
+    }
+    .col-comparar {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   BOTÓN VOLVER (DISEÑO PREMIUM DIETRICH)
+   ========================================================================== */
+#navegacion-fija {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+#btn-volver-fijo {
+    background-color: #333; /* Gris oscuro Dietrich */
+    color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 50px; /* Estilo cápsula moderna */
+    padding: 10px 25px;
+    font-size: 0.85em;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#btn-volver-fijo .flecha {
+    font-size: 1.4em;
+    line-height: 0;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+#btn-volver-fijo:hover {
+    background-color: #000; /* Negro total */
+    transform: translateX(-5px); /* Pequeño desplazamiento a la izquierda */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+#btn-volver-fijo:hover .flecha {
+    transform: translateX(-3px); /* La flecha se mueve indicando el sentido */
+}
+
+/* Ajuste para que no se pegue al logo en mobile */
+@media (max-width: 600px) {
+    #btn-volver-fijo {
+        padding: 8px 18px;
+        font-size: 0.75em;
+    }
+}
+
+/* ==========================================================================
+   11. CONFIGURACIÓN RESPONSIVE (CELULARES Y TABLETS)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    /* 1. Ajuste del Header y Campana */
+    .main-header { padding: 15px 10px; }
+    .logo-dietrich { max-width: 160px; }
+    
+    #btn-novedades { 
+        width: 45px; height: 45px; 
+        top: 15px; right: 10px; 
+    }
+
+    /* 2. Grid de Inicio (2 columnas pero con menos gap para que entren) */
+    .grid-inicio { 
+        gap: 12px !important; 
+        padding: 0 10px;
+    }
+    .card-inicio { height: 130px; }
+    .card-inicio span { font-size: 0.9em; }
+
+    /* 3. Selección de Marcas y Bancos (Ajuste de ancho para que no desborden) */
+    .contenedor-horizontal-marcas { gap: 10px; }
+    .card-marca { 
+        width: 45%; /* Entran 2 por fila cómodamente */
+        height: 130px; 
+    }
+    .grid-bancos { 
+        grid-template-columns: 1fr !important; /* En celular, bancos uno abajo del otro */
+        padding: 0 15px;
+    }
+
+    /* 4. Vista de Cálculo (Forzamos una sola columna) */
+    .contenedor-calculo { 
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+    
+    .formulario-card input, 
+    #vista-comparador .formulario input#comp-monto {
+        font-size: 1.5em !important; /* Achicamos el texto gigante para que entre el número */
+        padding: 12px !important;
+    }
+
+    /* 5. EL COMPARADOR (El cambio más importante para que no se rompa) */
+    .comparador-split {
+        grid-template-columns: 1fr !important; /* Obligatorio: uno abajo del otro */
+    }
+    
+    /* 6. TABLAS ELÁSTICAS (Evita que el diseño se "estire" hacia los costados) */
+    .table-container, 
+    .mini-ficha-tecnica, 
+    .cuadro-resultados {
+        width: 100% !important;
+        overflow-x: auto !important; /* Permite deslizar la tabla con el dedo si es muy ancha */
+        -webkit-overflow-scrolling: touch;
+        border: 1px solid #343a40 !important;
+    }
+
+    .tabla-condiciones th, .tabla-condiciones td,
+    .tabla-info-comp th, .tabla-info-comp td {
+        font-size: 0.8em !important; /* Letra un poco más chica en tablas de celular */
+        padding: 8px 4px !important;
+    }
+
+    /* 7. Botones de Planes (Ajuste de rejilla para móvil) */
+    .grid-planes-pc {
+        grid-template-columns: 1fr !important; /* Un plan por fila para que sea fácil de tocar */
+        padding: 10px;
+    }
+}
+
+/* Ajuste extra para celulares muy pequeños (iPhone SE / viejos) */
+@media (max-width: 380px) {
+    .card-marca { width: 100%; } /* Una marca por fila si el cel es muy angosto */
+    .formulario-card input { font-size: 1.2em !important; }
+}
+
+/* ==========================================================================
+   BOTÓN FLOTANTE WHATSAPP (SOPORTE)
+   ========================================================================== */
+.btn-whatsapp {
+    position: fixed;
+    bottom: 20px; /*Siempre a 20px del borde inferior para que no se pegue al logo en mobile*/
+    right: 20px;
+    background-color: #ffffff; /* Fondo blanco para que destaque */
+    border: 2px solid #000000;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: flex; /* Flexbox para alinear el icono y el texto */
+    align-items: center; /* Centra el contenido verticalmente */
+    gap: 10px;
+    text-decoration: none; /* Sin subrayado */
+    color: #000000;
+    font-weight: 800;
+    font-size: 0.8em;
+    text-transform: uppercase; /* Letras mayúsculas para un impacto visual fuerte */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 9999; /* Siempre por encima de todo */
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); /* Transición suave para hover */
+}
+
+.btn-whatsapp img {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.05) translateY(-3px);
+    background-color: #f8f9fa;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Ajuste para móviles: lo hacemos más compacto */
+@media (max-width: 768px) {
+    .btn-whatsapp span { display: none; } /* En cel solo queda el icono */
+    .btn-whatsapp {
+        padding: 12px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 50%; /* Queda circular en móviles */
+    }
+}
+
+/* ==========================================================================
+   DESCARGAR PDF
+   ========================================================================== */
+
+#btn-generar-pdf {
+    display: block;
+    width: fit-content;
+    margin: 30px auto; /* Centrado automático */
+    padding: 12px 25px;
+    background-color: #343a40; /* Gris Dietrich */
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 0.9em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+#btn-generar-pdf:hover {
+    background-color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* */
+@media print {
+    #vista-calculo {
+        background: white !important;
+        padding: 20px !important;
+    }
+}
+
+/* Regla para que no salga en celulares si estorba */
+@media (max-width: 768px) {
+    #btn-generar-pdf {
+        width: 90%; /* Casi ancho completo en celular */
+        font-size: 0.8em;
+    }
+}
