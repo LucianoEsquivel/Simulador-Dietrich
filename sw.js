@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dietrich-cache-v1.0.3';
+const CACHE_NAME = 'dietrich-cache-v1.0.4'; // Subimos a 1.0.4 para testear
 const assets = [
   './',
   './index.html',
@@ -8,8 +8,10 @@ const assets = [
   'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js'
 ];
 
-// Instalación: Guarda los archivos en el almacenamiento del celu/PC
+// 1. Instalación
 self.addEventListener('install', event => {
+  // Fuerza a este SW a convertirse en el activo sin esperar a que cierres la app
+  self.skipWaiting(); 
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
       return cache.addAll(assets);
@@ -17,7 +19,23 @@ self.addEventListener('install', event => {
   );
 });
 
-// Respuesta: Si no hay internet, busca en el caché
+// 2. Activación: AQUÍ ESTÁ LA SOLUCIÓN
+// Este bloque borra los cachés viejos (v1.0.2, v1.0.3, etc.) automáticamente
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames.map(cache => {
+          if (cache !== CACHE_NAME) {
+            return caches.delete(cache);
+          }
+        })
+      );
+    })
+  );
+});
+
+// 3. Respuesta
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request).then(response => {
