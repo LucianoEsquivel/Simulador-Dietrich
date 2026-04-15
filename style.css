@@ -172,6 +172,7 @@ main {
     4. VISTA INICIO (HOME) - BOTONES PRINCIPALES
    ========================================================================== */
 
+/* Contenedor principal: MARCA y BANCO uno al lado del otro */
 .contenedor-hero-home {
     display: flex;
     flex-direction: row; 
@@ -215,6 +216,7 @@ main {
     filter: brightness(0.4) grayscale(0.3);
 }
 
+/* Vinculación de tus archivos reales */
 .f-todos { background-image: url('img/todos.jpeg'); }
 .f-raptor { background-image: url('img/raptor.jpeg'); }
 .f-amarok { background-image: url('img/amarok.jpeg'); }
@@ -258,7 +260,7 @@ main {
     color: #fff; 
     width: 100%; 
     padding: 22px 0;
-    /* Fuente formal y moderna (Sans-Serif geométrica) */
+    /* Fuente formal y moderna (Minimalista) */
     font-family: 'Montserrat', 'Inter', 'Segoe UI', sans-serif;
     font-weight: 800; 
     font-size: 1.4em; 
@@ -271,7 +273,7 @@ main {
 
 .card-hero:hover .overlay-hero span {
     background: rgba(0, 0, 0, 0.45);
-    letter-spacing: 8px; /* Efecto dinámico en el texto al señalar */
+    letter-spacing: 8px; 
 }
 
 /* Botón comparador estilizado (Más minimalista) */
@@ -295,23 +297,6 @@ main {
 .btn-comparador-hero:hover { 
     background: #1a1a1a; 
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-/* Mobile */
-@media (max-width: 850px) {
-    .contenedor-hero-home { 
-        flex-direction: column;
-        height: auto; 
-    }
-    .card-hero {
-        height: 250px;
-        width: 100%;
-    }
-    .overlay-hero span { 
-        font-size: 1.1em; 
-        padding: 15px 0;
-        letter-spacing: 2px;
-    }
 }
 
 /* ==========================================================================
@@ -984,30 +969,25 @@ main {
         top: 15px; right: 10px; 
     }
 
-    /* --- CORRECCIÓN VISTA INICIO CELULAR --- */
-    .contenedor-hero-home { 
-        flex-direction: column !important; /* Los pone uno abajo del otro */
-        height: auto !important;           /* Permite que crezca según el contenido */
+    /* 2. VISTA INICIO CELULAR (Sin abusar de important) */
+    section#vista-inicio .contenedor-hero-home { 
+        flex-direction: column;
+        height: auto; 
         gap: 15px;
     }
 
-    .card-hero {
-        height: 220px !important;         /* FUERZA la altura para que se vea la foto */
+    section#vista-inicio .card-hero {
+        height: 220px; 
         min-height: 220px;
         width: 100%;
-        flex: none;                       /* Evita que el flexbox lo aplaste */
+        flex: none;
     }
 
-    .overlay-hero span { 
+    section#vista-inicio .overlay-hero span { 
         font-size: 1.1em; 
         padding: 18px 0;
         letter-spacing: 2px;
     }
-    /* --------------------------------------- */
-
-    /* 2. Grid de Inicio (Consistencia con el nuevo diseño Hero) */
-    .card-inicio { height: 130px; }
-    .card-inicio span { font-size: 0.9em; }
 
     /* 3. Selección de Marcas y Bancos */
     .contenedor-horizontal-marcas { gap: 10px; }
@@ -1020,7 +1000,7 @@ main {
         padding: 0 15px;
     }
 
-    /* 4. Vista de Cálculo */
+    /* 4. Vista de Cálculo (Soporte para la nueva calculadora dual) */
     .contenedor-calculo-nuevo,
     .contenedor-resultados-condiciones { 
         display: flex !important;
@@ -1054,21 +1034,14 @@ main {
         font-size: 0.8em !important; 
         padding: 8px 4px !important;
     }
-
-    /* 7. Botones de Planes */
-    .grid-planes-pc {
-        grid-template-columns: 1fr !important; 
-        padding: 10px;
-    }
 }
 
 /* Ajuste extra para celulares muy pequeños */
 @media (max-width: 380px) {
     .card-marca { width: 100%; }
     .formulario-card input { font-size: 1.2em !important; }
-    .card-hero { height: 180px !important; }
+    section#vista-inicio .card-hero { height: 180px; }
 }
-
 /* ==========================================================================
    BOTÓN FLOTANTE WHATSAPP (SOPORTE)
    ========================================================================== */
