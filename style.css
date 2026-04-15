@@ -974,7 +974,7 @@ main {
    11. CONFIGURACIÓN RESPONSIVE (CELULARES Y TABLETS)
    ========================================================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     /* 1. Ajuste del Header y Campana */
     .main-header { padding: 15px 10px; }
     .logo-dietrich { max-width: 160px; }
@@ -984,27 +984,45 @@ main {
         top: 15px; right: 10px; 
     }
 
-    /* 2. Grid de Inicio (2 columnas pero con menos gap para que entren) */
-    .grid-inicio { 
-        gap: 12px !important; 
-        padding: 0 10px;
+    /* --- CORRECCIÓN VISTA INICIO CELULAR --- */
+    .contenedor-hero-home { 
+        flex-direction: column !important; /* Los pone uno abajo del otro */
+        height: auto !important;           /* Permite que crezca según el contenido */
+        gap: 15px;
     }
+
+    .card-hero {
+        height: 220px !important;         /* FUERZA la altura para que se vea la foto */
+        min-height: 220px;
+        width: 100%;
+        flex: none;                       /* Evita que el flexbox lo aplaste */
+    }
+
+    .overlay-hero span { 
+        font-size: 1.1em; 
+        padding: 18px 0;
+        letter-spacing: 2px;
+    }
+    /* --------------------------------------- */
+
+    /* 2. Grid de Inicio (Consistencia con el nuevo diseño Hero) */
     .card-inicio { height: 130px; }
     .card-inicio span { font-size: 0.9em; }
 
-    /* 3. Selección de Marcas y Bancos (Ajuste de ancho para que no desborden) */
+    /* 3. Selección de Marcas y Bancos */
     .contenedor-horizontal-marcas { gap: 10px; }
     .card-marca { 
-        width: 45%; /* Entran 2 por fila cómodamente */
+        width: 45%; 
         height: 130px; 
     }
     .grid-bancos { 
-        grid-template-columns: 1fr !important; /* En celular, bancos uno abajo del otro */
+        grid-template-columns: 1fr !important; 
         padding: 0 15px;
     }
 
-    /* 4. Vista de Cálculo (Forzamos una sola columna) */
-    .contenedor-calculo { 
+    /* 4. Vista de Cálculo */
+    .contenedor-calculo-nuevo,
+    .contenedor-resultados-condiciones { 
         display: flex !important;
         flex-direction: column !important;
         gap: 20px !important;
@@ -1012,42 +1030,43 @@ main {
     
     .formulario-card input, 
     #vista-comparador .formulario input#comp-monto {
-        font-size: 1.5em !important; /* Achicamos el texto gigante para que entre el número */
+        font-size: 1.4em !important; 
         padding: 12px !important;
     }
 
-    /* 5. EL COMPARADOR (El cambio más importante para que no se rompa) */
+    /* 5. EL COMPARADOR */
     .comparador-split {
-        grid-template-columns: 1fr !important; /* Obligatorio: uno abajo del otro */
+        grid-template-columns: 1fr !important;
     }
     
-    /* 6. TABLAS ELÁSTICAS (Evita que el diseño se "estire" hacia los costados) */
+    /* 6. TABLAS ELÁSTICAS */
     .table-container, 
     .mini-ficha-tecnica, 
     .cuadro-resultados {
         width: 100% !important;
-        overflow-x: auto !important; /* Permite deslizar la tabla con el dedo si es muy ancha */
+        overflow-x: auto !important; 
         -webkit-overflow-scrolling: touch;
         border: 1px solid #343a40 !important;
     }
 
     .tabla-condiciones th, .tabla-condiciones td,
     .tabla-info-comp th, .tabla-info-comp td {
-        font-size: 0.8em !important; /* Letra un poco más chica en tablas de celular */
+        font-size: 0.8em !important; 
         padding: 8px 4px !important;
     }
 
-    /* 7. Botones de Planes (Ajuste de rejilla para móvil) */
+    /* 7. Botones de Planes */
     .grid-planes-pc {
-        grid-template-columns: 1fr !important; /* Un plan por fila para que sea fácil de tocar */
+        grid-template-columns: 1fr !important; 
         padding: 10px;
     }
 }
 
-/* Ajuste extra para celulares muy pequeños (iPhone SE / viejos) */
+/* Ajuste extra para celulares muy pequeños */
 @media (max-width: 380px) {
-    .card-marca { width: 100%; } /* Una marca por fila si el cel es muy angosto */
+    .card-marca { width: 100%; }
     .formulario-card input { font-size: 1.2em !important; }
+    .card-hero { height: 180px !important; }
 }
 
 /* ==========================================================================
