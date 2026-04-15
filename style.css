@@ -969,7 +969,7 @@ main {
         top: 15px; right: 10px; 
     }
 
-    /* 2. VISTA INICIO CELULAR (Sin abusar de important) */
+    /* 2. VISTA INICIO CELULAR */
     section#vista-inicio .contenedor-hero-home { 
         flex-direction: column;
         height: auto; 
@@ -989,18 +989,47 @@ main {
         letter-spacing: 2px;
     }
 
-    /* 3. Selección de Marcas y Bancos */
-    .contenedor-horizontal-marcas { gap: 10px; }
+    /* 3. SELECCIÓN DE MARCAS Y BANCOS */
+    .contenedor-horizontal-marcas { 
+        gap: 10px; 
+        justify-content: center;
+    }
     .card-marca { 
         width: 45%; 
         height: 130px; 
     }
-    .grid-bancos { 
-        grid-template-columns: 1fr !important; 
-        padding: 0 15px;
+
+    /* 7. REPARACIÓN: Listado de Planes (Tasas) */
+    /* Aquí forzamos que los planes no se escapen de la pantalla */
+    .grid-planes-pc {
+        display: flex !important;
+        flex-direction: column !important;
+        grid-template-columns: none !important; 
+        padding: 10px !important;
+        gap: 12px !important;
     }
 
-    /* 4. Vista de Cálculo (Soporte para la nueva calculadora dual) */
+    .btn-banco {
+        width: 100% !important;
+        min-height: 85px !important;
+        height: auto !important;
+        padding: 15px !important;
+        font-size: 0.9em !important;
+    }
+
+    /* Ajuste para las sub-categorías (Kia, BYD, etc) */
+    .contenedor-tarjetas-subcat {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 15px;
+    }
+    .card-sub-categoria {
+        width: 100% !important;
+        max-width: 300px;
+        height: 100px !important;
+    }
+
+    /* 4. VISTA DE CÁLCULO (Dual) */
     .contenedor-calculo-nuevo,
     .contenedor-resultados-condiciones { 
         display: flex !important;
