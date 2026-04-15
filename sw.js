@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dietrich-cache-v1.0.1.2'; // Subimos a 1.0.1.2 para testear (15/04/2026 15:34 PM)
+const CACHE_NAME = 'dietrich-cache-v1.0.1.3'; // Subimos a 1.0.1.3 para testear (15/04/2026 15:34 PM)
 const assets = [
   './',
   './index.html',
