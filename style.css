@@ -169,98 +169,151 @@ main {
 }
 
 /* ==========================================================================
-   4. VISTA INICIO (HOME) - BOTONES PRINCIPALES
+    4. VISTA INICIO (HOME) - BOTONES PRINCIPALES
    ========================================================================== */
 
-/* Contenedor de "POR MARCAS" y "POR BANCOS" */
-.grid-inicio { 
-    display: grid !important; /* [NO TOCAR] Usa Grid para organizar los botones principales */
-    grid-template-columns: 1fr 1fr !important; /* Mantiene 2 columnas incluso en móviles */
-    gap: 20px; 
-    max-width: 800px;
-    margin: 0 auto 20px auto;
-}
-
-/* Estilo base para los botones cuadrados de la Home */
-.card-inicio {
-    position: relative; /* Necesario para posicionar las marcas de agua dentro de la tarjeta */
-    height: 160px; /* Tamaño cuadrado ideal para PC y móvil */
-    background-color: #ffffff; /* Fondo blanco para resaltar el texto y las marcas de agua */
-    border: 2px solid #000000; 
-    border-radius: 20px; /* Bordes redondeados para un look más amigable */
-    display: flex; /* Flexbox para centrar el contenido */
-    align-items: center; /* Centra verticalmente el texto */
-    justify-content: center; /* Centra horizontalmente el texto */
-    cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
-    overflow: hidden; /* Evita que las marcas de agua se salgan de la tarjeta */
-    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); /* Transición suave para hover */
-}
-
-.card-inicio span { /* El texto dentro de cada tarjeta */
-    font-weight: 900; 
-    font-size: 1.1em; /* Texto grande y en negrita para máxima legibilidad */
-    color: #000; 
-    text-transform: uppercase; /* Texto en mayúsculas para un impacto visual fuerte */
-    z-index: 2; /* Asegura que el texto esté por encima de la imagen de fondo */
-}
-
-/* Marcas de agua (Siluetas de auto y banco) */
-.card-inicio::before { /* Pseudo-elemento para la marca de agua */
-    content: ""; /* Necesario para que el pseudo-elemento exista */
-    position: absolute; /* Posicionamiento absoluto dentro de la tarjeta */
-    /* FIJAMOS EL CENTRO: Evita que el logo salte al hacer hover */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    width: 60%; 
-    height: 60%;
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen dentro de la tarjeta */
-    background-size: contain; /* Ajusta el tamaño del logo para que se vea bien sin distorsionarse */
-    opacity: 0.1; 
-    filter: grayscale(100%);
-    z-index: 1; /* Asegura que la marca de agua esté detrás del texto */
-    transition: 0.3s ease; /* Transición suave para opacidad y escala */
-}
-
-.bg-auto::before  { background-image: url('img/auto.png'); } /* Cada tarjeta tiene su propia imagen de fondo definida por su clase específica */
-.bg-banco::before { background-image: url('img/banco.png'); } /* Cada tarjeta tiene su propia imagen de fondo definida por su clase específica */
-
-/* Efecto sobre la tarjeta completa */
-.card-inicio:hover { 
-    transform: translateY(-5px); 
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1); 
-}
-
-/* Efecto sobre el logo de fondo: solo crece, no se desplaza */
-.card-inicio:hover::before { 
-    opacity: 0.2; 
-    /* Mantenemos el translate original y solo sumamos el scale */
-    transform: translate(-50%, -50%) scale(1.1); 
-}
-
-/* Botón Comparador de Tasas (Estilo Ancho Completo) */
-.btn-comparador-principal {
+.contenedor-hero-home {
+    display: flex;
+    flex-direction: row; 
+    height: 65vh;        
+    gap: 15px;
+    margin-bottom: 15px;
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto 20px auto;
-    padding: 22px;
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    border-radius: 15px;
-    font-size: 1.1em;
-    font-weight: 800;
-    text-transform: uppercase;
-    cursor: pointer;
-    display: block; 
-    transition: 0.3s;
 }
 
-.btn-comparador-principal:hover {
-    background-color: #333333;
+.card-hero {
+    flex: 1;             
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #000;
+    transition: transform 0.3s ease;
+    height: 100%;        
+}
+
+.card-hero:hover {
     transform: scale(1.01);
 }
+
+.foto-fondo {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* --- LÓGICA DEL SLIDER DE MARCAS --- */
+.slider-fondo {
+    display: flex;
+    width: 600%; 
+    height: 100%;
+    position: absolute;
+    left: 0;
+    transform: translateX(0); 
+    transition: transform 0.6s ease-in-out, filter 0.5s ease;
+    filter: brightness(0.4) grayscale(0.3);
+}
+
+.f-todos { background-image: url('img/todos.jpeg'); }
+.f-raptor { background-image: url('img/raptor.jpeg'); }
+.f-amarok { background-image: url('img/amarok.jpeg'); }
+.f-dolphin { background-image: url('img/dolphin.jpeg'); }
+.f-k3 { background-image: url('img/k3.jpeg'); }
+.f-q1 { background-image: url('img/q1.jpeg'); }
+.f-banco { background-image: url('img/banco.jpeg'); }
+
+/* Animación SECUENCIAL (Ordenada) - 8 segundos total */
+@keyframes desfileVehiculos {
+    0%, 20%   { transform: translateX(-16.66%); } /* Raptor */
+    25%, 45%  { transform: translateX(-33.33%); } /* Amarok */
+    50%, 70%  { transform: translateX(-50%); }    /* Dolphin */
+    75%, 95%  { transform: translateX(-66.66%); } /* K3 */
+    100%      { transform: translateX(-83.33%); } /* Q1 */
+}
+
+#hero-marcas:hover .slider-fondo {
+    animation: desfileVehiculos 8s infinite; 
+    filter: brightness(0.8) grayscale(0);
+}
+
+#hero-marcas:not(:hover) .slider-fondo {
+    transform: translateX(0) !important;
+    animation: none !important;
+}
+
+/* --- OVERLAY: BARRA TRASLÚCIDA MINIMALISTA --- */
+.overlay-hero {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.1); 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    z-index: 10;
+}
+
+.overlay-hero span {
+    background: rgba(0, 0, 0, 0.65); 
+    color: #fff; 
+    width: 100%; 
+    padding: 22px 0;
+    /* Fuente formal y moderna (Sans-Serif geométrica) */
+    font-family: 'Montserrat', 'Inter', 'Segoe UI', sans-serif;
+    font-weight: 800; 
+    font-size: 1.4em; 
+    text-transform: uppercase;
+    letter-spacing: 5px; 
+    text-align: center;
+    backdrop-filter: blur(4px); 
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-hero:hover .overlay-hero span {
+    background: rgba(0, 0, 0, 0.45);
+    letter-spacing: 8px; /* Efecto dinámico en el texto al señalar */
+}
+
+/* Botón comparador estilizado (Más minimalista) */
+.btn-comparador-hero {
+    width: 100%;
+    padding: 18px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-comparador-hero:hover { 
+    background: #1a1a1a; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Mobile */
+@media (max-width: 850px) {
+    .contenedor-hero-home { 
+        flex-direction: column;
+        height: auto; 
+    }
+    .card-hero {
+        height: 250px;
+        width: 100%;
+    }
+    .overlay-hero span { 
+        font-size: 1.1em; 
+        padding: 15px 0;
+        letter-spacing: 2px;
+    }
+}
+
 /* ==========================================================================
    5. VISTA SELECCIÓN DE MARCAS (FORD, VW, BYD, KIA, AUDI)
    ========================================================================== */

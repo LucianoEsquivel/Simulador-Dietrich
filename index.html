@@ -68,21 +68,35 @@
     <main>
 
         <section id="vista-inicio" class="active">
-            <div class="contenedor-home-pc">
-                <h2 class="titulo-seccion">¿Cómo desea simular?</h2>
-                <div class="grid-inicio">
-                    <div class="card-inicio bg-auto" onclick="mostrarSeccionMarcas()">
-                        <span>POR MARCA</span>
+            <div class="contenedor-hero-home">
+                
+                <div id="hero-marcas" class="card-hero" onclick="mostrarSeccionMarcas()">
+                    <div class="slider-fondo">
+                        <div class="foto-fondo f-todos"></div>
+                        <div class="foto-fondo f-raptor"></div>
+                        <div class="foto-fondo f-amarok"></div>
+                        <div class="foto-fondo f-dolphin"></div>
+                        <div class="foto-fondo f-k3"></div>
+                        <div class="foto-fondo f-q1"></div>
                     </div>
-                    <div class="card-inicio bg-banco" onclick="mostrarSeccionBancos()">
-                        <span>POR BANCO</span>
+                    <div class="overlay-hero">
+                        <span>SIMULAR POR MARCA</span>
                     </div>
                 </div>
-                <button class="btn-comparador-principal" onclick="irAComparador()">
-                    COMPARADOR DE TASAS
-                </button>
-                <p class="footer-interno">Simulador exclusivo para uso interno - Grupo Dietrich 2026</p>
+
+                <div id="hero-bancos" class="card-hero" onclick="mostrarSeccionBancos()">
+                    <div class="foto-fondo f-banco"></div>
+                    <div class="overlay-hero">
+                        <span>SIMULAR POR BANCO</span>
+                    </div>
+                </div>
+
             </div>
+
+            <button class="btn-comparador-hero" onclick="irAComparador()">
+                COMPARADOR DE TASAS
+            </button>
+            <p class="footer-interno">Simulador exclusivo para uso interno - Grupo Dietrich 2026</p>
         </section>
 
         <section id="vista-marcas" class="hidden">

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dietrich-cache-v1.0.6'; // Subimos a 1.0.6 para testear (15/04/2026 11:16 AM)
+const CACHE_NAME = 'dietrich-cache-v1.0.7'; // Subimos a 1.0.7 para testear (15/04/2026 11:16 AM)
 const assets = [
   './',
   './index.html',
@@ -7,7 +7,7 @@ const assets = [
   './manifest.json',
   'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js'
 ];
-
+//recordatorio: agregar arriba los archivos para cachear, por ejemplo: './images/logo.png', './fonts/Roboto-Regular.ttf', etc.
 // 1. Instalación
 self.addEventListener('install', event => {
   // Fuerza a este SW a convertirse en el activo sin esperar a que cierres la app
