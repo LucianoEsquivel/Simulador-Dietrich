@@ -16,7 +16,7 @@ const bancos = {
                         gastos: 6, 
                         seguro: "A DEFINIR", 
                         baseCalculo: 1000000, 
-                        descripcion: "Esto es una testeo de las descargas 1.0.3",
+                        descripcion: "Esto es una testeo de las descargas 1.0.9",
                         plazos: [{m:12, c:94530}, {m:18, c:66639}, {m:24, c:52775}, {m:36, c:39073}, {m:48, c:32381}, {m:60, c:28490}, {m:72, c:25996}] 
                     },
                     { 
@@ -632,35 +632,19 @@ function abrirFormulario(plan) {
     financiacionActual = plan;
     mostrarSeccion('vista-calculo');
     
-    // Título del plan
     document.getElementById('nombre-financiacion-seleccionada').innerText = plan.nombre;
-    
-    // CONEXIÓN DINÁMICA: Busca la propiedad 'descripcion' en el objeto que está al inicio del app.js
-    document.getElementById('texto-informativo-dinamico').innerText = plan.descripcion || "Consulte condiciones vigentes de esta línea de crédito.";
+    document.getElementById('texto-informativo-dinamico').innerText = plan.descripcion || "Consulte condiciones vigentes.";
 
-    const esVW = (bancoActual && bancoActual.key === 'vw_financial');
-    const inputPrecioLista = document.getElementById('precio-lista').closest('.input-group');
-    const inputPrecioVenta = document.getElementById('precio').closest('.input-group');
-    const inputAnticipo = document.getElementById('anticipo').closest('.input-group');
-
-    if (esVW) {
-        inputPrecioLista.style.display = 'none';
-        inputPrecioVenta.style.display = 'none';
-        inputAnticipo.querySelector('label').innerText = "Monto a Financiar";
-    } else {
-        inputPrecioLista.style.display = 'block';
-        inputPrecioVenta.style.display = 'block';
-        inputAnticipo.querySelector('label').innerText = "Anticipo";
-    }
-
+    // Mostramos u ocultamos el grupo de cotización para planes en USD
     const grupoDolar = document.getElementById('grupo-cotizacion');
     if (grupoDolar) {
         grupoDolar.style.display = (plan.moneda === "USD") ? "block" : "none";
     }
 
+    // Renderizamos la tabla de condiciones (la de la derecha)
     let tablaTasas = `
         <div class="ficha-tecnica-detallada">
-            <h4 style="text-align:center; padding:10px;">Condiciones de la financiacion</h4>
+            <h4 style="text-align:center; padding:10px;">Condiciones de la financiación</h4>
             <div class="table-container">
                 <table class="tabla-condiciones">
                     <thead>
@@ -684,9 +668,10 @@ function abrirFormulario(plan) {
     document.getElementById('ficha-tecnica').innerHTML = tablaTasas;
     document.getElementById('resultado-cuotas').innerHTML = "";
 
-    document.getElementById('precio-lista').value = "";
-    document.getElementById('precio').value = "";
-    document.getElementById('anticipo').value = "";
+    // Limpiamos todos los campos al entrar
+    ['precio-lista', 'precio', 'anticipo', 'monto-directo'].forEach(id => {
+        document.getElementById(id).value = "";
+    });
 
     vincularEventosCalculo();
     window.scrollTo(0, 0);
@@ -695,37 +680,31 @@ function abrirFormulario(plan) {
 /* ==========================================================================
    4. MOTOR DE CÁLCULO
    ========================================================================== */
+
 function calcularSimulacion() {
     const obtenerNumeroLimpio = (id) => {
         const input = document.getElementById(id);
         if (!input) return 0;
-        // Limpiamos los puntos antes de convertir a número para que la cuenta no de ERROR
         return parseFloat(input.value.replace(/\./g, '')) || 0;
     };
 
-    const esVW = (bancoActual && bancoActual.key === 'vw_financial');
+    const montoDirecto = obtenerNumeroLimpio('monto-directo');
     const pListaPesos = obtenerNumeroLimpio('precio-lista');
     const vVentaPesos = obtenerNumeroLimpio('precio');
-    const valorInputPrincipal = obtenerNumeroLimpio('anticipo'); 
+    const anticipoPesos = obtenerNumeroLimpio('anticipo');
     const cotizacion = parseFloat(document.getElementById('cotizacion-dolar').value) || 1;
 
-    if (!esVW && vVentaPesos === 0) return;
-    if (esVW && valorInputPrincipal === 0) return;
+    // Si no hay datos en ninguno de los dos bloques, no calculamos
+    if (montoDirecto === 0 && vVentaPesos === 0) return;
 
     const esUSD = (financiacionActual.moneda === "USD");
     const factor = esUSD ? cotizacion : 1;
-    const moneda = esUSD ? "USD" : "$";
+    const moneda = esUSD ? "USD " : "$ ";
 
-    // GENERAMOS SOLO LA TABLA, SIN TÍTULOS (El CSS pone el título)
     let html = `
         <table class="tabla-condiciones">
             <thead>
-                <tr>
-                    <th>Plazo</th>
-                    <th>Cuota</th>
-                    <th>Financiado</th>
-                    <th>Gastos</th>
-                </tr>
+                <tr><th>Plazo</th><th>Cuota</th><th>Financiado</th><th>Gastos</th></tr>
             </thead>
             <tbody>`;
 
@@ -734,12 +713,16 @@ function calcularSimulacion() {
         let filaClase = "";
         let advertenciaTexto = "";
 
-        if (esVW) {
-            montoFin = valorInputPrincipal / factor;
+        // DETERMINAMOS EL MONTO A FINANCIAR SEGÚN EL BLOQUE USADO
+        if (montoDirecto > 0) {
+            // Caso 1: Ingreso Directo (aplica para todas las marcas ahora)
+            montoFin = montoDirecto / factor;
         } else {
+            // Caso 2: Cálculo por Precios (Precio Venta - Anticipo)
             const pLista = pListaPesos / factor;
             const vVenta = vVentaPesos / factor;
-            const antIngresado = valorInputPrincipal / factor;
+            const antIngresado = anticipoPesos / factor;
+            
             let ltvPlan = p.ltv || financiacionActual.ltv;
             let topeMax = p.max || financiacionActual.maxFinanciable || 999999999999;
             let maxPermitidoPorLTV = (typeof ltvPlan === 'number') ? (pLista * (ltvPlan / 100)) : 999999999999;
@@ -748,7 +731,7 @@ function calcularSimulacion() {
             montoFin = Math.min((vVenta - antIngresado), techoFinalBanco);
             let antMinimoReal = (vVenta - techoFinalBanco) * factor;
 
-            if (valorInputPrincipal < (antMinimoReal - 100)) {
+            if (anticipoPesos < (antMinimoReal - 100)) {
                 filaClase = "fila-error-anticipo"; 
                 advertenciaTexto = `<br><small style="color:red">Anticipo bajo</small>`;
             }
@@ -778,16 +761,29 @@ function calcularSimulacion() {
    ========================================================================== */
 
 function vincularEventosCalculo() {
-    const inputs = ['precio-lista', 'precio', 'anticipo', 'cotizacion-dolar'];
-    inputs.forEach(id => {
-        const el = document.getElementById(id);
-        if (el) {
-            el.oninput = (e) => {
-                if (e.target.id !== 'cotizacion-dolar') formatCurrencyInput(e.target);
-                calcularSimulacion();
-            };
-        }
+    const inputsBloque1 = ['precio-lista', 'precio', 'anticipo'];
+    const inputBloque2 = 'monto-directo';
+    const inputDolar = 'cotizacion-dolar';
+
+    // Eventos para Bloque 1 (Cálculo por Precios)
+    inputsBloque1.forEach(id => {
+        document.getElementById(id).oninput = (e) => {
+            formatCurrencyInput(e.target);
+            // Si escribo aquí, borro el monto directo
+            document.getElementById('monto-directo').value = ""; 
+            calcularSimulacion();
+        };
     });
+
+    // Evento para Bloque 2 (Monto Directo)
+    document.getElementById(inputBloque2).oninput = (e) => {
+        formatCurrencyInput(e.target);
+        // Si escribo aquí, borro los 3 del Bloque 1
+        inputsBloque1.forEach(id => document.getElementById(id).value = "");
+        calcularSimulacion();
+    };
+
+    document.getElementById(inputDolar).oninput = () => calcularSimulacion();
 }
 
 function irAComparador() {

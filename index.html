@@ -135,47 +135,53 @@
         </section>
 
         <section id="vista-calculo" class="hidden">
-                    <h2 id="nombre-financiacion-seleccionada" class="titulo-seccion"></h2>
+            <h2 id="nombre-financiacion-seleccionada" class="titulo-seccion"></h2>
 
+            <div class="info-extra-plan">
+                <p><strong>Información de la tasa:</strong> <span id="texto-informativo-dinamico">--</span></p>
+            </div>
 
-                    <div class="info-extra-plan">
-                        <p><strong>Información de la tasa:</strong> <span id="texto-informativo-dinamico">-- Acá puedes agregar el texto sobre impuestos o tipo de vehículo --</span></p>
+            <div class="contenedor-calculo-nuevo">
+                <div class="formulario-card">
+                    <h4 class="leyenda-input">Si no conoces el monto a financiar:</h4>
+                    <div class="input-group">
+                        <label>Precio de Lista</label>
+                        <input type="text" id="precio-lista" placeholder="$ 0">
+                    </div>
+                    <div class="input-group">
+                        <label>Precio de Venta</label>
+                        <input type="text" id="precio" placeholder="$ 0">
+                    </div>
+                    <div class="input-group">
+                        <label>Anticipo del Cliente</label>
+                        <input type="text" id="anticipo" placeholder="$ 0">
+                    </div>
+                </div>
+
+                <div class="formulario-card">
+                    <h4 class="leyenda-input">Si conoces el monto a financiar:</h4>
+                    <div class="input-group">
+                        <label>Monto Directo a Financiar</label>
+                        <input type="text" id="monto-directo" placeholder="$ 0" style="border-color: #28a745;">
+                    </div>
+                    <div id="grupo-cotizacion" class="input-group" style="display:none; margin-top:10px;">
+                        <label>Cotización Dólar</label>
+                        <input type="number" id="cotizacion-dolar" value="1000">
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor-resultados-condiciones">
+                <div id="resultado-cuotas" class="cuadro-resultados">
                     </div>
 
-                    <div class="contenedor-calculo">
-                        
-                        <div class="columna-inputs">
-                            <div class="formulario-card">
-                                <div class="input-group">
-                                    <label>Precio de Lista</label>
-                                    <input type="text" id="precio-lista" placeholder="$ 0">
-                                </div>
-                                <div class="input-group">
-                                    <label>Precio de Venta</label>
-                                    <input type="text" id="precio" placeholder="$ 0">
-                                </div>
-                                <div class="input-group">
-                                    <label>Anticipo</label>
-                                    <input type="text" id="anticipo" placeholder="$ 0">
-                                </div>
-                                <div id="grupo-cotizacion" class="input-group" style="display:none;">
-                                    <label>Cotización Dólar</label>
-                                    <input type="number" id="cotizacion-dolar" value="1000">
-                                </div>
-                            </div>
-
-                            <div id="resultado-cuotas" class="cuadro-resultados">
-                                </div>
-                        </div>
-
-                        <div id="ficha-tecnica">
-                            </div>
-
+                <div id="ficha-tecnica">
                     </div>
-                    
-                    <button id="btn-generar-pdf" class="btn-pdf-descarga" onclick="descargarPDF()">
-                        <span>📄 DESCARGAR COTIZACIÓN (PDF)</span>
-                    </button>
+            </div>
+            
+            <button id="btn-generar-pdf" class="btn-pdf-descarga" onclick="descargarPDF()">
+                <span>📄 DESCARGAR COTIZACIÓN (PDF)</span>
+            </button>
         </section>
 
         <section id="vista-comparador" class="hidden">
