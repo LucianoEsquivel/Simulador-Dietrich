@@ -1,10 +1,27 @@
-const CACHE_NAME = 'dietrich-cache-v1.0.7'; // Subimos a 1.0.7 para testear (15/04/2026 11:16 AM)
+const CACHE_NAME = 'dietrich-cache-v1.0.8'; // Subimos a 1.0.8 para testear (15/04/2026 12:44 AM)
 const assets = [
   './',
   './index.html',
   './style.css',
   './app.js',
   './manifest.json',
+  './img/amarok.jpeg',
+  './img/raptor.jpeg',
+  './img/dolphin.jpeg',
+  './img/k3.jpeg',
+  './img/q1.jpeg',
+  './img/banco.jpeg',
+  './img/audi.png',
+  './img/byd.png',
+  './img/dietrich.png',
+  './img/ford.png',
+  './img/galicia.png',
+  './img/icbc.png',
+  './img/icon-192.png',
+  './img/icon-512.png',
+  './img/kia.png',
+  './img/santander.png',
+  './img/volkswagen.png',
   'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js'
 ];
 //recordatorio: agregar arriba los archivos para cachear, por ejemplo: './images/logo.png', './fonts/Roboto-Regular.ttf', etc.
