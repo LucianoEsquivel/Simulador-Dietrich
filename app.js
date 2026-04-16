@@ -1,3 +1,10 @@
+let refreshing;
+navigator.serviceWorker.addEventListener('controllerchange', () => {
+  if (refreshing) return;
+  refreshing = true;
+  window.location.reload(); // Recarga la página automáticamente cuando hay código nuevo
+});
+
 /* ==========================================================================
    1. BASE DE DATOS DE BANCOS Y PLANES (datos.js)
    ========================================================================== */
