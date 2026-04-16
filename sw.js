@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dietrich-cache-v1.1.3.1.0'; 
+const CACHE_NAME = 'dietrich-cache-v2.0.0'; // Cambia el número de versión cada vez que quieras actualizar el cache
 const assets = [
   './',
   './index.html',
@@ -56,8 +56,8 @@ self.addEventListener('activate', event => {
 // 3. Respuesta
 self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request).then(response => {
-      return response || fetch(event.request);
+    fetch(event.request).catch(() => {
+      return caches.match(event.request);
     })
   );
 });
