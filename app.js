@@ -23,7 +23,7 @@ const bancos = {
                         gastos: 6, 
                         seguro: "A DEFINIR", 
                         baseCalculo: 1000000, 
-                        descripcion: "Esto es una testeo de las descargas 2.0.1",
+                        descripcion: "Financiacion exclusiva para pickups (Ranger, Maverick, Amarok)",
                         plazos: [{m:12, c:94530}, {m:18, c:66639}, {m:24, c:52775}, {m:36, c:39073}, {m:48, c:32381}, {m:60, c:28490}, {m:72, c:25996}] 
                     },
                     { 
