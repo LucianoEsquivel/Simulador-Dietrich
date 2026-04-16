@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dietrich-cache-v1.1.3.9'; 
+const CACHE_NAME = 'dietrich-cache-v1.1.3.1.0'; 
 const assets = [
   './',
   './index.html',
