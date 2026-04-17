@@ -201,7 +201,7 @@ const bancos = {
                     { 
                         nombre: "Territory Titanium", 
                         maxFinanciable: 25000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Línea premium para Territory Titanium con tasa diferencial.",
+                        descripcion: "Línea exclusiva para Territory Titanium.",
                         plazos: [{ m: 18, c: 55.56, tna: "0%", cft: "0%", max: 25000000, info: "TNA 0%" }] 
                     },                   
                     { 
