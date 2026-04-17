@@ -956,13 +956,13 @@ main {
 }
 
 /* ==========================================================================
-   11. CONFIGURACIÓN RESPONSIVE (CELULARES Y TABLETS)
+   11. CONFIGURACIÓN RESPONSIVE (CELULARES Y TABLETS) - OPTIMIZADO V2
    ========================================================================== */
 
 @media (max-width: 850px) {
     /* 1. Ajuste del Header y Campana */
     .main-header { padding: 15px 10px; }
-    .logo-dietrich { max-width: 160px; }
+    .logo-dietrich { max-width: 150px; } /* Un pelín más chico para ganar aire */
     
     #btn-novedades { 
         width: 45px; height: 45px; 
@@ -973,19 +973,18 @@ main {
     section#vista-inicio .contenedor-hero-home { 
         flex-direction: column;
         height: auto; 
-        gap: 15px;
+        gap: 12px;
     }
 
     section#vista-inicio .card-hero {
-        height: 220px; 
-        min-height: 220px;
+        height: 200px; /* Reducimos altura para ver más contenido abajo */
+        min-height: 200px;
         width: 100%;
-        flex: none;
     }
 
     section#vista-inicio .overlay-hero span { 
         font-size: 1.1em; 
-        padding: 18px 0;
+        padding: 15px 0;
         letter-spacing: 2px;
     }
 
@@ -993,84 +992,93 @@ main {
     .contenedor-horizontal-marcas { 
         gap: 12px; 
         padding: 10px;
-        justify-content: space-evenly;
+        justify-content: center;
     }
     .card-marca { 
-        width: 44%; 
+        width: 42%; /* Ajuste para evitar desbordes */
         height: 120px; 
     }
 
     /* 7. REPARACIÓN: Listado de Planes (Tasas) */
-    /* Aquí forzamos que los planes no se escapen de la pantalla */
     .grid-planes-pc {
         display: flex !important;
         flex-direction: column !important;
-        grid-template-columns: none !important; 
         padding: 10px !important;
-        gap: 12px !important;
+        gap: 10px !important;
     }
 
     .btn-banco {
         width: 100% !important;
-        min-height: 75px !important;
-        height: auto !important;
-        padding: 12px !important;
-        font-size: 0.85em !important;
+        min-height: 70px !important;
+        font-size: 0.8em !important;
+        padding: 10px !important;
     }
 
-    /* Ajuste para las sub-categorías (Kia, BYD, etc) */
-    .contenedor-tarjetas-subcat {
-        flex-direction: column !important;
-        align-items: center;
-        gap: 15px;
-    }
-    .card-sub-categoria {
-        width: 100% !important;
-        max-width: 300px;
-        height: 100px !important;
-    }
-
-    /* 4. VISTA DE CÁLCULO (Dual) */
+    /* 4. VISTA DE CÁLCULO - OPTIMIZACIÓN DE TABLAS */
     .contenedor-calculo-nuevo,
     .contenedor-resultados-condiciones { 
         display: flex !important;
         flex-direction: column !important;
-        gap: 20px !important;
+        gap: 15px !important;
+        width: 100% !important;
+        padding: 0 !important;
     }
     
-    .formulario-card input, 
-    #vista-comparador .formulario input#comp-monto {
-        font-size: 1.4em !important; 
+    /* Inputs más amigables al pulgar */
+    .formulario-card { padding: 15px !important; }
+    .formulario-card input {
+        font-size: 1.3em !important; 
         padding: 12px !important;
+    }
+
+    /* --- MEJORA VISUAL DE TABLAS (REPARACIÓN FOTO) --- */
+    .table-container, 
+    .mini-ficha-tecnica, 
+    .cuadro-resultados {
+        width: 100% !important;
+        margin: 0 auto !important;
+        border-radius: 8px !important;
+        border: 1.5px solid #343a40 !important;
+        overflow-x: hidden !important; /* Evitamos scroll lateral innecesario */
+    }
+
+    /* Encabezados más finos para ganar espacio */
+    .tabla-condiciones th, 
+    .cuadro-resultados th,
+    .tabla-info-comp th {
+        font-size: 0.65em !important; 
+        padding: 8px 2px !important;
+        letter-spacing: 0.5px;
+    }
+
+    /* Celdas de datos con más aire vertical y letra clara */
+    .tabla-condiciones td, 
+    .cuadro-resultados td,
+    .tabla-info-comp td {
+        font-size: 0.85em !important; 
+        padding: 14px 4px !important; /* Más espacio para no "pisar" los números */
+        font-weight: 600 !important;
+    }
+
+    /* Resaltado de montos principales */
+    .cuadro-resultados td:nth-child(2) {
+        font-size: 1em !important;
+        color: #000 !important;
+        font-weight: 800 !important;
     }
 
     /* 5. EL COMPARADOR */
     .comparador-split {
         grid-template-columns: 1fr !important;
-    }
-    
-    /* 6. TABLAS ELÁSTICAS */
-    .table-container, 
-    .mini-ficha-tecnica, 
-    .cuadro-resultados {
-        width: 100% !important;
-        overflow-x: auto !important; 
-        -webkit-overflow-scrolling: touch;
-        border: 1px solid #343a40 !important;
-    }
-
-    .tabla-condiciones th, .tabla-condiciones td,
-    .tabla-info-comp th, .tabla-info-comp td {
-        font-size: 0.9em !important; 
-        padding: 12px 2px !important;
+        gap: 20px;
     }
 }
 
 /* Ajuste extra para celulares muy pequeños */
 @media (max-width: 380px) {
-    .card-marca { width: 100%; }
-    .formulario-card input { font-size: 1.2em !important; }
-    section#vista-inicio .card-hero { height: 180px; }
+    .card-marca { width: 90%; }
+    .formulario-card input { font-size: 1.1em !important; }
+    .tabla-condiciones td, .cuadro-resultados td { font-size: 0.75em !important; }
 }
 /* ==========================================================================
    BOTÓN FLOTANTE WHATSAPP (SOPORTE)
