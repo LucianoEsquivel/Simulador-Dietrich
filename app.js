@@ -193,16 +193,16 @@ const bancos = {
                         plazos: [{ m: 18, c: 55.56, tna: "0%", cft: "0%", max: 15000000, info: "TNA 0%" }] 
                     },
                     { 
-                        nombre: "(3) Territory", 
+                        nombre: "Territory", 
                         maxFinanciable: 15000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Tasa 0% para Ford Territory. Sujeto a disponibilidad de stock.",
                         plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", max: 15000000, info: "TNA 0%" }, { m: 18, c: 55.56, tna: "0%", cft: "0%", max: 15000000, info: "TNA 0%" }] 
                     },
                     { 
-                        nombre: "(3.b) Territory Titanium", 
+                        nombre: "Territory Titanium", 
                         maxFinanciable: 25000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Línea premium para Territory Titanium con tasa diferencial.",
-                        plazos: [{ m: 18, c: 63.19, tna: "13,90%", cft: "18,18%", max: 18000000, info: "TNA 13,90%" }] 
+                        plazos: [{ m: 18, c: 55.56, tna: "0%", cft: "0%", max: 25000000, info: "TNA 0%" }] 
                     },                   
                     { 
                         nombre: "(4) Especial Ranger XL", 
