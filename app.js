@@ -16,64 +16,64 @@ const bancos = {
                 nombre: "Santander Río General",
                 planes: [
                     { 
-                        nombre: "(1) Especial Pickups UVA", 
+                        nombre: "Especial Pickups UVA", 
+                        tna: "12,90%", 
+                        cft: "16,78%", 
+                        ltv: 80, 
+                        gastos: 2, 
+                        seguro: "Cautivo", 
+                        baseCalculo: 1000000, 
+                        descripcion: "Financiacion exclusiva para pickups (Ranger, Maverick, Amarok)",
+                        plazos: [{m:12, c:90517}, {m:18, c:62628}, {m:24, c:48719}, {m:36, c:34878}, {m:48, c:28026}, {m:60, c:23969}, {m:72, c:21309}] 
+                    },
+                    { 
+                        nombre: "Línea UVA", 
                         tna: "19,90%", 
                         cft: "26,92%", 
                         ltv: 80, 
-                        gastos: 6, 
-                        seguro: "A DEFINIR", 
+                        gastos: 2, 
+                        seguro: "Cautivo", 
                         baseCalculo: 1000000, 
-                        descripcion: "Financiacion exclusiva para pickups (Ranger, Maverick, Amarok)",
-                        plazos: [{m:12, c:94530}, {m:18, c:66639}, {m:24, c:52775}, {m:36, c:39073}, {m:48, c:32381}, {m:60, c:28490}, {m:72, c:25996}] 
+                        descripcion: "Aplica para toda la gama",
+                        plazos: [{m:12, c:94530}, {m:18, c:66639}, {m:24, c:52775}, {m:36, c:39073}, {m:48, c:32381}, {m:60, c:28490}] 
                     },
                     { 
-                        nombre: "(2) Línea UVA", 
-                        tna: "26,00%", 
-                        cft: "36,42%", 
-                        ltv: 80, 
-                        gastos: 6, 
-                        seguro: "A DEFINIR", 
-                        baseCalculo: 1000000, 
-                        descripcion: "Segundo testeo en v1.0.5",
-                        plazos: [{m:12, c:98091}, {m:18, c:70230}, {m:24, c:56438}, {m:36, c:42918}, {m:48, c:36423}, {m:60, c:32728}] 
-                    },
-                    { 
-                        nombre: "(3) Línea UVA con Quebranto", 
+                        nombre: "Línea UVA con Quebranto", 
                         ltv: 80, 
                         seguro: "A DEFINIR", 
                         baseCalculo: 1000000, 
                         descripcion: "Tasa preferencial con esquema de quebranto bonificado.",
                         plazos: [
-                            { m: 12, c: 83334, tna: "0%", cft: "0%", g: 18, info: "TNA 0%" }, 
-                            { m: 18, c: 60947, tna: "9,90%", cft: "12,66%", g: 16.5, info: "TNA 9,9%" }, 
-                            { m: 24, c: 47030, tna: "9,90%", cft: "12,66%", g: 19.5, info: "TNA 9,9%" }
+                            { m: 12, c: 83334, tna: "0%", cft: "0%", g: 14, info: "TNA 0%" }, 
+                            { m: 18, c: 60947, tna: "9,90%", cft: "12,66%", g: 11, info: "TNA 9,9%" }, 
+                            { m: 24, c: 47030, tna: "9,90%", cft: "12,66%", g: 15, info: "TNA 9,9%" }
                         ] 
                     },
                     { 
-                        nombre: "(4.a) UVA Quebranto Pickups (TNA 0%)", 
+                        nombre: "UVA Quebranto Pickups (TNA 0%)", 
                         tna: "0,00%", 
                         cft: "0,00%", 
                         ltv: 80, 
-                        seguro: "A DEFINIR", 
+                        seguro: "Cautivo", 
                         baseCalculo: 1000000, 
                         descripcion: "Tasa 0% exclusiva para Pickups con gastos de otorgamiento diferenciales.",
-                        plazos: [{m:12, c:83334, g:12}, {m:18, c:55556, g:16.1}, {m:24, c:41667, g:20.1}] 
+                        plazos: [{m:12, c:83334, g:10}, {m:18, c:55556, g:12}, {m:24, c:41667, g:15}] 
                     },
                     { 
-                        nombre: "(4.b) UVA Quebranto Pickups (TNA 9,9%)", 
+                        nombre: "UVA Quebranto Pickups (TNA 9,9%)", 
                         tna: "9,90%", 
                         cft: "12,66%", 
                         ltv: 80, 
-                        seguro: "A DEFINIR", 
+                        seguro: "Cautivo", 
                         baseCalculo: 1000000, 
                         descripcion: "Línea Pickups con tasa fija promocional y ajuste UVA.",
                         plazos: [{m:12, c:88822, g:7.1}, {m:18, c:60947, g:9.3}, {m:24, c:47030, g:11.3}] 
                     },
                     { 
-                        nombre: "(5) Línea Fija con Quebranto", 
+                        nombre: "Línea Fija con Quebranto", 
                         ltv: 80, 
                         gastos: 12, 
-                        seguro: "A DEFINIR", 
+                        seguro: "Cautivo", 
                         baseCalculo: 1000000, 
                         descripcion: "Cuotas fijas en pesos durante todo el plan.",
                         plazos: [
@@ -86,29 +86,29 @@ const bancos = {
                         ] 
                     },
                     { 
-                        nombre: "(6) Tasa Fija 0km", 
-                        tna: "49,50%", 
-                        cft: "79,41%", 
+                        nombre: "Tasa Fija 0km", 
+                        tna: "47,90%", 
+                        cft: "76,13%", 
                         ltv: 80, 
-                        gastos: 6, 
+                        gastos: 2, 
                         seguro: "A DEFINIR", 
                         baseCalculo: 1000000, 
                         descripcion: "Línea tradicional en pesos con tasa fija.",
-                        plazos: [{m:12, c:112365}, {m:18, c:84889}, {m:24, c:71629}, {m:36, c:59272}, {m:48, c:53911}, {m:60, c:51256}] 
+                        plazos: [{m:12, c:111366}, {m:18, c:83851}, {m:24, c:70542}, {m:36, c:58086}, {m:48, c:52364}, {m:60, c:49900}] 
                     },
                     { 
-                        nombre: "(7) Tasa Fija Eléctricos", 
+                        nombre: "Tasa Fija Eléctricos", 
                         tna: "41,90%", 
                         cft: "64,31%", 
                         ltv: 80, 
-                        gastos: 6, 
+                        gastos: 2, 
                         seguro: "A DEFINIR", 
                         baseCalculo: 1000000, 
                         descripcion: "Beneficio exclusivo para movilidad sustentable (Vehículos Eléctricos/Híbridos).",
                         plazos: [{m:12, c:107654}, {m:18, c:80008}, {m:24, c:66534}, {m:36, c:53729}, {m:48, c:47949}, {m:60, c:44926}] 
                     },
                     { 
-                        nombre: "(8) Tasa UVA Eléctricos", 
+                        nombre: "Tasa UVA Eléctricos", 
                         tna: "21,00%", 
                         cft: "28,59%", 
                         ltv: 80, 
@@ -124,28 +124,28 @@ const bancos = {
                 nombre: "Santander Río ByD",
                 planes: [
                     { 
-                        nombre: "(1.a) Línea UVA ByD (TNA 0%)", 
-                        tna: "0%", cft: "0%", ltv: 80, seguro: "A DEFINIR", baseCalculo: 1000000, 
-                        descripcion: "Línea BYD Tasa 0% UVA. Ideal para plazos de 12 a 24 meses.",
-                        plazos: [{ m: 12, c: 83334, g: 14 }, { m: 18, c: 55556, g: 18 }, { m: 24, c: 41667, g: 23 }] 
+                        nombre: "Línea UVA ByD (TNA 0%)", 
+                        tna: "0%", cft: "0%", ltv: 80, seguro: "Cautivo", baseCalculo: 1000000, 
+                        descripcion: "Financiacion exclusiva para unidades BYD con tasa 0%",
+                        plazos: [{ m: 12, c: 83334, g: 12 }, { m: 18, c: 55556, g: 15 }, { m: 24, c: 41667, g: 19 }] 
                     },
                     { 
-                        nombre: "(1.b) Línea UVA ByD (TNA 9,9%)", 
-                        tna: "9,90%", cft: "12,66%", ltv: 80, seguro: "A DEFINIR", baseCalculo: 1000000, 
+                        nombre: "Línea UVA ByD (TNA 9,9%)", 
+                        tna: "9,90%", cft: "12,66%", ltv: 80, seguro: "Cautivo", baseCalculo: 1000000, 
                         descripcion: "Tasa fija promocional BYD con ajuste UVA.",
-                        plazos: [{ m: 12, c: 88822, g: 10 }, { m: 18, c: 60947, g: 12 }, { m: 24, c: 47030, g: 16 }] 
+                        plazos: [{ m: 12, c: 88822, g: 5 }, { m: 18, c: 60947, g: 6 }, { m: 24, c: 47030, g: 7 }] 
                     },
                     { 
-                        nombre: "(2) Línea UVA 19,90%", 
-                        tna: "19,90%", cft: "36,43%", ltv: 80, gastos: 6, seguro: "A DEFINIR", baseCalculo: 100000, 
+                        nombre: "Línea UVA 19,90%", 
+                        tna: "14,90%", cft: "19,60%", ltv: 80, gastos: 6, seguro: "Cautivo", baseCalculo: 100000, 
                         descripcion: "Esquema UVA competitivo para toda la gama BYD.",
-                        plazos: [{ m: 12, c: 9809 }, { m: 18, c: 7023 }, { m: 24, c: 5644 }, { m: 36, c: 4292 }, { m: 48, c: 3642 }] 
+                        plazos: [{ m: 12, c: 91655 }, { m: 18, c: 63762 }, { m: 24, c: 49861 }, { m: 36, c: 36052 }, { m: 48, c: 29239 }, { m: 60, c: 25222 }] 
                     },
                     { 
-                        nombre: "(3) Línea Tradicional ByD", 
-                        tna: "39,90%", cft: "79,41%", ltv: 80, gastos: 6, seguro: "A DEFINIR", baseCalculo: 100000, 
+                        nombre: "Línea Tradicional ByD", 
+                        tna: "38,90%", cft: "58,68%", ltv: 80, gastos: 6, seguro: "Cautivo", baseCalculo: 100000, 
                         descripcion: "Crédito prendario tradicional a tasa fija para unidades BYD.",
-                        plazos: [{ m: 12, c: 11236 }, { m: 18, c: 8849 }, { m: 24, c: 7163 }, { m: 36, c: 5927 }, { m: 48, c: 5391 }, { m: 60, c: 5126 }] 
+                        plazos: [{ m: 12, c: 105819 }, { m: 18, c: 78118 }, { m: 24, c: 64570 }, { m: 36, c: 51606 }, { m: 48, c: 45672 }, { m: 60, c: 42509 }] 
                     }
                 ]
             },
@@ -153,20 +153,20 @@ const bancos = {
                 nombre: "Santander Río KIA",
                 planes: [
                     { 
-                        nombre: "(1) Seltos", 
-                        tna: "0%", cft: "-", seguro: "A DEFINIR", baseCalculo: 1000, 
+                        nombre: "Seltos", 
+                        tna: "0%", cft: "-", seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Financiación especial para KIA Seltos con Tasa 0%.",
                         plazos: [{ m: 12, c: 83.33, g: 12, max: 24000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 16.5, max: 17000000, info: "TNA 0%" }] 
                     },
                     { 
-                        nombre: "(2) K3", 
-                        tna: "0%", cft: "-", seguro: "A DEFINIR", baseCalculo: 1000, 
+                        nombre: "K3", 
+                        tna: "0%", cft: "-", seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Plan de ahorro y crédito para KIA K3 con Tasa bonificada.",
                         plazos: [{ m: 12, c: 83.33, g: 12, max: 20000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 16.5, max: 14000000, info: "TNA 0%" }] 
                     },
                     { 
-                        nombre: "(3) K2500", 
-                        tna: "0%", cft: "-", seguro: "A DEFINIR", baseCalculo: 1000, 
+                        nombre: "K2500", 
+                        tna: "0%", cft: "-", seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Línea comercial para KIA K2500 con beneficios de tasa.",
                         plazos: [{ m: 12, c: 83.33, g: 12, max: 24000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 14.5, max: 16000000, info: "TNA 0%" }] 
                     }

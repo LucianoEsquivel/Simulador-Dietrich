@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dietrich-cache-V17.4.26.13.02'; // Cambia el número de versión cada vez que quieras actualizar el cache
+const CACHE_NAME = 'dietrich-cache-V17.4.26.15.47'; // Cambia el número de versión cada vez que quieras actualizar el cache
 const assets = [
   './',
   './index.html',
