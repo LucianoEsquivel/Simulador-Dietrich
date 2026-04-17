@@ -984,3 +984,27 @@ function descargarPDF() {
         botonPdf.style.display = 'block';
     });
 }
+
+/* - Función para obligar la descarga de la última versión */
+async function forzarActualizacion() {
+    // 1. Intentamos actualizar el registro del Service Worker
+    if ('serviceWorker' in navigator) {
+        const registrations = await navigator.serviceWorker.getRegistrations();
+        for (let registration of registrations) {
+            await registration.update();
+        }
+        
+        // 2. Limpiamos todos los cachés guardados (fotos, css, js antiguos)
+        const cacheNames = await caches.keys();
+        await Promise.all(
+            cacheNames.map(name => caches.delete(name))
+        );
+
+        // 3. Notificamos al usuario y forzamos recarga dura (Hard Reload)
+        alert("Buscando actualizaciones... El simulador se reiniciará para aplicar los cambios.");
+        window.location.reload(true); 
+    } else {
+        // Si no hay service worker (navegador viejo), solo recargamos
+        window.location.reload(true);
+    }
+}
