@@ -181,15 +181,15 @@ const bancos = {
                 nombre: "ICBC Minorista",
                 planes: [
                     { 
-                        nombre: "(1) Everest", 
+                        nombre: "Everest", 
                         maxFinanciable: 30000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Línea Everest: Máxima financiación para unidades seleccionadas.",
-                        plazos: [{ m: 18, tna: "0%", cft: "0%", ltv: "Máx $30M", c: 55.56, g: 17 }, { m: 24, tna: "14,90%", cft: "19,60%", ltv: "Máx $30M", c: 49.86, g: 17 }] 
+                        descripcion: "Esta tasa aplica solo para: Everest Titanium, la cuota incluye capita, intereses e IVA",
+                        plazos: [{ m: 18, tna: "0%", cft: "0%", max: 30000000, c: 55.56, g: 17 }, { m: 24, tna: "14,90%", cft: "19,60%", max: 30000000, c: 49.86, g: 17 }] 
                     },
                     { 
-                        nombre: "(2) Maverick", 
+                        nombre: "Maverick", 
                         maxFinanciable: 15000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Financiación exclusiva para Ford Maverick.",
+                        descripcion: "Esta tasa aplica para: Maverick HEV, Tremor y XLT, la cuota incluye capita, intereses e IVA",
                         plazos: [{ m: 18, c: 55.56, tna: "0%", cft: "0%", max: 15000000, info: "TNA 0%" }] 
                     },
                     { 
