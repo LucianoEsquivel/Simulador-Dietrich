@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dietrich-cache-V17.4.26.12.56'; // Cambia el número de versión cada vez que quieras actualizar el cache
+const CACHE_NAME = 'dietrich-cache-V17.4.26.13.02'; // Cambia el número de versión cada vez que quieras actualizar el cache
 const assets = [
   './',
   './index.html',
@@ -10,7 +10,7 @@ const assets = [
   './img/dolphin.jpeg',
   './img/k3.jpeg',
   './img/q1.jpeg',
-  './img/banco.jpeg',
+  './img/bancos.jpeg',
   './img/todos.jpeg',
   './img/audi.png',
   './img/byd.png',

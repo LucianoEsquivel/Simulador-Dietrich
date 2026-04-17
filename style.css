@@ -223,7 +223,7 @@ main {
 .f-dolphin { background-image: url('img/dolphin.jpeg'); }
 .f-k3 { background-image: url('img/k3.jpeg'); }
 .f-q1 { background-image: url('img/q1.jpeg'); }
-.f-banco { background-image: url('img/banco.jpeg'); }
+.f-banco { background-image: url('img/bancos.jpeg'); }
 
 /* Animación SECUENCIAL (Ordenada) - 8 segundos total */
 @keyframes desfileVehiculos {
