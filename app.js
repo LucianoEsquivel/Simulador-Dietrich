@@ -205,144 +205,155 @@ const bancos = {
                         plazos: [{ m: 18, c: 55.56, tna: "0%", cft: "0%", max: 25000000, info: "TNA 0%" }] 
                     },                   
                     { 
-                        nombre: "(4) Especial Ranger XL", 
-                        maxFinanciable: 18000000, gastos: 6, seguro: "A DEFINIR", baseCalculo: 1000, 
-                        descripcion: "Promoción especial para Ranger XL con bajos gastos de otorgamiento.",
+                        nombre: "Especial Ranger XL", 
+                        maxFinanciable: 18000000, gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Promoción especial para Ranger XL",
                         plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", max: 18000000, info: "TNA 0% (Promo XL)" }] 
                     },
+
                     { 
-                        nombre: "(5) Especial UVA Ranger", 
-                        ltv: 60, gastos: 17, seguro: "A DEFINIR", baseCalculo: 1000, 
+                        nombre: "Especial Ranger Cabina simple", 
+                        maxFinanciable: 25000000, gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Esta tasa aplica solo para: Ranger XL 2.0L Diesel Chasis 4x4 MT, XL 2.0L Diesel Cabina Simple 4x2 MT y XL 2.0L Diesel Cabina Simple 4x4 MT, la cuota incluye capita, intereses e IVA",
+                        plazos: [{ m: 24, c: 41.67, tna: "0%", cft: "0%", max: 25000000, info: "TNA 0% (Promo Cabina simple)" }] 
+                    },
+                    { 
+                        nombre: "Especial UVA Ranger", 
+                        ltv: 60, gastos: 17, seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Plan UVA Ranger: Hasta 60% del valor de la unidad.",
                         plazos: [{ m: 24, c: 41.67, tna: "0%", cft: "0%", ltv: 60, info: "TNA 0%" }, { m: 36, c: 33.21, tna: "10,00%", cft: "12,79%", ltv: 60, info: "TNA 10,00%" }] 
                     },
                     { 
-                        nombre: "(6.a) Tasa Especial Ranger (19,9% / 23,9% / 29,9%)", 
-                        ltv: 60, seguro: "A DEFINIR", baseCalculo: 1000, 
+                        nombre: "Tasa Especial Ranger (19,9% / 23,9% / 29,9%)", 
+                        ltv: 60, seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Esquema de tasas escalonadas según LTV y plazos para Ranger.",
                         plazos: [{ m: 12, c: 94.53, tna: "19,90%", cft: "26,92%", g: 6, ltv: 25, info: "LTV hasta 25%" }, { m: 12, c: 94.53, tna: "19,90%", cft: "26,92%", g: 17, ltv: 60, info: "LTV 26% al 60%" }, { m: 24, c: 55.16, tna: "23,90%", cft: "33,08%", g: 6, ltv: 25, info: "LTV hasta 25%" }, { m: 24, c: 55.16, tna: "23,90%", cft: "33,08%", g: 17, ltv: 60, info: "LTV 26% al 60%" }, { m: 36, c: 45.47, tna: "29,90%", cft: "42,82%", g: 17, ltv: 60, info: "Gasto fijo 17%" }] 
                     },
                     { 
-                        nombre: "(6.b) Tasa Especial Ranger (TNA 0% / 26,9%)", 
+                        nombre: "Tasa Especial Ranger (TNA 0% / 26,9%)", 
                         maxFinanciable: 25000000, gastos: 17, seguro: "A DEFINIR", baseCalculo: 1000, 
                         descripcion: "Línea combinada Tasa 0% y Tasa Fija para Ranger.",
                         plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", max: 25000000, info: "TNA 0%" }, { m: 18, c: 55.56, tna: "0%", cft: "0%", max: 25000000, info: "TNA 0%" }, { m: 24, c: 56.99, tna: "26,90%", cft: "37,87%", max: 25000000, info: "TNA 26,90%" }] 
                     },
                     { 
-                        nombre: "(7) Plan Cosecha (Cuotas Semestrales)", 
+                        nombre: "Plan Cosecha (Cuotas Semestrales)", 
                         ltv: 60, seguro: "A DEFINIR", baseCalculo: 1000, 
                         descripcion: "Plan Cosecha: Pensado para el agro con pagos cada 6 meses.",
                         plazos: [{ m: 12, c: 686.52, tna: "39,90%", cft: "54,11%", g: 6, ltv: 25, info: "2 Cuotas - LTV hasta 25%" }, { m: 12, c: 686.52, tna: "39,90%", cft: "54,11%", g: 17, ltv: 60, info: "2 Cuotas - LTV 26% al 60%" }, { m: 24, c: 441.28, tna: "45,90%", cft: "63,25%", g: 6, ltv: 25, info: "4 Cuotas - LTV hasta 25%" }, { m: 24, c: 441.28, tna: "45,90%", cft: "63,25%", g: 17, ltv: 60, info: "4 Cuotas - LTV 26% al 60%" }] 
                     },
                     { 
-                        nombre: "(8) Especial Transit 12/24", 
-                        gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
+                        nombre: "Especial Transit 24/36", 
+                        gastos: 17, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Financiación para Transit con seguro liberado y tasas competitivas.",
-                        plazos: [{ m: 12, c: 88.82, tna: "9,90%", cft: "12,66%", max: 45000000, info: "TNA 9,9% (Tope $45M)" }, { m: 24, c: 52.77, tna: "19,90%", cft: "26,92%", max: 40000000, info: "TNA 19,9% (Tope $40M)" }] 
+                        plazos: [{ m: 24, c: 41.67, tna: "0%", cft: "0%", ltv: 60, info: "TNA 0%" }, { m: 36, c: 33.21, tna: "10,00", cft: "12,79%", ltv: 60, info: "TNA 12,79%" }] 
                     },
                     { 
-                        nombre: "(9) Transit Especial UVA", 
+                        nombre: "Transit UVA", 
                         ltv: 60, gastos: 17, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Línea UVA para Transit. Sujeto a condiciones de Banco ICBC.",
                         plazos: [{ m: 24, c: 41.67, tna: "0%", cft: "0%", ltv: 60, info: "TNA 0% (UVA)" }, { m: 36, c: 33.21, tna: "10,00%", cft: "12,79%", ltv: 60, info: "TNA 10,00% (UVA)" }] 
                     },
                     { 
-                        nombre: "(10) Transit Especial (Tasa Fija)", 
+                        nombre: "Transit Especial", 
                         gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
-                        descripcion: "Crédito a tasa fija para unidades Transit. Seguro a elección.",
-                        plazos: [{ m: 12, c: 106.43, tna: "39,90%", cft: "60,53%", ltv: 40, info: "LTV Máx 40%" }, { m: 24, c: 73.27, tna: "51,90%", cft: "84,43%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 61.07, tna: "51,90%", cft: "84,43%", ltv: 50, info: "LTV Máx 50%" }, { m: 48, c: 55.85, tna: "51,90%", cft: "84,43%", ltv: 50, info: "LTV Máx 50%" }] 
-                    },
-                    { 
-                        nombre: "(11) Tasa General Green", 
-                        tna: "47,00%", cft: "74,30%", ltv: 80, gastos: 6, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Línea Green: Crédito prendario tradicional con LTV hasta el 80%.",
-                        plazos: [{ m: 12, c: 110.81 }, { m: 24, c: 69.93 }, { m: 36, c: 57.42 }, { m: 48, c: 51.92 }, { m: 60, c: 49.14 }] 
+                        descripcion: "Seguro liberado para Transit. aplica para todos los modelos de Transit, excepto E-Transit.",
+                        plazos: [{ m: 12, c: 86.90, tna: "9,90%", cft: "12,66%", ltv: 60, info: "LTV Máx 60%" }, { m: 24, c: 52.77, tna: "19,90%", cft: "26,96%", ltv: 60, info: "LTV Máx 60%" }, { m: 36, c: 56.62, tna: "45,90%", cft: "72,10%", ltv: 50, info: "LTV Máx 50%" }, { m: 48, c: 52.63, tna: "47,90%", cft: "76,13%", ltv: 50, info: "LTV Máx 50%" }] 
                     }
+                    
                 ]
             },
             comercial: {
                 nombre: "ICBC Comercial",
                 planes: [
                     { 
-                        nombre: "(1) Especial Ranger Semestral", 
+                        nombre: "Ranger XL seg. liberado", 
+                        maxFinanciable: 18000000, gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Esta tasa aplica para: Ranger XL 4x2, 4x4 y Chasis, seguro de vida 0,20% sobre saldo, seguro liberado",
+                        plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", max: 18000000, info: "TNA 0%" }] 
+                    },
+
+                    { 
+                        nombre: "Ranger XL C/S", 
+                        maxFinanciable: 25000000, gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Esta tasa aplica para: Ranger XL 4x2, 4x4 y Chasis, seguro de vida 0,20% sobre saldo, seguro liberado",
+                        plazos: [{ m: 24, c: 42.00, tna: "0%", cft: "0%", max: 25000000, info: "TNA 0%" }] 
+                    },
+
+                    { 
+                        nombre: "Especial Ranger Semestral", 
                         ltv: 50, gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Línea comercial para Ranger con esquema de pagos semestrales.",
-                        plazos: [{ m: 12, c: 653.07, tna: "32,90%", cft: "43,77%", ltv: 50, info: "2 Cuotas Semestrales" }, { m: 24, c: 459.41, tna: "49,90%", cft: "69,49%", ltv: 50, info: "4 Cuotas Semestrales" }] 
+                        plazos: [{ m: 12, c: 686.52, tna: "39,90%", cft: "54,11%", ltv: 50, info: "2 Cuotas Semestrales" }, { m: 24, c: 459.41, tna: "49,90%", cft: "69,49%", ltv: 50, info: "4 Cuotas Semestrales" }] 
                     },
                     { 
-                        nombre: "(2.a) Comercial Ranger XL/XLS (cautivo)", 
+                        nombre: "Comercial Ranger XL/XLS (cautivo)", 
                         gastos: 6, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Financiación para Ranger XL/XLS con seguro cautivo del banco.",
-                        plazos: [{ m: 12, c: 90.93, tna: "14,90%", cft: "17,77%", ltv: 40, info: "LTV Máx 40%" }, { m: 24, c: 63.18, tna: "39,90%", cft: "54,90%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 56.81, tna: "49,90%", cft: "71,45%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 51.33, tna: "49,90%", cft: "71,45%", ltv: 60, info: "LTV Máx 60%" }] 
+                        plazos: [{ m: 12, c: 90.93, tna: "14,90%", cft: "17,77%", ltv: 40, info: "max 40%" }, { m: 24, c: 63.18, tna: "39,90%", cft: "54,19", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 54.81, tna: "45,90%", cft: "64,34%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 48.43, tna: "45,90%", cft: "64,34%", ltv: 60, info: "LTV Máx 60%" }] 
                     },
                     { 
-                        nombre: "(2.b) Comercial Ranger XL/XLS (liberado)", 
+                        nombre: "Comercial Ranger XL/XLS (liberado)", 
                         gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Financiación comercial para Ranger con seguro liberado.",
-                        plazos: [{ m: 12, c: 91.98, tna: "16,90%", cft: "20,36%", ltv: 40, info: "LTV Máx 40%" }, { m: 24, c: 64.38, tna: "41,90%", cft: "57,50%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 58.18, tna: "51,90%", cft: "75,10%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 52.81, tna: "51,90%", cft: "75,10%", ltv: 60, info: "LTV Máx 60%" }] 
+                        plazos: [{ m: 12, c: 91.98, tna: "16,90%", cft: "20,36%", ltv: 40, info: "LTV Máx 40%" }, { m: 24, c: 64.38, tna: "41,90%", cft: "57,50%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 55.46, tna: "47,90%", cft: "67,86%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 49.87, tna: "47,90%", cft: "67,86%", ltv: 60, info: "LTV Máx 60%" }] 
                     },
+                    
                     { 
-                        nombre: "(3) Transit 12M y 24", 
-                        gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
-                        descripcion: "Préstamos para Transit canal comercial plazos cortos.",
-                        plazos: [{ m: 12, c: 88.35, tna: "9,90%", cft: "11,51%", max: 45000000, info: "TNA 9,9% (Máx $45M)" }, { m: 24, c: 51.81, tna: "19,90%", cft: "24,35%", max: 40000000, info: "TNA 19,9% (Máx $40M)" }] 
-                    },
-                    { 
-                        nombre: "(4.a) Especial Transit (cautivo)", 
+                        nombre: "Especial Transit (cautivo)", 
                         gastos: 6, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Línea Transit canal comercial con seguro del banco.",
-                        plazos: [{ m: 12, c: 103.31, tna: "37,90%", cft: "50,93%", ltv: 40, info: "LTV Máx 40%" }, { m: 24, c: 69.28, tna: "49,90%", cft: "71,45%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 56.81, tna: "49,90%", cft: "71,45%", ltv: 50, info: "LTV Máx 50%" }, { m: 48, c: 51.33, tna: "49,90%", cft: "71,45%", ltv: 50, info: "LTV Máx 50%" }] 
+                        plazos: [{ m: 12, c: 87.32, tna: "7,90%", cft: "9,09%", ltv: 60, info: "LTV Máx 60%" }, { m: 24, c: 50.74, tna: "17,90%", cft: "21,67%", ltv: 60, info: "LTV Máx 60%" }, { m: 36, c: 54.12, tna: "45,90%", cft: "64,34%", ltv: 50, info: "LTV Máx 50%" }, { m: 48, c: 48.43, tna: "45,90%", cft: "64,34%", ltv: 50, info: "LTV Máx 50%" }] 
                     },
                     { 
-                        nombre: "(4.b) Especial Transit (liberado)", 
+                        nombre: "Especial Transit (liberado)", 
                         gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Línea Transit canal comercial con seguro a elección.",
-                        plazos: [{ m: 12, c: 104.43, tna: "39,90%", cft: "54,19%", ltv: 40, info: "LTV Máx 40%" }, { m: 24, c: 70.53, tna: "51,90%", cft: "75,10%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 58.18, tna: "51,90%", cft: "75,10%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 52.81, tna: "51,90%", cft: "75,10%", ltv: 60, info: "LTV Máx 60%" }] 
+                        plazos: [{ m: 12, c: 88.35, tna: "9.90%", cft: "11.51%", ltv: 60, info: "LTV Máx 60%" }, { m: 24, c: 51.81, tna: "19,90%", cft: "24,35%", ltv: 60, info: "LTV Máx 60%" }, { m: 36, c: 55.46, tna: "47,90%", cft: "67,86%", ltv: 50, info: "LTV Máx 50%" }, { m: 48, c: 49.87, tna: "47,90%", cft: "67,86%", ltv: 50, info: "LTV Máx 50%" }] 
                     },
                     { 
-                        nombre: "(5.a) Generales Canal Comercial (cautivo)", 
-                        tna: "52,00%", ltv: 75, gastos: 6, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        nombre: "Generales Canal Comercial (cautivo)", 
+                        tna: "47,90%", ltv: 75, gastos: 6, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Créditos generales para empresas con seguro cautivo.",
-                        plazos: [{ m: 12, c: 112.45, cft: "79,55%" }, { m: 24, c: 71.80, cft: "79,53%" }, { m: 36, c: 59.52, cft: "79,52%" }, { m: 48, c: 54.22, cft: "79,50%" }] 
+                        plazos: [{ m: 12, c: 110.09, cft: "71,96%" }, { m: 24, c: 69.23, cft: "71,94%" }, { m: 36, c: 56.71, cft: "71.93%" }, { m: 48, c: 51.19, cft: "71,91%" }] 
                     },
                     { 
-                        nombre: "(5.b) Generales Canal Comercial (liberado)", 
-                        tna: "55,00%", ltv: 75, gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
+                        nombre: "Generales Canal Comercial (liberado)", 
+                        tna: "50,90%", ltv: 75, gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Créditos generales para empresas con seguro liberado.",
-                        plazos: [{ m: 12, c: 114.18, cft: "85,30%" }, { m: 24, c: 73.71, cft: "85,28%" }, { m: 36, c: 61.62, cft: "85,26%" }, { m: 48, c: 56.48, cft: "85,25%" }] 
+                        plazos: [{ m: 12, c: 111.81, cft: "77,49%" }, { m: 24, c: 71.11, cft: "77,47%" }, { m: 36, c: 58.76, cft: "77,45%" }, { m: 48, c: 53.40, cft: "77,44%" }] 
                     },
                     { 
-                        nombre: "(6.a) Mi Pyme - Ranger", 
-                        gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
-                        descripcion: "Línea Mi Pyme exclusiva para unidades Ford Ranger.",
-                        plazos: [{ m: 24, c: 58.76, tna: "30,80%", cft: "38,25%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 52.05, tna: "40,90%", cft: "53,07%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 46.18, tna: "40,90%", cft: "53,07%", ltv: 60, info: "LTV Máx 60%" }] 
+                        nombre: "Mi Pyme - Ranger", 
+                        gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Línea Mi Pyme exclusiva para unidades Ford Ranger, excepto Raptor",
+                        plazos: [{ m: 24, c: 58.76, tna: "30,80%", cft: "38,25%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 50.05, tna: "37,80%", cft: "48,56%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 44.02, tna: "37,80%", cft: "48,55%", ltv: 60, info: "LTV Máx 60%" }] 
                     },
                     { 
-                        nombre: "(6.b) Mi Pyme - Transit", 
-                        gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
-                        descripcion: "Línea Mi Pyme para unidades Ford Transit.",
-                        plazos: [{ m: 24, c: 65.86, tna: "30,80%", cft: "55,34%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 53.43,tna: "30,80%", cft: "56,20%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 47.66, tna: "30,80%", cft: "56,20%", ltv: 60, info: "LTV Máx 60%" }] 
+                        nombre: "Mi Pyme - Transit", 
+                        gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Línea Mi Pyme para unidades Ford Transit, excepto E-Transit.",
+                        plazos: [{ m: 24, c: 58.76, tna: "30,80%", cft: "38,25%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 50.05, tna: "37,80%", cft: "48,56%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 44.02, tna: "37,80%", cft: "48,55%", ltv: 60, info: "LTV Máx 60%" }] 
                     },
                     { 
-                        nombre: "(7) Especial UVA Transit", 
+                        nombre: "Especial UVA Transit", 
                         tna: "19,00%", cft: "25,57%", ltv: 60, gastos: 6, seguro: "LIBERADO", esUVA: true, valorUVA: 1706.43, baseCalculo: 1000, 
                         descripcion: "Financiación UVA canal comercial para Transit.",
                         plazos: [{ m: 24, c: 52.24 }, { m: 36, c: 38.52 }] 
                     },
                     { 
-                        nombre: "(8) General UVA Ranger", 
-                        tna: "31,00%", cft: "44,68%", ltv: 60, gastos: 6, seguro: "LIBERADO", esUVA: true, valorUVA: 1706.43, baseCalculo: 1000, 
+                        nombre: "General UVA Ranger", 
+                        tna: "26,90%", cft: "37,87%", ltv: 60, gastos: 6, seguro: "LIBERADO", esUVA: true, valorUVA: 1706.43, baseCalculo: 1000, 
                         descripcion: "Plan UVA Ranger comercial. Plazos hasta 60 meses.",
-                        plazos: [{ m: 12, c: 101.06 }, { m: 24, c: 59.53 }, { m: 36, c: 46.20 }, { m: 48, c: 39.90 }, { m: 60, c: 36.39 }] 
+                        plazos: [{ m: 12, c: 98.62 }, { m: 24, c: 56.99 }, { m: 36, c: 43.50 }, { m: 48, c: 37.04 }, { m: 60, c: 33.38 }] 
                     },
                     { 
-                        nombre: "(9.a) Ranger USD", 
+                        nombre: "Ranger USD 12/24", 
                         moneda: "USD", ltv: 50, gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Crédito prendario en dólares para Ford Ranger.",
                         plazos: [{ m: 12, c: 83.50, tna: "0,00%", cft: "2,41%", info: "TNA 0% USD" }, { m: 24, c: 44.91, tna: "4,50%", cft: "7,38%", info: "TNA 4,5% USD" }] 
                     },
                     { 
-                        nombre: "(9.b) Ranger USD", 
+                        nombre: "Ranger USD", 
                         moneda: "USD", tna: "11,00%", cft: "14,56%", ltv: 50, gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Crédito en dólares para Ranger. Tasa fija 11%.",
                         plazos: [{ m: 12, c: 90.10 }, { m: 24, c: 48.20 }, { m: 36, c: 34.34 }] 
