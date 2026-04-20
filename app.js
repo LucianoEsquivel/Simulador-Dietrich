@@ -289,7 +289,7 @@ const bancos = {
                         nombre: "Comercial Ranger XL/XLS (cautivo)", 
                         gastos: 6, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Financiación para Ranger XL/XLS con seguro cautivo del banco.",
-                        plazos: [{ m: 12, c: 90.93, tna: "14,90%", cft: "17,77%", ltv: 40, info: "max 40%" }, { m: 24, c: 63.18, tna: "39,90%", cft: "54,19", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 54.81, tna: "45,90%", cft: "64,34%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 48.43, tna: "45,90%", cft: "64,34%", ltv: 60, info: "LTV Máx 60%" }] 
+                        plazos: [{ m: 12, c: 90.93, tna: "14,90%", cft: "17,77%", ltv: 40, info: "max 40%" }, { m: 24, c: 63.18, tna: "39,90%", cft: "54,19", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 54.12, tna: "45,90%", cft: "64,34%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 48.43, tna: "45,90%", cft: "64,34%", ltv: 60, info: "LTV Máx 60%" }] 
                     },
                     { 
                         nombre: "Comercial Ranger XL/XLS (liberado)", 
@@ -368,35 +368,84 @@ const bancos = {
             volkswagen: {
                 nombre: "Volkswagen",
                 planes: [
+
                     { 
-                        nombre: "(1) Especial Polo High/Comfort", 
-                        tna: "0%", cft: "0%", ltv: "Máx $20M", gastos: 17.73, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Tasa 0% para VW Polo Highline y Comfortline.",
-                        plazos: [{ m: 24, c: 41.67, tna: "0%", ltv: "Máx $20M", g: 17.73 }] 
-                    },
-                    { 
-                        nombre: "(2) Especial Autos", 
-                        tna: "0% / 9,9%", ltv: "Varios", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Planes especiales para la línea de autos Volkswagen.",
+                        nombre: "Amarok financia mas", 
+                        tna: "0%", ltv: "Varios", seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Tasa 0% para Amarok, seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 17/04/2026 hasta el 30/04/2026",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",   g: 9.14,   ltv: "Máx $15M" },
-                            { m: 18, c: 55.56, tna: "0%",   g: 16.33, ltv: "Máx $15M" },
-                            { m: 24, c: 41.67, tna: "0%",   g: 12.29, ltv: "Máx $10M" },
-                            { m: 24, c: 47.03, tna: "9,90%", g: 17.13, ltv: "Máx $15M" }
+                            { m: 12, c: 83.33, tna: "0%",   g: 15.915,   ltv: "44000000" },
+                            { m: 18, c: 55.56, tna: "0%",   g: 16.52, ltv: "28000000" },
+                            { m: 24, c: 41.67, tna: "0%",   g: 15.31, ltv: "20000000" },
                         ] 
                     },
                     { 
-                        nombre: "(3) Especial Amarok", 
-                        tna: "0% / 24,5%", ltv: "Varios", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Financiación bonificada para Volkswagen Amarok.",
+                        nombre: "Amarok sin quebranto", 
+                        tna: "0%", ltv: "21500000", gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Tasa 0% para Amarok, seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 17/04/2026 hasta el 30/04/2026",
+                        plazos: [{ m: 12, c: 83.33, tna: "0%", ltv: "21500000", g: 2 }] 
+                    },
+                    { 
+                        nombre: "UVA Amarok (24)", 
+                        tna: "0%", ltv: "21500000", seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Financiación UVA para Amarok con tasa 0% durante los primeros 24 meses.",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",    g: 12.89, ltv: "Máx $24M" },
-                            { m: 18, c: 55.56, tna: "0%",    g: 15.31, ltv: "Máx $20M" },
-                            { m: 24, c: 55.53, tna: "24,50%", g: 17.73, ltv: "Máx $20M" }
+                            { m: 24, c: 41.67, tna: "0%",   g: 2,   ltv: "21500000" },
                         ] 
                     },
                     { 
-                        nombre: "(4) Usados Tasa Fija", 
+                        nombre: "Autos financia mas", 
+                        tna: "0%", ltv: "Varios", seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Financiación bonificada para Volkswagen, excepto Amarok",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0%",    g: 11.075, ltv: "32000000" },
+                            { m: 18, c: 55.56, tna: "0%",    g: 15.31, ltv: "25500000" },
+                            { m: 24, c: 41.67, tna: "0%",    g: 17.73, ltv: "21000000" }
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Autos sin quebranto", 
+                        tna: "0%", ltv: "21000000", seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Financiacion exclusiva para Tera Highline y Outfit, T-Cross, Highline y Extreme, Polo Comfortline y Highline y Taos (todas las versioens), seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 17/04/2026 hasta el 30/04/2026",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0%",   g: 2,   ltv: "21000000" },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "UVA Autos", 
+                        tna: "0%", ltv: "21000000", seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Financiacion exclusiva para Tera Highline y Outfit, T-Cross, Highline y Extreme, Polo Comfortline y Highline y Taos (todas las versioens), seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 17/04/2026 hasta el 30/04/2026",
+                        plazos: [
+                            { m: 24, c: 41.67, tna: "0%",   g: 2,   ltv: "21000000" },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Especial Amarok", 
+                        tna: "varios", ltv: "Varios", seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Financiación exclusiva para Amarok",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0%",    g: 16.52, ltv: "27000000" },
+                            { m: 18, c: 55.56, tna: "0%",    g: 16.52, ltv: "17000000" },
+                            { m: 24, c: 52.77, tna: "19,90%",    g: 14.705, ltv: "24000000" }
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Especial Autos", 
+                        tna: "varios", ltv: "Varios", seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Financiación exclusiva para Volkswagen, excepto Amarok",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0%",    g: 14.705, ltv: "25000000" },
+                            { m: 18, c: 55.56, tna: "0%",    g: 16.52, ltv: "17000000" },
+                            { m: 24, c: 47.03, tna: "9,90%",    g: 16.52, ltv: "17000000" }
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Usados Tasa Fija", 
                         tna: "Varios", ltv: 50, gastos: 14.10, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Créditos para vehículos usados a tasa fija en pesos.",
                         plazos: [
@@ -407,7 +456,7 @@ const bancos = {
                         ] 
                     },
                     { 
-                        nombre: "(5) Usados UVAs", 
+                        nombre: "Usados UVAs", 
                         tna: "Varios", ltv: 50, gastos: 14.10, seguro: "CAUTIVO", baseCalculo: 1000, esUVA: true, 
                         descripcion: "Financiación UVA para unidades usadas de la marca.",
                         plazos: [
@@ -423,12 +472,21 @@ const bancos = {
                 nombre: "Audi",
                 planes: [
                     { 
-                        nombre: "(1) Audi A1", 
+                        nombre: "Audi A1", 
                         tna: "0% / 9,9%", ltv: "Varios", seguro: "CAUTIVO", gastos: 19.5, baseCalculo: 1000, 
                         descripcion: "Línea exclusiva para Audi A1. Tasa bonificada.",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",   ltv: "Máx $16.5M", g: 19.5 }, 
-                            { m: 12, c: 88.82, tna: "9.9%", ltv: "Máx $22.5M", g: 19.5 }
+                            { m: 12, c: 83.33, tna: "0%",   ltv: "20000000", g: 13.495 }, 
+                            { m: 12, c: 88.82, tna: "9.9%", ltv: "30500000", g: 13.495 }
+                        ] 
+                    },
+
+                    { 
+                        nombre: "UVA Audi", 
+                        tna: "0%%", ltv: "0%", seguro: "CAUTIVO", gastos: 2, baseCalculo: 1000, 
+                        descripcion: "Línea exclusiva para Audi A1. Tasa bonificada.",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0%",   ltv: "20000000", g: 2 }, 
                         ] 
                     }
                 ]
@@ -485,7 +543,7 @@ const marcasConfig = {
     },
     audi: {
         nombre: "Audi",
-        bancos: ["vw_financial-audi"]
+        bancos: ["vw_financial-audi", "santander-general", "galicia-prendarios"]
     }
 };
 
