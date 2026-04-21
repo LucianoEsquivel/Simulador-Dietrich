@@ -156,19 +156,19 @@ const bancos = {
                         nombre: "Seltos", 
                         tna: "0%", cft: "-", seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Financiación especial para KIA Seltos con Tasa 0%.",
-                        plazos: [{ m: 12, c: 83.33, g: 12, max: 24000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 16.5, max: 17000000, info: "TNA 0%" }] 
+                        plazos: [{ m: 12, c: 83.33, g: 12, ltv: 24000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 16.5, ltv: 17000000, info: "TNA 0%" }] 
                     },
                     { 
                         nombre: "K3", 
                         tna: "0%", cft: "-", seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Plan de ahorro y crédito para KIA K3 con Tasa bonificada.",
-                        plazos: [{ m: 12, c: 83.33, g: 12, max: 20000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 16.5, max: 14000000, info: "TNA 0%" }] 
+                        plazos: [{ m: 12, c: 83.33, g: 12, ltv: 20000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 16.5, ltv: 14000000, info: "TNA 0%" }] 
                     },
                     { 
                         nombre: "K2500", 
                         tna: "0%", cft: "-", seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Línea comercial para KIA K2500 con beneficios de tasa.",
-                        plazos: [{ m: 12, c: 83.33, g: 12, max: 24000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 14.5, max: 16000000, info: "TNA 0%" }] 
+                        plazos: [{ m: 12, c: 83.33, g: 12, ltv: 24000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 14.5, ltv: 16000000, info: "TNA 0%" }] 
                     }
                 ]
             }
@@ -182,40 +182,40 @@ const bancos = {
                 planes: [
                     { 
                         nombre: "Everest", 
-                        maxFinanciable: 30000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        ltv: 30000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Esta tasa aplica solo para: Everest Titanium, la cuota incluye capita, intereses e IVA",
-                        plazos: [{ m: 18, tna: "0%", cft: "0%", max: 30000000, c: 55.56, g: 17 }, { m: 24, tna: "14,90%", cft: "19,60%", max: 30000000, c: 49.86, g: 17 }] 
+                        plazos: [{ m: 18, tna: "0%", cft: "0%", ltv: 30000000, c: 55.56, g: 17 }, { m: 24, tna: "14,90%", cft: "19,60%", ltv: 30000000, c: 49.86, g: 17 }] 
                     },
                     { 
                         nombre: "Maverick", 
-                        maxFinanciable: 15000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        ltv: 15000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Esta tasa aplica para: Maverick HEV, Tremor y XLT, la cuota incluye capita, intereses e IVA",
-                        plazos: [{ m: 18, c: 55.56, tna: "0%", cft: "0%", max: 15000000, info: "TNA 0%" }] 
+                        plazos: [{ m: 18, c: 55.56, tna: "0%", cft: "0%", ltv: 15000000, info: "TNA 0%" }] 
                     },
                     { 
                         nombre: "Territory", 
-                        maxFinanciable: 15000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        ltv: 15000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Tasa 0% para Ford Territory. Sujeto a disponibilidad de stock.",
-                        plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", max: 15000000, info: "TNA 0%" }, { m: 18, c: 55.56, tna: "0%", cft: "0%", max: 15000000, info: "TNA 0%" }] 
+                        plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 15000000, info: "TNA 0%" }, { m: 18, c: 55.56, tna: "0%", cft: "0%", ltv: 15000000, info: "TNA 0%" }] 
                     },
                     { 
                         nombre: "Territory Titanium", 
-                        maxFinanciable: 25000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        ltv: 25000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Línea exclusiva para Territory Titanium.",
-                        plazos: [{ m: 18, c: 55.56, tna: "0%", cft: "0%", max: 25000000, info: "TNA 0%" }] 
+                        plazos: [{ m: 18, c: 55.56, tna: "0%", cft: "0%", ltv: 25000000, info: "TNA 0%" }] 
                     },                   
                     { 
                         nombre: "Especial Ranger XL", 
-                        maxFinanciable: 18000000, gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
+                        ltv: 18000000, gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Promoción especial para Ranger XL",
-                        plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", max: 18000000, info: "TNA 0% (Promo XL)" }] 
+                        plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 18000000, info: "TNA 0% (Promo XL)" }] 
                     },
 
                     { 
                         nombre: "Especial Ranger Cabina simple", 
-                        maxFinanciable: 25000000, gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
+                        ltv: 25000000, gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Esta tasa aplica solo para: Ranger XL 2.0L Diesel Chasis 4x4 MT, XL 2.0L Diesel Cabina Simple 4x2 MT y XL 2.0L Diesel Cabina Simple 4x4 MT, la cuota incluye capita, intereses e IVA",
-                        plazos: [{ m: 24, c: 41.67, tna: "0%", cft: "0%", max: 25000000, info: "TNA 0% (Promo Cabina simple)" }] 
+                        plazos: [{ m: 24, c: 41.67, tna: "0%", cft: "0%", ltv: 25000000, info: "TNA 0% (Promo Cabina simple)" }] 
                     },
                     { 
                         nombre: "Especial UVA Ranger", 
@@ -231,9 +231,9 @@ const bancos = {
                     },
                     { 
                         nombre: "Tasa Especial Ranger (TNA 0% / 26,9%)", 
-                        maxFinanciable: 25000000, gastos: 17, seguro: "A DEFINIR", baseCalculo: 1000, 
+                        ltv: 25000000, gastos: 17, seguro: "A DEFINIR", baseCalculo: 1000, 
                         descripcion: "Línea combinada Tasa 0% y Tasa Fija para Ranger.",
-                        plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", max: 25000000, info: "TNA 0%" }, { m: 18, c: 55.56, tna: "0%", cft: "0%", max: 25000000, info: "TNA 0%" }, { m: 24, c: 56.99, tna: "26,90%", cft: "37,87%", max: 25000000, info: "TNA 26,90%" }] 
+                        plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 25000000, info: "TNA 0%" }, { m: 18, c: 55.56, tna: "0%", cft: "0%", ltv: 25000000, info: "TNA 0%" }, { m: 24, c: 56.99, tna: "26,90%", cft: "37,87%", ltv: 25000000, info: "TNA 26,90%" }] 
                     },
                     { 
                         nombre: "Plan Cosecha (Cuotas Semestrales)", 
@@ -267,16 +267,16 @@ const bancos = {
                 planes: [
                     { 
                         nombre: "Ranger XL seg. liberado", 
-                        maxFinanciable: 18000000, gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        ltv: 18000000, gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Esta tasa aplica para: Ranger XL 4x2, 4x4 y Chasis, seguro de vida 0,20% sobre saldo, seguro liberado",
-                        plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", max: 18000000, info: "TNA 0%" }] 
+                        plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 18000000, info: "TNA 0%" }] 
                     },
 
                     { 
                         nombre: "Ranger XL C/S", 
-                        maxFinanciable: 25000000, gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        ltv: 25000000, gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Esta tasa aplica para: Ranger XL 4x2, 4x4 y Chasis, seguro de vida 0,20% sobre saldo, seguro liberado",
-                        plazos: [{ m: 24, c: 42.00, tna: "0%", cft: "0%", max: 25000000, info: "TNA 0%" }] 
+                        plazos: [{ m: 24, c: 42.00, tna: "0%", cft: "0%", ltv: 25000000, info: "TNA 0%" }] 
                     },
 
                     { 
@@ -371,76 +371,76 @@ const bancos = {
 
                     { 
                         nombre: "Amarok financia mas", 
-                        tna: "0%", ltv: "Varios", seguro: "CAUTIVO", baseCalculo: 1000, 
+                        tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Tasa 0% para Amarok, seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 17/04/2026 hasta el 30/04/2026",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",   g: 15.915,   ltv: "44000000" },
-                            { m: 18, c: 55.56, tna: "0%",   g: 16.52, ltv: "28000000" },
-                            { m: 24, c: 41.67, tna: "0%",   g: 15.31, ltv: "20000000" },
+                            { m: 12, c: 83.33, tna: "0%",   g: 15.915,   ltv: 44000000 },
+                            { m: 18, c: 55.56, tna: "0%",   g: 16.52, ltv: 28000000 },
+                            { m: 24, c: 41.67, tna: "0%",   g: 15.31, ltv: 20000000 },
                         ] 
                     },
                     { 
                         nombre: "Amarok sin quebranto", 
-                        tna: "0%", ltv: "21500000", gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        tna: "0%", gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Tasa 0% para Amarok, seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 17/04/2026 hasta el 30/04/2026",
-                        plazos: [{ m: 12, c: 83.33, tna: "0%", ltv: "21500000", g: 2 }] 
+                        plazos: [{ m: 12, c: 83.33, tna: "0%", ltv: 21500000, g: 2 }] 
                     },
                     { 
                         nombre: "UVA Amarok (24)", 
-                        tna: "0%", ltv: "21500000", seguro: "CAUTIVO", baseCalculo: 1000, 
+                        tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Financiación UVA para Amarok con tasa 0% durante los primeros 24 meses.",
                         plazos: [
-                            { m: 24, c: 41.67, tna: "0%",   g: 2,   ltv: "21500000" },
+                            { m: 24, c: 41.67, tna: "0%", g: 2, ltv: 21500000 },
                         ] 
                     },
                     { 
                         nombre: "Autos financia mas", 
-                        tna: "0%", ltv: "Varios", seguro: "CAUTIVO", baseCalculo: 1000, 
+                        tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Financiación bonificada para Volkswagen, excepto Amarok",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",    g: 11.075, ltv: "32000000" },
-                            { m: 18, c: 55.56, tna: "0%",    g: 15.31, ltv: "25500000" },
-                            { m: 24, c: 41.67, tna: "0%",    g: 17.73, ltv: "21000000" }
+                            { m: 12, c: 83.33, tna: "0%",    g: 11.075, ltv: 32000000 },
+                            { m: 18, c: 55.56, tna: "0%",    g: 15.31, ltv: 25500000 },
+                            { m: 24, c: 41.67, tna: "0%",    g: 17.73, ltv: 21000000 }
                         ] 
                     },
 
                     { 
                         nombre: "Autos sin quebranto", 
-                        tna: "0%", ltv: "21000000", seguro: "CAUTIVO", baseCalculo: 1000, 
+                        tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Financiacion exclusiva para Tera Highline y Outfit, T-Cross, Highline y Extreme, Polo Comfortline y Highline y Taos (todas las versioens), seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 17/04/2026 hasta el 30/04/2026",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",   g: 2,   ltv: "21000000" },
+                            { m: 12, c: 83.33, tna: "0%",   g: 2,   ltv: 21000000 },
                         ] 
                     },
 
                     { 
                         nombre: "UVA Autos", 
-                        tna: "0%", ltv: "21000000", seguro: "CAUTIVO", baseCalculo: 1000, 
+                        tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Financiacion exclusiva para Tera Highline y Outfit, T-Cross, Highline y Extreme, Polo Comfortline y Highline y Taos (todas las versioens), seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 17/04/2026 hasta el 30/04/2026",
                         plazos: [
-                            { m: 24, c: 41.67, tna: "0%",   g: 2,   ltv: "21000000" },
+                            { m: 24, c: 41.67, tna: "0%",   g: 2,   ltv: 21000000 },
                         ] 
                     },
 
                     { 
                         nombre: "Especial Amarok", 
-                        tna: "varios", ltv: "Varios", seguro: "CAUTIVO", baseCalculo: 1000, 
+                        tna: "varios", seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Financiación exclusiva para Amarok",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",    g: 16.52, ltv: "27000000" },
-                            { m: 18, c: 55.56, tna: "0%",    g: 16.52, ltv: "17000000" },
-                            { m: 24, c: 52.77, tna: "19,90%",    g: 14.705, ltv: "24000000" }
+                            { m: 12, c: 83.33, tna: "0%",    g: 16.52, ltv: 27000000 },
+                            { m: 18, c: 55.56, tna: "0%",    g: 16.52, ltv: 17000000 },
+                            { m: 24, c: 52.77, tna: "19,90%", g: 14.705, ltv: 24000000 }
                         ] 
                     },
 
                     { 
                         nombre: "Especial Autos", 
-                        tna: "varios", ltv: "Varios", seguro: "CAUTIVO", baseCalculo: 1000, 
+                        tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Financiación exclusiva para Volkswagen, excepto Amarok",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",    g: 14.705, ltv: "25000000" },
-                            { m: 18, c: 55.56, tna: "0%",    g: 16.52, ltv: "17000000" },
-                            { m: 24, c: 47.03, tna: "9,90%",    g: 16.52, ltv: "17000000" }
+                            { m: 12, c: 83.33, tna: "0%",    g: 14.705, ltv: 25000000 },
+                            { m: 18, c: 55.56, tna: "0%",    g: 16.52, ltv: 17000000 },
+                            { m: 24, c: 47.03, tna: "9,90%",    g: 16.52, ltv: 17000000 }
                         ] 
                     },
 
@@ -473,20 +473,20 @@ const bancos = {
                 planes: [
                     { 
                         nombre: "Audi A1", 
-                        tna: "0% / 9,9%", ltv: "Varios", seguro: "CAUTIVO", gastos: 19.5, baseCalculo: 1000, 
+                        tna: "0% / 9,9%", seguro: "CAUTIVO", gastos: 19.5, baseCalculo: 1000, 
                         descripcion: "Línea exclusiva para Audi A1. Tasa bonificada.",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",   ltv: "20000000", g: 13.495 }, 
-                            { m: 12, c: 88.82, tna: "9.9%", ltv: "30500000", g: 13.495 }
+                            { m: 12, c: 83.33, tna: "0%",   ltv: 20000000, g: 13.495 }, 
+                            { m: 12, c: 88.82, tna: "9.9%", ltv: 30500000, g: 13.495 }
                         ] 
                     },
 
                     { 
                         nombre: "UVA Audi", 
-                        tna: "0%%", ltv: "0%", seguro: "CAUTIVO", gastos: 2, baseCalculo: 1000, 
+                        tna: "0%", seguro: "CAUTIVO", gastos: 2, baseCalculo: 1000, 
                         descripcion: "Línea exclusiva para Audi A1. Tasa bonificada.",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",   ltv: "20000000", g: 2 }, 
+                            { m: 12, c: 83.33, tna: "0%",   ltv: 20000000, g: 2 }, 
                         ] 
                     }
                 ]
@@ -500,14 +500,14 @@ const bancos = {
                 nombre: "Préstamos Prendarios",
                 planes: [
                     { 
-                        nombre: "(1) Tasa Fija 0km", 
-                        tna: "71,00%", cft: "129,27%", maxFinanciable: 57000000, minFinanciable: 1000000, ltv: 80, gastos: 6, seguro: "A DEFINIR", baseCalculo: 1000, 
+                        nombre: "Tasa Fija 0km", 
+                        tna: "71,00%", cft: "129,27%", ltv: 57000000, ltv: 80, gastos: 6, seguro: "A DEFINIR", baseCalculo: 1000, 
                         descripcion: "Crédito prendario Galicia tasa fija. LTV hasta 80%.",
                         plazos: [{ m: 12, c: 141.53 }, { m: 24, c: 94.25 }, { m: 36, c: 80.72 }, { m: 48, c: 75.30 }, { m: 60, c: 72.84 }] 
                     },
                     { 
-                        nombre: "(2) Prendario UVA 0km", 
-                        tna: "UVA + 37%", cft: "36,30%", maxFinanciable: 57000000, ltv: 80, gastos: 6, valorUVA: 1706.43, baseCalculo: 1000, esUVA: true, 
+                        nombre: "Prendario UVA 0km", 
+                        tna: "UVA + 37%", cft: "36,30%", ltv: 57000000, ltv: 80, gastos: 6, valorUVA: 1706.43, baseCalculo: 1000, esUVA: true, 
                         descripcion: "Línea UVA Banco Galicia para unidades 0km.",
                         plazos: [{ m: 12, c: 70.52 }, { m: 24, c: 41.61 }, { m: 36, c: 32.39 }, { m: 48, c: 28.07 }, { m: 60, c: 25.69 }] 
                     }
@@ -607,9 +607,8 @@ function seleccionarMarca(marcaKey) {
         gridTarjetas.className = 'contenedor-tarjetas-subcat'; 
         cont.appendChild(gridTarjetas);
 
-        // Creamos el "puente": Un solo botón de Santander
         const btnBydBridge = document.createElement('div'); 
-        btnBydBridge.className = 'card-sub-categoria cat-general'; // cat-general ya tiene el logo de Santander en CSS
+        btnBydBridge.className = 'card-sub-categoria cat-general'; 
         btnBydBridge.innerHTML = `<span>Santander Río</span>`; 
         
         btnBydBridge.onclick = () => {
@@ -626,7 +625,7 @@ function seleccionarMarca(marcaKey) {
     document.getElementById('nombre-banco-seleccionado').innerText = `Opciones para ${config.nombre}`;
     
     const cont = document.getElementById('lista-financiaciones');
-    cont.innerHTML = ""; // Limpiamos el botón antiguo
+    cont.innerHTML = ""; 
     
     const gridTarjetas = document.createElement('div');
     gridTarjetas.className = 'contenedor-tarjetas-subcat'; 
@@ -711,13 +710,11 @@ function abrirFormulario(plan) {
     document.getElementById('nombre-financiacion-seleccionada').innerText = plan.nombre;
     document.getElementById('texto-informativo-dinamico').innerText = plan.descripcion || "Consulte condiciones vigentes.";
 
-    // Mostramos u ocultamos el grupo de cotización para planes en USD
     const grupoDolar = document.getElementById('grupo-cotizacion');
     if (grupoDolar) {
         grupoDolar.style.display = (plan.moneda === "USD") ? "block" : "none";
     }
 
-    // Renderizamos la tabla de condiciones (la de la derecha)
     let tablaTasas = `
         <div class="ficha-tecnica-detallada">
             <h4 style="text-align:center; padding:10px;">Condiciones de la financiación</h4>
@@ -729,13 +726,20 @@ function abrirFormulario(plan) {
                     <tbody>`;
     
     plan.plazos.forEach(p => {
-        let ltvDato = p.ltv || (p.max ? "Máx $" + (p.max / 1000000) + "M" : null) || plan.ltv || "---";
+        // --- MODIFICACIÓN UNIFICACIÓN LTV ---
+        let ltvRaw = p.ltv || plan.ltv || "---";
+        let ltvMostrar = ltvRaw;
+
+        if (typeof ltvRaw === 'number') {
+            ltvMostrar = (ltvRaw <= 100) ? ltvRaw + "%" : "$" + (ltvRaw / 1000000) + "M";
+        }
+
         tablaTasas += `
             <tr>
                 <td><strong>${p.m} Meses</strong></td>
                 <td>${p.tna || plan.tna || "---"}</td>
                 <td>${p.cft || plan.cft || "---"}</td>
-                <td>${typeof ltvDato === 'number' ? ltvDato + '%' : ltvDato}</td>
+                <td>${ltvMostrar}</td>
                 <td>${p.g || plan.gastos || "0"}%</td>
             </tr>`;
     });
@@ -744,12 +748,11 @@ function abrirFormulario(plan) {
     document.getElementById('ficha-tecnica').innerHTML = tablaTasas;
     document.getElementById('resultado-cuotas').innerHTML = "";
 
-    // Limpiamos todos los campos al entrar
     ['precio-lista', 'precio', 'anticipo', 'monto-directo'].forEach(id => {
         document.getElementById(id).value = "";
     });
 
-    vincularEventosCalculo();
+    vvincularEventosCalculo();
     window.scrollTo(0, 0);
 }
 
@@ -770,7 +773,6 @@ function calcularSimulacion() {
     const anticipoPesos = obtenerNumeroLimpio('anticipo');
     const cotizacion = parseFloat(document.getElementById('cotizacion-dolar').value) || 1;
 
-    // Si no hay datos en ninguno de los dos bloques, no calculamos
     if (montoDirecto === 0 && vVentaPesos === 0) return;
 
     const esUSD = (financiacionActual.moneda === "USD");
@@ -789,21 +791,26 @@ function calcularSimulacion() {
         let filaClase = "";
         let advertenciaTexto = "";
 
-        // DETERMINAMOS EL MONTO A FINANCIAR SEGÚN EL BLOQUE USADO
-        if (montoDirecto > 0) {
-            // Caso 1: Ingreso Directo (aplica para todas las marcas ahora)
-            montoFin = montoDirecto / factor;
-        } else {
-            // Caso 2: Cálculo por Precios (Precio Venta - Anticipo)
+        // --- MODIFICACIÓN UNIFICACIÓN LTV EN CÁLCULO ---
+        let ltvValor = p.ltv || financiacionActual.ltv || 999999999999;
+        let techoFinalBanco;
+
+        if (ltvValor <= 100) {
+            // Caso Porcentaje
             const pLista = pListaPesos / factor;
+            techoFinalBanco = pLista * (ltvValor / 100);
+        } else {
+            // Caso Monto Fijo
+            techoFinalBanco = ltvValor / factor;
+        }
+
+        if (montoDirecto > 0) {
+            // Aplicamos techo de seguridad también al monto directo
+            montoFin = Math.min((montoDirecto / factor), techoFinalBanco);
+        } else {
             const vVenta = vVentaPesos / factor;
             const antIngresado = anticipoPesos / factor;
             
-            let ltvPlan = p.ltv || financiacionActual.ltv;
-            let topeMax = p.max || financiacionActual.maxFinanciable || 999999999999;
-            let maxPermitidoPorLTV = (typeof ltvPlan === 'number') ? (pLista * (ltvPlan / 100)) : 999999999999;
-            let techoFinalBanco = Math.min(maxPermitidoPorLTV, topeMax);
-
             montoFin = Math.min((vVenta - antIngresado), techoFinalBanco);
             let antMinimoReal = (vVenta - techoFinalBanco) * factor;
 
@@ -841,20 +848,16 @@ function vincularEventosCalculo() {
     const inputBloque2 = 'monto-directo';
     const inputDolar = 'cotizacion-dolar';
 
-    // Eventos para Bloque 1 (Cálculo por Precios)
     inputsBloque1.forEach(id => {
         document.getElementById(id).oninput = (e) => {
             formatCurrencyInput(e.target);
-            // Si escribo aquí, borro el monto directo
             document.getElementById('monto-directo').value = ""; 
             calcularSimulacion();
         };
     });
 
-    // Evento para Bloque 2 (Monto Directo)
     document.getElementById(inputBloque2).oninput = (e) => {
         formatCurrencyInput(e.target);
-        // Si escribo aquí, borro los 3 del Bloque 1
         inputsBloque1.forEach(id => document.getElementById(id).value = "");
         calcularSimulacion();
     };
@@ -867,7 +870,6 @@ function irAComparador() {
     poblarSelectoresBanco(1);
     poblarSelectoresBanco(2);
 
-    // Aseguramos que el input maestro limpie los resultados viejos y aplique puntos
     const inputMontoMaster = document.getElementById('comp-monto');
     if (inputMontoMaster) {
         inputMontoMaster.oninput = (e) => {
@@ -897,7 +899,6 @@ function actualizarCategoriasComp(col) {
         options += `<option value="${key}">${bancos[bancoKey].categorias[key].nombre}</option>`; 
     }
     selectCat.innerHTML = options;
-    // Limpiamos resultados previos de esa columna
     document.getElementById(`res-${col}`).innerHTML = "";
 }
 
@@ -911,19 +912,14 @@ function actualizarPlanesComp(col) {
         options += `<option value="${index}">${plan.nombre}</option>`; 
     });
     selectPlan.innerHTML = options;
-    
-    // Si ya había un monto, calculamos automáticamente al elegir el plan
     calcularComparacion(); 
 }
 
 function calcularComparacion() {
     const input = document.getElementById('comp-monto');
     if (!input) return;
-    
-    // LIMPIEZA INFALIBLE: Removemos todo lo que no sea número
     const montoRaw = input.value.replace(/\D/g, '');
     const monto = parseFloat(montoRaw) || 0;
-    
     renderizarResultadoCol(1, monto);
     renderizarResultadoCol(2, monto);
 }
@@ -961,23 +957,21 @@ function renderizarResultadoCol(col, monto) {
         const tnaFila = p.tna || plan.tna || "---";
         const gasPct = p.g !== undefined ? p.g : (plan.gastos || 0);
         
-        let ltvFila = p.ltv || plan.ltv || (p.max ? p.max : "---");
-        if (typeof ltvFila === 'number') {
-            ltvFila = ltvFila > 1000 ? "Máx $" + (ltvFila / 1000000) + "M" : ltvFila + "%";
+        // --- MODIFICACIÓN UNIFICACIÓN LTV EN COMPARADOR ---
+        let ltvRaw = p.ltv || plan.ltv || "---";
+        let ltvFila = ltvRaw;
+
+        if (typeof ltvRaw === 'number') {
+            ltvFila = (ltvRaw <= 100) ? ltvRaw + "%" : "Máx $" + (ltvRaw / 1000000) + "M";
         }
 
         let cuotaHtml = "";
-        let gastosCeldaHtml = `<td>${gasPct}%</td>`; // Por defecto solo %
+        let gastosCeldaHtml = `<td>${gasPct}%</td>`; 
 
         if (tieneMonto) {
-            // Cálculo de Cuota
             const valorCuota = (monto / base) * p.c;
             cuotaHtml = `<td class="cuota-resaltada-comp">$${Math.round(valorCuota).toLocaleString('es-AR')}</td>`;
-            
-            // Cálculo de Gastos en Pesos
             const valorGastos = (monto * gasPct) / 100;
-            
-            // Celda de gastos combinada: Pesos + Porcentaje pequeño debajo
             gastosCeldaHtml = `
                 <td>
                     <div style="font-weight:700;">$${Math.round(valorGastos).toLocaleString('es-AR')}</div>
@@ -998,27 +992,20 @@ function renderizarResultadoCol(col, monto) {
     html += `</tbody></table></div>`;
     resDiv.innerHTML = html;
 }
-/* ==========================================================================
-   6. UTILIDADES GLOBALES (Faltantes)
-   ========================================================================== */
+
 function formatCurrencyInput(input) {
-    // Solo permitimos números
     let value = input.value.replace(/\D/g, "");
     if (value === "") {
         input.value = "";
         return;
     }
-    // Formateamos con puntos de miles usando el estándar de Argentina
     input.value = new Intl.NumberFormat('es-AR').format(value);
 }
 
 function toggleNovedades() {
     const panel = document.getElementById('panel-lateral');
     if (panel) {
-        // Removemos o agregamos la clase 'hidden' para mostrar/ocultar
         panel.classList.toggle('hidden');
-    } else {
-        console.error("No se encontró el elemento 'panel-lateral'");
     }
 }
 
