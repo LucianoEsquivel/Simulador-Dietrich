@@ -757,7 +757,7 @@ function abrirFormulario(plan) {
 }
 
 /* ==========================================================================
-   4. MOTOR DE CÁLCULO
+   4. MOTOR DE CÁLCULO (CORREGIDO)
    ========================================================================== */
 
 function calcularSimulacion() {
@@ -791,21 +791,25 @@ function calcularSimulacion() {
         let filaClase = "";
         let advertenciaTexto = "";
 
-        // --- MODIFICACIÓN UNIFICACIÓN LTV EN CÁLCULO ---
+        // --- LÓGICA DE LTV UNIFICADA Y SEGURA ---
         let ltvValor = p.ltv || financiacionActual.ltv || 999999999999;
         let techoFinalBanco;
 
         if (ltvValor <= 100) {
-            // Caso Porcentaje
-            const pLista = pListaPesos / factor;
-            techoFinalBanco = pLista * (ltvValor / 100);
+            // Caso Porcentaje: Si no hay precio de lista, ponemos un techo infinito para no romper el Monto Directo
+            if (pListaPesos > 0) {
+                const pLista = pListaPesos / factor;
+                techoFinalBanco = pLista * (ltvValor / 100);
+            } else {
+                techoFinalBanco = 999999999999; 
+            }
         } else {
             // Caso Monto Fijo
             techoFinalBanco = ltvValor / factor;
         }
 
         if (montoDirecto > 0) {
-            // Aplicamos techo de seguridad también al monto directo
+            // Aplicamos el techo (Si es monto fijo lo respetará, si es % y no hay precio de lista, usará el directo)
             montoFin = Math.min((montoDirecto / factor), techoFinalBanco);
         } else {
             const vVenta = vVentaPesos / factor;
@@ -845,24 +849,36 @@ function calcularSimulacion() {
 
 function vincularEventosCalculo() {
     const inputsBloque1 = ['precio-lista', 'precio', 'anticipo'];
-    const inputBloque2 = 'monto-directo';
+    const inputBloque2 = 'monto-directo'; // Esta es la variable correcta
     const inputDolar = 'cotizacion-dolar';
 
+    // Eventos para Bloque 1 (Cálculo por Precios)
     inputsBloque1.forEach(id => {
-        document.getElementById(id).oninput = (e) => {
-            formatCurrencyInput(e.target);
-            document.getElementById('monto-directo').value = ""; 
-            calcularSimulacion();
-        };
+        const el = document.getElementById(id);
+        if (el) {
+            el.oninput = (e) => {
+                formatCurrencyInput(e.target);
+                document.getElementById('monto-directo').value = ""; 
+                calcularSimulacion();
+            };
+        }
     });
 
-    document.getElementById(inputBloque2).oninput = (e) => {
-        formatCurrencyInput(e.target);
-        inputsBloque1.forEach(id => document.getElementById(id).value = "");
-        calcularSimulacion();
-    };
+    // Evento para Bloque 2 (Monto Directo) - AQUÍ ESTABA EL ERROR
+    const elDirecto = document.getElementById(inputBloque2);
+    if (elDirecto) {
+        elDirecto.oninput = (e) => {
+            formatCurrencyInput(e.target);
+            inputsBloque1.forEach(id => {
+                const inputLimpio = document.getElementById(id);
+                if (inputLimpio) inputLimpio.value = "";
+            });
+            calcularSimulacion();
+        };
+    }
 
-    document.getElementById(inputDolar).oninput = () => calcularSimulacion();
+    const elDolar = document.getElementById(inputDolar);
+    if (elDolar) elDolar.oninput = () => calcularSimulacion();
 }
 
 function irAComparador() {
