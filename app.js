@@ -752,7 +752,7 @@ function abrirFormulario(plan) {
         document.getElementById(id).value = "";
     });
 
-    vvincularEventosCalculo();
+    vincularEventosCalculo();
     window.scrollTo(0, 0);
 }
 
