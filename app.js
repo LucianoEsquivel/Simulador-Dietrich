@@ -501,13 +501,13 @@ const bancos = {
                 planes: [
                     { 
                         nombre: "Tasa Fija 0km", 
-                        tna: "71,00%", cft: "129,27%", ltv: 57000000, ltv: 80, gastos: 6, seguro: "A DEFINIR", baseCalculo: 1000, 
+                        tna: "71,00%", cft: "129,27%", ltv: 80, gastos: 6, seguro: "A DEFINIR", baseCalculo: 1000, 
                         descripcion: "Crédito prendario Galicia tasa fija. LTV hasta 80%.",
                         plazos: [{ m: 12, c: 141.53 }, { m: 24, c: 94.25 }, { m: 36, c: 80.72 }, { m: 48, c: 75.30 }, { m: 60, c: 72.84 }] 
                     },
                     { 
                         nombre: "Prendario UVA 0km", 
-                        tna: "UVA + 37%", cft: "36,30%", ltv: 57000000, ltv: 80, gastos: 6, valorUVA: 1706.43, baseCalculo: 1000, esUVA: true, 
+                        tna: "UVA + 37%", cft: "36,30%", ltv: 80, gastos: 6, valorUVA: 1706.43, baseCalculo: 1000, esUVA: true, 
                         descripcion: "Línea UVA Banco Galicia para unidades 0km.",
                         plazos: [{ m: 12, c: 70.52 }, { m: 24, c: 41.61 }, { m: 36, c: 32.39 }, { m: 48, c: 28.07 }, { m: 60, c: 25.69 }] 
                     }
