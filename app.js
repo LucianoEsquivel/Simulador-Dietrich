@@ -10,10 +10,10 @@ navigator.serviceWorker.addEventListener('controllerchange', () => {
    ========================================================================== */
 const bancos = {
     santander: {
-        nombre: "Santander Río",
+        nombre: "Santander",
         categorias: {
             general: {
-                nombre: "Santander Río General",
+                nombre: "Santander General",
                 planes: [
                     { 
                         nombre: "Especial Pickups UVA", 
@@ -121,7 +121,7 @@ const bancos = {
                 ]
             },
             byd: {
-                nombre: "Santander Río ByD",
+                nombre: "Santander ByD",
                 planes: [
                     { 
                         nombre: "Línea UVA ByD (TNA 0%)", 
@@ -150,7 +150,7 @@ const bancos = {
                 ]
             },
             kia: {
-                nombre: "Santander Río KIA",
+                nombre: "Santander KIA",
                 planes: [
                     { 
                         nombre: "Seltos", 
@@ -609,7 +609,7 @@ function seleccionarMarca(marcaKey) {
 
         const btnBydBridge = document.createElement('div'); 
         btnBydBridge.className = 'card-sub-categoria cat-general'; 
-        btnBydBridge.innerHTML = `<span>Santander Río</span>`; 
+        btnBydBridge.innerHTML = `<span>Santander</span>`; 
         
         btnBydBridge.onclick = () => {
             bancoActual = bancoByd;
