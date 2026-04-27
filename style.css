@@ -1447,3 +1447,94 @@ main {
         font-size: 0.7rem;
     }
 }
+
+/* =========================================
+   BLOQUE PARTICULAR: BOTONES CON FICHA RÁPIDA
+   ========================================= */
+
+.btn-plan-ficha {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    color: #000000;
+    font-weight: 700; /* Bajamos de 800 a 700 para que sea menos pesada */
+    font-size: 0.85em;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    
+    position: relative;
+    overflow: visible; /* Clave para que se vea el tooltip */
+}
+
+.btn-plan-ficha.destacado {
+    border-left: 6px solid #282b29;
+}
+
+.btn-plan-ficha:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* EL CUADRO INFORMATIVO (TOOLTIP ESTILO GLASS) */
+.btn-plan-ficha::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    
+    /* Fondo Gris Oscuro traslúcido y elegante */
+    background: rgba(33, 37, 41, 0.95);
+    backdrop-filter: blur(4px); /* Desenfoque de fondo premium */
+    
+    color: #ffffff;
+    padding: 14px 18px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500; /* Letra más fina y legible */
+    line-height: 1.6;
+    width: 220px;
+    white-space: pre-line;
+    text-align: left;
+    
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999999;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Bordecito sutil */
+}
+
+/* Triangulito estilizado */
+.btn-plan-ficha::before {
+    content: "";
+    position: absolute;
+    bottom: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 7px solid transparent;
+    border-top-color: rgba(33, 37, 41, 0.95);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999999;
+    transition: all 0.3s ease;
+}
+
+/* Activación suave */
+.btn-plan-ficha:hover::after, 
+.btn-plan-ficha:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}

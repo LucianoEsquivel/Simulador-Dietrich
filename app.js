@@ -26,6 +26,7 @@ const bancos = {
                         seguro: "Cautivo", 
                         baseCalculo: 1000000, 
                         descripcion: "Financiacion exclusiva para pickups (Ranger, Maverick, Amarok)",
+                        utilPara: "Pickups",
                         plazos: [{m:12, c:90517}, {m:18, c:62628}, {m:24, c:48719}, {m:36, c:34878}, {m:48, c:28026}, {m:60, c:23969}, {m:72, c:21309}] 
                     },
                     { 
@@ -38,6 +39,7 @@ const bancos = {
                         seguro: "Cautivo", 
                         baseCalculo: 1000000, 
                         descripcion: "Aplica para toda la gama, seguro cautivo",
+                        utilPara: "todas las marcas",
                         plazos: [{m:12, c:94530}, {m:18, c:66639}, {m:24, c:52775}, {m:36, c:39073}, {m:48, c:32381}, {m:60, c:28490}] 
                     },
                     { 
@@ -47,6 +49,7 @@ const bancos = {
                         seguro: "A DEFINIR", 
                         baseCalculo: 1000000, 
                         descripcion: "Linea UVA con quebranto",
+                        utilPara: "todas las marcas",
                         plazos: [
                             { m: 12, c: 83334, tna: "0%", cft: "0%", g: 14, info: "TNA 0%" }, 
                             { m: 18, c: 60947, tna: "9,90%", cft: "12,66%", g: 11, info: "TNA 9,9%" }, 
@@ -62,6 +65,7 @@ const bancos = {
                         seguro: "Cautivo", 
                         baseCalculo: 1000000, 
                         descripcion: "Línea Pickups con tasa UVA (aplica para Ranger, Maverick, Amarok)",
+                        utilPara: "Pickups",
                         plazos: [{m:12, c:83334, g:10}, {m:18, c:55556, g:12}, {m:24, c:41667, g:15}] 
                     },
                     { 
@@ -73,6 +77,7 @@ const bancos = {
                         seguro: "Cautivo", 
                         baseCalculo: 1000000, 
                         descripcion: "Línea Pickups con tasa UVA (aplica para Ranger, Maverick, Amarok)",
+                        utilPara: "Pickups",
                         plazos: [{m:12, c:88822, g:7.1}, {m:18, c:60947, g:9.3}, {m:24, c:47030, g:11.3}] 
                     },
                     { 
@@ -83,6 +88,7 @@ const bancos = {
                         seguro: "Cautivo", 
                         baseCalculo: 1000000, 
                         descripcion: "Línea tradicional en pesos con tasa fija con quebranto.",
+                        utilPara: "Todas las marcas",
                         plazos: [
                             { m: 12, c: 99568, tna: "28,50%", cft: "40,49%" }, 
                             { m: 18, c: 75384, tna: "34,50%", cft: "50,73%" }, 
@@ -102,6 +108,7 @@ const bancos = {
                         seguro: "A DEFINIR", 
                         baseCalculo: 1000000, 
                         descripcion: "Línea tradicional en pesos con tasa fija.",
+                        utilPara: "Todas las marcas",
                         plazos: [{m:12, c:111366}, {m:18, c:83851}, {m:24, c:70542}, {m:36, c:58086}, {m:48, c:52364}, {m:60, c:49900}] 
                     },
                     { 
@@ -114,6 +121,7 @@ const bancos = {
                         seguro: "A DEFINIR", 
                         baseCalculo: 1000000, 
                         descripcion: "Financiación UVA exclusiva para unidades de movilidad eléctrica.",
+                        utilPara: "100% Electricos",
                         plazos: [{m:12, c:107654}, {m:18, c:80008}, {m:24, c:66534}, {m:36, c:53729}, {m:48, c:47949}, {m:60, c:44926}] 
                     },
                     { 
@@ -126,6 +134,7 @@ const bancos = {
                         seguro: "A DEFINIR", 
                         baseCalculo: 1000000, 
                         descripcion: "Financiación UVA exclusiva para unidades de movilidad eléctrica.",
+                        utilPara: "100% Electricos",
                         plazos: [{m:12, c:95168}, {m:18, c:67280}, {m:24, c:53427}, {m:36, c:39753}, {m:48, c:33093}, {m:60, c:29235}] 
                     }
                 ]
@@ -138,6 +147,7 @@ const bancos = {
                         destacado: true,
                         tna: "0%", cft: "0%", ltv: 80, seguro: "Cautivo", baseCalculo: 1000000, 
                         descripcion: "Financiacion exclusiva para unidades BYD con tasa 0%",
+                        utilPara: "ByD",
                         plazos: [{ m: 12, c: 83334, g: 12 }, { m: 18, c: 55556, g: 15 }, { m: 24, c: 41667, g: 19 }] 
                     },
                     { 
@@ -145,6 +155,7 @@ const bancos = {
                         destacado: true,
                         tna: "9,90%", cft: "12,66%", ltv: 80, seguro: "Cautivo", baseCalculo: 1000000, 
                         descripcion: "Financiacion exclusiva para unidades BYD",
+                        utilPara: "ByD",
                         plazos: [{ m: 12, c: 88822, g: 5 }, { m: 18, c: 60947, g: 6 }, { m: 24, c: 47030, g: 7 }] 
                     },
                     { 
@@ -152,6 +163,7 @@ const bancos = {
                         destacado: false,
                         tna: "14,90%", cft: "19,60%", ltv: 80, gastos: 6, seguro: "Cautivo", baseCalculo: 100000, 
                         descripcion: "Financiacion exclusiva para unidades BYD",
+                        utilPara: "ByD",
                         plazos: [{ m: 12, c: 91655 }, { m: 18, c: 63762 }, { m: 24, c: 49861 }, { m: 36, c: 36052 }, { m: 48, c: 29239 }, { m: 60, c: 25222 }] 
                     },
                     { 
@@ -159,6 +171,7 @@ const bancos = {
                         destacado: false,
                         tna: "38,90%", cft: "58,68%", ltv: 80, gastos: 6, seguro: "Cautivo", baseCalculo: 100000, 
                         descripcion: "Crédito prendario tradicional a tasa fija para unidades BYD.",
+                        utilPara: "ByD",
                         plazos: [{ m: 12, c: 105819 }, { m: 18, c: 78118 }, { m: 24, c: 64570 }, { m: 36, c: 51606 }, { m: 48, c: 45672 }, { m: 60, c: 42509 }] 
                     }
                 ]
@@ -171,6 +184,7 @@ const bancos = {
                         destacado: true,
                         tna: "0%", cft: "-", seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Financiación especial para KIA Seltos con Tasa 0%.",
+                        utilPara: "Seltos",
                         plazos: [{ m: 12, c: 83.33, g: 14.85, ltv: 24000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 19.26, ltv: 16500000, info: "TNA 0%" }] 
                     },
                     
@@ -179,6 +193,7 @@ const bancos = {
                         destacado: true,
                         tna: "0%", cft: "-", seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Línea comercial para KIA K2500 tasa 0%.",
+                        utilPara: "K2500",
                         plazos: [{ m: 12, c: 83.33, g: 14.85, ltv: 23000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 19.26, ltv: 16000000, info: "TNA 0%" }] 
                     },
                     { 
@@ -186,6 +201,7 @@ const bancos = {
                         destacado: true,
                         tna: "0%", cft: "-", seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Linea Tasa Fija, 0%, con quebranto",
+                        utilPara: "Seltos",
                         plazos: [{ m: 12, c: 83.33, g: 29.93, ltv: 19500000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 39.12, ltv: 14500000, info: "TNA 0%" }] 
                     },
                     { 
@@ -193,6 +209,7 @@ const bancos = {
                         destacado: true,
                         tna: "0%", cft: "-", seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Linea tasa fija Tasa 0%, con quebranto.",
+                        utilPara: "K2500",
                         plazos: [{ m: 12, c: 83.33, g: 28.84, ltv: 19000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 37.67, ltv: 14500000, info: "TNA 0%" }] 
                     },
                 ]
@@ -210,6 +227,7 @@ const bancos = {
                         destacado: true,
                         ltv: 30000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, Esta tasa aplica solo para: Everest Titanium, la cuota incluye capital, intereses e IVA",
+                        utilPara: "Everest",
                         plazos: [{ m: 18, tna: "0%", cft: "0%", ltv: 30000000, c: 55.56, g: 17 }, { m: 24, tna: "14,90%", cft: "19,60%", ltv: 30000000, c: 49.86, g: 17 }] 
                     },
                     { 
@@ -217,6 +235,7 @@ const bancos = {
                         destacado: true,
                         ltv: 15000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, Esta tasa aplica para: Maverick HEV, Tremor y XLT, la cuota incluye capital, intereses e IVA",
+                        utilPara: "Todas las Mavericks",
                         plazos: [{ m: 18, c: 55.56, tna: "0%", cft: "0%", ltv: 15000000, info: "TNA 0%" }] 
                     },
                     { 
@@ -224,6 +243,7 @@ const bancos = {
                         destacado: true,
                         ltv: 15000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, Aplica para: Territory SEL, Territory Titanium, Territory HEV, la cuota incluye capital, intereses e IVA",
+                        utilPara: "Todas las Territory",
                         plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 15000000, info: "TNA 0%" }, { m: 18, c: 55.56, tna: "0%", cft: "0%", ltv: 15000000, info: "TNA 0%" }] 
                     },
                     { 
@@ -231,6 +251,7 @@ const bancos = {
                         destacado: true,
                         ltv: 25000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, Línea exclusiva para Territory Titanium, la cuota inclluye capital, intereses e IVA",
+                        utilPara: "Solo Territory Titanium",
                         plazos: [{ m: 18, c: 55.56, tna: "0%", cft: "0%", ltv: 25000000, info: "TNA 0%" }] 
                     },                   
                     { 
@@ -238,6 +259,7 @@ const bancos = {
                         destacado: true,
                         ltv: 18000000, gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, Aplica para: Ranger XL 4x2, 4x4 y Chasis, la cuota incluye capital, intereses e IVA",
+                        utilPara: "Ranger XL",
                         plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 18000000, info: "TNA 0% (Promo XL)" }] 
                     },
 
@@ -246,6 +268,7 @@ const bancos = {
                         destacado: true,
                         ltv: 25000000, gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, Esta tasa aplica solo para: Ranger XL 2.0L Diesel Chasis 4x4 MT, XL 2.0L Diesel Cabina Simple 4x2 MT y XL 2.0L Diesel Cabina Simple 4x4 MT, la cuota incluye capital, intereses e IVA",
+                        utilPara: "Ranger XL C/S",
                         plazos: [{ m: 24, c: 41.67, tna: "0%", cft: "0%", ltv: 25000000, info: "TNA 0% (Promo Cabina simple)" }] 
                     },
                     { 
@@ -253,6 +276,7 @@ const bancos = {
                         destacado: true,
                         ltv: 60, gastos: 17, seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para todas las versiones de Ranger excepto Raptor, la cuota incluye capital, intereses e IVA",
+                        utilPara: "Ranger excepto Raptor",
                         plazos: [{ m: 24, c: 41.67, tna: "0%", cft: "0%", ltv: 60, info: "TNA 0%" }, { m: 36, c: 33.21, tna: "10,00%", cft: "12,79%", ltv: 60, info: "TNA 10,00%" }] 
                     },
                     { 
@@ -260,6 +284,7 @@ const bancos = {
                         destacado: false,
                         ltv: 60, seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para todas las versiones de Ranger, excepto Raptor, la cuota incluye capital, intereses e IVA",
+                        utilPara: "Ranger excepto Raptor",
                         plazos: [{ m: 12, c: 94.53, tna: "19,90%", cft: "26,92%", g: 6, ltv: 25, info: "LTV hasta 25%" }, { m: 12, c: 94.53, tna: "19,90%", cft: "26,92%", g: 17, ltv: 60, info: "LTV 26% al 60%" }, { m: 24, c: 55.16, tna: "23,90%", cft: "33,08%", g: 6, ltv: 25, info: "LTV hasta 25%" }, { m: 24, c: 55.16, tna: "23,90%", cft: "33,08%", g: 17, ltv: 60, info: "LTV 26% al 60%" }, { m: 36, c: 45.47, tna: "29,90%", cft: "42,82%", g: 17, ltv: 60, info: "Gasto fijo 17%" }] 
                     },
                     { 
@@ -267,6 +292,7 @@ const bancos = {
                         destacado: false,
                         ltv: 25000000, gastos: 17, seguro: "A DEFINIR", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para todas las versiones de Ranger, excepto Raptor, la cuota incluye capital, intereses e IVA",
+                        utilPara: "Ranger excepto Raptor",
                         plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 25000000, info: "TNA 0%" }, { m: 18, c: 55.56, tna: "0%", cft: "0%", ltv: 25000000, info: "TNA 0%" }, { m: 24, c: 56.99, tna: "26,90%", cft: "37,87%", ltv: 25000000, info: "TNA 26,90%" }] 
                     },
                     { 
@@ -274,6 +300,7 @@ const bancos = {
                         destacado: false,
                         ltv: 60, seguro: "Liberado", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para todas las versiones de Ranger excepto Raptor, Seguro liberado, la cuota incluye capital, intereses e IVA",
+                        utilPara: "Ranger excepto Raptor",
                         plazos: [{ m: 12, c: 686.52, tna: "39,90%", cft: "54,11%", g: 6, ltv: 25, info: "2 Cuotas - LTV hasta 25%" }, { m: 12, c: 686.52, tna: "39,90%", cft: "54,11%", g: 17, ltv: 60, info: "2 Cuotas - LTV 26% al 60%" }, { m: 24, c: 441.28, tna: "45,90%", cft: "63,25%", g: 6, ltv: 25, info: "4 Cuotas - LTV hasta 25%" }, { m: 24, c: 441.28, tna: "45,90%", cft: "63,25%", g: 17, ltv: 60, info: "4 Cuotas - LTV 26% al 60%" }] 
                     },
                     { 
@@ -281,6 +308,7 @@ const bancos = {
                         destacado: false,
                         gastos: 17, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para todas las versiones de Transit, excepto las E-Transit, para personas fisicas, seguro liberado, la cuota incluye capital, intereses e IVA",
+                        utilPara: "Transit excepto E-Transit",
                         plazos: [{ m: 24, c: 41.67, tna: "0%", cft: "0%", ltv: 60, info: "TNA 0%" }, { m: 36, c: 33.21, tna: "10,00", cft: "12,79%", ltv: 60, info: "TNA 12,79%" }] 
                     },
                     
@@ -289,6 +317,7 @@ const bancos = {
                         destacado: false,
                         gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, Seguro liberado para Transit. aplica para todos los modelos de Transit, excepto E-Transit. la cuota incluye capital, intereses e IVA",
+                        utilPara: "Transit excepto E-Transit",
                         plazos: [{ m: 12, c: 86.90, tna: "9,90%", cft: "12,66%", ltv: 60, info: "LTV Máx 60%" }, { m: 24, c: 52.77, tna: "19,90%", cft: "26,96%", ltv: 60, info: "LTV Máx 60%" }, { m: 36, c: 56.62, tna: "45,90%", cft: "72,10%", ltv: 50, info: "LTV Máx 50%" }, { m: 48, c: 52.63, tna: "47,90%", cft: "76,13%", ltv: 50, info: "LTV Máx 50%" }] 
                     }
                     
@@ -302,6 +331,7 @@ const bancos = {
                         destacado: true,
                         ltv: 18000000, gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, Esta tasa aplica para: Ranger XL 4x2, 4x4 y Chasis, seguro de vida 0,20% sobre saldo, seguro liberado",
+                        utilPara: "Ranger XL",
                         plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 18000000, info: "TNA 0%" }] 
                     },
 
@@ -310,6 +340,7 @@ const bancos = {
                         destacado: true,
                         ltv: 25000000, gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, Aplica para XL Chasis, XL C/S 4x2 y 4x4, seguro liberado, sin gastos de otorgamiento, seguro de vida 0,20% sobre saldo",
+                        utilPara: "Ranger XL C/S",
                         plazos: [{ m: 24, c: 42.00, tna: "0%", cft: "0%", ltv: 25000000, info: "TNA 0%" }] 
                     },
 
@@ -318,6 +349,7 @@ const bancos = {
                         destacado: true,
                         ltv: 50, gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para Ranger XL y XLS, seguro liberado, sin gastos de otorgamiento, seguro de vida 0,20% sobre saldo",
+                        utilPara: "Ranger XL y XLS",
                         plazos: [{ m: 12, c: 686.52, tna: "39,90%", cft: "54,11%", ltv: 50, info: "2 Cuotas Semestrales" }, { m: 24, c: 459.41, tna: "49,90%", cft: "69,49%", ltv: 50, info: "4 Cuotas Semestrales" }] 
                     },
                     { 
@@ -325,6 +357,7 @@ const bancos = {
                         destacado: false, 
                         gastos: 6, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, Financiación para Ranger XL/XLS con seguro cautivo, seguro de vida 0,20% sobre saldo.",
+                        utilPara: "Ranger XL y XLS",
                         plazos: [{ m: 12, c: 90.93, tna: "14,90%", cft: "17,77%", ltv: 40, info: "max 40%" }, { m: 24, c: 63.18, tna: "39,90%", cft: "54,19", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 54.12, tna: "45,90%", cft: "64,34%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 48.43, tna: "45,90%", cft: "64,34%", ltv: 60, info: "LTV Máx 60%" }] 
                     },
                     { 
@@ -332,6 +365,7 @@ const bancos = {
                         destacado: true,
                         gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, Financiación comercial para Ranger XL y XLS con seguro liberado, seguro de vida 0,20% sobre saldo",
+                        utilPara: "Ranger XL y XLS",
                         plazos: [{ m: 12, c: 91.98, tna: "16,90%", cft: "20,36%", ltv: 40, info: "LTV Máx 40%" }, { m: 24, c: 64.38, tna: "41,90%", cft: "57,50%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 55.46, tna: "47,90%", cft: "67,86%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 49.87, tna: "47,90%", cft: "67,86%", ltv: 60, info: "LTV Máx 60%" }] 
                     },
                     
@@ -340,6 +374,7 @@ const bancos = {
                         destacado: false,
                         gastos: 6, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para Transit excepto las E-Transit, seguro de vida 0,20% sobre saldo, seguro cautivo.",
+                        utilPara: "Transit excepto E-Transit",
                         plazos: [{ m: 12, c: 87.32, tna: "7,90%", cft: "9,09%", ltv: 60, info: "LTV Máx 60%" }, { m: 24, c: 50.74, tna: "17,90%", cft: "21,67%", ltv: 60, info: "LTV Máx 60%" }, { m: 36, c: 54.12, tna: "45,90%", cft: "64,34%", ltv: 50, info: "LTV Máx 50%" }, { m: 48, c: 48.43, tna: "45,90%", cft: "64,34%", ltv: 50, info: "LTV Máx 50%" }] 
                     },
                     { 
@@ -347,6 +382,7 @@ const bancos = {
                         destacado: false,
                         gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para Transit excepto las E-Transit, seguro liberado, seguro de vida 0,20% sobre saldo",
+                        utilPara: "Transit excepto E-Transit",
                         plazos: [{ m: 12, c: 88.35, tna: "9.90%", cft: "11.51%", ltv: 60, info: "LTV Máx 60%" }, { m: 24, c: 51.81, tna: "19,90%", cft: "24,35%", ltv: 60, info: "LTV Máx 60%" }, { m: 36, c: 55.46, tna: "47,90%", cft: "67,86%", ltv: 50, info: "LTV Máx 50%" }, { m: 48, c: 49.87, tna: "47,90%", cft: "67,86%", ltv: 50, info: "LTV Máx 50%" }] 
                     },
                     { 
@@ -354,6 +390,7 @@ const bancos = {
                         destacado: true,
                         tna: "47,90%", ltv: 75, gastos: 6, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para Kuga, Maverick, F-150, Mustang, Ranger, Territory, Bronco, Transit, seguro de vida 0,20% sobre saldo",
+                        utilPara: "Kuga, Maverick, F-150, Mustang, Ranger, Territory, Bronco, Transit",
                         plazos: [{ m: 12, c: 110.09, cft: "71,96%" }, { m: 24, c: 69.23, cft: "71,94%" }, { m: 36, c: 56.71, cft: "71.93%" }, { m: 48, c: 51.19, cft: "71,91%" }] 
                     },
                     { 
@@ -361,6 +398,7 @@ const bancos = {
                         destacado: true,
                         tna: "50,90%", ltv: 75, gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para Kuga, Maverick, F-150, Mustang, Ranger, Territory, Bronco, Transit",
+                        utilPara: "Kuga, Maverick, F-150, Mustang, Ranger, Territory, Bronco, Transit",
                         plazos: [{ m: 12, c: 111.81, cft: "77,49%" }, { m: 24, c: 71.11, cft: "77,47%" }, { m: 36, c: 58.76, cft: "77,45%" }, { m: 48, c: 53.40, cft: "77,44%" }] 
                     },
                     { 
@@ -368,6 +406,7 @@ const bancos = {
                         destacado: false,
                         gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, Línea Mi Pyme exclusiva para unidades Ford Ranger, excepto Raptor",
+                        utilPara: "Ranger excepto Raptor",
                         plazos: [{ m: 24, c: 58.76, tna: "30,80%", cft: "38,25%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 50.05, tna: "37,80%", cft: "48,56%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 44.02, tna: "37,80%", cft: "48,55%", ltv: 60, info: "LTV Máx 60%" }] 
                     },
                     { 
@@ -375,6 +414,7 @@ const bancos = {
                         destacado: false,
                         gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, Línea Mi Pyme para unidades Ford Transit, excepto E-Transit.",
+                        utilPara: "Transit excepto E-Transit",
                         plazos: [{ m: 24, c: 58.76, tna: "30,80%", cft: "38,25%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 50.05, tna: "37,80%", cft: "48,56%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 44.02, tna: "37,80%", cft: "48,55%", ltv: 60, info: "LTV Máx 60%" }] 
                     },
                     { 
@@ -382,6 +422,7 @@ const bancos = {
                         destacado: false,
                         tna: "19,00%", cft: "25,57%", ltv: 60, gastos: 6, seguro: "LIBERADO", esUVA: true, valorUVA: 1706.43, baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para Transit, excepto E-Transit, para personas fisicas y juridicas, seguro liberado, la cuota incluye capital e intereses",
+                        utilPara: "Transit excepto E-Transit",
                         plazos: [{ m: 24, c: 52.24 }, { m: 36, c: 38.52 }] 
                     },
                     { 
@@ -389,6 +430,7 @@ const bancos = {
                         destacado: false,
                         tna: "26,90%", cft: "37,87%", ltv: 60, gastos: 6, seguro: "LIBERADO", esUVA: true, valorUVA: 1706.43, baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para todos los modelos de Ranger, la cuota incluye capital, intereses e IVA",
+                        utilPara: "Ranger",
                         plazos: [{ m: 12, c: 98.62 }, { m: 24, c: 56.99 }, { m: 36, c: 43.50 }, { m: 48, c: 37.04 }, { m: 60, c: 33.38 }] 
                     },
                     { 
@@ -396,6 +438,7 @@ const bancos = {
                         destacado: false,
                         moneda: "USD", ltv: 50, gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para todas las versiones de Ranger excepto Raptor, seguro de vida 0,20% sobre saldo.",
+                        utilPara: "Ranger excepto Raptor",
                         plazos: [{ m: 12, c: 83.50, tna: "0,00%", cft: "2,41%", info: "TNA 0% USD" }, { m: 24, c: 44.91, tna: "4,50%", cft: "7,38%", info: "TNA 4,5% USD" }] 
                     },
                     { 
@@ -403,6 +446,7 @@ const bancos = {
                         destacado: false,
                         moneda: "USD", tna: "11,00%", cft: "14,56%", ltv: 50, gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para todas las versiones de Ranger, excepto Raptor, seguro de vida 0,20% sobre saldo",
+                        utilPara: "Ranger",
                         plazos: [{ m: 12, c: 90.10 }, { m: 24, c: 48.20 }, { m: 36, c: 34.34 }] 
                     }
                 ]
@@ -421,6 +465,7 @@ const bancos = {
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Aplica para Amarok, seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 17/04/2026 hasta el 30/04/2026",
+                        utilPara: "Amarok",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",   g: 15.915,   ltv: 44000000 },
                             { m: 18, c: 55.56, tna: "0%",   g: 16.52, ltv: 28000000 },
@@ -432,6 +477,7 @@ const bancos = {
                         destacado: true,
                         tna: "0%", gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Aplica para Amarok, seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 17/04/2026 hasta el 30/04/2026",
+                        utilPara: "Amarok",
                         plazos: [{ m: 12, c: 83.33, tna: "0%", ltv: 21500000, g: 2 }] 
                     },
                     { 
@@ -439,6 +485,7 @@ const bancos = {
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Aplica para Amarok, para persona fisica, seguro cautivo de VW Broker, vigencia: 17/04/2026-30/04/2026",
+                        utilPara: "Amarok",
                         plazos: [
                             { m: 24, c: 41.67, tna: "0%", g: 2, ltv: 21500000 },
                         ] 
@@ -448,6 +495,7 @@ const bancos = {
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Aplica para Tera (Highline, Outfit), T-Cross (Comfortline, Highline, Extreme), Polo (Comfortline, Highline) y Taos (Todas las versiones) disponible para persona fisica y juridica, seguro cautivo de VW Broker, vigencia: 17/04/2026-30/04/2026",
+                        utilPara: "Tera, T-Cross, Polo, Taos",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",    g: 11.075, ltv: 32000000 },
                             { m: 18, c: 55.56, tna: "0%",    g: 15.31, ltv: 25500000 },
@@ -460,6 +508,7 @@ const bancos = {
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Aplica para Tera (Highline, Outfit), T-Cross (Comfortline, Highline, Extreme), Polo (Comfortline, Highline) y Taos (Todas las versiones) disponible para persona fisica y juridica, seguro cautivo de VW Broker, vigencia: 17/04/2026-30/04/2026",
+                        utilPara: "Tera, T-Cross, Polo, Taos",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",   g: 2,   ltv: 21000000 },
                         ] 
@@ -470,6 +519,7 @@ const bancos = {
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Aplica para Tera (Highline, Outfit), T-Cross (Comfortline, Highline, Extreme), Polo (Comfortline, Highline) y Taos (Todas las versiones) disponible para persona fisica y juridica, seguro cautivo de VW Broker, vigencia: 17/04/2026-30/04/2026",
+                        utilPara: "Tera, T-Cross, Polo, Taos",
                         plazos: [
                             { m: 24, c: 41.67, tna: "0%",   g: 2,   ltv: 21000000 },
                         ] 
@@ -480,6 +530,7 @@ const bancos = {
                         destacado: false,
                         tna: "varios", seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Aplica para Amarok, disponible para persona fisica, juridica, seguro cautivo de BW Broker, vigencia: 08/04/2026-30/04/2026",
+                        utilPara: "Amarok",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",    g: 16.52, ltv: 27000000 },
                             { m: 18, c: 55.56, tna: "0%",    g: 16.52, ltv: 17000000 },
@@ -492,6 +543,7 @@ const bancos = {
                         destacado: false,
                         tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Aplica para todos los modelos excepto Amarok, disponible para persona fisica, juridica, seguro cautivo de BW Broker, vigencia: 08/04/2026-30/04/2026",
+                        utilPara: "Todos los modelos excepto Amarok",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",    g: 14.705, ltv: 25000000 },
                             { m: 18, c: 55.56, tna: "0%",    g: 16.52, ltv: 17000000 },
@@ -504,6 +556,7 @@ const bancos = {
                         destacado: false, 
                         tna: "Varios", ltv: 50, gastos: 14.10, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Usados multimarca hasta 10 años, vigencia 08/04/2026-30/04/2026, persona fisica y juridica, seguro cautivo de VW Broker.",
+                        utilPara: "Usados hasta 10 años",
                         plazos: [
                             { m: 12, c: 99.81, tna: "28,90%", g: 14.10, ltv: 50 },
                             { m: 18, c: 75.63, tna: "34,90%", g: 14.10, ltv: 50 },
@@ -516,6 +569,7 @@ const bancos = {
                         destacado: false,
                         tna: "Varios", ltv: 50, gastos: 14.10, seguro: "CAUTIVO", baseCalculo: 1000, esUVA: true, 
                         descripcion: "Usados multimarca hasta 6 años, vigencia 08/04/2026-30/04/2026, persona fisica, seguro cautivo de VW Broker",
+                        utilPara: "Usados hasta 6 años",
                         plazos: [
                             { m: 12, c: 87.48, tna: "7,50%",  g: 14.10, ltv: 50 },
                             { m: 18, c: 62.63, tna: "12,90%", g: 14.10, ltv: 50 },
@@ -533,6 +587,7 @@ const bancos = {
                         destacado: true,
                         tna: "0% / 9,9%", seguro: "CAUTIVO", gastos: 19.5, baseCalculo: 1000, 
                         descripcion: "Solo para modelo Audi A1, vigencia: 18/04/2026-30/04/2026, persona fisica y juridica, seguro cautivo de VW Broker",
+                        utilPara: "A1",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",   ltv: 20000000, g: 13.495 }, 
                             { m: 12, c: 88.82, tna: "9.9%", ltv: 30500000, g: 13.495 }
@@ -544,6 +599,7 @@ const bancos = {
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", gastos: 2, baseCalculo: 1000, 
                         descripcion: "Para los modelos de A1, vigencia: 18/04/2026-30/04/2026, para persona fisica, seguro cautivo de VW Broker",
+                        utilPara: "A1",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",   ltv: 20000000, g: 2 }, 
                         ] 
@@ -563,6 +619,7 @@ const bancos = {
                         destacado: true, 
                         tna: "71,00%", cft: "129,27%", ltv: 80, gastos: 6, seguro: "A DEFINIR", baseCalculo: 1000, 
                         descripcion: "Crédito prendario Galicia tasa fija. LTV hasta 80%.",
+                        utilPara: "Todas las marcas",
                         plazos: [{ m: 12, c: 141.53 }, { m: 24, c: 94.25 }, { m: 36, c: 80.72 }, { m: 48, c: 75.30 }, { m: 60, c: 72.84 }] 
                     },
                     { 
@@ -570,6 +627,7 @@ const bancos = {
                         destacado: true,
                         tna: "UVA + 37%", cft: "36,30%", ltv: 80, gastos: 6, valorUVA: 1706.43, baseCalculo: 1000, esUVA: true, 
                         descripcion: "Línea UVA Banco Galicia para unidades 0km.",
+                        utilPara: "Todas las marcas",
                         plazos: [{ m: 12, c: 70.52 }, { m: 24, c: 41.61 }, { m: 36, c: 32.39 }, { m: 48, c: 28.07 }, { m: 60, c: 25.69 }] 
                     }
                 ]
@@ -755,42 +813,52 @@ function mostrarPlanes(categoria, bancoKey) {
     const destacados = categoria.planes.filter(plan => plan.destacado === true);
     const otros = categoria.planes.filter(plan => plan.destacado !== true);
 
-    // 2. Contenedor para los planes que se ven siempre
+    // --- FUNCIÓN INTERNA PARA CREAR BOTONES CON FICHA RÁPIDA ---
+    const crearBotonConTooltip = (plan, contenedor) => {
+        const btn = document.createElement('button');
+        
+        // CAMBIO CLAVE: Usamos 'btn-plan-ficha' para evitar herencias de .btn-banco
+        btn.className = plan.destacado ? 'btn-plan-ficha destacado' : 'btn-plan-ficha';
+        btn.innerText = plan.nombre;
+        
+        // Extraemos datos clave del primer plazo para el tooltip
+        const p1 = plan.plazos[0];
+        const tna = p1.tna || plan.tna || "Consultar";
+        const gastos = p1.g !== undefined ? p1.g : (plan.gastos || "0");
+        const plazoMin = plan.plazos[0].m;
+        const plazoMax = plan.plazos[plan.plazos.length - 1].m;
+
+        // Construimos el texto del cuadro
+        const infoRapida = `📍 ${plan.utilPara || 'Toda la gama'}\n📈 TNA: ${tna}\n⏱ Plazos: ${plazoMin} a ${plazoMax} meses\n💰 Gastos: ${gastos}%`;
+        
+        // Seteamos el atributo que leerá el CSS
+        btn.setAttribute('data-tooltip', infoRapida);
+        
+        btn.onclick = () => abrirFormulario(plan);
+        contenedor.appendChild(btn);
+    };
+
+    // 2. Contenedor para los planes destacados
     const contenedorDestacados = document.createElement('div');
     contenedorDestacados.className = 'grid-planes-pc'; 
     cont.appendChild(contenedorDestacados);
 
-    destacados.forEach(plan => {
-        const btn = document.createElement('button');
-        btn.className = 'btn-banco destacado'; // Agregamos clase para estilo premium
-        btn.innerText = plan.nombre;
-        btn.onclick = () => abrirFormulario(plan);
-        contenedorDestacados.appendChild(btn);
-    });
+    destacados.forEach(plan => crearBotonConTooltip(plan, contenedorDestacados));
 
-    // 3. Si existen planes "no destacados", creamos el sistema de "Ver más"
+    // 3. Sistema de "Ver más" para planes no destacados
     if (otros.length > 0) {
-        // Botón para expandir
         const btnVerMas = document.createElement('button');
         btnVerMas.className = 'btn-ver-mas-opciones';
         btnVerMas.innerHTML = `🔽 VER OTRAS OPCIONES DE TASAS`;
         cont.appendChild(btnVerMas);
 
-        // Contenedor oculto para los planes extra
         const contenedorOtros = document.createElement('div');
         contenedorOtros.id = 'extra-planes-container';
         contenedorOtros.className = 'grid-planes-pc hidden-opciones';
         cont.appendChild(contenedorOtros);
 
-        otros.forEach(plan => {
-            const btn = document.createElement('button');
-            btn.className = 'btn-banco';
-            btn.innerText = plan.nombre;
-            btn.onclick = () => abrirFormulario(plan);
-            contenedorOtros.appendChild(btn);
-        });
+        otros.forEach(plan => crearBotonConTooltip(plan, contenedorOtros));
 
-        // Lógica del botón toggle
         btnVerMas.onclick = () => {
             const estaOculto = contenedorOtros.classList.contains('hidden-opciones');
             if (estaOculto) {
