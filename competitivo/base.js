@@ -6,10 +6,10 @@ export const financiaciones = [
         banco: "Santander",
         nombre: "Especial pickups UVA",
         descripcion: "Financiacion exclusiva para pickups",
-        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        tipoPersona: "Ambas", // O "Jurídica" o "Ambas"
         aplicaATodo: false,
         factorCalculo: 1000000, // Para calcular el valor de la cuota por millón financiado
-        vehiculosIds: [1, 2, 110, 111, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 88, 89, 90, 91, 92, 93, 94, 95], // Aquí van los IDs que definimos antes
+        vehiculosIds: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88], // Aquí van los IDs que definimos antes
         
         // Estructura completa por cada plazo:
         cuotasPorMillon: [
@@ -28,7 +28,7 @@ export const financiaciones = [
         banco: "Santander",
         nombre: "Linea UVA 0km",
         descripcion: "Financiación para toda la gama",
-        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        tipoPersona: "Ambas", // O "Jurídica" o "Ambas"
         factorCalculo: 1000000,
         aplicaATodo: true, // Muestra este plan para cualquier vehículo seleccionado (bandera en true)
         vehiculosIds: [], 
@@ -49,7 +49,7 @@ export const financiaciones = [
         banco: "Santander",
         nombre: "Linea UVA c/quebranto",
         descripcion: "esta financiacion aplica para toda la gama",
-        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        tipoPersona: "Ambas", // O "Jurídica" o "Ambas"
         factorCalculo: 1000000,
         aplicaATodo: true, // Muestra este plan para cualquier vehículo seleccionado (bandera en true)
         vehiculosIds: [], 
@@ -67,10 +67,10 @@ export const financiaciones = [
         banco: "Santander",
         nombre: "Linea UVA c/quebranto (pickups)",
         descripcion: "esta aplica para pickups nomas",
-        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        tipoPersona: "Ambas", // O "Jurídica" o "Ambas"
         factorCalculo: 1000000,
         aplicaATodo: false, // Solo para vehículos específicos (bandera en false)
-        vehiculosIds: [1, 2, 110, 111, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 88, 89, 90, 91, 92, 93, 94, 95], 
+        vehiculosIds: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88], 
 
         // Tabla de plazos completa y detallada
         cuotasPorMillon: [
@@ -91,7 +91,7 @@ export const financiaciones = [
         banco: "Santander",
         nombre: "Linea c/quebranto 10%",
         descripcion: "esta financiacion aplica para toda la gama",
-        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        tipoPersona: "Ambas", // O "Jurídica" o "Ambas"
         factorCalculo: 1000000,
         aplicaATodo: true, // Muestra este plan para cualquier vehículo seleccionado (bandera en true)
         vehiculosIds: [], 
@@ -112,7 +112,7 @@ export const financiaciones = [
         banco: "Santander",
         nombre: "Tasa fija 0km",
         descripcion: "esta financiacion aplica para toda la gama",
-        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        tipoPersona: "Ambas", // O "Jurídica" o "Ambas"
         factorCalculo: 1000000,
         aplicaATodo: true, // Muestra este plan para cualquier vehículo seleccionado (bandera en true)
         vehiculosIds: [], 
@@ -133,10 +133,10 @@ export const financiaciones = [
         banco: "Santander",
         nombre: "Tasa fija Green",
         descripcion: "financiacion exclusiva para vehiculos 100% electricos",
-        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        tipoPersona: "Ambas", // O "Jurídica" o "Ambas"
         factorCalculo: 1000000,
         aplicaATodo: false, // Solo para vehículos eléctricos (bandera en false)
-        vehiculosIds: [33, 35, 40, 103, 104, 105, 106, 107, 108, 109], 
+        vehiculosIds: [35, 37, 42, 130, 131, 132, 133], 
         
         // Tabla de plazos completa y detallada
         cuotasPorMillon: [
@@ -154,10 +154,10 @@ export const financiaciones = [
         banco: "Santander",
         nombre: "UVA Electricos",
         descripcion: "financiacion exclusiva para vehiculos 100% electricos",
-        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        tipoPersona: "Ambas", // O "Jurídica" o "Ambas"
         factorCalculo: 1000000,
         aplicaATodo: false, // Solo para vehículos eléctricos (bandera en false)
-        vehiculosIds: [33, 35, 40, 103, 104, 105, 106, 107, 108, 109], 
+        vehiculosIds: [35, 37, 42, 130, 131, 132, 133], 
         
         // Tabla de plazos completa y detallada
         cuotasPorMillon: [
@@ -175,10 +175,10 @@ export const financiaciones = [
         banco: "Santander",
         nombre: "Linea UVA ByD Electricos",
         descripcion: "financiacion exclusiva para vehiculos de ByD",
-        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        tipoPersona: "Ambas", // O "Jurídica" o "Ambas"
         factorCalculo: 1000000,
         aplicaATodo: false, // Solo para vehículos BYD (bandera en false)
-        vehiculosIds: [103, 104, 105, 106, 107, 108, 109], 
+        vehiculosIds: [130, 131, 132, 133, 134, 135, 136, 137], 
         
         // Tabla de plazos detallada con las dos opciones de tasa
         cuotasPorMillon: [
@@ -199,10 +199,10 @@ export const financiaciones = [
         banco: "Santander",
         nombre: "UVA ByD Green electricos",
         descripcion: "financiacion exclusiva para byd",
-        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        tipoPersona: "Ambas", // O "Jurídica" o "Ambas"
         factorCalculo: 1000000,
         aplicaATodo: false, // Solo para vehículos BYD (bandera en false)
-        vehiculosIds: [103, 104, 105, 106, 107, 108, 109], 
+        vehiculosIds: [130, 131, 132, 133, 134, 135, 136, 137], 
         
         // Tabla de plazos completa y detallada
         cuotasPorMillon: [
@@ -220,10 +220,10 @@ export const financiaciones = [
         banco: "Santander",
         nombre: "Linea tradicional ByD",
         descripcion: "financiacion exclusiva para ByD",
-        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        tipoPersona: "Ambas", // O "Jurídica" o "Ambas"
         factorCalculo: 1000000,
         aplicaATodo: false, // Solo para vehículos BYD (bandera en false)
-        vehiculosIds: [103, 104, 105, 106, 107, 108, 109], 
+        vehiculosIds: [130, 131, 132, 133, 134, 135, 136, 137], 
         
         // Tabla de plazos completa y detallada
         cuotasPorMillon: [
@@ -239,12 +239,12 @@ export const financiaciones = [
     {
         idPlan: 12,
         banco: "Santander",
-        nombre: "Seltos",
+        nombre: "Seltos UVA",
         descripcion: "financiacion exclusiva para KIA Seltos",
-        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        tipoPersona: "Ambas", // O "Jurídica" o "Ambas"
         factorCalculo: 1000000,
         aplicaATodo: false, 
-        vehiculosIds: [98], 
+        vehiculosIds: [124], 
         
         // Tabla de plazos en formato compacto (un objeto por línea)
         cuotasPorMillon: [
@@ -256,29 +256,12 @@ export const financiaciones = [
     {
         idPlan: 13,
         banco: "Santander",
-        nombre: "k3",
-        descripcion: "financiacion exclusiva para KIA K3",
-        tipoPersona: "Física", // O "Jurídica" o "Ambas"
-        factorCalculo: 1000000,
-        aplicaATodo: false, 
-        vehiculosIds: [96, 97], 
-        
-        // Tabla de plazos en formato compacto
-        cuotasPorMillon: [
-            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$20.000.000", gastos: "12%", seguro: "Cautivo" },
-            { plazo: "18 meses", valor: "$55,55", tna: "0%", cft: "S/D", ltv: "$14.000.000", gastos: "16,50%", seguro: "Cautivo" }
-        ]
-    },
-
-    {
-        idPlan: 14,
-        banco: "Santander",
-        nombre: "k2500",
+        nombre: "k2500 UVA",
         descripcion: "financiacion exclusiva para KIA K2500",
-        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        tipoPersona: "Ambas", // O "Jurídica" o "Ambas"
         factorCalculo: 1000000,
         aplicaATodo: false, 
-        vehiculosIds: [102], 
+        vehiculosIds: [129], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -288,14 +271,50 @@ export const financiaciones = [
     },
 
     {
+        idPlan: 14,
+        banco: "Santander",
+        nombre: "Seltos Tasa Fija",
+        descripcion: "financiacion exclusiva para Seltos",
+        tipoPersona: "Ambas", // O "Jurídica" o "Ambas"
+        factorCalculo: 1000000,
+        aplicaATodo: false, 
+        vehiculosIds: [124], 
+        
+        // Tabla de plazos en formato compacto
+        cuotasPorMillon: [
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$20.000.000", gastos: "12%", seguro: "Cautivo" },
+            { plazo: "18 meses", valor: "$55,55", tna: "0%", cft: "S/D", ltv: "$14.000.000", gastos: "16,50%", seguro: "Cautivo" }
+        ]
+    },
+
+    {
         idPlan: 15,
+        banco: "Santander",
+        nombre: "k2500 Tasa fija",
+        descripcion: "financiacion exclusiva para K2500",
+        tipoPersona: "Ambas", // O "Jurídica" o "Ambas"
+        factorCalculo: 1000000,
+        aplicaATodo: false, 
+        vehiculosIds: [129], 
+        
+        // Tabla de plazos en formato compacto
+        cuotasPorMillon: [
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$20.000.000", gastos: "12%", seguro: "Cautivo" },
+            { plazo: "18 meses", valor: "$55,55", tna: "0%", cft: "S/D", ltv: "$14.000.000", gastos: "16,50%", seguro: "Cautivo" }
+        ]
+    },
+
+    
+
+    {
+        idPlan: 16,
         banco: "ICBC",
         nombre: "Especial Ranger XL (Mayorista)",
         descripcion: "Financiacion exclusiva para Ranger XL DC y chasis",
         tipoPersona: "Jurídica", // O "Física" o "Ambas"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [1, 2, 110, 111, 4], 
+        vehiculosIds: [1, 2, 3, 4, 5, 6, 7], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -304,14 +323,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 16,
+        idPlan: 17,
         banco: "ICBC",
         nombre: "Especial Ranger C/S (Mayorista)",
         descripcion: "Financiacion exclusiva para Ranger XL CS y chasis",
         tipoPersona: "Jurídica", // O "Física" o "Ambas"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [3, 4, 5], 
+        vehiculosIds: [1, 2, 3], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -321,14 +340,14 @@ export const financiaciones = [
 
 
     {
-        idPlan: 17,
+        idPlan: 18,
         banco: "ICBC",
         nombre: "Especial Ranger XL y XLS (mayorista)",
         descripcion: "Financiacion exclusiva para Ranger XL y XLS",
         tipoPersona: "Jurídica", // O "Física" o "Ambas"
         aplicaATodo: false, 
         factorCalculo: 1000,
-        vehiculosIds: [1, 2, 110, 111,7, 8], 
+        vehiculosIds: [1, 2, 3, 4, 5, 6, 7, 9, 10], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -347,14 +366,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 18,
+        idPlan: 19,
         banco: "ICBC",
         nombre: "Transit lib. y caut. (mayorista)",
         descripcion: "Financiacion exclusiva para Transit menos E-Transit",
         tipoPersona: "Jurídica", // O "Física" o "Ambas"
         aplicaATodo: false,
         factorCalculo: 1000, 
-        vehiculosIds: [29, 30, 31, 32, 34, 36, 37], 
+        vehiculosIds: [31, 32, 33, 34, 36, 38, 39], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -373,14 +392,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 19,
+        idPlan: 20,
         banco: "ICBC",
         nombre: "General (liberado, cautivo) (mayorista)",
         descripcion: "Financiacion exclusiva para toda la gama Ford",
         tipoPersona: "Jurídica", // O "Física" o "Ambas"
         aplicaATodo: false,
         factorCalculo: 1000, 
-        vehiculosIds: [1, 2, 110, 111, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 20, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40] , 
+        vehiculosIds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42] , 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -399,14 +418,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 20,
+        idPlan: 21,
         banco: "ICBC",
         nombre: "Especial Mi Pyme Ranger (mayorista)",
         descripcion: "Financiacion exclusiva para Ranger (excepto Raptor)",
         tipoPersona: "Jurídica", // O "Física" o "Ambas"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [1, 2, 110, 111, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 
+        vehiculosIds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -417,14 +436,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 21,
+        idPlan: 22,
         banco: "ICBC",
         nombre: "Especial mi Pyme transit (mayorista)",
         descripcion: "Financiacion exclusiva para Transit (excepto e-transit)",
         tipoPersona: "Jurídica", // O "Física" o "Ambas"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [29, 30, 31, 32, 34, 36, 37], 
+        vehiculosIds: [31, 32, 33, 34, 36, 38, 39], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -435,14 +454,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 22,
+        idPlan: 23,
         banco: "ICBC",
         nombre: "tasa especial transit UVA (mayorista)",
         descripcion: "Financiacion exclusiva para Transit (excepto e-transit)",
-        tipoPersona: "Jurídica", // O "Física" o "Ambas"
+        tipoPersona: "Ambas", // O "Física" o "Ambas"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [29, 30, 31, 32, 34, 36, 37], 
+        vehiculosIds: [31, 32, 33, 34, 36, 38, 39], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -452,14 +471,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 23,
+        idPlan: 24,
         banco: "ICBC",
         nombre: "Especial Ranger UVA (lib) (mayorista)",
         descripcion: "Financiacion exclusiva para Ranger",
         tipoPersona: "Jurídica", // O "Física" o "Ambas"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [1, 2, 110, 111, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], 
+        vehiculosIds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -472,14 +491,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 24,
+        idPlan: 25,
         banco: "ICBC",
         nombre: "Everest (minorista)",
         descripcion: "Financiacion exclusiva para Everest",
         tipoPersona: "Física", // O "Jurídica" o "Ambas"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [28], 
+        vehiculosIds: [30], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -489,14 +508,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 25,
+        idPlan: 26,
         banco: "ICBC",
         nombre: "maverick (minorista)",
         descripcion: "Financiacion exclusiva para Maverick",
         tipoPersona: "Física", // O "Jurídica" o "Ambas"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [15, 16, 17], 
+        vehiculosIds: [17, 18, 19], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -505,14 +524,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 26,
+        idPlan: 27,
         banco: "ICBC",
         nombre: "Territory Titanium (minorista)",
         descripcion: "Financiacion exclusiva para Territory Titanium",
         tipoPersona: "Física", // O "Jurídica" o "Ambas"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [23], 
+        vehiculosIds: [25], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -521,14 +540,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 27,
+        idPlan: 28,
         banco: "ICBC",
         nombre: "Territory (minorista)",
         descripcion: "Financiacion exclusiva para Territory",
         tipoPersona: "Física", // O "Jurídica" o "Ambas"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [21, 22, 23], 
+        vehiculosIds: [23, 24, 25], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -538,14 +557,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 28,
+        idPlan: 29,
         banco: "ICBC",
         nombre: "ranger XL (minorista)",
         descripcion: "Financiacion exclusiva para Ranger XL",
         tipoPersona: "Física", // O "Jurídica" o "Ambas"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [1, 2, 110, 111, 5], 
+        vehiculosIds: [1, 2, 3, 4, 5, 6, 7], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -554,14 +573,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 29,
+        idPlan: 30,
         banco: "ICBC",
         nombre: "ranger cs y chasis (minorista)",
         descripcion: "Financiacion exclusiva para Ranger XL CS y chasis",
         tipoPersona: "Física", // O "Jurídica" o "Ambas"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [3, 4, 5], 
+        vehiculosIds: [1, 2, 3], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -570,14 +589,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 30,
+        idPlan: 31,
         banco: "ICBC",
         nombre: "tasa especial uva ranger (minorista)",
         descripcion: "Financiacion exclusiva para Ranger, excepto Raptor",
         tipoPersona: "Física", // O "Jurídica" o "Ambas"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [1, 2, 110, 111, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 
+        vehiculosIds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -587,14 +606,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 31,
+        idPlan: 32,
         banco: "ICBC",
         nombre: "tasa especial ranger (minorista)",
         descripcion: "Financiacion exclusiva para Ranger, excepto Raptor",
         tipoPersona: "Física", // O "Jurídica" o "Ambas"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [1, 2, 110, 111, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 
+        vehiculosIds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 
         
         // Tabla de plazos compacta - Ordenada por combinación de Tasa/Gastos
         cuotasPorMillon: [
@@ -610,14 +629,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 32,
+        idPlan: 33,
         banco: "ICBC",
         nombre: "nueva tasa transit UVA (minorista)",
         descripcion: "Financiacion exclusiva para Transit (excepto e-transit)",
         tipoPersona: "Física", // O "Jurídica" o "Ambas"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [29, 30, 31, 32, 34, 36, 37], 
+        vehiculosIds: [31, 32, 33, 34, 36, 38, 39], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -627,14 +646,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 33,
+        idPlan: 34,
         banco: "ICBC",
         nombre: "tasa especial transit (minorista)",
         descripcion: "Financiacion exclusiva para Transit (excepto e-transit)",
         tipoPersona: "Física", // O "Jurídica" o "Ambas"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [29, 30, 31, 32, 34, 36, 37], 
+        vehiculosIds: [31, 32, 33, 34, 36, 38, 39], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -646,7 +665,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 34,
+        idPlan: 35,
         banco: "Galicia",
         nombre: "prendario tasa fija",
         descripcion: "Financiacion exclusiva para toda la gama",
@@ -666,14 +685,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 35,
+        idPlan: 36,
         banco: "Volkswagen Financiera",
         nombre: "Audi A1",
         descripcion: "Financiacion exclusiva para Audi A1",
         tipoPersona: "Ambas", // O "Jurídica" o "Física"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [41], 
+        vehiculosIds: [43], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -683,14 +702,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 36,
+        idPlan: 37,
         banco: "Volkswagen Financiera",
         nombre: "UVA Audi",
         descripcion: "Financiacion exclusiva para audi A1",
         tipoPersona: "Ambas", // O "Jurídica" o "Física"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [41],
+        vehiculosIds: [43],
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -699,14 +718,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 37, //cambiar id luego
+        idPlan: 38, //cambiar id luego
         banco: "Volkswagen Financiera",
         nombre: "Amarok financia mas",
         descripcion: "Financiacion exclusiva para amarok",
         tipoPersona: "Ambas", // O "Jurídica" o "Física"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [88, 89, 90, 91, 92, 93, 94, 95], 
+        vehiculosIds: [74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -717,14 +736,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 38, // cambiar id luego
+        idPlan: 39, // cambiar id luego
         banco: "Volkswagen Financiera",
         nombre: "Amarok sin quebranto",
         descripcion: "Financiacion exclusiva para amarok",
         tipoPersona: "Ambas", // O "Jurídica" o "Física"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [88, 89, 90, 91, 92, 93, 94, 95], 
+        vehiculosIds: [74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -733,14 +752,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 39, // cambiar id luego
+        idPlan: 40, // cambiar id luego
         banco: "Volkswagen Financiera",
         nombre: "UVA Amarok (24)",
         descripcion: "Financiacion exclusiva para amarok",
-        tipoPersona: "Ambas", // O "Jurídica" o "Física"
+        tipoPersona: "Física", // O "Jurídica" o "Física"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [88, 89, 90, 91, 92, 93, 94, 95], 
+        vehiculosIds: [74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -750,14 +769,14 @@ export const financiaciones = [
 
     
     {
-        idPlan: 40, // cambiar id luego
+        idPlan: 41, // cambiar id luego
         banco: "Volkswagen Financiera",
         nombre: "Autos financia mas",
         descripcion: "Tera Highline y Outfit, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos (todas las versiones) Vigencia: desde el 17/04/2026 hasta el 30/04/2026, Disponible: Persona física, jurídica y venta directa ",
         tipoPersona: "Ambas", // O "Jurídica" o "Física"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [63, 64, 67, 68, 69, 78, 79, 74], 
+        vehiculosIds: [95, 96, 99, 100, 103, 104, 105, 106, 107, 108], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -768,14 +787,14 @@ export const financiaciones = [
     },
     
     {
-        idPlan: 41, // cambiar id luego
+        idPlan: 42, // cambiar id luego
         banco: "Volkswagen Financiera",
         nombre: "UVA Autos",
         descripcion: "Tera Highline y Outfit, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos (todas las versiones) Vigencia: desde el 17/04/2026 hasta el 30/04/2026, Disponible: Persona física, jurídica y venta directa ",
-        tipoPersona: "Ambas", // O "Jurídica" o "Física"
+        tipoPersona: "Física", // O "Jurídica" o "Física"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [63, 64, 67, 68, 69, 78, 79, 74], 
+        vehiculosIds: [95, 96, 99, 100, 103, 104, 105, 106, 107, 108], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -784,14 +803,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 42,
+        idPlan: 43,
         banco: "Volkswagen Financiera",
         nombre: "especial amarok",
         descripcion: "Financiacion exclusiva para amarok nomas",
         tipoPersona: "Ambas", // O "Jurídica" o "Física"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [88, 89, 90, 91, 92, 93, 94, 95], 
+        vehiculosIds: [74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -802,14 +821,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 43,
+        idPlan: 44,
         banco: "Volkswagen Financiera",
         nombre: "especial autos",
         descripcion: "Financiacion exclusiva para volkswagen, excepto amarok",
         tipoPersona: "Ambas", // O "Jurídica" o "Física"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87], 
+        vehiculosIds: [89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119], 
 
         
         // Tabla de plazos en formato compacto
@@ -826,151 +845,190 @@ export const vehiculos = [
 
 /******************************** Ford ******************************************/
 
-    { id: 1, marca: "Ford", modelo: "Ranger", version: "XL 4x2 MT", tags: [] },
-    { id: 2, marca: "Ford", modelo: "Ranger", version: "XL 4x4 MT", tags: [] },
-    { id: 110, marca: "Ford", modelo: "Ranger", version: "XL 4x2 AT", tags: [] },
-    { id: 111, marca: "Ford", modelo: "Ranger", version: "XL 4x4 AT", tags: [] },
-    { id: 3, marca: "Ford", modelo: "Ranger", version: "XL 4x2 C/S", tags: [] },
-    { id: 4, marca: "Ford", modelo: "Ranger", version: "XL 4x4 C/S", tags: [] },
-    { id: 5, marca: "Ford", modelo: "Ranger", version: "XL 4x4 Chasis", tags: [] },
-    { id: 6, marca: "Ford", modelo: "Ranger", version: "Black 4x4", tags: [] },
-    { id: 7, marca: "Ford", modelo: "Ranger", version: "XLS 4x2", tags: [] },
-    { id: 8, marca: "Ford", modelo: "Ranger", version: "XLS 4x4 3.0 V6", tags: [] },
-    { id: 9, marca: "Ford", modelo: "Ranger", version: "XLT 4x2", tags: [] },
-    { id: 10, marca: "Ford", modelo: "Ranger", version: "XLT 4x4", tags: [] },
-    { id: 11, marca: "Ford", modelo: "Ranger", version: "XLT 4x4 3.0 V6", tags: [] },
-    { id: 12, marca: "Ford", modelo: "Ranger", version: "Limited 2.0", tags: [] },
-    { id: 13, marca: "Ford", modelo: "Ranger", version: "Limited + 3.0", tags: [] },
-    { id: 14, marca: "Ford", modelo: "Ranger", version: "Raptor", tags: [] },
+    { id: 1, marca: "Ford", modelo: "Ranger", version: "XL 4x4 Chasis", tags: [] },
+    { id: 2, marca: "Ford", modelo: "Ranger", version: "XL 4x2 C/S", tags: [] },
+    { id: 3, marca: "Ford", modelo: "Ranger", version: "XL 4x4 C/S", tags: [] },
+    { id: 4, marca: "Ford", modelo: "Ranger", version: "XL 4x2 MT", tags: [] },
+    { id: 5, marca: "Ford", modelo: "Ranger", version: "XL 4x4 MT", tags: [] },
+    { id: 6, marca: "Ford", modelo: "Ranger", version: "XL 4x2 AT", tags: [] },
+    { id: 7, marca: "Ford", modelo: "Ranger", version: "XL 4x4 AT", tags: [] },
+    { id: 8, marca: "Ford", modelo: "Ranger", version: "Black 4x4", tags: [] },
+    { id: 9, marca: "Ford", modelo: "Ranger", version: "XLS 4x2", tags: [] },
+    { id: 10, marca: "Ford", modelo: "Ranger", version: "XLS 4x4 3.0 V6", tags: [] },
+    { id: 11, marca: "Ford", modelo: "Ranger", version: "XLT 4x2", tags: [] },
+    { id: 12, marca: "Ford", modelo: "Ranger", version: "XLT 4x4", tags: [] },
+    { id: 13, marca: "Ford", modelo: "Ranger", version: "XLT 4x4 3.0 V6", tags: [] },
+    { id: 14, marca: "Ford", modelo: "Ranger", version: "Limited 2.0", tags: [] },
+    { id: 15, marca: "Ford", modelo: "Ranger", version: "Limited + 3.0", tags: [] },
+    { id: 16, marca: "Ford", modelo: "Ranger", version: "Raptor", tags: [] },
 
-    { id: 15, marca: "Ford", modelo: "Maverick", version: "XLT", tags: [] },
-    { id: 16, marca: "Ford", modelo: "Maverick", version: "Lariat Hibrida", tags: [] },
-    { id: 17, marca: "Ford", modelo: "Maverick", version: "Tremor", tags: [] },
+    { id: 17, marca: "Ford", modelo: "Maverick", version: "XLT", tags: [] },
+    { id: 18, marca: "Ford", modelo: "Maverick", version: "Lariat Hibrida", tags: [] },
+    { id: 19, marca: "Ford", modelo: "Maverick", version: "Tremor", tags: [] },
 
-    { id: 18, marca: "Ford", modelo: "F-150", version: "Lariat", tags: [] },
-    { id: 19, marca: "Ford", modelo: "F-150", version: "Tremor", tags: [] },
-    { id: 20, marca: "Ford", modelo: "F-150", version: "Raptor", tags: [] },
+    { id: 20, marca: "Ford", modelo: "F-150", version: "Lariat", tags: [] },
+    { id: 21, marca: "Ford", modelo: "F-150", version: "Tremor", tags: [] },
+    { id: 22, marca: "Ford", modelo: "F-150", version: "Raptor", tags: [] },
 
-    { id: 21, marca: "Ford", modelo: "Territory", version: "SEL", tags: [] },
-    { id: 22, marca: "Ford", modelo: "Territory", version: "Trend Hibrida", tags: [] },
-    { id: 23, marca: "Ford", modelo: "Territory", version: "Titanium", tags: [] },
+    { id: 23, marca: "Ford", modelo: "Territory", version: "SEL", tags: [] },
+    { id: 24, marca: "Ford", modelo: "Territory", version: "Trend Hibrida", tags: [] },
+    { id: 25, marca: "Ford", modelo: "Territory", version: "Titanium", tags: [] },
 
-    { id: 24, marca: "Ford", modelo: "Bronco Sport", version: "BigBend", tags: [] },
-    { id: 25, marca: "Ford", modelo: "Bronco Sport", version: "Badlands", tags: [] },
+    { id: 26, marca: "Ford", modelo: "Bronco Sport", version: "BigBend", tags: [] },
+    { id: 27, marca: "Ford", modelo: "Bronco Sport", version: "Badlands", tags: [] },
 
-    { id: 26, marca: "Ford", modelo: "Kuga", version: "Platinum", tags: [] },
-    { id: 27, marca: "Ford", modelo: "Bronco ", version: "Badlands", tags: [] },
-    { id: 28, marca: "Ford", modelo: "Everest ", version: "Titanium", tags: [] },
+    { id: 28, marca: "Ford", modelo: "Kuga", version: "Platinum", tags: [] },
+    { id: 29, marca: "Ford", modelo: "Bronco ", version: "Badlands", tags: [] },
+    { id: 30, marca: "Ford", modelo: "Everest ", version: "Titanium", tags: [] },
 
-    { id: 29, marca: "Ford", modelo: "Transit Van", version: "Mediana MT", tags: [] },
-    { id: 30, marca: "Ford", modelo: "Transit Van", version: "Mediana TE MT", tags: [] },
-    { id: 31, marca: "Ford", modelo: "Transit Van", version: "Larga TE MT", tags: [] },
-    { id: 32, marca: "Ford", modelo: "Transit Van", version: "Larga AT", tags: [] },
-    { id: 33, marca: "Ford", modelo: "Transit Van", version: "E-Transit", tags: [] },
-    { id: 34, marca: "Ford", modelo: "Transit Chasis", version: "Chasis", tags: [] },
-    { id: 35, marca: "Ford", modelo: "Transit Chasis", version: "Chasis-E", tags: [] },
-    { id: 36, marca: "Ford", modelo: "Transit Minibus", version: "MT", tags: [] },
-    { id: 37, marca: "Ford", modelo: "Transit Minibus", version: "AT", tags: [] },
+    { id: 31, marca: "Ford", modelo: "Transit Van", version: "Mediana MT", tags: [] },
+    { id: 32, marca: "Ford", modelo: "Transit Van", version: "Mediana TE MT", tags: [] },
+    { id: 33, marca: "Ford", modelo: "Transit Van", version: "Larga TE MT", tags: [] },
+    { id: 34, marca: "Ford", modelo: "Transit Van", version: "Larga AT", tags: [] },
+    { id: 35, marca: "Ford", modelo: "Transit Van", version: "E-Transit", tags: [] },
+    { id: 36, marca: "Ford", modelo: "Transit Chasis", version: "Chasis", tags: [] },
+    { id: 37, marca: "Ford", modelo: "Transit Chasis", version: "Chasis-E", tags: [] },
+    { id: 38, marca: "Ford", modelo: "Transit Minibus", version: "MT", tags: [] },
+    { id: 39, marca: "Ford", modelo: "Transit Minibus", version: "AT", tags: [] },
 
-    { id: 38, marca: "Ford", modelo: "Mustang", version: "Dark Horse", tags: [] },
-    { id: 39, marca: "Ford", modelo: "Mustang", version: "GT Performance", tags: [] },
-    { id: 40, marca: "Ford", modelo: "Mustang", version: "Mach-E", tags: [] },
+    { id: 40, marca: "Ford", modelo: "Mustang", version: "Dark Horse", tags: [] },
+    { id: 41, marca: "Ford", modelo: "Mustang", version: "GT Performance", tags: [] },
+    { id: 42, marca: "Ford", modelo: "Mustang", version: "Mach-E", tags: [] },
 
 /******************************** AUDI ******************************************/
 
-    { id: 41, marca: "Audi", modelo: "A1", version: "Sportback", tags: [] },
+    { id: 43, marca: "Audi", modelo: "A1", version: "Sportback 30 TFSI", tags: [] },
 
-    { id: 42, marca: "Audi", modelo: "A3", version: "Sportback", tags: [] },
-    { id: 43, marca: "Audi", modelo: "A3", version: "Sedan", tags: [] },
-    { id: 44, marca: "Audi", modelo: "A3", version: "S3 Sportback", tags: [] },
-    { id: 45, marca: "Audi", modelo: "A3", version: "S3 Sedan", tags: [] },
-    { id: 46, marca: "Audi", modelo: "A3", version: "RS 3 Sportback", tags: [] },
-    { id: 47, marca: "Audi", modelo: "A3", version: "RS 3 Sedan", tags: [] },
+    { id: 44, marca: "Audi", modelo: "A3", version: "Sportback 1.4 TFSI", tags: [] },
+    { id: 45, marca: "Audi", modelo: "A3", version: "Sportback 1.4 TFSI Advanced", tags: [] },
+    { id: 46, marca: "Audi", modelo: "A3", version: "Sportback 2.0 TFSI S-Line", tags: [] },
+    { id: 47, marca: "Audi", modelo: "A3", version: "Sedan 1.4 TFSI", tags: [] },
+    { id: 48, marca: "Audi", modelo: "A3", version: "Sedan 1.4 TFSI Advanced", tags: [] },
+    { id: 49, marca: "Audi", modelo: "A3", version: "Sedan 2.0 TFSI S-Line", tags: [] },
 
-    { id: 48, marca: "Audi", modelo: "A5", version: "Sedan", tags: [] },
+    { id: 50, marca: "Audi", modelo: "S3", version: "Sportback", tags: [] },
+    { id: 51, marca: "Audi", modelo: "S3", version: "Sedan", tags: [] },
+    { id: 52, marca: "Audi", modelo: "RS3", version: "Sportback", tags: [] },
+    { id: 53, marca: "Audi", modelo: "RS3", version: "Sedan", tags: [] },
 
-    { id: 49, marca: "Audi", modelo: "A6", version: "Sedan", tags: [] },
-    { id: 50, marca: "Audi", modelo: "A6", version: "AllRoad Quattro", tags: [] },
+    { id: 54, marca: "Audi", modelo: "A5", version: "Advanced", tags: [] },
+    { id: 55, marca: "Audi", modelo: "A5", version: "Serie", tags: [] },
+    { id: 56, marca: "Audi", modelo: "A5", version: "S-Line quattro", tags: [] },
 
-    { id: 51, marca: "Audi", modelo: "Q2", version: "Q2", tags: [] },
+    { id: 57, marca: "Audi", modelo: "S5", version: "Avant", tags: [] },
 
-    { id: 52, marca: "Audi", modelo: "Q3", version: "Q3", tags: [] },
-    { id: 53, marca: "Audi", modelo: "Q3", version: "Sportback", tags: [] },
-    { id: 54, marca: "Audi", modelo: "Q3", version: "RS Sportback", tags: [] },
+    { id: 58, marca: "Audi", modelo: "A6", version: "S line quattro", tags: [] },
 
-    { id: 55, marca: "Audi", modelo: "Q5", version: "Sportback", tags: [] },
-    { id: 56, marca: "Audi", modelo: "Q5", version: "Q5", tags: [] },
-    { id: 57, marca: "Audi", modelo: "Q5", version: "SQ5 Sportback", tags: [] },
+    { id: 59, marca: "Audi", modelo: "Q2", version: "35 TFSI Advanced", tags: [] },
+    { id: 60, marca: "Audi", modelo: "Q2", version: "40 TFSI quattro", tags: [] },
 
-    { id: 58, marca: "Audi", modelo: "Q7", version: "Q7", tags: [] },
+    { id: 61, marca: "Audi", modelo: "Q3", version: "Advanced", tags: [] },
+    { id: 62, marca: "Audi", modelo: "Q3", version: "Advanced Plus (WPZ)", tags: [] },
+    { id: 63, marca: "Audi", modelo: "Q3", version: "Sportback Advanced", tags: [] },
+    { id: 64, marca: "Audi", modelo: "Q3", version: "Sportback Advanced Plus", tags: [] },
 
-    { id: 59, marca: "Audi", modelo: "Q8", version: "Q8", tags: [] },
-    { id: 60, marca: "Audi", modelo: "Q8", version: "RS Performance", tags: [] },
+    { id: 65, marca: "Audi", modelo: "Q5", version: "Advanced", tags: [] },
+    { id: 66, marca: "Audi", modelo: "Q5", version: "Advanced Plus", tags: [] },
+    { id: 67, marca: "Audi", modelo: "Q5", version: "Sportback Advanced", tags: [] },
+    { id: 68, marca: "Audi", modelo: "Q5", version: "Sportback S-Line", tags: [] },
+    { id: 69, marca: "Audi", modelo: "SQ5", version: "Sportback", tags: [] },
+
+    { id: 70, marca: "Audi", modelo: "Q6", version: "50 E-Tron Performance", tags: [] },
+
+    { id: 71, marca: "Audi", modelo: "Q7", version: "55 TFSI S-Line quattro", tags: [] },
+
+    { id: 72, marca: "Audi", modelo: "Q8", version: "55 TFSI quattro", tags: [] },
+    { id: 73, marca: "Audi", modelo: "RS Q8", version: "Performance", tags: [] },
+    
 
 /******************************** Volkswagen ******************************************/
+    { id: 74, marca: "Volkswagen", modelo: "Amarok", version: "Trendline TDI MT 4x2 G2", tags: [] },
+    { id: 75, marca: "Volkswagen", modelo: "Amarok", version: "Trendline TDI MT 4x4 G2", tags: [] },
+    { id: 76, marca: "Volkswagen", modelo: "Amarok", version: "Comfortline TDI MT 4x2 G2", tags: [] },
+    { id: 77, marca: "Volkswagen", modelo: "Amarok", version: "Comfortline TDI MT 4x2 SE G2", tags: [] },
+    { id: 78, marca: "Volkswagen", modelo: "Amarok", version: "Comfortline TDI AT 4x2 G2", tags: [] },
+    { id: 79, marca: "Volkswagen", modelo: "Amarok", version: "Comfortline TDI AT 4x2 SE G2", tags: [] },
+    { id: 80, marca: "Volkswagen", modelo: "Amarok", version: "Comfortline V6 AT 4x4 G2", tags: [] },
+    { id: 81, marca: "Volkswagen", modelo: "Amarok", version: "Highline TDI MT 4x2 G2", tags: [] },
+    { id: 82, marca: "Volkswagen", modelo: "Amarok", version: "Highline TDI AT 4x2 G2", tags: [] },
+    { id: 83, marca: "Volkswagen", modelo: "Amarok", version: "Highline TDI AT 4x2 SE G2", tags: [] },
+    { id: 84, marca: "Volkswagen", modelo: "Amarok", version: "Highline V6 AT 4x4 G2", tags: [] },
+    { id: 85, marca: "Volkswagen", modelo: "Amarok", version: "Extreme V6 AT 4x4 G2", tags: [] },
+    { id: 86, marca: "Volkswagen", modelo: "Amarok", version: "Hero V6 AT 4x4 G2", tags: [] },
+    { id: 87, marca: "Volkswagen", modelo: "Amarok", version: "Black Style V6 AT 4x4 G2", tags: [] },
+    { id: 88, marca: "Volkswagen", modelo: "Amarok", version: "Black Style V6 AT 4x4 SE G2", tags: [] },
 
-    { id: 61, marca: "Volkswagen", modelo: "Tera", version: "Trend", tags: [] },
-    { id: 62, marca: "Volkswagen", modelo: "Tera", version: "Comfort", tags: [] },
-    { id: 63, marca: "Volkswagen", modelo: "Tera", version: "High", tags: [] },
-    { id: 64, marca: "Volkswagen", modelo: "Tera", version: "Outfit", tags: [] },
 
-    { id: 65, marca: "Volkswagen", modelo: "Nivus", version: "170  TSI", tags: [] },
-    { id: 66, marca: "Volkswagen", modelo: "Nivus", version: "Trendile 200 TSI", tags: [] },
-    { id: 67, marca: "Volkswagen", modelo: "Nivus", version: "Comfortline 200 TSI", tags: [] },
-    { id: 68, marca: "Volkswagen", modelo: "Nivus", version: "Highline 200 TSI", tags: [] },
-    { id: 69, marca: "Volkswagen", modelo: "Nivus", version: "Highline Outfit 200 TSI", tags: [] },
+    { id: 89, marca: "Volkswagen", modelo: "Nivus", version: "170  TSI", tags: [] },
+    { id: 90, marca: "Volkswagen", modelo: "Nivus", version: "Trendile 200 TSI", tags: [] },
+    { id: 91, marca: "Volkswagen", modelo: "Nivus", version: "Comfortline 200 TSI", tags: [] },
+    { id: 92, marca: "Volkswagen", modelo: "Nivus", version: "Highline 200 TSI", tags: [] },
+    { id: 93, marca: "Volkswagen", modelo: "Nivus", version: "Highline Outfit 200 TSI", tags: [] },
 
-    { id: 70, marca: "Volkswagen", modelo: "T-Cross", version: "Trendline 170 TSI", tags: [] },
-    { id: 71, marca: "Volkswagen", modelo: "T-Cross", version: "Trendline 200 TSI", tags: [] },
-    { id: 72, marca: "Volkswagen", modelo: "T-Cross", version: "Comfortline 200 TSI", tags: [] },
-    { id: 73, marca: "Volkswagen", modelo: "T-Cross", version: "Extreme 200 TSI", tags: [] },
+    { id: 94, marca: "Volkswagen", modelo: "Polo", version: "Track", tags: [] },
+    { id: 95, marca: "Volkswagen", modelo: "Polo", version: "Comfortline", tags: [] },
+    { id: 96, marca: "Volkswagen", modelo: "Polo", version: "Highline", tags: [] },
 
-    { id: 74, marca: "Volkswagen", modelo: "Taos", version: "Comfortline 250 TSI", tags: [] },
 
-    { id: 75, marca: "Volkswagen", modelo: "Tiguan", version: "Life", tags: [] },
-    { id: 76, marca: "Volkswagen", modelo: "Tiguan", version: "R-Line", tags: [] },
+    { id: 97, marca: "Volkswagen", modelo: "Tera", version: "Trend", tags: [] },
+    { id: 98, marca: "Volkswagen", modelo: "Tera", version: "Comfort", tags: [] },
+    { id: 99, marca: "Volkswagen", modelo: "Tera", version: "High", tags: [] },
+    { id: 100, marca: "Volkswagen", modelo: "Tera", version: "Outfit", tags: [] },
 
-    { id: 77, marca: "Volkswagen", modelo: "Polo", version: "Track", tags: [] },
-    { id: 78, marca: "Volkswagen", modelo: "Polo", version: "Comfortline", tags: [] },
-    { id: 79, marca: "Volkswagen", modelo: "Polo", version: "Highline", tags: [] },
 
-    { id: 80, marca: "Volkswagen", modelo: "Virtus", version: "MSI", tags: [] },
-    { id: 81, marca: "Volkswagen", modelo: "Virtus", version: "Trendline", tags: [] },
-    { id: 82, marca: "Volkswagen", modelo: "Virtus", version: "Highline", tags: [] },
-    { id: 83, marca: "Volkswagen", modelo: "Virtus", version: "Exclusive", tags: [] },
+    { id: 101, marca: "Volkswagen", modelo: "T-Cross", version: "Trendline 170 TSI MT", tags: [] },
+    { id: 102, marca: "Volkswagen", modelo: "T-Cross", version: "Trendline 200 TSI AT", tags: [] },
+    { id: 103, marca: "Volkswagen", modelo: "T-Cross", version: "Comfortline 200 TSI AT", tags: [] },
+    { id: 104, marca: "Volkswagen", modelo: "T-Cross", version: "Highline 200 TSI AT", tags: [] },
+    { id: 105, marca: "Volkswagen", modelo: "T-Cross", version: "Extreme 200 TSI AT", tags: [] },
 
-    { id: 84, marca: "Volkswagen", modelo: "Vento", version: "GLI", tags: [] },
+    { id: 106, marca: "Volkswagen", modelo: "Taos", version: "Comfortline 250 TSI AT", tags: [] },
+    { id: 107, marca: "Volkswagen", modelo: "Taos", version: "HIghline 250 TSI AT", tags: [] },
+    { id: 108, marca: "Volkswagen", modelo: "Taos", version: "HIghline BiTono 250 TSI AT", tags: [] },
 
-    { id: 85, marca: "Volkswagen", modelo: "Saveiro", version: "CS Trendline", tags: [] },
-    { id: 86, marca: "Volkswagen", modelo: "Saveiro", version: "CD Comfortline", tags: [] },
-    { id: 87, marca: "Volkswagen", modelo: "Saveiro", version: "CD Extreme", tags: [] },
+    { id: 109, marca: "Volkswagen", modelo: "Tiguan", version: "Life", tags: [] },
+    { id: 110, marca: "Volkswagen", modelo: "Tiguan", version: "R-Line", tags: [] },
 
-    { id: 88, marca: "Volkswagen", modelo: "Amarok", version: "Trendline 4x2", tags: [] },
-    { id: 89, marca: "Volkswagen", modelo: "Amarok", version: "Trendline 4x4", tags: [] },
-    { id: 90, marca: "Volkswagen", modelo: "Amarok", version: "Comfortline 4x2", tags: [] },
-    { id: 91, marca: "Volkswagen", modelo: "Amarok", version: "Highline", tags: [] },
-    { id: 92, marca: "Volkswagen", modelo: "Amarok", version: "V6 Comfortline", tags: [] },
-    { id: 93, marca: "Volkswagen", modelo: "Amarok", version: "V6 Highline", tags: [] },
-    { id: 94, marca: "Volkswagen", modelo: "Amarok", version: "V6 Hero", tags: [] },
-    { id: 95, marca: "Volkswagen", modelo: "Amarok", version: "V6 Black Style", tags: [] },
+    { id: 111, marca: "Volkswagen", modelo: "Virtus", version: "MSI", tags: [] },
+    { id: 112, marca: "Volkswagen", modelo: "Virtus", version: "Trendline", tags: [] },
+    { id: 113, marca: "Volkswagen", modelo: "Virtus", version: "Comfortline", tags: [] },
+    { id: 114, marca: "Volkswagen", modelo: "Virtus", version: "Highline", tags: [] },
+    { id: 115, marca: "Volkswagen", modelo: "Virtus", version: "Exclusive", tags: [] },
+
+    { id: 116, marca: "Volkswagen", modelo: "Vento", version: "GLI", tags: [] },
+
+    { id: 117, marca: "Volkswagen", modelo: "Saveiro", version: "CS Trendline", tags: [] },
+    { id: 118, marca: "Volkswagen", modelo: "Saveiro", version: "CD Comfortline", tags: [] },
+    { id: 119, marca: "Volkswagen", modelo: "Saveiro", version: "CD Extreme", tags: [] },
+
 
 /******************************** KIA ******************************************/
 
-    { id: 96, marca: "KIA", modelo: "K3", version: "Sedan EX-GT line", tags: [] },
-    { id: 97, marca: "KIA", modelo: "K3", version: "Criss - EX GT line", tags: [] },
-    { id: 98, marca: "KIA", modelo: "Seltos", version: "Seltos", tags: [] },
-    { id: 99, marca: "KIA", modelo: "Cerato", version: "Cerato", tags: [] },
-    { id: 100, marca: "KIA", modelo: "Sportage", version: "Sportage", tags: [] },
-    { id: 101, marca: "KIA", modelo: "Carnival", version: "Carnival", tags: [] },
-    { id: 102, marca: "KIA", modelo: "K2500", version: "K2500", tags: [] },
+    { id: 120, marca: "KIA", modelo: "K3", version: "Sedan EX", tags: [] },
+    { id: 121, marca: "KIA", modelo: "K3", version: "Sedan EX GT line", tags: [] },
+    { id: 122, marca: "KIA", modelo: "K3", version: "Cross - EX", tags: [] },
+    { id: 123, marca: "KIA", modelo: "K3", version: "Cross GT Line", tags: [] },
+    { id: 124, marca: "KIA", modelo: "Seltos", version: "Seltos", tags: [] },
+    
+    { id: 125, marca: "KIA", modelo: "K4", version: "Sedan EX", tags: [] },
+    { id: 126, marca: "KIA", modelo: "K4", version: "Sedan GT line", tags: [] },
+
+    { id: 127, marca: "KIA", modelo: "Sportage", version: "Sportage X-Line 2.0 R AWD AT", tags: [] },
+
+    { id: 128, marca: "KIA", modelo: "Sportage", version: "Carnival SX 2.2 R A/T", tags: [] },
+
+    { id: 129, marca: "KIA", modelo: "K2500", version: "K2500", tags: [] },
+   
 
 /******************************** ByD ******************************************/
 
-    { id: 103, marca: "ByD", modelo: "Dolphin", version: "MINI GL", tags: [] },
-    { id: 104, marca: "ByD", modelo: "Dolphin", version: "MINI GS", tags: [] },
-    { id: 105, marca: "ByD", modelo: "YUAN", version: "Pro GL", tags: [] },
-    { id: 106, marca: "ByD", modelo: "YUAN", version: "Pro GS", tags: [] },
-    { id: 107, marca: "ByD", modelo: "SONG", version: "Pro GL", tags: [] },
-    { id: 108, marca: "ByD", modelo: "SONG", version: "Pro GS", tags: [] },
-    { id: 109, marca: "ByD", modelo: "ATTO 2 DM-i", version: "GS", tags: [] },
+    { id: 130, marca: "ByD", modelo: "Dolphin", version: "MINI GL", tags: [] },
+    { id: 131, marca: "ByD", modelo: "Dolphin", version: "MINI GS", tags: [] },
+    { id: 132, marca: "ByD", modelo: "YUAN", version: "Pro GL", tags: [] },
+    { id: 133, marca: "ByD", modelo: "YUAN", version: "Pro GS", tags: [] },
+    { id: 134, marca: "ByD", modelo: "SONG", version: "Pro GL", tags: [] },
+    { id: 135, marca: "ByD", modelo: "SONG", version: "Pro GS", tags: [] },
+    { id: 136, marca: "ByD", modelo: "ATTO 2 DM-i", version: "GS", tags: [] },
+    { id: 137, marca: "ByD", modelo: "SHARK", version: "Shark", tags: [] },
+
 ];
