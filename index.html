@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador de Créditos - Dietrich</title>
-    <link rel="stylesheet" href="style.css?v=18.07">
+    <link rel="stylesheet" href="style.css?v=21.33">
     <link rel="manifest" href="./manifest.json">
     <meta name="theme-color" content="#333333">
     <link rel="apple-touch-icon" href="img/icon-192.png">
@@ -17,47 +17,52 @@
     </div>
 
     <div id="panel-lateral" class="modal-novedades hidden">
-    <div class="modal-contenedor">
-        <div class="panel-header">
-            <h3>Novedades y Circulares</h3>
-            <button class="btn-cerrar-panel" onclick="toggleNovedades()">✕ CERRAR</button>
-        </div>
-        
-        <div class="modal-cuerpo">
-            <div class="seccion-texto">
-                <h4>📢 COMUNICADOS DEL MES</h4>
-                <div class="contenido-comunicado">
-                    <p><strong>Actualización Marzo 2026:</strong></p>
-                    <p>Se informa a toda la red de ventas que han ingresado las nuevas tasas para el banco Santander. Es vital prestar atención a los nuevos coeficientes de Pickups ya que sufrieron una baja del 2%.</p>
-                    <ul>
-                        <li>✅ <strong>Ford Ranger:</strong> LTV ajustado al 80% en planes UVA.</li>
-                        <li>✅ <strong>Volkswagen:</strong> Se mantiene tasa 0% en Polo por 12 meses.</li>
-                        <li>✅ <strong>ICBC:</strong> Nueva línea Everest con beneficios en patentamiento.</li>
-                    </ul>
-                    <p>Ante cualquier duda con la carga de los gastos iniciales, consultar el instructivo de Sellos e Impuestos actualizado en la intranet.</p>
-                </div>
+        <div class="modal-contenedor">
+            <div class="panel-header">
+                <h3>Novedades y Circulares</h3>
+                <button class="btn-cerrar-panel" onclick="toggleNovedades()">✕ CERRAR</button>
             </div>
+            
+            <div class="modal-cuerpo">
+                <div class="seccion-texto">
+                    <h4>📢 COMUNICADOS DEL MES</h4>
+                    <div class="contenido-comunicado">
+                        <p><strong>Actualización Marzo 2026:</strong></p>
+                        <p>Se informa a toda la red de ventas que han ingresado las nuevas tasas para el banco Santander. Es vital prestar atención a los nuevos coeficientes de Pickups ya que sufrieron una baja del 2%.</p>
+                        <ul>
+                            <li>✅ <strong>Ford Ranger:</strong> LTV ajustado al 80% en planes UVA.</li>
+                            <li>✅ <strong>Volkswagen:</strong> Se mantiene tasa 0% en Polo por 12 meses.</li>
+                            <li>✅ <strong>ICBC:</strong> Nueva línea Everest con beneficios en patentamiento.</li>
+                        </ul>
+                        <p>Ante cualquier duda con la carga de los gastos iniciales, consultar el instructivo de Sellos e Impuestos actualizado en la intranet.</p>
+                    </div>
+                </div>
 
-            <hr class="divisor">
+                <hr class="divisor">
 
-            <div class="seccion-descargas">
-                <h4>📂 CIRCULARES PDF</h4>
-                <div class="lista-pdfs">
-                    <a href="pdf/circular-santander.pdf" target="_blank" class="btn-pdf-full">📄 Circular Santander</a>
-                    <a href="pdf/circular-icbc.pdf" target="_blank" class="btn-pdf-full">📄 Circular Banco ICBC</a>
-                    <a href="pdf/circular-vw.pdf" target="_blank" class="btn-pdf-full">📄 Circular VW Financial</a>
-                    <a href="pdf/circular-galicia.pdf" target="_blank" class="btn-pdf-full">📄 Circular Banco Galicia</a>
+                <div class="seccion-descargas">
+                    <h4>📂 CIRCULARES PDF</h4>
+                    <div class="lista-pdfs">
+                        <a href="pdf/circular-santander.pdf" target="_blank" class="btn-pdf-full">📄 Circular Santander</a>
+                        <a href="pdf/circular-icbc.pdf" target="_blank" class="btn-pdf-full">📄 Circular Banco ICBC</a>
+                        <a href="pdf/circular-vw.pdf" target="_blank" class="btn-pdf-full">📄 Circular VW Financial</a>
+                        <a href="pdf/circular-galicia.pdf" target="_blank" class="btn-pdf-full">📄 Circular Banco Galicia</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
     <header class="main-header">
-        <button class="btn-actualizar-header" onclick="forzarActualizacion()" title="Actualizar App">
-            <span class="icon-refresh">🔄</span>
-            <span class="text-refresh">Actualizar</span>
-        </button>
+        <div class="header-actions">
+            
+
+            <button class="btn-actualizar-header" onclick="forzarActualizacion()" title="Actualizar App">
+                <span class="icon-refresh">🔄</span>
+                <span class="text-refresh">Actualizar</span>
+            </button>
+        </div>
+
         <img src="img/dietrich.png" alt="Dietrich" class="logo-dietrich">
     </header>
 
@@ -70,10 +75,8 @@
     </nav>
 
     <main>
-
         <section id="vista-inicio" class="active">
             <div class="contenedor-hero-home">
-                
                 <div id="hero-marcas" class="card-hero" onclick="mostrarSeccionMarcas()">
                     <div class="slider-fondo">
                         <div class="foto-fondo f-todos"></div>
@@ -94,13 +97,21 @@
                         <span>SIMULAR POR BANCO</span>
                     </div>
                 </div>
-
             </div>
 
             <button class="btn-comparador-hero" onclick="irAComparador()">
                 COMPARADOR DE TASAS
             </button>
-            <p class="footer-interno">Simulador exclusivo para uso interno - Grupo Dietrich 2026 V21.4.2026.18.07</p>
+
+            <button class="btn-competitivo-dietrich" onclick="window.location.href='./competitivo/index.html'">
+                COMPETITIVO
+            </button>
+            <p class="footer-interno">Simulador exclusivo para uso interno - Grupo Dietrich 2026 V26.4.2026.21.33</p>
+
+            <button id="btnInstalar" class="btn-pwa-footer" style="display: none;">
+                <span>📥</span>
+                <span class="texto-boton">Instalar</span>
+            </button>
         </section>
 
         <section id="vista-marcas" class="hidden">
@@ -190,11 +201,8 @@
             </div>
 
             <div class="contenedor-resultados-condiciones">
-                <div id="resultado-cuotas" class="cuadro-resultados">
-                    </div>
-
-                <div id="ficha-tecnica">
-                    </div>
+                <div id="resultado-cuotas" class="cuadro-resultados"></div>
+                <div id="ficha-tecnica"></div>
             </div>
             
             <button id="btn-generar-pdf" class="btn-pdf-descarga" onclick="descargarPDF()">
@@ -212,46 +220,62 @@
                     </div>
                 </div>
                 <div class="comparador-split">
-    <div id="columna-1" class="col-comparar">
-        <p class="label-col">Financiacion A</p>
-        <div class="selectores-comp">
-            <select id="select-banco-1" onchange="actualizarCategoriasComp(1)"></select>
-            <select id="select-cat-1" onchange="actualizarPlanesComp(1)"></select>
-            <select id="select-plan-1" onchange="calcularComparacion()"></select>
-        </div>
-        <div id="res-1" class="res-col"></div>
-    </div>
+                    <div id="columna-1" class="col-comparar">
+                        <p class="label-col">Financiacion A</p>
+                        <div class="selectores-comp">
+                            <select id="select-banco-1" onchange="actualizarCategoriasComp(1)"></select>
+                            <select id="select-cat-1" onchange="actualizarPlanesComp(1)"></select>
+                            <select id="select-plan-1" onchange="calcularComparacion()"></select>
+                        </div>
+                        <div id="res-1" class="res-col"></div>
+                    </div>
 
-    <div id="columna-2" class="col-comparar">
-        <p class="label-col">Financiacion B</p>
-        <div class="selectores-comp">
-            <select id="select-banco-2" onchange="actualizarCategoriasComp(2)"></select>
-            <select id="select-cat-2" onchange="actualizarPlanesComp(2)"></select>
-            <select id="select-plan-2" onchange="calcularComparacion()"></select>
-        </div>
-        <div id="res-2" class="res-col"></div>
-    </div>
-</div>
+                    <div id="columna-2" class="col-comparar">
+                        <p class="label-col">Financiacion B</p>
+                        <div class="selectores-comp">
+                            <select id="select-banco-2" onchange="actualizarCategoriasComp(2)"></select>
+                            <select id="select-cat-2" onchange="actualizarPlanesComp(2)"></select>
+                            <select id="select-plan-2" onchange="calcularComparacion()"></select>
+                        </div>
+                        <div id="res-2" class="res-col"></div>
+                    </div>
+                </div>
             </div>
         </section>
 
-
-        <a href="https://wa.me/+5492804006499" class="btn-whatsapp" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-            <span>Consultas</span>
-        </a>
+            <div class="contenedor-consultas">
+                         <div id="lista-consultas" class="lista-contactos hidden-consultas">
+                    <a href="https://wa.me/5492804006499" target="_blank" class="item-contacto">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">
+                        <span>Consultas tecnicas</span>
+                    </a>
+                    <a href="https://wa.me/5492804002222" target="_blank" class="item-contacto">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">
+                        <span>Ventas Ford</span>
+                    </a>
+                    <a href="https://wa.me/5492804003333" target="_blank" class="item-contacto">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">
+                        <span>Ventas VW</span>
+                    </a>
+                </div>
+            
+                <button class="btn-whatsapp" onclick="toggleMenuConsultas()">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                    <span>Consultas</span>
+                </button>
+        </div>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script src="app.js"></script> 
     <script>
         if ('serviceWorker' in navigator) {
-         window.addEventListener('load', () => {
-             navigator.serviceWorker.register('./sw.js')
-                .then(reg => console.log('Service Worker registrado con éxito', reg))
-                .catch(err => console.warn('Error al registrar el Service Worker', err));
-        });
-     }
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('Service Worker registrado con éxito', reg))
+                    .catch(err => console.warn('Error al registrar el Service Worker', err));
+            });
+        }
     </script>
 </body>
 </html>

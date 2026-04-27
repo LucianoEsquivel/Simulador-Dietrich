@@ -1,5 +1,7 @@
-const CACHE_NAME = 'dietrich-cache-V21.4.2026.18.07'; // Cambia el número de versión cada vez que quieras actualizar el cache
+const CACHE_NAME = 'dietrich-unificado-V26.04.2026.21.36'; // Nueva versión unificada
+
 const assets = [
+  // --- ARCHIVOS SIMULADOR (RAÍZ) ---
   './',
   './index.html',
   './style.css',
@@ -23,42 +25,59 @@ const assets = [
   './img/kia.png',
   './img/santander.png',
   './img/volkswagen.png',
-  'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js'
+  'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js',
+
+  // --- ARCHIVOS COMPETITIVO (SUB-CARPETA) ---
+  './competitivo/index.html',
+  './competitivo/style.css',
+  './competitivo/app.js',
+  './competitivo/base.js',
+  './competitivo/logos/dietrich.png',
+  './competitivo/logos/santander.png',
+  './competitivo/logos/icbc.png',
+  './competitivo/logos/galicia.png',
+  './competitivo/logos/volkswagen.png',
+  './competitivo/logos/ford.png',
+  './competitivo/logos/audi.png',
+  './competitivo/logos/kia.png',
+  './competitivo/logos/byd.png',
+  './competitivo/fondos/audi.jpg',
+  './competitivo/fondos/ford.jpg',
+  './competitivo/fondos/kia.jpg',
+  './competitivo/fondos/volkswagen.jpg',
+  './competitivo/fondos/byd.jpg'
 ];
-//recordatorio: agregar arriba los archivos para cachear, por ejemplo: './images/logo.png', './fonts/Roboto-Regular.ttf', etc.
-// 1. Instalación
+
+// 1. Instalación: Guarda todo (Simulador + Competitivo)
 self.addEventListener('install', event => {
-  // Fuerza a este SW a convertirse en el activo sin esperar a que cierres la app
   self.skipWaiting(); 
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => {
-      return cache.addAll(assets);
-    })
+    caches.open(CACHE_NAME).then(cache => cache.addAll(assets))
   );
 });
 
-// 2. Activación: AQUÍ ESTÁ LA SOLUCIÓN
-// Este bloque borra los cachés viejos (v1.0.2, v1.0.3, etc.) automáticamente
+// 2. Activación: Borra cachés viejos de ambas apps
 self.addEventListener('activate', event => {
   event.waitUntil(
-    caches.keys().then(cacheNames => {
+    caches.keys().then(keys => {
       return Promise.all(
-        cacheNames.map(cache => {
-          if (cache !== CACHE_NAME) {
-            console.log('Borrando caché antiguo:', cache);
-            return caches.delete(cache);
-          }
-        })
+        keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key))
       );
-    }).then(() => self.clients.claim()) // <---LÍNEA CLAVE
+    })
   );
+  self.clients.claim(); 
 });
 
-// 3. Respuesta
+// 3. Estrategia: NETWORK FIRST (Prioriza internet para ver cambios del CEO)
 self.addEventListener('fetch', event => {
   event.respondWith(
-    fetch(event.request).catch(() => {
-      return caches.match(event.request);
-    })
+    fetch(event.request)
+      .then(networkResponse => {
+        return caches.open(CACHE_NAME).then(cache => {
+          cache.put(event.request, networkResponse.clone());
+          return networkResponse;
+        });
+      })
+      .catch(() => caches.match(event.request)) // Si no hay internet, usa el caché
   );
 });
