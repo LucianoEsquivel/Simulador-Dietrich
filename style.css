@@ -67,9 +67,16 @@ main {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    z-index: 1500; /* Asegura que esté por encima de otros elementos */ 
+    z-index: 2000; /* Asegura que esté por encima de otros elementos */ 
     box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Sombra sutil para destacar la campana */
     transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Transición con un toque de rebote para hacerla más atractiva */
+    pointer-events: auto;
+}
+
+.btn-comparador-hero, 
+.btn-competitivo-dietrich {
+    position: relative;
+    z-index: 10;
 }
 
 #btn-novedades:hover {
@@ -217,7 +224,7 @@ main {
 
 #hero-marcas .foto-fondo {
     filter: brightness(0.8) grayscale(0.2);
-    transition: filter 0.5s ease;
+    -webkit-filter: brightness(0.8) grayscale(0.2);
 }
 
 #hero-marcas:hover .foto-fondo {
@@ -231,7 +238,14 @@ main {
 .f-dolphin { background-image: url('img/dolphin.jpeg'); }
 .f-k3 { background-image: url('img/k3.jpeg'); }
 .f-q1 { background-image: url('img/q1.jpeg'); }
-.f-banco { background-image: url('img/bancos.jpeg'); filter: grayscale(0) brightness(1) !important;}
+.f-banco { 
+    background-image: url('img/bancos.jpeg') !important; 
+    background-size: cover;
+    background-position: center;
+    /* Eliminamos cualquier filtro heredado */
+    filter: none !important; 
+    -webkit-filter: none !important;
+}
 
 /* Animación SECUENCIAL (Ordenada) - 8 segundos total */
 @keyframes desfileVehiculos {
@@ -975,6 +989,7 @@ main {
     #btn-novedades { 
         width: 45px; height: 45px; 
         top: 15px; right: 10px; 
+        z-index: 2000;
     }
 
     /* 2. VISTA INICIO CELULAR */
