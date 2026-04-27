@@ -213,7 +213,15 @@ main {
     left: 0;
     transform: translateX(0); 
     transition: transform 0.6s ease-in-out, filter 0.5s ease;
+}
+
+#hero-marcas .foto-fondo {
     filter: brightness(0.8) grayscale(0.2);
+    transition: filter 0.5s ease;
+}
+
+#hero-marcas:hover .foto-fondo {
+    filter: brightness(0.9) grayscale(0);
 }
 
 /* Vinculación de tus archivos reales */
@@ -223,7 +231,7 @@ main {
 .f-dolphin { background-image: url('img/dolphin.jpeg'); }
 .f-k3 { background-image: url('img/k3.jpeg'); }
 .f-q1 { background-image: url('img/q1.jpeg'); }
-.f-banco { background-image: url('img/bancos.jpeg'); }
+.f-banco { background-image: url('img/bancos.jpeg'); filter: grayscale(0) brightness(1) !important;}
 
 /* Animación SECUENCIAL (Ordenada) - 8 segundos total */
 @keyframes desfileVehiculos {
