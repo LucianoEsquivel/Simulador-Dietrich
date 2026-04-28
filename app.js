@@ -942,6 +942,19 @@ function calcularSimulacion() {
     const anticipoPesos = obtenerNumeroLimpio('anticipo');
     const cotizacion = parseFloat(document.getElementById('cotizacion-dolar').value) || 1;
 
+    // --- NUEVA LÓGICA: MOSTRAR MÁXIMO FINANCIABLE EN TIEMPO REAL ---
+    const divMaximo = document.getElementById('info-maximo-financiable');
+    const spanMontoMax = document.getElementById('monto-max-ltv');
+    const ltvGeneral = financiacionActual.ltv || 0;
+
+    if (pListaPesos > 0 && typeof ltvGeneral === 'number' && ltvGeneral <= 100) {
+        const maximoLTV = pListaPesos * (ltvGeneral / 100);
+        if (spanMontoMax) spanMontoMax.innerText = `$ ${Math.round(maximoLTV).toLocaleString('es-AR')}`;
+        if (divMaximo) divMaximo.style.display = "block";
+    } else {
+        if (divMaximo) divMaximo.style.display = "none";
+    }
+
     if (montoDirecto === 0 && vVentaPesos === 0) return;
 
     const esUSD = (financiacionActual.moneda === "USD");
@@ -965,7 +978,6 @@ function calcularSimulacion() {
         let techoFinalBanco;
 
         if (ltvValor <= 100) {
-            // Caso Porcentaje: Si no hay precio de lista, ponemos un techo infinito para no romper el Monto Directo
             if (pListaPesos > 0) {
                 const pLista = pListaPesos / factor;
                 techoFinalBanco = pLista * (ltvValor / 100);
@@ -973,12 +985,10 @@ function calcularSimulacion() {
                 techoFinalBanco = 999999999999; 
             }
         } else {
-            // Caso Monto Fijo
             techoFinalBanco = ltvValor / factor;
         }
 
         if (montoDirecto > 0) {
-            // Aplicamos el techo (Si es monto fijo lo respetará, si es % y no hay precio de lista, usará el directo)
             montoFin = Math.min((montoDirecto / factor), techoFinalBanco);
         } else {
             const vVenta = vVentaPesos / factor;

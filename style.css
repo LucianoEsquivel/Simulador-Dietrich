@@ -1538,3 +1538,27 @@ main {
     visibility: visible;
     transform: translateX(-50%) translateY(0);
 }
+
+
+/*maximo financiable*/
+.info-max-fin {
+    margin-top: 8px;
+    padding: 8px 12px;
+    background-color: #e9ecef; /* Gris clarito */
+    border-radius: 8px;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #495057;
+    border-left: 4px solid #28a745; /* Verde para indicar capacidad de préstamo */
+    animation: fadeIn 0.3s ease;
+}
+
+#monto-max-ltv {
+    color: #1e4d2b; /* Verde oscuro para el monto */
+    font-size: 1.1em;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
