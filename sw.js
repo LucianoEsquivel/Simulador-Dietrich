@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dietrich-unificado-V28.4.2026.20.07'; // Nueva versión unificada
+const CACHE_NAME = 'dietrich-unificado-V30.04.2026.15.56'; // Nueva versión unificada
 
 const assets = [
   // --- ARCHIVOS SIMULADOR (RAÍZ) ---

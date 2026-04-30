@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador de Créditos - Dietrich</title>
-    <link rel="stylesheet" href="style.css?v=20.07">
+    <title>Cotizador de Créditos - Dietrich</title>
+    <link rel="stylesheet" href="style.css?v=15.55">
     <link rel="manifest" href="./manifest.json">
     <meta name="theme-color" content="#333333">
     <link rel="apple-touch-icon" href="img/icon-192.png">
@@ -87,14 +87,14 @@
                         <div class="foto-fondo f-q1"></div>
                     </div>
                     <div class="overlay-hero">
-                        <span>SIMULAR POR MARCA</span>
+                        <span>COTIZAR POR MARCA</span>
                     </div>
                 </div>
 
                 <div id="hero-bancos" class="card-hero" onclick="mostrarSeccionBancos()">
                     <div class="foto-fondo f-banco"></div>
                     <div class="overlay-hero">
-                        <span>SIMULAR POR BANCO</span>
+                        <span>COTIZAR POR BANCO</span>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
             <button class="btn-competitivo-dietrich" onclick="window.location.href='./competitivo/index.html'">
                 COMPETITIVO
             </button>
-            <p class="footer-interno">Simulador exclusivo para uso interno - Grupo Dietrich 2026 V28.4.2026.20.07</p>
+            <p class="footer-interno">Cotizador exclusivo para uso interno - Grupo Dietrich 2026 V30.04.2026.15.55</p>
 
             <button id="btnInstalar" class="btn-pwa-footer" style="display: none;">
                 <span>📥</span>
@@ -155,6 +155,20 @@
                 <div class="card-banco galicia" onclick="mostrarCategorias('galicia')">
                     <span class="nombre-banco">GALICIA</span>
                 </div>
+                <!-- Banner de Opciones No Prendarias -->
+                <div class="banner-no-prendario" onclick="mostrarSeccionNoPrendaria()">
+                    <div class="texto-banner">
+                        <strong>Opciones no prendarias</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- Nueva sección para Opciones No Prendarias -->
+        <section id="vista-no-prendaria" class="hidden">
+            <h2 id="nombre-categoria-no-prendaria" class="titulo-seccion">Opciones No Prendarias</h2>
+            <div id="lista-opciones-no-prendarias" class="grid-bancos">
+                <!-- Los botones se generarán por JavaScript aquí -->
             </div>
         </section>
 

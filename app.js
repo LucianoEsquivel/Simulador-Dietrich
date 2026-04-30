@@ -69,6 +69,17 @@ const bancos = {
                         plazos: [{m:12, c:83334, g:10}, {m:18, c:55556, g:12}, {m:24, c:41667, g:15}] 
                     },
                     { 
+                        nombre: "Santander dolares", 
+                        destacado: true, 
+                        ltv: 80, 
+                        seguro: "Cautivo", 
+                        moneda: "USD",
+                        baseCalculo: 10000, 
+                        descripcion: "linea en dolares para personas (fisicas/juridicas) que generen dolares",
+                        utilPara: "Toda la gama",
+                        plazos: [{m:24, c:465, tna: "8,90%", cft: "11,32%", g:2}, {m:36, c:329, tna:"9,50%", cft:"12,12%", g:2}, {m:48, c:263, tna:"9,90%", cft:"12,66%", g:2},{m:60, c:227, tna:"10,90%", cft:"14,02%", g:2},{m:72, c:204, tna:"11,50%", cft:"14,84", g:2},] 
+                    },
+                    { 
                         nombre: "UVA Quebranto Pickups (TNA 9,9%)", 
                         destacado: false,
                         tna: "9,90%", 
@@ -687,9 +698,11 @@ function mostrarSeccion(id) {
 function manejadorVolver() {
     if (vistaActual === 'vista-calculo') {
         mostrarSeccion('vista-financiaciones');
-    } else if (vistaActual === 'vista-financiaciones') {
+    } else if (vistaActual === 'vista-financiaciones' || vistaActual === 'vista-no-prendaria') {
         const destino = (origenNavegacion === 'marcas') ? 'vista-marcas' : 'vista-bancos';
         mostrarSeccion(destino);
+        // Resetear título si es necesario
+        document.getElementById('nombre-categoria-no-prendaria').innerText = "Opciones No Prendarias";
     } else {
         mostrarSeccion('vista-inicio');
     }
@@ -942,24 +955,25 @@ function calcularSimulacion() {
     const anticipoPesos = obtenerNumeroLimpio('anticipo');
     const cotizacion = parseFloat(document.getElementById('cotizacion-dolar').value) || 1;
 
-    // --- NUEVA LÓGICA: MOSTRAR MÁXIMO FINANCIABLE EN TIEMPO REAL ---
+    const esUSD = (financiacionActual.moneda === "USD");
+    const factor = esUSD ? cotizacion : 1;
+    const moneda = esUSD ? "USD " : "$ ";
+
+    // --- LÓGICA: MOSTRAR MÁXIMO FINANCIABLE EN TIEMPO REAL (CORREGIDA PARA MONEDA) ---
     const divMaximo = document.getElementById('info-maximo-financiable');
     const spanMontoMax = document.getElementById('monto-max-ltv');
     const ltvGeneral = financiacionActual.ltv || 0;
 
     if (pListaPesos > 0 && typeof ltvGeneral === 'number' && ltvGeneral <= 100) {
-        const maximoLTV = pListaPesos * (ltvGeneral / 100);
-        if (spanMontoMax) spanMontoMax.innerText = `$ ${Math.round(maximoLTV).toLocaleString('es-AR')}`;
+        // Calculamos el máximo en la moneda del plan (si es USD, divide por el factor)
+        const maximoLTV = (pListaPesos / factor) * (ltvGeneral / 100);
+        if (spanMontoMax) spanMontoMax.innerText = `${moneda}${Math.round(maximoLTV).toLocaleString('es-AR')}`;
         if (divMaximo) divMaximo.style.display = "block";
     } else {
         if (divMaximo) divMaximo.style.display = "none";
     }
 
     if (montoDirecto === 0 && vVentaPesos === 0) return;
-
-    const esUSD = (financiacionActual.moneda === "USD");
-    const factor = esUSD ? cotizacion : 1;
-    const moneda = esUSD ? "USD " : "$ ";
 
     let html = `
         <table class="tabla-condiciones">
@@ -973,18 +987,20 @@ function calcularSimulacion() {
         let filaClase = "";
         let advertenciaTexto = "";
 
-        // --- LÓGICA DE LTV UNIFICADA Y SEGURA ---
+        // --- LÓGICA DE LTV UNIFICADA Y SEGURA (CORREGIDA PARA USD) ---
         let ltvValor = p.ltv || financiacionActual.ltv || 999999999999;
         let techoFinalBanco;
 
         if (ltvValor <= 100) {
             if (pListaPesos > 0) {
-                const pLista = pListaPesos / factor;
-                techoFinalBanco = pLista * (ltvValor / 100);
+                // Convertimos el precio de lista a la moneda del plan ANTES de aplicar el %
+                const pListaEnMonedaPlan = pListaPesos / factor;
+                techoFinalBanco = pListaEnMonedaPlan * (ltvValor / 100);
             } else {
                 techoFinalBanco = 999999999999; 
             }
         } else {
+            // Si el LTV es un monto fijo, también lo ajustamos a la moneda del plan
             techoFinalBanco = ltvValor / factor;
         }
 
@@ -1252,7 +1268,7 @@ async function forzarActualizacion() {
         );
 
         // 3. Notificamos al usuario y forzamos recarga dura (Hard Reload)
-        alert("Buscando actualizaciones... El simulador se reiniciará para aplicar los cambios.");
+        alert("Buscando actualizaciones... El cotizador se reiniciará para aplicar los cambios.");
         window.location.reload(true); 
     } else {
         // Si no hay service worker (navegador viejo), solo recargamos
@@ -1317,6 +1333,10 @@ window.toggleMenuConsultas = () => {
     }
 };
 
+
+
+
+
 // Cierra el menú si el usuario hace clic afuera de los contactos
 document.addEventListener('click', (e) => {
     const contenedor = document.querySelector('.contenedor-consultas');
@@ -1327,3 +1347,98 @@ document.addEventListener('click', (e) => {
         if (lista) lista.classList.add('hidden-consultas');
     }
 });
+
+
+/* =========================================
+   OPCIONES NO PRENDARIAS
+   ========================================= */
+
+function mostrarSeccionNoPrendaria() {
+    origenNavegacion = 'inicio'; // Para que el botón volver sepa a dónde regresar
+    mostrarSeccion('vista-no-prendaria');
+    
+    const cont = document.getElementById('lista-opciones-no-prendarias');
+    cont.innerHTML = ""; // Limpiamos el contenedor
+
+    // Creamos el botón de BNA dinámicamente
+    const btnBna = document.createElement('div');
+    btnBna.className = 'card-banco bna';
+    btnBna.innerHTML = `<span class="nombre-banco">BANCO NACIÓN</span>`;
+    
+    // Al hacer clic, iremos al siguiente nivel (BNA + Autos / BNA Conecta)
+    btnBna.onclick = () => mostrarSubOpcionesBNA();
+    
+    cont.appendChild(btnBna);
+}
+
+function mostrarSubOpcionesBNA() {
+    const cont = document.getElementById('lista-opciones-no-prendarias');
+    const titulo = document.getElementById('nombre-categoria-no-prendaria');
+    
+    // Cambiamos el título para dar contexto al usuario
+    titulo.innerText = "BNA - Seleccione Producto";
+    
+    // Limpiamos el botón anterior y generamos los nuevos
+    cont.innerHTML = `
+        <div class="card-banco" onclick="verDetalleBNA('autos')">
+            <span class="nombre-banco">BNA + AUTOS</span>
+        </div>
+        <div class="card-banco" onclick="verDetalleBNA('conecta')">
+            <span class="nombre-banco">BNA CONECTA</span>
+        </div>
+    `;
+}
+
+function verDetalleBNA(tipo) {
+    const cont = document.getElementById('lista-opciones-no-prendarias');
+    const titulo = document.getElementById('nombre-categoria-no-prendaria');
+
+    // Configuración de contenidos por producto
+    const infoProductos = {
+        'autos': {
+            nombre: "BNA + AUTOS",
+            descripcion: "Línea de créditos personales para la adquisición de unidades 0km. El cliente gestiona el crédito en la sucursal y el desembolso se realiza mediante orden de pago.",
+            pdf: "manual_bna_autos.pdf",
+            wa: "5492804006499"
+        },
+        'conecta': {
+            nombre: "BNA CONECTA",
+            descripcion: "Plataforma digital de BNA para la compra de unidades. Proceso 100% online donde el cliente elige Dietrich dentro del marketplace y califica de forma inmediata.",
+            pdf: "manual_bna_conecta.pdf",
+            wa: "5492804006499"
+        }
+    };
+
+    const info = infoProductos[tipo];
+    titulo.innerText = info.nombre;
+
+    cont.innerHTML = `
+        <div class="formulario-card" style="grid-column: 1 / span 2; text-align: center; padding: 30px;">
+            <!-- EXPLICACIÓN COMERCIAL DINÁMICA -->
+            <div style="background: #f9f9f9; padding: 15px; border-radius: 10px; margin-bottom: 20px; border-left: 5px solid #005a9c;">
+                <p style="color: #333; font-size: 0.95em; line-height: 1.5; text-align: left; margin: 0;">
+                    <strong>¿Cómo funciona?</strong><br>
+                    ${info.descripcion}
+                </p>
+            </div>
+
+            <p style="margin-bottom: 20px; color: #666; font-size: 0.85em;">
+                Este proceso se gestiona de forma externa al cotizador.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 15px; max-width: 400px; margin: 0 auto;">
+                <a href="pdf/${info.pdf}" target="_blank" class="btn-pdf-descarga" style="text-decoration: none; width: 100%;">
+                    📄 DESCARGAR INSTRUCTIVO (PDF)
+                </a>
+                <a href="https://wa.me/${info.wa}" target="_blank" class="btn-whatsapp" style="text-decoration: none; justify-content: center; width: 100%;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" style="width:20px;">
+                    CONSULTAR REFERENTE
+                </a>
+            </div>
+
+            <button onclick="mostrarSubOpcionesBNA()" class="btn-ver-mas-opciones" style="margin-top: 30px; border-style: solid; width: auto; padding: 10px 20px;">
+                ← VOLVER A PRODUCTOS BNA
+            </button>
+        </div>
+    `;
+}

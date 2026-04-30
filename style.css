@@ -1562,3 +1562,63 @@ main {
     from { opacity: 0; transform: translateY(-5px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* OPCIONES NO PRENDARIAS */
+.banner-no-prendario {
+    grid-column: 1 / span 2; /* Ocupa todo el ancho en la grilla 2x2 */
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;      /* Centrado vertical de los elementos */
+    justify-content: center;   /* NUEVO: Centrado horizontal de los elementos */
+    gap: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.banner-no-prendario:hover {
+    background: #000;
+    transform: scale(1.01); /* Un escalado más sutil para que no se vea tosco */
+}
+
+.icono-info { 
+    font-size: 1.5em; 
+}
+
+.texto-banner { 
+    display: flex; 
+    flex-direction: column; 
+    text-align: center; /* NUEVO: Centra las líneas de texto entre sí */
+}
+
+.texto-banner strong { 
+    font-size: 1.1em; 
+    text-transform: uppercase; 
+    font-weight: 900; /* Para que coincida con el estilo Dietrich */
+    letter-spacing: 1px;
+}
+
+.texto-banner span { 
+    font-size: 0.85em; 
+    opacity: 0.8; 
+}
+
+/* Estilo específico para BNA */
+.card-banco.bna::after {
+    background-image: url('img/bna.png'); /* Asegúrate de tener el logo en tu carpeta img */
+    opacity: 0.15;
+    filter: grayscale(100%);
+}
+
+.card-banco.bna:hover::after {
+    opacity: 0.3;
+    filter: grayscale(0%);
+    transform: scale(1.4); /* Efecto de crecimiento igual a los otros bancos */
+}
+
+.card-banco.bna:hover .nombre-banco {
+    color: #005a9c; /* Color institucional de BNA */
+}
