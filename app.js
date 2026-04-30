@@ -505,7 +505,7 @@ const bancos = {
                         nombre: "Autos financia mas", 
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Tera (Highline, Outfit), T-Cross (Comfortline, Highline, Extreme), Polo (Comfortline, Highline) y Taos (Todas las versiones) disponible para persona fisica y juridica, seguro cautivo de VW Broker, vigencia: 17/04/2026-30/04/2026",
+                        descripcion: "Aplica para Nivus (Highline, Outfit), Tera (Highline, Outfit), T-Cross (Comfortline, Highline, Extreme), Polo (Comfortline, Highline) y Taos (Todas las versiones) disponible para persona fisica y juridica, seguro cautivo de VW Broker, vigencia: 17/04/2026-30/04/2026",
                         utilPara: "Tera, T-Cross, Polo, Taos",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",    g: 11.075, ltv: 32000000 },
@@ -518,7 +518,7 @@ const bancos = {
                         nombre: "Autos sin quebranto", 
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Tera (Highline, Outfit), T-Cross (Comfortline, Highline, Extreme), Polo (Comfortline, Highline) y Taos (Todas las versiones) disponible para persona fisica y juridica, seguro cautivo de VW Broker, vigencia: 17/04/2026-30/04/2026",
+                        descripcion: "Aplica para Nivus (Highline, Outfit), Tera (Highline, Outfit), T-Cross (Comfortline, Highline, Extreme), Polo (Comfortline, Highline) y Taos (Todas las versiones) disponible para persona fisica y juridica, seguro cautivo de VW Broker, vigencia: 17/04/2026-30/04/2026",
                         utilPara: "Tera, T-Cross, Polo, Taos",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",   g: 2,   ltv: 21000000 },
@@ -529,7 +529,7 @@ const bancos = {
                         nombre: "UVA Autos", 
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Tera (Highline, Outfit), T-Cross (Comfortline, Highline, Extreme), Polo (Comfortline, Highline) y Taos (Todas las versiones) disponible para persona fisica y juridica, seguro cautivo de VW Broker, vigencia: 17/04/2026-30/04/2026",
+                        descripcion: "Aplica para Tera Nivus (Highline, Outfit), (Highline, Outfit), T-Cross (Comfortline, Highline, Extreme), Polo (Comfortline, Highline) y Taos (Todas las versiones) disponible para persona fisica y juridica, seguro cautivo de VW Broker, vigencia: 17/04/2026-30/04/2026",
                         utilPara: "Tera, T-Cross, Polo, Taos",
                         plazos: [
                             { m: 24, c: 41.67, tna: "0%",   g: 2,   ltv: 21000000 },
