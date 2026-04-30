@@ -76,7 +76,7 @@ const bancos = {
                         moneda: "USD",
                         baseCalculo: 10000, 
                         descripcion: "linea en dolares para personas (fisicas/juridicas) que generen dolares",
-                        utilPara: "Toda la gama",
+                        utilPara: "Toda las marcas",
                         plazos: [{m:24, c:465, tna: "8,90%", cft: "11,32%", g:2}, {m:36, c:329, tna:"9,50%", cft:"12,12%", g:2}, {m:48, c:263, tna:"9,90%", cft:"12,66%", g:2},{m:60, c:227, tna:"10,90%", cft:"14,02%", g:2},{m:72, c:204, tna:"11,50%", cft:"14,84", g:2},] 
                     },
                     { 
