@@ -594,11 +594,11 @@ const bancos = {
                 nombre: "Audi",
                 planes: [
                     { 
-                        nombre: "Audi A1", 
+                        nombre: "Audi A1 y Q2", 
                         destacado: true,
-                        tna: "0% / 9,9%", seguro: "CAUTIVO", gastos: 19.5, baseCalculo: 1000, 
-                        descripcion: "Solo para modelo Audi A1, vigencia: 18/04/2026-30/04/2026, persona fisica y juridica, seguro cautivo de VW Broker",
-                        utilPara: "A1",
+                        tna: "0% / 9,9%", seguro: "CAUTIVO", gastos: 13.495, baseCalculo: 1000, 
+                        descripcion: "Para los modelos Audi A1 y Q2, vigencia: 1/05/2026-31/05/2026, persona fisica y juridica, seguro cautivo de VW Broker",
+                        utilPara: "A1 y Q2",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",   ltv: 20000000, g: 13.495 }, 
                             { m: 12, c: 88.82, tna: "9.9%", ltv: 30500000, g: 13.495 }
@@ -609,8 +609,8 @@ const bancos = {
                         nombre: "UVA Audi", 
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", gastos: 2, baseCalculo: 1000, 
-                        descripcion: "Para los modelos de A1, vigencia: 18/04/2026-30/04/2026, para persona fisica, seguro cautivo de VW Broker",
-                        utilPara: "A1",
+                        descripcion: "Para los A1 y Q2, vigencia: 1/05/2026-31/05/2026, para persona fisica, seguro cautivo de VW Broker",
+                        utilPara: "A1 y Q2",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",   ltv: 20000000, g: 2 }, 
                         ] 

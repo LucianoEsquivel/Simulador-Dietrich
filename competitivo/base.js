@@ -687,12 +687,12 @@ export const financiaciones = [
     {
         idPlan: 36,
         banco: "Volkswagen Financiera",
-        nombre: "Audi A1",
-        descripcion: "Financiacion exclusiva para Audi A1",
+        nombre: "Audi A1 y Q2",
+        descripcion: "Financiacion exclusiva para Audi A1 y Q2",
         tipoPersona: "Ambas", // O "Jurídica" o "Física"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [43], 
+        vehiculosIds: [43, 59, 60], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -705,11 +705,11 @@ export const financiaciones = [
         idPlan: 37,
         banco: "Volkswagen Financiera",
         nombre: "UVA Audi",
-        descripcion: "Financiacion exclusiva para audi A1",
-        tipoPersona: "Ambas", // O "Jurídica" o "Física"
+        descripcion: "Financiacion exclusiva para audi A1 y Q2",
+        tipoPersona: "Fisica", // O "Jurídica" o "Física"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [43],
+        vehiculosIds: [43, 59, 60],
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
