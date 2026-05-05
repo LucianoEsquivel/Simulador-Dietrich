@@ -1622,3 +1622,43 @@ main {
 .card-banco.bna:hover .nombre-banco {
     color: #005a9c; /* Color institucional de BNA */
 }
+
+/************************BANNER PARA OPCIONES PARA VEHICULOS USADOS MULTIMARCA************************************/
+
+/* Estilo para el Banner de Usados */
+.banner-usados {
+    grid-column: 1 / -1; /* Ocupa todo el ancho (las dos columnas) */
+    background: linear-gradient(135deg, #1a1a1a 0%, #444444 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s ease;
+    border: 1px solid #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-usados:active {
+    transform: scale(0.98);
+}
+
+.banner-usados .texto-banner {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.banner-usados strong {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+.banner-usados .subtexto-banner {
+    font-size: 0.8em;
+    opacity: 0.8;
+    text-transform: uppercase;
+}

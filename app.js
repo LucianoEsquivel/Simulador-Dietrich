@@ -560,34 +560,7 @@ const bancos = {
                             { m: 18, c: 55.56, tna: "0%",    g: 16.52, ltv: 17000000 },
                             { m: 24, c: 47.03, tna: "9,90%",    g: 16.52, ltv: 17000000 }
                         ] 
-                    },
-
-                    { 
-                        nombre: "Usados Tasa Fija",
-                        destacado: false, 
-                        tna: "Varios", ltv: 50, gastos: 14.10, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Usados multimarca hasta 10 años, vigencia 08/04/2026-30/04/2026, persona fisica y juridica, seguro cautivo de VW Broker.",
-                        utilPara: "Usados hasta 10 años",
-                        plazos: [
-                            { m: 12, c: 99.81, tna: "28,90%", g: 14.10, ltv: 50 },
-                            { m: 18, c: 75.63, tna: "34,90%", g: 14.10, ltv: 50 },
-                            { m: 24, c: 63.92, tna: "37,90%", g: 14.10, ltv: 50 },
-                            { m: 36, c: 52.73, tna: "40,50%", g: 14.10, ltv: 50 }
-                        ] 
-                    },
-                    { 
-                        nombre: "Usados UVAs", 
-                        destacado: false,
-                        tna: "Varios", ltv: 50, gastos: 14.10, seguro: "CAUTIVO", baseCalculo: 1000, esUVA: true, 
-                        descripcion: "Usados multimarca hasta 6 años, vigencia 08/04/2026-30/04/2026, persona fisica, seguro cautivo de VW Broker",
-                        utilPara: "Usados hasta 6 años",
-                        plazos: [
-                            { m: 12, c: 87.48, tna: "7,50%",  g: 14.10, ltv: 50 },
-                            { m: 18, c: 62.63, tna: "12,90%", g: 14.10, ltv: 50 },
-                            { m: 24, c: 50.21, tna: "15,50%", g: 14.10, ltv: 50 },
-                            { m: 36, c: 37.61, tna: "17,50%", g: 14.10, ltv: 50 }
-                        ] 
-                    }
+                    },                                  
                 ]
             },
             audi: {
@@ -644,7 +617,47 @@ const bancos = {
                 ]
             }
         }
-    }
+    },
+    
+    usados: {
+        nombre: "Tasas para usados",
+        categorias: {
+            Usados: {
+                nombre: "Volkswagen Financiera - Usados",
+                planes: [
+
+                    { 
+                        nombre: "Usados Tasa Fija",
+                        destacado: true, 
+                        tna: "Varios", ltv: 50, gastos: 14.10, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Usados multimarca hasta 10 años, vigencia 08/04/2026-30/04/2026, persona fisica y juridica, seguro cautivo de VW Broker.",
+                        utilPara: "Usados hasta 10 años",
+                        plazos: [
+                            { m: 12, c: 99.81, tna: "28,90%", g: 14.10, ltv: 50 },
+                            { m: 18, c: 75.63, tna: "34,90%", g: 14.10, ltv: 50 },
+                            { m: 24, c: 63.92, tna: "37,90%", g: 14.10, ltv: 50 },
+                            { m: 36, c: 52.73, tna: "40,50%", g: 14.10, ltv: 50 }
+                        ] 
+                    },
+                    { 
+                        nombre: "Usados UVAs", 
+                        destacado: true,
+                        tna: "Varios", ltv: 50, gastos: 14.10, seguro: "CAUTIVO", baseCalculo: 1000, esUVA: true, 
+                        descripcion: "Usados multimarca hasta 6 años, vigencia 08/04/2026-30/04/2026, persona fisica, seguro cautivo de VW Broker",
+                        utilPara: "Usados hasta 6 años",
+                        plazos: [
+                            { m: 12, c: 87.48, tna: "7,50%",  g: 14.10, ltv: 50 },
+                            { m: 18, c: 62.63, tna: "12,90%", g: 14.10, ltv: 50 },
+                            { m: 24, c: 50.21, tna: "15,50%", g: 14.10, ltv: 50 },
+                            { m: 36, c: 37.61, tna: "17,50%", g: 14.10, ltv: 50 }
+                        ] 
+                    }
+                ]
+            },
+        }
+    },
+
+
 };
 /* ==========================================================================
    2. CONFIGURACIÓN Y NAVEGACIÓN
@@ -841,8 +854,16 @@ function mostrarPlanes(categoria, bancoKey) {
         const plazoMin = plan.plazos[0].m;
         const plazoMax = plan.plazos[plan.plazos.length - 1].m;
 
-        // Construimos el texto del cuadro
-        const infoRapida = `📍 ${plan.utilPara || 'Toda la gama'}\n📈 TNA: ${tna}\n⏱ Plazos: ${plazoMin} a ${plazoMax} meses\n💰 Gastos: ${gastos}%`;
+        // --- NUEVO: Lógica para formatear LTV (Porcentaje o Monto Fijo) ---
+        let ltvRaw = p1.ltv || plan.ltv || "---";
+        let ltvMostrar = ltvRaw;
+        if (typeof ltvRaw === 'number') {
+            // Si es menor a 100 lo muestra como %, si es mayor lo muestra en Millones
+            ltvMostrar = (ltvRaw <= 100) ? `${ltvRaw}%` : `Máx $${ltvRaw / 1000000}M`;
+        }
+
+        // Construimos el texto del cuadro agregando el LTV al final
+        const infoRapida = `📍 ${plan.utilPara || 'Toda la gama'}\n📈 TNA: ${tna}\n⏱ Plazos: ${plazoMin} a ${plazoMax} meses\n💰 Gastos: ${gastos}%\n🏦 LTV: ${ltvMostrar}`;
         
         // Seteamos el atributo que leerá el CSS
         btn.setAttribute('data-tooltip', infoRapida);
@@ -930,11 +951,29 @@ function abrirFormulario(plan) {
     document.getElementById('ficha-tecnica').innerHTML = tablaTasas;
     document.getElementById('resultado-cuotas').innerHTML = "";
 
+    // 1. Limpiamos todos los inputs primero por defecto
     ['precio-lista', 'precio', 'anticipo', 'monto-directo'].forEach(id => {
         document.getElementById(id).value = "";
     });
 
+    // 2. Vinculamos los eventos para que el usuario pueda escribir
     vincularEventosCalculo();
+
+    // --- NUEVO: LÓGICA DE AUTOCOMPLETADO PARA LTV EN PESOS ---
+    // Buscamos el LTV general del plan o, si no lo tiene, el del primer plazo
+    let ltvBase = plan.ltv || plan.plazos[0].ltv || 0;
+    
+    // Si el LTV es un número mayor a 100, sabemos que es plata (ej: 44000000) y no un porcentaje (ej: 80)
+    if (typeof ltvBase === 'number' && ltvBase > 100) {
+        const inputMonto = document.getElementById('monto-directo');
+        
+        // Escribimos el LTV máximo formateado con puntos (ej: 44.000.000)
+        inputMonto.value = new Intl.NumberFormat('es-AR').format(ltvBase);
+        
+        // Simulamos automáticamente para que ya aparezcan las cuotas en pantalla
+        calcularSimulacion();
+    }
+
     window.scrollTo(0, 0);
 }
 
