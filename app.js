@@ -341,25 +341,16 @@ const bancos = {
                         nombre: "Ranger XL seg. liberado", 
                         destacado: true,
                         ltv: 18000000, gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: DD/MM/AAAA, Esta tasa aplica para: Ranger XL 4x2, 4x4 y Chasis, seguro de vida 0,20% sobre saldo, seguro liberado",
+                        descripcion: "Fecha de vigencia: 06/05/2026, Esta tasa aplica para: Ranger XL 4x2, 4x4 y Chasis, seguro de vida 0,20% sobre saldo, seguro liberado",
                         utilPara: "Ranger XL",
                         plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 18000000, info: "TNA 0%" }] 
-                    },
-
-                    { 
-                        nombre: "Ranger XL C/S", 
-                        destacado: true,
-                        ltv: 25000000, gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: DD/MM/AAAA, Aplica para XL Chasis, XL C/S 4x2 y 4x4, seguro liberado, sin gastos de otorgamiento, seguro de vida 0,20% sobre saldo",
-                        utilPara: "Ranger XL C/S",
-                        plazos: [{ m: 24, c: 42.00, tna: "0%", cft: "0%", ltv: 25000000, info: "TNA 0%" }] 
                     },
 
                     { 
                         nombre: "Especial Ranger Semestral", 
                         destacado: true,
                         ltv: 50, gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para Ranger XL y XLS, seguro liberado, sin gastos de otorgamiento, seguro de vida 0,20% sobre saldo",
+                        descripcion: "Fecha de vigencia: 06/05/2026, aplica para Ranger XL y XLS, seguro liberado, sin gastos de otorgamiento, seguro de vida 0,20% sobre saldo",
                         utilPara: "Ranger XL y XLS",
                         plazos: [{ m: 12, c: 686.52, tna: "39,90%", cft: "54,11%", ltv: 50, info: "2 Cuotas Semestrales" }, { m: 24, c: 459.41, tna: "49,90%", cft: "69,49%", ltv: 50, info: "4 Cuotas Semestrales" }] 
                     },
@@ -367,40 +358,40 @@ const bancos = {
                         nombre: "Comercial Ranger XL/XLS (cautivo)",
                         destacado: false, 
                         gastos: 6, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: DD/MM/AAAA, Financiación para Ranger XL/XLS con seguro cautivo, seguro de vida 0,20% sobre saldo.",
+                        descripcion: "Fecha de vigencia: 06/05/2026, Financiación para Ranger XL/XLS con seguro cautivo, seguro de vida 0,20% sobre saldo.",
                         utilPara: "Ranger XL y XLS",
-                        plazos: [{ m: 12, c: 90.93, tna: "14,90%", cft: "17,77%", ltv: 40, info: "max 40%" }, { m: 24, c: 63.18, tna: "39,90%", cft: "54,19", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 54.12, tna: "45,90%", cft: "64,34%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 48.43, tna: "45,90%", cft: "64,34%", ltv: 60, info: "LTV Máx 60%" }] 
+                        plazos: [{ m: 12, c: 90.93, tna: "14,90%", cft: "17,77%", ltv: 40, info: "max 40%" }, { m: 24, c: 63.18, tna: "39,90%", cft: "54,19", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 48.90, tna: "37,90%", cft: "50,93%", ltv: 50, info: "LTV Máx 50%" },] 
                     },
                     { 
                         nombre: "Comercial Ranger XL/XLS (liberado)", 
                         destacado: true,
                         gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: DD/MM/AAAA, Financiación comercial para Ranger XL y XLS con seguro liberado, seguro de vida 0,20% sobre saldo",
+                        descripcion: "Fecha de vigencia: 06/05/2026, Financiación comercial para Ranger XL y XLS con seguro liberado, seguro de vida 0,20% sobre saldo",
                         utilPara: "Ranger XL y XLS",
-                        plazos: [{ m: 12, c: 91.98, tna: "16,90%", cft: "20,36%", ltv: 40, info: "LTV Máx 40%" }, { m: 24, c: 64.38, tna: "41,90%", cft: "57,50%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 55.46, tna: "47,90%", cft: "67,86%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 49.87, tna: "47,90%", cft: "67,86%", ltv: 60, info: "LTV Máx 60%" }] 
+                        plazos: [{ m: 12, c: 91.98, tna: "16,90%", cft: "20,36%", ltv: 40, info: "LTV Máx 40%" }, { m: 24, c: 64.38, tna: "41,90%", cft: "57,50%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 50.18, tna: "39,90%", cft: "54,19%", ltv: 60, info: "LTV Máx 60%" },] 
                     },
                     
                     { 
                         nombre: "Especial Transit (cautivo)", 
                         destacado: false,
                         gastos: 6, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para Transit excepto las E-Transit, seguro de vida 0,20% sobre saldo, seguro cautivo.",
+                        descripcion: "Fecha de vigencia: 06/05/2026, aplica para Transit excepto las E-Transit, seguro de vida 0,20% sobre saldo, seguro cautivo.",
                         utilPara: "Transit excepto E-Transit",
-                        plazos: [{ m: 12, c: 87.32, tna: "7,90%", cft: "9,09%", ltv: 60, info: "LTV Máx 60%" }, { m: 24, c: 50.74, tna: "17,90%", cft: "21,67%", ltv: 60, info: "LTV Máx 60%" }, { m: 36, c: 54.12, tna: "45,90%", cft: "64,34%", ltv: 50, info: "LTV Máx 50%" }, { m: 48, c: 48.43, tna: "45,90%", cft: "64,34%", ltv: 50, info: "LTV Máx 50%" }] 
+                        plazos: [{ m: 12, c: 87.32, tna: "7,90%", cft: "9,09%", ltv: 60, info: "LTV Máx 60%" }, { m: 24, c: 50.74, tna: "17,90%", cft: "21,67%", ltv: 60, info: "LTV Máx 60%" }, { m: 36, c: 48.90, tna: "37,90%", cft: "50,93%", ltv: 50, info: "LTV Máx 50%" },] 
                     },
                     { 
                         nombre: "Especial Transit (liberado)", 
                         destacado: false,
                         gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para Transit excepto las E-Transit, seguro liberado, seguro de vida 0,20% sobre saldo",
+                        descripcion: "Fecha de vigencia: 06/05/2026, aplica para Transit excepto las E-Transit, seguro liberado, seguro de vida 0,20% sobre saldo",
                         utilPara: "Transit excepto E-Transit",
-                        plazos: [{ m: 12, c: 88.35, tna: "9.90%", cft: "11.51%", ltv: 60, info: "LTV Máx 60%" }, { m: 24, c: 51.81, tna: "19,90%", cft: "24,35%", ltv: 60, info: "LTV Máx 60%" }, { m: 36, c: 55.46, tna: "47,90%", cft: "67,86%", ltv: 50, info: "LTV Máx 50%" }, { m: 48, c: 49.87, tna: "47,90%", cft: "67,86%", ltv: 50, info: "LTV Máx 50%" }] 
+                        plazos: [{ m: 12, c: 88.35, tna: "9.90%", cft: "11.51%", ltv: 60, info: "LTV Máx 60%" }, { m: 24, c: 51.81, tna: "19,90%", cft: "24,35%", ltv: 60, info: "LTV Máx 60%" }, { m: 36, c: 50.18, tna: "39,90%", cft: "54,19%", ltv: 50, info: "LTV Máx 50%" },] 
                     },
                     { 
                         nombre: "Generales Canal Comercial (cautivo)", 
                         destacado: true,
                         tna: "47,90%", ltv: 75, gastos: 6, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para Kuga, Maverick, F-150, Mustang, Ranger, Territory, Bronco, Transit, seguro de vida 0,20% sobre saldo",
+                        descripcion: "Fecha de vigencia: 06/05/2026, aplica para Kuga, Maverick, F-150, Mustang, Ranger, Territory, Bronco, Transit, seguro de vida 0,20% sobre saldo",
                         utilPara: "Kuga, Maverick, F-150, Mustang, Ranger, Territory, Bronco, Transit",
                         plazos: [{ m: 12, c: 110.09, cft: "71,96%" }, { m: 24, c: 69.23, cft: "71,94%" }, { m: 36, c: 56.71, cft: "71.93%" }, { m: 48, c: 51.19, cft: "71,91%" }] 
                     },
@@ -408,7 +399,7 @@ const bancos = {
                         nombre: "Generales Canal Comercial (liberado)", 
                         destacado: true,
                         tna: "50,90%", ltv: 75, gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para Kuga, Maverick, F-150, Mustang, Ranger, Territory, Bronco, Transit",
+                        descripcion: "Fecha de vigencia: 06/05/2026, aplica para Kuga, Maverick, F-150, Mustang, Ranger, Territory, Bronco, Transit",
                         utilPara: "Kuga, Maverick, F-150, Mustang, Ranger, Territory, Bronco, Transit",
                         plazos: [{ m: 12, c: 111.81, cft: "77,49%" }, { m: 24, c: 71.11, cft: "77,47%" }, { m: 36, c: 58.76, cft: "77,45%" }, { m: 48, c: 53.40, cft: "77,44%" }] 
                     },
@@ -416,49 +407,49 @@ const bancos = {
                         nombre: "Mi Pyme - Ranger", 
                         destacado: false,
                         gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: DD/MM/AAAA, Línea Mi Pyme exclusiva para unidades Ford Ranger, excepto Raptor",
+                        descripcion: "Fecha de vigencia: 06/05/2026, Línea Mi Pyme exclusiva para unidades Ford Ranger, excepto Raptor",
                         utilPara: "Ranger excepto Raptor",
-                        plazos: [{ m: 24, c: 58.76, tna: "30,80%", cft: "38,25%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 50.05, tna: "37,80%", cft: "48,56%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 44.02, tna: "37,80%", cft: "48,55%", ltv: 60, info: "LTV Máx 60%" }] 
+                        plazos: [{ m: 24, c: 54.93, tna: "23,90%", cft: "29,37%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 45.72, tna: "30,90%", cft: "38,94%", ltv: 60, info: "LTV Máx 60%" },] 
                     },
                     { 
                         nombre: "Mi Pyme - Transit", 
                         destacado: false,
                         gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: DD/MM/AAAA, Línea Mi Pyme para unidades Ford Transit, excepto E-Transit.",
+                        descripcion: "Fecha de vigencia: 06/05/2026, Línea Mi Pyme para unidades Ford Transit, excepto E-Transit.",
                         utilPara: "Transit excepto E-Transit",
-                        plazos: [{ m: 24, c: 58.76, tna: "30,80%", cft: "38,25%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 50.05, tna: "37,80%", cft: "48,56%", ltv: 60, info: "LTV Máx 60%" }, { m: 48, c: 44.02, tna: "37,80%", cft: "48,55%", ltv: 60, info: "LTV Máx 60%" }] 
+                        plazos: [{ m: 24, c: 54.93, tna: "23,90%", cft: "29,37%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 45.72, tna: "30,90%", cft: "38,94%", ltv: 60, info: "LTV Máx 60%" },] 
                     },
                     { 
                         nombre: "Especial UVA Transit", 
                         destacado: false,
-                        tna: "19,00%", cft: "25,57%", ltv: 60, gastos: 6, seguro: "LIBERADO", esUVA: true, valorUVA: 1706.43, baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para Transit, excepto E-Transit, para personas fisicas y juridicas, seguro liberado, la cuota incluye capital e intereses",
+                        tna: "10,00%", cft: "12,79%", ltv: 60, gastos: 6, seguro: "LIBERADO", esUVA: true, valorUVA: 1706.43, baseCalculo: 1000, 
+                        descripcion: "Fecha de vigencia: 06/05/2026, aplica para Transit, excepto E-Transit, para personas fisicas y juridicas, seguro liberado, la cuota incluye capital e intereses",
                         utilPara: "Transit excepto E-Transit",
-                        plazos: [{ m: 24, c: 52.24 }, { m: 36, c: 38.52 }] 
+                        plazos: [{ m: 24, c: 47.09 }, { m: 36, c: 33.21 }] 
                     },
                     { 
                         nombre: "General UVA Ranger", 
                         destacado: false,
-                        tna: "26,90%", cft: "37,87%", ltv: 60, gastos: 6, seguro: "LIBERADO", esUVA: true, valorUVA: 1706.43, baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para todos los modelos de Ranger, la cuota incluye capital, intereses e IVA",
+                        tna: "19,00%", cft: "25,57%", ltv: 60, gastos: 6, seguro: "LIBERADO", esUVA: true, valorUVA: 1706.43, baseCalculo: 1000, 
+                        descripcion: "Fecha de vigencia: 06/05/2026, aplica para todos los modelos de Ranger, la cuota incluye capital, intereses e IVA",
                         utilPara: "Ranger",
-                        plazos: [{ m: 12, c: 98.62 }, { m: 24, c: 56.99 }, { m: 36, c: 43.50 }, { m: 48, c: 37.04 }, { m: 60, c: 33.38 }] 
+                        plazos: [{ m: 12, c: 94.01 }, { m: 24, c: 52.24 }, { m: 36, c: 38.52 }, { m: 48, c: 31.80 }, { m: 60, c: 27.89 }] 
                     },
                     { 
                         nombre: "Ranger USD 12/24", 
                         destacado: false,
                         moneda: "USD", ltv: 50, gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para todas las versiones de Ranger excepto Raptor, seguro de vida 0,20% sobre saldo.",
+                        descripcion: "Fecha de vigencia: 06/05/2026, aplica para todas las versiones de Ranger excepto Raptor, seguro de vida 0,20% sobre saldo.",
                         utilPara: "Ranger excepto Raptor",
-                        plazos: [{ m: 12, c: 83.50, tna: "0,00%", cft: "2,41%", info: "TNA 0% USD" }, { m: 24, c: 44.91, tna: "4,50%", cft: "7,38%", info: "TNA 4,5% USD" }] 
+                        plazos: [{ m: 12, c: 84.42, tna: "0,00%", cft: "2,41%", info: "TNA 0% USD" }, { m: 24, c: 44.91, tna: "4,50%", cft: "7,38%", info: "TNA 4,5% USD" }] 
                     },
                     { 
                         nombre: "Ranger USD", 
                         destacado: false,
                         moneda: "USD", tna: "11,00%", cft: "14,56%", ltv: 50, gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para todas las versiones de Ranger, excepto Raptor, seguro de vida 0,20% sobre saldo",
+                        descripcion: "Fecha de vigencia: 06/05/2026, aplica para todas las versiones de Ranger, excepto Raptor, seguro de vida 0,20% sobre saldo",
                         utilPara: "Ranger",
-                        plazos: [{ m: 12, c: 90.10 }, { m: 24, c: 48.20 }, { m: 36, c: 34.34 }] 
+                        plazos: [{ m: 12, c: 90.01 }, { m: 24, c: 48.20 }, { m: 36, c: 34.34 }] 
                     }
                 ]
             }

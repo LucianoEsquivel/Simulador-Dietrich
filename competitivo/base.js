@@ -318,26 +318,9 @@ export const financiaciones = [
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
-            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "0%", ltv: "$18.000.000", gastos: "4%", seguro: "Liberado"}
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "0%", ltv: "$18.000.000", gastos: "2%", seguro: "Liberado"}
         ]
     },
-
-    {
-        idPlan: 17,
-        banco: "ICBC",
-        nombre: "Especial Ranger C/S (Mayorista)",
-        descripcion: "Financiacion exclusiva para Ranger XL CS y chasis",
-        tipoPersona: "Jurídica", // O "Física" o "Ambas"
-        factorCalculo: 1000,
-        aplicaATodo: false, 
-        vehiculosIds: [1, 2, 3], 
-        
-        // Tabla de plazos en formato compacto
-        cuotasPorMillon: [
-            { plazo: "24 meses", valor: "$42,00", tna: "0%", cft: "0%", ltv: "$25.000.000", gastos: "6%", seguro: "Liberado" }
-        ]
-    },
-
 
     {
         idPlan: 18,
@@ -354,14 +337,13 @@ export const financiaciones = [
             // Opciones Seguro Cautivo
             { plazo: "12 meses", valor: "$90,93", tna: "14,90%", cft: "17,77%", ltv: "40%", gastos: "6%", seguro: "Cautivo" },
             { plazo: "24 meses", valor: "$63,18", tna: "39,90%", cft: "54,19%", ltv: "50%", gastos: "6%", seguro: "Cautivo" },
-            { plazo: "36 meses", valor: "$54,12", tna: "45,90%", cft: "64,34%", ltv: "60%", gastos: "6%", seguro: "Cautivo" },
-            { plazo: "48 meses", valor: "$48,43", tna: "45,90%", cft: "64,34%", ltv: "60%", gastos: "6%", seguro: "Cautivo" },
+            { plazo: "36 meses", valor: "$48,90", tna: "37,90%", cft: "50,93%", ltv: "50%", gastos: "6%", seguro: "Cautivo" },
+            
             
             // Opciones Seguro Liberado
             { plazo: "12 meses", valor: "$91,90", tna: "16,90%", cft: "20,36%", ltv: "40%", gastos: "6%", seguro: "Liberado" },
             { plazo: "24 meses", valor: "$64,38", tna: "41,90%", cft: "57,50%", ltv: "50%", gastos: "6%", seguro: "Liberado" },
-            { plazo: "36 meses", valor: "$55,46", tna: "47,90%", cft: "67,86%", ltv: "60%", gastos: "6%", seguro: "Liberado" },
-            { plazo: "48 meses", valor: "$47,30", tna: "47,90%", cft: "67,86%", ltv: "60%", gastos: "6%", seguro: "Liberado" }
+            { plazo: "36 meses", valor: "$50,18", tna: "39,90%", cft: "54,19%", ltv: "60%", gastos: "6%", seguro: "Liberado" },
         ]
     },
 
@@ -380,14 +362,12 @@ export const financiaciones = [
             // Opciones Seguro Cautivo
             { plazo: "12 meses", valor: "$87,32", tna: "7,90%", cft: "9,09%", ltv: "60%", gastos: "6%", seguro: "Cautivo" },
             { plazo: "24 meses", valor: "$50,74", tna: "17,90%", cft: "21,67%", ltv: "60%", gastos: "6%", seguro: "Cautivo" },
-            { plazo: "36 meses", valor: "$54,12", tna: "45,90%", cft: "64,34%", ltv: "50%", gastos: "6%", seguro: "Cautivo" },
-            { plazo: "48 meses", valor: "$48,43", tna: "45,90%", cft: "64,34%", ltv: "50%", gastos: "6%", seguro: "Cautivo" },
+            { plazo: "36 meses", valor: "$48,90", tna: "37,90%", cft: "50,93%", ltv: "50%", gastos: "6%", seguro: "Cautivo" },
             
             // Opciones Seguro Liberado
             { plazo: "12 meses", valor: "$88,35", tna: "9,90%", cft: "11,51%", ltv: "60%", gastos: "6%", seguro: "Liberado" },
             { plazo: "24 meses", valor: "$51,81", tna: "19,90%", cft: "24,35%", ltv: "60%", gastos: "6%", seguro: "Liberado" },
-            { plazo: "36 meses", valor: "$55,46", tna: "47,90%", cft: "68,86%", ltv: "50%", gastos: "6%", seguro: "Liberado" },
-            { plazo: "48 meses", valor: "$49,87", tna: "47,90%", cft: "67,86%", ltv: "50%", gastos: "6%", seguro: "Liberado" }
+            { plazo: "36 meses", valor: "$50,18", tna: "39,90%", cft: "54,19%", ltv: "50%", gastos: "6%", seguro: "Liberado" },
         ]
     },
 
@@ -405,9 +385,9 @@ export const financiaciones = [
         cuotasPorMillon: [
             // Opciones Seguro Cautivo
             { plazo: "12 meses", valor: "$112,45", tna: "47,90%", cft: "71,96%", ltv: "75%", gastos: "60%", seguro: "Cautivo" },
-            { plazo: "24 meses", valor: "$71,72", tna: "47,90%", cft: "71,94%", ltv: "75%", gastos: "60%", seguro: "Cautivo" },
-            { plazo: "36 meses", valor: "$59,02", tna: "47,90%", cft: "71,93%", ltv: "75%", gastos: "60%", seguro: "Cautivo" },
-            { plazo: "48 meses", valor: "$53,31", tna: "47,90%", cft: "71,91%", ltv: "75%", gastos: "60%", seguro: "Cautivo" },
+            { plazo: "24 meses", valor: "$69,23", tna: "47,90%", cft: "71,94%", ltv: "75%", gastos: "60%", seguro: "Cautivo" },
+            { plazo: "36 meses", valor: "$56,71", tna: "47,90%", cft: "71,93%", ltv: "75%", gastos: "60%", seguro: "Cautivo" },
+            { plazo: "48 meses", valor: "$51,19", tna: "47,90%", cft: "71,91%", ltv: "75%", gastos: "60%", seguro: "Cautivo" },
             
             // Opciones Seguro Liberado
             { plazo: "12 meses", valor: "$111,81", tna: "50,90%", cft: "77,49%", ltv: "75%", gastos: "60%", seguro: "Liberado" },
@@ -429,9 +409,8 @@ export const financiaciones = [
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
-            { plazo: "24 meses", valor: "$58,76", tna: "30,80%", cft: "38,25%", ltv: "50%", gastos: "6%", seguro: "Cautivo" },
-            { plazo: "36 meses", valor: "$50,05", tna: "37,80%", cft: "48,56%", ltv: "60%", gastos: "6%", seguro: "Cautivo" },
-            { plazo: "48 meses", valor: "$44.02", tna: "37,80%", cft: "48,55%", ltv: "60%", gastos: "6%", seguro: "Cautivo" }
+            { plazo: "24 meses", valor: "$54,93", tna: "23,90%", cft: "29,37%", ltv: "50%", gastos: "6%", seguro: "Cautivo" },
+            { plazo: "36 meses", valor: "$45,72", tna: "30,90%", cft: "38,94%", ltv: "60%", gastos: "6%", seguro: "Cautivo" },
         ]
     },
 
@@ -447,9 +426,8 @@ export const financiaciones = [
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
-            { plazo: "24 meses", valor: "$58,76", tna: "30,80%", cft: "38,25%", ltv: "50%", gastos: "6%", seguro: "Cautivo" },
-            { plazo: "36 meses", valor: "$50,05", tna: "37,80%", cft: "48,56%", ltv: "60%", gastos: "6%", seguro: "Cautivo" },
-            { plazo: "48 meses", valor: "$44,02", tna: "37,80%", cft: "45,55%", ltv: "60%", gastos: "6%", seguro: "Cautivo" }
+            { plazo: "24 meses", valor: "$54,93", tna: "23,90%", cft: "29,37%", ltv: "50%", gastos: "6%", seguro: "Cautivo" },
+            { plazo: "36 meses", valor: "$45,72", tna: "30,90%", cft: "38,94%", ltv: "60%", gastos: "6%", seguro: "Cautivo" },
         ]
     },
 
@@ -465,8 +443,8 @@ export const financiaciones = [
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
-            { plazo: "24 meses", valor: "$52,24", tna: "19%", cft: "25,57%", ltv: "60%", gastos: "6%", seguro: "Liberado" },
-            { plazo: "36 meses", valor: "$38,52", tna: "19%", cft: "25,57%", ltv: "60%", gastos: "6%", seguro: "Liberado" }
+            { plazo: "24 meses", valor: "$47,23", tna: "10%", cft: "12,79%", ltv: "60%", gastos: "6%", seguro: "Liberado" },
+            { plazo: "36 meses", valor: "$33,21", tna: "10%", cft: "12,79%", ltv: "60%", gastos: "6%", seguro: "Liberado" }
         ]
     },
 
@@ -482,11 +460,11 @@ export const financiaciones = [
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
-            { plazo: "12 meses", valor: "$98,63", tna: "26,90%", cft: "37,87%", ltv: "60%", gastos: "6%", seguro: "Liberado" },
-            { plazo: "24 meses", valor: "$56,99", tna: "26,90%", cft: "37,87%", ltv: "60%", gastos: "6%", seguro: "Liberado" },
-            { plazo: "36 meses", valor: "$43,50", tna: "26,90%", cft: "37,87%", ltv: "60%", gastos: "6%", seguro: "Liberado" },
-            { plazo: "48 meses", valor: "$37,04", tna: "26,90%", cft: "37,87%", ltv: "60%", gastos: "6%", seguro: "Liberado" },
-            { plazo: "60 meses", valor: "$33,38", tna: "26,90%", cft: "37,87%", ltv: "60%", gastos: "6%", seguro: "Liberado" }
+            { plazo: "12 meses", valor: "$94,01", tna: "19%", cft: "25,57%", ltv: "60%", gastos: "6%", seguro: "Liberado" },
+            { plazo: "24 meses", valor: "$52,24", tna: "19%", cft: "25,57%", ltv: "60%", gastos: "6%", seguro: "Liberado" },
+            { plazo: "36 meses", valor: "$38,52", tna: "19%", cft: "25,57%", ltv: "60%", gastos: "6%", seguro: "Liberado" },
+            { plazo: "48 meses", valor: "$31,80", tna: "19%", cft: "25,57%", ltv: "60%", gastos: "6%", seguro: "Liberado" },
+            { plazo: "60 meses", valor: "$27,89", tna: "19%", cft: "25,57%", ltv: "60%", gastos: "6%", seguro: "Liberado" }
         ]
     },
 
