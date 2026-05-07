@@ -732,11 +732,11 @@ export const financiaciones = [
         idPlan: 41, // cambiar id luego
         banco: "Volkswagen Financiera",
         nombre: "Autos financia mas",
-        descripcion: "Tera Highline y Outfit, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos (todas las versiones) Vigencia: desde el 17/04/2026 hasta el 30/04/2026, Disponible: Persona física, jurídica y venta directa ",
+        descripcion: "Tera Highline y Outfit, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos Highline y Highline Bi Tono y Nivus Highline y Nivus Outfit Vigencia: desde el 17/04/2026 hasta el 30/04/2026, Disponible: Persona física, jurídica y venta directa ",
         tipoPersona: "Ambas", // O "Jurídica" o "Física"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [95, 96, 99, 100, 103, 104, 105, 106, 107, 108], 
+        vehiculosIds: [92, 93, 95, 96, 99, 100, 103, 104, 105, 107, 108], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
@@ -745,45 +745,43 @@ export const financiaciones = [
             { plazo: "24 meses", valor: "$41,67", tna: "0%", cft: "S/D", ltv: "$19.000.000", gastos: "17,73%", seguro: "Cautivo" }
         ]
     },
-    
+
     {
         idPlan: 42, // cambiar id luego
         banco: "Volkswagen Financiera",
-        nombre: "UVA Autos",
-        descripcion: "Tera Highline y Outfit, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos (todas las versiones) Vigencia: desde el 17/04/2026 hasta el 30/04/2026, Disponible: Persona física, jurídica y venta directa ",
-        tipoPersona: "Física", // O "Jurídica" o "Física"
-        factorCalculo: 1000,
-        aplicaATodo: false, 
-        vehiculosIds: [95, 96, 99, 100, 103, 104, 105, 106, 107, 108], 
-        
-        // Tabla de plazos en formato compacto
-        cuotasPorMillon: [
-            { plazo: "24 meses", valor: "$41,67", tna: "0%", cft: "S/D", ltv: "$21.000.000", gastos: "2%", seguro: "Cautivo" }
-        ]
-    },
-
-    {
-        idPlan: 43,
-        banco: "Volkswagen Financiera",
-        nombre: "especial amarok",
-        descripcion: "Financiacion exclusiva para amarok nomas",
+        nombre: "Autos sin quebranto",
+        descripcion: "Tera Highline y Outfit, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos Highline y Highline Bi Tono y Nivus Highline y Nivus Outfit Vigencia: desde el 17/04/2026 hasta el 30/04/2026, Disponible: Persona física, jurídica y venta directa ",
         tipoPersona: "Ambas", // O "Jurídica" o "Física"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88], 
+        vehiculosIds: [92, 93, 95, 96, 99, 100, 103, 104, 105, 107, 108], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
-            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$27.000.000", gastos: "16,52%", seguro: "Cautivo" },
-            { plazo: "18 meses", valor: "$55,56", tna: "0%", cft: "S/D", ltv: "$17.000.000", gastos: "16,52%", seguro: "Cautivo" },
-            { plazo: "24 meses", valor: "$52,77", tna: "19,90%", cft: "S/D", ltv: "$24.000.000", gastos: "14,705%", seguro: "Cautivo" }
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$17.000.000", gastos: "2%", seguro: "Cautivo" }
+        ]
+    },
+    
+    {
+        idPlan: 43, // cambiar id luego
+        banco: "Volkswagen Financiera",
+        nombre: "UVA Autos",
+        descripcion: "Tera Highline y Outfit, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos Highline y Highline Bi Tono y Nivus Highline y Nivus Outfit Vigencia: desde el 17/04/2026 hasta el 30/04/2026, Disponible: Persona física ",
+        tipoPersona: "Física", // O "Jurídica" o "Física"
+        factorCalculo: 1000,
+        aplicaATodo: false, 
+        vehiculosIds: [92, 93, 95, 96, 99, 100, 103, 104, 105, 107, 108], 
+        
+        // Tabla de plazos en formato compacto
+        cuotasPorMillon: [
+            { plazo: "24 meses", valor: "$41,67", tna: "0%", cft: "S/D", ltv: "$19.000.000", gastos: "2%", seguro: "Cautivo" }
         ]
     },
 
     {
         idPlan: 44,
         banco: "Volkswagen Financiera",
-        nombre: "especial autos",
+        nombre: "Especial autos",
         descripcion: "Financiacion exclusiva para volkswagen, excepto amarok",
         tipoPersona: "Ambas", // O "Jurídica" o "Física"
         factorCalculo: 1000,
@@ -796,6 +794,25 @@ export const financiaciones = [
             { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$25.000.000", gastos: "14,705%", seguro: "Cautivo" },
             { plazo: "18 meses", valor: "$55,56", tna: "0%", cft: "S/D", ltv: "$17.000.000", gastos: "16,52%", seguro: "Cautivo" },
             { plazo: "24 meses", valor: "$47,03", tna: "9,90%", cft: "S/D", ltv: "$17.000.000", gastos: "16,52%", seguro: "Cautivo" }
+        ]
+    },
+
+    {
+        idPlan: 45,
+        banco: "Volkswagen Financiera",
+        nombre: "Autos largo plazo",
+        descripcion: "Financiacion exclusiva para volkswagen, excepto amarok",
+        tipoPersona: "Ambas", // O "Jurídica" o "Física"
+        factorCalculo: 1000,
+        aplicaATodo: false, 
+        vehiculosIds: [89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119], 
+
+        
+        // Tabla de plazos en formato compacto
+        cuotasPorMillon: [
+            { plazo: "36 meses", valor: "$45,47", tna: "29,9%", cft: "S/D", ltv: "$32.000.000", gastos: "13,495%", seguro: "Cautivo" },
+            { plazo: "48 meses", valor: "$39,12", tna: "29,9%", cft: "S/D", ltv: "$32.000.000", gastos: "14,1%", seguro: "Cautivo" },
+            
         ]
     },
 
