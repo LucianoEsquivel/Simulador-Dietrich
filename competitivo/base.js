@@ -583,7 +583,7 @@ export const financiaciones = [
             { plazo: "24 meses (Tasa 19% - Gtos 6%)", valor: "$52,77", tna: "19,90%", cft: "26,92%", ltv: "25%", gastos: "6%", seguro: "Cautivo" },
             { plazo: "12 meses (Tasa 19% - Gtos 17%)", valor: "$94,53", tna: "19%", cft: "26,92%", ltv: "$25.000.000", gastos: "17%", seguro: "Cautivo" },
             { plazo: "18 meses (Tasa 0% - Gtos 17%)", valor: "$55,56", tna: "0%", cft: "0%", ltv: "$30.000.000", gastos: "17%", seguro: "Cautivo" },
-            { plazo: "12 meses (Tasa 0% - Gtos 17%)", valor: "$83,33,53", tna: "0%", cft: "0%", ltv: "80%", gastos: "17%", seguro: "Cautivo" },
+            { plazo: "12 meses (Tasa 0% - Gtos 17%)", valor: "$83,33", tna: "0%", cft: "0%", ltv: "80%", gastos: "17%", seguro: "Cautivo" },
             { plazo: "24 meses (Tasa 19% - Gtos 17%)", valor: "$52,77", tna: "19,90%", cft: "26,92%", ltv: "80%", gastos: "17%", seguro: "Cautivo" },
             { plazo: "36 meses (Tasa 30% - Gtos 17%)", valor: "$45,47", tna: "29,90%", cft: "42,82%", ltv: "60%", gastos: "17%", seguro: "Cautivo" }
         ]

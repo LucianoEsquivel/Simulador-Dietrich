@@ -321,7 +321,7 @@ const bancos = {
                         gastos: 6, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: 07/05/2026, Seguro liberado para Transit. aplica para todos los modelos de Transit, excepto E-Transit. la cuota incluye capital, intereses e IVA",
                         utilPara: "Transit excepto E-Transit",
-                        plazos: [{ m: 12, c: 86.90, tna: "9,90%", cft: "12,66%", ltv: 60, info: "LTV Máx 60%" }, { m: 24, c: 52.77, tna: "19,90%", cft: "26,96%", ltv: 60, info: "LTV Máx 60%" }, { m: 36, c: 50.91, tna: "37,90%", cft: "56,84%", ltv: 50, info: "LTV Máx 50%" }] 
+                        plazos: [{ m: 12, c: 88.92, tna: "9,90%", cft: "12,66%", ltv: 60, info: "LTV Máx 60%" }, { m: 24, c: 52.77, tna: "19,90%", cft: "26,96%", ltv: 60, info: "LTV Máx 60%" }, { m: 36, c: 50.91, tna: "37,90%", cft: "56,84%", ltv: 50, info: "LTV Máx 50%" }] 
                     }
                     
                 ]
