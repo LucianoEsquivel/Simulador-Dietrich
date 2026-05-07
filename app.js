@@ -466,42 +466,42 @@ const bancos = {
                         nombre: "Amarok financia mas", 
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Amarok, seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 17/04/2026 hasta el 30/04/2026",
+                        descripcion: "Aplica para Amarok, seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 07/05/2026 hasta el 31/05/2026",
                         utilPara: "Amarok",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",   g: 15.915,   ltv: 44000000 },
-                            { m: 18, c: 55.56, tna: "0%",   g: 16.52, ltv: 28000000 },
-                            { m: 24, c: 41.67, tna: "0%",   g: 15.31, ltv: 20000000 },
+                            { m: 12, c: 83.33, tna: "0%",   g: 15.915,   ltv: 40000000 },
+                            { m: 18, c: 55.56, tna: "0%",   g: 16.52, ltv: 26000000 },
+                            { m: 24, c: 41.67, tna: "0%",   g: 15.31, ltv: 18000000 },
                         ] 
                     },
                     { 
                         nombre: "Amarok sin quebranto", 
                         destacado: true,
                         tna: "0%", gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Amarok, seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 17/04/2026 hasta el 30/04/2026",
+                        descripcion: "Aplica para Amarok, seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 07/05/2026 hasta el 31/05/2026",
                         utilPara: "Amarok",
-                        plazos: [{ m: 12, c: 83.33, tna: "0%", ltv: 21500000, g: 2 }] 
+                        plazos: [{ m: 12, c: 83.33, tna: "0%", ltv: 20000000, g: 2 }] 
                     },
                     { 
                         nombre: "UVA Amarok (24)", 
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Amarok, para persona fisica, seguro cautivo de VW Broker, vigencia: 17/04/2026-30/04/2026",
+                        descripcion: "Aplica para Amarok, para persona fisica, seguro cautivo de VW Broker, vigencia: 07/05/2026-31/05/2026",
                         utilPara: "Amarok",
                         plazos: [
-                            { m: 24, c: 41.67, tna: "0%", g: 2, ltv: 21500000 },
+                            { m: 24, c: 41.67, tna: "0%", g: 2, ltv: 20000000 },
                         ] 
                     },
                     { 
                         nombre: "Autos financia mas", 
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Nivus (Highline, Outfit), Tera (Highline, Outfit), T-Cross (Comfortline, Highline, Extreme), Polo (Comfortline, Highline) y Taos (Todas las versiones) disponible para persona fisica y juridica, seguro cautivo de VW Broker, vigencia: 17/04/2026-30/04/2026",
-                        utilPara: "Tera, T-Cross, Polo, Taos",
+                        descripcion: "Aplica para Nivus (Highline, Outfit), Tera (Highline, Outfit), T-Cross (Comfortline, Highline, Extreme), Polo (Comfortline, Highline) y Taos (Todas las versiones) disponible para persona fisica y juridica, seguro cautivo de VW Broker, vigencia: 07/05/2026-31/05/2026",
+                        utilPara: "Tera, T-Cross, Polo, Taos, Nivus",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",    g: 11.075, ltv: 32000000 },
-                            { m: 18, c: 55.56, tna: "0%",    g: 15.31, ltv: 25500000 },
-                            { m: 24, c: 41.67, tna: "0%",    g: 17.73, ltv: 21000000 }
+                            { m: 12, c: 83.33, tna: "0%",    g: 11.075, ltv: 28000000 },
+                            { m: 18, c: 55.56, tna: "0%",    g: 15.31, ltv: 22000000 },
+                            { m: 24, c: 41.67, tna: "0%",    g: 17.73, ltv: 19000000 }
                         ] 
                     },
 
@@ -509,10 +509,10 @@ const bancos = {
                         nombre: "Autos sin quebranto", 
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Nivus (Highline, Outfit), Tera (Highline, Outfit), T-Cross (Comfortline, Highline, Extreme), Polo (Comfortline, Highline) y Taos (Todas las versiones) disponible para persona fisica y juridica, seguro cautivo de VW Broker, vigencia: 17/04/2026-30/04/2026",
-                        utilPara: "Tera, T-Cross, Polo, Taos",
+                        descripcion: "Aplica para Nivus (Highline, Outfit), Tera (Highline, Outfit), T-Cross (Comfortline, Highline, Extreme), Polo (Comfortline, Highline) y Taos (Todas las versiones) disponible para persona fisica y juridica, seguro cautivo de VW Broker, vigencia: 07/05/2026-31/05/2026",
+                        utilPara: "Tera, T-Cross, Polo, Taos, Nivus",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",   g: 2,   ltv: 21000000 },
+                            { m: 12, c: 83.33, tna: "0%",   g: 2,   ltv: 17000000 },
                         ] 
                     },
 
@@ -520,23 +520,10 @@ const bancos = {
                         nombre: "UVA Autos", 
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Tera Nivus (Highline, Outfit), (Highline, Outfit), T-Cross (Comfortline, Highline, Extreme), Polo (Comfortline, Highline) y Taos (Todas las versiones) disponible para persona fisica y juridica, seguro cautivo de VW Broker, vigencia: 17/04/2026-30/04/2026",
-                        utilPara: "Tera, T-Cross, Polo, Taos",
+                        descripcion: "Aplica para Tera Nivus (Highline, Outfit), (Highline, Outfit), T-Cross (Comfortline, Highline, Extreme), Polo (Comfortline, Highline) y Taos (Todas las versiones) disponible para persona fisica y juridica, seguro cautivo de VW Broker, vigencia: 07/05/2026-31/05/2026",
+                        utilPara: "Tera, T-Cross, Polo, Taos, Nivus",
                         plazos: [
-                            { m: 24, c: 41.67, tna: "0%",   g: 2,   ltv: 21000000 },
-                        ] 
-                    },
-
-                    { 
-                        nombre: "Especial Amarok", 
-                        destacado: false,
-                        tna: "varios", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Amarok, disponible para persona fisica, juridica, seguro cautivo de BW Broker, vigencia: 08/04/2026-30/04/2026",
-                        utilPara: "Amarok",
-                        plazos: [
-                            { m: 12, c: 83.33, tna: "0%",    g: 16.52, ltv: 27000000 },
-                            { m: 18, c: 55.56, tna: "0%",    g: 16.52, ltv: 17000000 },
-                            { m: 24, c: 52.77, tna: "19,90%", g: 14.705, ltv: 24000000 }
+                            { m: 24, c: 41.67, tna: "0%",   g: 2,   ltv: 19000000 },
                         ] 
                     },
 
@@ -544,14 +531,26 @@ const bancos = {
                         nombre: "Especial Autos", 
                         destacado: false,
                         tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para todos los modelos excepto Amarok, disponible para persona fisica, juridica, seguro cautivo de BW Broker, vigencia: 08/04/2026-30/04/2026",
+                        descripcion: "Aplica para todos los modelos excepto Amarok, disponible para persona fisica, juridica, seguro cautivo de BW Broker, vigencia: 07/05/2026-31/05/2026",
                         utilPara: "Todos los modelos excepto Amarok",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",    g: 14.705, ltv: 25000000 },
                             { m: 18, c: 55.56, tna: "0%",    g: 16.52, ltv: 17000000 },
                             { m: 24, c: 47.03, tna: "9,90%",    g: 16.52, ltv: 17000000 }
                         ] 
-                    },                                  
+                    },
+                    
+                    { 
+                        nombre: "Autos largo plazo", 
+                        destacado: false,
+                        tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para todos los modelos excepto Amarok, disponible para persona fisica, juridica, seguro cautivo de BW Broker, vigencia: 07/05/2026-31/05/2026",
+                        utilPara: "Todos los modelos excepto Amarok",
+                        plazos: [
+                            { m: 36, c: 45.47, tna: "9,50%",    g: 2, ltv: 32000000 },
+                            { m: 48, c: 39.12, tna: "10,00%",    g: 2, ltv: 32000000 }
+                        ] 
+                    },
                 ]
             },
             audi: {
@@ -621,7 +620,7 @@ const bancos = {
                         nombre: "Usados Tasa Fija",
                         destacado: true, 
                         tna: "Varios", ltv: 50, gastos: 14.10, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Usados multimarca hasta 10 años, vigencia 08/04/2026-30/04/2026, persona fisica y juridica, seguro cautivo de VW Broker.",
+                        descripcion: "Usados multimarca hasta 10 años, vigencia 07/07/2026-31/05/2026, persona fisica y juridica, seguro cautivo de VW Broker.",
                         utilPara: "Usados hasta 10 años",
                         plazos: [
                             { m: 12, c: 99.81, tna: "28,90%", g: 14.10, ltv: 50 },
@@ -634,7 +633,7 @@ const bancos = {
                         nombre: "Usados UVAs", 
                         destacado: true,
                         tna: "Varios", ltv: 50, gastos: 14.10, seguro: "CAUTIVO", baseCalculo: 1000, esUVA: true, 
-                        descripcion: "Usados multimarca hasta 6 años, vigencia 08/04/2026-30/04/2026, persona fisica, seguro cautivo de VW Broker",
+                        descripcion: "Usados multimarca hasta 6 años, vigencia 07/05/2026-31/05/2026, persona fisica, seguro cautivo de VW Broker",
                         utilPara: "Usados hasta 6 años",
                         plazos: [
                             { m: 12, c: 87.48, tna: "7,50%",  g: 14.10, ltv: 50 },
