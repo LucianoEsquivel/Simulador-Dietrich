@@ -268,7 +268,7 @@ const bancos = {
                     { 
                         nombre: "Especial Ranger XL", 
                         destacado: true,
-                        ltv: 18000000, gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
+                        ltv: 18000000, gastos: 2, seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: 07/05/2026, Aplica para: Ranger XL 4x2, 4x4 y Chasis, la cuota incluye capital, intereses e IVA",
                         utilPara: "Ranger XL",
                         plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 18000000, info: "TNA 0% (Promo XL)" }] 

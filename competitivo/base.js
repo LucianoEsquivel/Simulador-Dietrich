@@ -546,7 +546,7 @@ export const financiaciones = [
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
-            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "0%", ltv: "$18.000.000", gastos: "17%", seguro: "Cautivo" }
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "0%", ltv: "$18.000.000", gastos: "2%", seguro: "Cautivo" }
         ]
     },
 
