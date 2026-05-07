@@ -286,7 +286,7 @@ const bancos = {
                         nombre: "Tasa Especial Ranger (19,9% / 23,9% / 29,9%)", 
                         destacado: false,
                         ltv: 60, seguro: "Cautivo", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: DD/MM/AAAA, aplica para todas las versiones de Ranger, excepto Raptor, la cuota incluye capital, intereses e IVA",
+                        descripcion: "Fecha de vigencia: 07/05/2026, aplica para todas las versiones de Ranger, excepto Raptor, la cuota incluye capital, intereses e IVA",
                         utilPara: "Ranger excepto Raptor",
                         plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", g: 6, ltv: 25, info: "LTV hasta 25%" }, { m: 12, c: 83.33, tna: "0%", cft: "0%", g: 17, ltv: 80, info: "LTV 26% al 80%" }, { m: 24, c: 52.77, tna: "19,90%", cft: "26,92%", g: 6, ltv: 25, info: "LTV hasta 25%" }, { m: 24, c: 52.77, tna: "19,90%", cft: "26,92%", g: 17, ltv: 80, info: "LTV 26% al 80%" }, { m: 36, c: 45.47, tna: "29,90%", cft: "42,82%", g: 17, ltv: 60, info: "Gasto fijo 17%" }] 
                     },
