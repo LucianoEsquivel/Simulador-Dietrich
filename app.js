@@ -172,7 +172,7 @@ const bancos = {
                     { 
                         nombre: "Línea UVA 19,90%", 
                         destacado: false,
-                        tna: "14,90%", cft: "19,60%", ltv: 80, gastos: 6, seguro: "Cautivo", baseCalculo: 100000, 
+                        tna: "14,90%", cft: "19,60%", ltv: 80, gastos: 6, seguro: "Cautivo", baseCalculo: 1000000, 
                         descripcion: "Financiacion exclusiva para unidades BYD",
                         utilPara: "ByD",
                         plazos: [{ m: 12, c: 91655 }, { m: 18, c: 63762 }, { m: 24, c: 49861 }, { m: 36, c: 36052 }, { m: 48, c: 29239 }, { m: 60, c: 25222 }] 
@@ -180,7 +180,7 @@ const bancos = {
                     { 
                         nombre: "Línea Tradicional ByD", 
                         destacado: false,
-                        tna: "38,90%", cft: "58,68%", ltv: 80, gastos: 6, seguro: "Cautivo", baseCalculo: 100000, 
+                        tna: "38,90%", cft: "58,68%", ltv: 80, gastos: 6, seguro: "Cautivo", baseCalculo: 1000000, 
                         descripcion: "Crédito prendario tradicional a tasa fija para unidades BYD.",
                         utilPara: "ByD",
                         plazos: [{ m: 12, c: 105819 }, { m: 18, c: 78118 }, { m: 24, c: 64570 }, { m: 36, c: 51606 }, { m: 48, c: 45672 }, { m: 60, c: 42509 }] 
