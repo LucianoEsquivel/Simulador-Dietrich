@@ -732,7 +732,7 @@ export const financiaciones = [
         idPlan: 41, // cambiar id luego
         banco: "Volkswagen Financiera",
         nombre: "Autos financia mas",
-        descripcion: "Tera Highline y Outfit, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos Highline y Highline Bi Tono y Nivus Highline y Nivus Outfit Vigencia: desde el 17/04/2026 hasta el 30/04/2026, Disponible: Persona física, jurídica y venta directa ",
+        descripcion: "Tera Highline y Outfit, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos Highline y Highline Bi Tono y Nivus Highline y Nivus Outfit Vigencia: desde el 7/05/2026 hasta el 31/05/2026, Disponible: Persona física, jurídica y venta directa ",
         tipoPersona: "Ambas", // O "Jurídica" o "Física"
         factorCalculo: 1000,
         aplicaATodo: false, 
@@ -750,7 +750,7 @@ export const financiaciones = [
         idPlan: 42, // cambiar id luego
         banco: "Volkswagen Financiera",
         nombre: "Autos sin quebranto",
-        descripcion: "Tera Highline y Outfit, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos Highline y Highline Bi Tono y Nivus Highline y Nivus Outfit Vigencia: desde el 17/04/2026 hasta el 30/04/2026, Disponible: Persona física, jurídica y venta directa ",
+        descripcion: "Tera Highline y Outfit, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos Highline y Highline Bi Tono y Nivus Highline y Nivus Outfit Vigencia: desde el 7/05/2026 hasta el 31/05/2026, Disponible: Persona física, jurídica y venta directa ",
         tipoPersona: "Ambas", // O "Jurídica" o "Física"
         factorCalculo: 1000,
         aplicaATodo: false, 
@@ -766,7 +766,7 @@ export const financiaciones = [
         idPlan: 43, // cambiar id luego
         banco: "Volkswagen Financiera",
         nombre: "UVA Autos",
-        descripcion: "Tera Highline y Outfit, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos Highline y Highline Bi Tono y Nivus Highline y Nivus Outfit Vigencia: desde el 17/04/2026 hasta el 30/04/2026, Disponible: Persona física ",
+        descripcion: "Tera Highline y Outfit, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos Highline y Highline Bi Tono y Nivus Highline y Nivus Outfit Vigencia: desde el 7/05/2026 hasta el 31/05/2026, Disponible: Persona física ",
         tipoPersona: "Física", // O "Jurídica" o "Física"
         factorCalculo: 1000,
         aplicaATodo: false, 
