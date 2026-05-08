@@ -534,8 +534,13 @@ main {
 }
 
 /* 5. Listado de Logos (Se activan por la clase del botón) */
+/* --- LISTADO DE LOGOS CORREGIDO --- */
 .cat-general::after    { background-image: url('img/santander.png'); }
-.cat-prendarios::after { background-image: url('img/galicia.png'); }
+
+/* Reglas específicas para que no se mezclen los logos en la categoría 'prendarios' */
+.galicia.cat-prendarios::after { background-image: url('img/galicia.png'); }
+.supervielle.cat-prendarios::after { background-image: url('img/supervielle.png'); }
+
 .cat-minorista::after, 
 .cat-comercial::after  { background-image: url('img/ford.png'); }
 .cat-volkswagen::after { background-image: url('img/volkswagen.png'); }
@@ -1661,4 +1666,41 @@ main {
     font-size: 0.8em;
     opacity: 0.8;
     text-transform: uppercase;
+}
+
+/* ==========================================================================
+   ESTILO UNIFICADO PARA SUPERVIELLE (style.css)
+   ========================================================================== */
+
+/* ==========================================================================
+   CORRECCIÓN FINAL SUPERVIELLE (style.css)
+   ========================================================================== */
+
+/* 1. Imagen base (Común para todos los casos) */
+.supervielle::after { 
+    background-image: url('img/supervielle.png'); 
+}
+
+/* 2. VISTA PRINCIPAL (La de los botones grandes de Bancos) */
+/* Aquí el logo sale de la esquina. Bajamos de 25px a 15px para que no suba tanto */
+.card-banco.supervielle:hover::after {
+    opacity: 0.4; 
+    filter: grayscale(0%) brightness(1);
+    /* Se mueve un poco menos para quedarse más cerca de la esquina/centro */
+    transform: translate(15px, -15px) scale(1.5); 
+}
+
+/* 3. VISTA DE MARCAS / SUBCATEGORÍAS (Los botones de adentro) */
+/* Aquí el logo DEBE mantener el centrado (-50%, -50%) para no romperse */
+.card-sub-categoria.supervielle:hover::after {
+    opacity: 0.25; 
+    filter: grayscale(0%) brightness(0.2); /* Silueta con un toque de color */
+    /* Mantenemos el translate original de centrado y solo escalamos */
+    transform: translate(-50%, -50%) scale(1.15); 
+}
+
+/* 4. Texto siempre en negro para ambos casos */
+.supervielle:hover .nombre-banco,
+.supervielle:hover span {
+    color: #000000 !important;
 }

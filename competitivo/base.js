@@ -727,24 +727,6 @@ export const financiaciones = [
         ]
     },
 
-    
-    {
-        idPlan: 41, // cambiar id luego
-        banco: "Volkswagen Financiera",
-        nombre: "Autos financia mas",
-        descripcion: "Tera Highline y Outfit, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos Highline y Highline Bi Tono y Nivus Highline y Nivus Outfit Vigencia: desde el 7/05/2026 hasta el 31/05/2026, Disponible: Persona física, jurídica y venta directa ",
-        tipoPersona: "Ambas", // O "Jurídica" o "Física"
-        factorCalculo: 1000,
-        aplicaATodo: false, 
-        vehiculosIds: [92, 93, 95, 96, 99, 100, 103, 104, 105, 107, 108], 
-        
-        // Tabla de plazos en formato compacto
-        cuotasPorMillon: [
-            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$28.000.000", gastos: "11,075%", seguro: "Cautivo" },
-            { plazo: "18 meses", valor: "$55,56", tna: "0%", cft: "S/D", ltv: "$22.500.000", gastos: "15,31%", seguro: "Cautivo" },
-            { plazo: "24 meses", valor: "$41,67", tna: "0%", cft: "S/D", ltv: "$19.000.000", gastos: "17,73%", seguro: "Cautivo" }
-        ]
-    },
 
     {
         idPlan: 42, // cambiar id luego

@@ -574,6 +574,85 @@ const bancos = {
             }
         }
     },
+
+    supervielle: {
+        nombre: "Banco Supervielle",
+        categorias: {
+            prendarios: {
+                nombre: "Prendarios",
+                planes: [
+                    { 
+                        nombre: "Tasa Fija 0km (R3)",
+                        destacado: true, 
+                        ltv: 80, gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Crédito prendario Supervielle tasa fija. LTV hasta 65%.",
+                        utilPara: "Todas las marcas",
+                        plazos: [
+                            { m: 12, c: 118.38, tna: "59,00%" }, 
+                            { m: 18, c: 89.83, tna: "57,00%" },
+                            { m: 24, c: 76.12, tna: "56,00%" }, 
+                            { m: 30, c: 68.75, tna: "56,00%" }, 
+                            { m: 36, c: 63.42, tna: "55,00%" }, 
+                            { m: 48, c: 56.56, tna: "54,00%" },
+                            { m: 60, c: 55.13, tna: "54,00%" },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa Fija 0km (R0)",
+                        destacado: true, 
+                        ltv: 80, gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Crédito prendario Supervielle tasa fija. LTV hasta 65%.",
+                        utilPara: "Todas las marcas",
+                        plazos: [
+                            { m: 12, c: 114.56, tna: "53,00%" }, 
+                            { m: 18, c: 87.18, tna: "53,00%" },
+                            { m: 24, c: 74.03, tna: "53,00%" }, 
+                            { m: 30, c: 66.56, tna: "53,00%" }, 
+                            { m: 36, c: 61.90, tna: "53,00%" }, 
+                            { m: 48, c: 56.74, tna: "53,00%" },
+                            { m: 60, c: 54.26, tna: "53,00%" },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa UVA 0km (R3)",
+                        destacado: true, 
+                        ltv: 80, gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Crédito prendario Supervielle tasa UVAs. LTV hasta 65%.",
+                        utilPara: "Todas las marcas",
+                        plazos: [
+                            { m: 12, c: 100.08, tna: "26,00%" }, 
+                            { m: 18, c: 70.90, tna: "24,00%" },
+                            { m: 24, c: 56.40, tna: "23,00%" }, 
+                            { m: 30, c: 48.16, tna: "23,00%" }, 
+                            { m: 36, c: 42.04, tna: "22,00%" }, 
+                            { m: 48, c: 34.64, tna: "21,00%" },
+                            { m: 60, c: 30.73, tna: "21,00%" },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa UVA 0km (R0)",
+                        destacado: true, 
+                        ltv: 80, gastos: 6, seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Crédito prendario Supervielle tasa UVAs. LTV hasta 65%.",
+                        utilPara: "Todas las marcas",
+                        plazos: [
+                            { m: 12, c: 96.13, tna: "20,00%" }, 
+                            { m: 18, c: 68.26, tna: "20,00%" },
+                            { m: 24, c: 54.40, tna: "20,00%" }, 
+                            { m: 30, c: 46.13, tna: "20,00%" }, 
+                            { m: 36, c: 40.66, tna: "20,00%" }, 
+                            { m: 48, c: 33.93, tna: "20,00%" },
+                            { m: 60, c: 29.99, tna: "20,00%" },
+                        ] 
+                    },
+                ]
+            }
+        }
+    },
+
     galicia: {
         nombre: "Banco Galicia",
         categorias: {
@@ -609,7 +688,7 @@ const bancos = {
                 planes: [
 
                     { 
-                        nombre: "Usados Tasa Fija",
+                        nombre: "Usados Tasa Fija - VW Financiera",
                         destacado: true, 
                         tna: "Varios", ltv: 50, gastos: 14.10, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Usados multimarca hasta 10 años, vigencia 07/07/2026-31/05/2026, persona fisica y juridica, seguro cautivo de VW Broker.",
@@ -622,7 +701,7 @@ const bancos = {
                         ] 
                     },
                     { 
-                        nombre: "Usados UVAs", 
+                        nombre: "Usados UVAs - VW Financiera", 
                         destacado: true,
                         tna: "Varios", ltv: 50, gastos: 14.10, seguro: "CAUTIVO", baseCalculo: 1000, esUVA: true, 
                         descripcion: "Usados multimarca hasta 6 años, vigencia 07/05/2026-31/05/2026, persona fisica, seguro cautivo de VW Broker",
@@ -648,15 +727,16 @@ let bancoActual = null;
 let financiacionActual = null;
 let origenNavegacion = 'inicio'; 
 let vistaActual = 'vista-inicio'; // Nueva variable para seguimiento
+let historialNavegacion = [];
 
 const marcasConfig = {
     ford: { 
         nombre: "Ford", 
-        bancos: ["santander-general", "icbc-minorista", "icbc-comercial", "galicia-prendarios"] 
+        bancos: ["santander-general", "icbc-minorista", "icbc-comercial", "galicia-prendarios", "supervielle-prendarios"] 
     },
     vw: { 
         nombre: "Volkswagen", 
-        bancos: ["vw_financial-volkswagen", "santander-general", "galicia-prendarios"] 
+        bancos: ["vw_financial-volkswagen", "santander-general", "galicia-prendarios", "supervielle-prendarios"] 
     },
     byd: { 
         nombre: "BYD", 
@@ -664,16 +744,21 @@ const marcasConfig = {
     },
     kia: { 
         nombre: "KIA", 
-        bancos: ["santander-general", "santander-kia", "galicia-prendarios"] 
+        bancos: ["santander-general", "santander-kia", "galicia-prendarios", "supervielle-prendarios"] 
     },
     audi: {
         nombre: "Audi",
-        bancos: ["vw_financial-audi", "santander-general", "galicia-prendarios"]
+        bancos: ["vw_financial-audi", "santander-general", "galicia-prendarios", "supervielle-prendarios"]
     }
 };
 
 /* --- NUEVA LÓGICA DE NAVEGACIÓN CENTRALIZADA --- */
-function mostrarSeccion(id) {
+function mostrarSeccion(id, esVolver = false) {
+    // Si no es un movimiento de "volver", guardamos la vista donde estamos antes de cambiar
+    if (!esVolver && vistaActual && vistaActual !== id) {
+        historialNavegacion.push(vistaActual);
+    }
+
     vistaActual = id;
     document.querySelectorAll('section').forEach(s => s.classList.replace('active', 'hidden'));
     document.getElementById(id).classList.replace('hidden', 'active');
@@ -683,6 +768,7 @@ function mostrarSeccion(id) {
     if (nav) {
         if (id === 'vista-inicio') {
             nav.classList.add('hidden');
+            historialNavegacion = []; // Limpiamos el historial al llegar al inicio
         } else {
             nav.classList.remove('hidden');
         }
@@ -691,14 +777,20 @@ function mostrarSeccion(id) {
 
 // El "cerebro" del botón VOLVER fijo
 function manejadorVolver() {
-    if (vistaActual === 'vista-calculo') {
-        mostrarSeccion('vista-financiaciones');
-    } else if (vistaActual === 'vista-financiaciones' || vistaActual === 'vista-no-prendaria') {
-        const destino = (origenNavegacion === 'marcas') ? 'vista-marcas' : 'vista-bancos';
-        mostrarSeccion(destino);
-        // Resetear título si es necesario
-        document.getElementById('nombre-categoria-no-prendaria').innerText = "Opciones No Prendarias";
+    if (historialNavegacion.length > 0) {
+        // Sacamos la última vista del historial
+        const vistaAnterior = historialNavegacion.pop();
+        
+        // Vamos a esa vista indicando que es un movimiento de "volver" (para no duplicar el historial)
+        mostrarSeccion(vistaAnterior, true);
+
+        // Limpiezas visuales opcionales según la vista a la que volvemos
+        if (vistaAnterior === 'vista-inicio') {
+            const tituloNoPrendaria = document.getElementById('nombre-categoria-no-prendaria');
+            if (tituloNoPrendaria) tituloNoPrendaria.innerText = "Opciones No Prendarias";
+        }
     } else {
+        // Por seguridad, si el historial está vacío, mandamos al inicio
         mostrarSeccion('vista-inicio');
     }
 }
@@ -720,6 +812,7 @@ function seleccionarMarca(marcaKey) {
 
     origenNavegacion = 'marcas';
 
+    // Lógica especial para BYD (Mantiene tu estructura original)
     if (marcaKey === 'byd') {
         const bancoByd = bancos['santander'];
         const catByd = bancoByd.categorias['byd'];
@@ -735,7 +828,8 @@ function seleccionarMarca(marcaKey) {
         cont.appendChild(gridTarjetas);
 
         const btnBydBridge = document.createElement('div'); 
-        btnBydBridge.className = 'card-sub-categoria cat-general'; 
+        // Agregamos 'santander' para asegurar el logo correcto en BYD
+        btnBydBridge.className = 'card-sub-categoria cat-general santander'; 
         btnBydBridge.innerHTML = `<span>Santander</span>`; 
         
         btnBydBridge.onclick = () => {
@@ -748,6 +842,7 @@ function seleccionarMarca(marcaKey) {
         return;
     }
 
+    // Lógica para Ford, VW, Audi y KIA
     mostrarSeccion('vista-financiaciones');
     document.getElementById('nombre-banco-seleccionado').innerText = `Opciones para ${config.nombre}`;
     
@@ -764,14 +859,27 @@ function seleccionarMarca(marcaKey) {
         const categoria = banco.categorias[catKey];
 
         const btn = document.createElement('div'); 
-        btn.className = `card-sub-categoria cat-${catKey}`; 
+        
+        // --- CAMBIO CLAVE 1: Agregamos ${bancoKey} a la clase ---
+        // Esto permite que el CSS distinga entre .galicia.cat-prendarios y .supervielle.cat-prendarios
+        btn.className = `card-sub-categoria cat-${catKey} ${bancoKey}`; 
         
         let nombreMostrar = categoria.nombre;
+        
+        // --- CAMBIO CLAVE 2: Lógica de nombres corregida ---
         if (bancoKey === 'vw_financial' && catKey === 'volkswagen') nombreMostrar = "Volkswagen";
-        if (catKey === 'prendarios') nombreMostrar = "Galicia Prendario";
+        
+        // Validamos banco + categoría para que Supervielle no diga "Galicia"
+        if (bancoKey === 'galicia' && catKey === 'prendarios') {
+            nombreMostrar = "Galicia Prendario";
+        } else if (bancoKey === 'supervielle' && catKey === 'prendarios') {
+            nombreMostrar = "Supervielle Prendarios";
+        }
+        
         if (catKey === 'comercial') nombreMostrar = "ICBC Mayorista";
 
         btn.innerHTML = `<span>${nombreMostrar}</span>`; 
+        
         btn.onclick = () => {
             bancoActual = banco;
             bancoActual.key = bancoKey;
@@ -803,7 +911,7 @@ function mostrarCategorias(bancoKey) {
     for (let key in bancoActual.categorias) {
         const cat = bancoActual.categorias[key];
         const btn = document.createElement('div'); 
-        btn.className = `card-sub-categoria cat-${key}`; 
+        btn.className = `card-sub-categoria cat-${key} ${bancoActual.key}`;
         btn.innerHTML = `<span>${cat.nombre}</span>`; 
         btn.onclick = () => mostrarPlanes(cat, bancoKey);
         gridTarjetas.appendChild(btn);
