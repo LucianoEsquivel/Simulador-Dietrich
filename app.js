@@ -812,37 +812,7 @@ function seleccionarMarca(marcaKey) {
 
     origenNavegacion = 'marcas';
 
-    // Lógica especial para BYD (Mantiene tu estructura original)
-    if (marcaKey === 'byd') {
-        const bancoByd = bancos['santander'];
-        const catByd = bancoByd.categorias['byd'];
-        
-        mostrarSeccion('vista-financiaciones');
-        document.getElementById('nombre-banco-seleccionado').innerText = "Seleccione Entidad para BYD";
-
-        const cont = document.getElementById('lista-financiaciones');
-        cont.innerHTML = ""; 
-
-        const gridTarjetas = document.createElement('div');
-        gridTarjetas.className = 'contenedor-tarjetas-subcat'; 
-        cont.appendChild(gridTarjetas);
-
-        const btnBydBridge = document.createElement('div'); 
-        // Agregamos 'santander' para asegurar el logo correcto en BYD
-        btnBydBridge.className = 'card-sub-categoria cat-general santander'; 
-        btnBydBridge.innerHTML = `<span>Santander</span>`; 
-        
-        btnBydBridge.onclick = () => {
-            bancoActual = bancoByd;
-            bancoActual.key = 'santander';
-            mostrarPlanes(catByd, 'santander');
-        };
-        
-        gridTarjetas.appendChild(btnBydBridge);
-        return;
-    }
-
-    // Lógica para Ford, VW, Audi y KIA
+    // Lógica estándar para todas las marcas (incluyendo BYD)
     mostrarSeccion('vista-financiaciones');
     document.getElementById('nombre-banco-seleccionado').innerText = `Opciones para ${config.nombre}`;
     
@@ -859,23 +829,14 @@ function seleccionarMarca(marcaKey) {
         const categoria = banco.categorias[catKey];
 
         const btn = document.createElement('div'); 
-        
-        // --- CAMBIO CLAVE 1: Agregamos ${bancoKey} a la clase ---
-        // Esto permite que el CSS distinga entre .galicia.cat-prendarios y .supervielle.cat-prendarios
         btn.className = `card-sub-categoria cat-${catKey} ${bancoKey}`; 
         
         let nombreMostrar = categoria.nombre;
         
-        // --- CAMBIO CLAVE 2: Lógica de nombres corregida ---
+        // Mantenemos tus correcciones de nombres
         if (bancoKey === 'vw_financial' && catKey === 'volkswagen') nombreMostrar = "Volkswagen";
-        
-        // Validamos banco + categoría para que Supervielle no diga "Galicia"
-        if (bancoKey === 'galicia' && catKey === 'prendarios') {
-            nombreMostrar = "Galicia Prendario";
-        } else if (bancoKey === 'supervielle' && catKey === 'prendarios') {
-            nombreMostrar = "Supervielle Prendarios";
-        }
-        
+        if (bancoKey === 'galicia' && catKey === 'prendarios') nombreMostrar = "Galicia Prendario";
+        if (bancoKey === 'supervielle' && catKey === 'prendarios') nombreMostrar = "Supervielle Prendarios";
         if (catKey === 'comercial') nombreMostrar = "ICBC Mayorista";
 
         btn.innerHTML = `<span>${nombreMostrar}</span>`; 
