@@ -543,6 +543,32 @@ const bancos = {
                             { m: 48, c: 39.12, tna: "10,00%",    g: 2, ltv: 32000000 }
                         ] 
                     },
+
+                    { 
+                        nombre: "Rentadoras Autos", 
+                        destacado: true,
+                        tna: "varios",  seguro: "LIBERADO", baseCalculo: 1000, 
+                        descripcion: "Aplica para todos los modelos excepto Amarok, disponible para persona fisica, juridica, seguro liberado, vigencia: 11/05/2026-31/05/2026",
+                        utilPara: "Todos los modelos excepto Amarok",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0,00%",    g: 16.52, ltv: 26000000 },
+                            { m: 18, c: 63.80, tna: "15,00%",    g: 15.31, ltv: 26000000 },
+                            { m: 24, c: 53.96, tna: "21,90%",    g: 15.31, ltv: 26000000 }
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Rentadoras Amarok", 
+                        destacado: true,
+                        tna: "varios",  seguro: "LIBERADO", baseCalculo: 1000, 
+                        descripcion: "Aplica para Amarok, disponible para persona fisica, juridica, seguro liberado, vigencia: 11/05/2026-31/05/2026",
+                        utilPara: "Amarok",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0,00%",    g: 16.52, ltv: 32000000 },
+                            { m: 18, c: 63.53, tna: "14,50%",    g: 15.31, ltv: 32000000 },
+                            { m: 24, c: 53.72, tna: "21,50%",    g: 15.31, ltv: 32000000 }
+                        ] 
+                    },
                 ]
             },
             audi: {
