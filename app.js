@@ -715,6 +715,28 @@ const bancos = {
                     }
                 ]
             },
+            UsadosICBC: {
+                nombre: "ICBC - Usados",
+                planes: [
+                    {
+                        idPlan: 56, 
+                        nombre: "Tasa Especial Usados (ICBC)",
+                        destacado: true,
+                        tipoPersona: "Física",
+                        moneda: "ARS",
+                        baseCalculo: 1000, 
+                        aplicaATodo: false, 
+                        utilPara: "Usados multimarca hasta 13 años",
+                        descripcion: "Vigencia: Mayo 2026. LTV: 80% (0-1 año), 70% (2-5 años), 60% (6-10 años), 50% (11-13 años).",
+                        vehiculosIds: [], 
+                        plazos: [
+                            { m: 12, c: 100.40, tna: "29,90%", cft: "42,82%", ltv: 80, g: 6, seguro: "Cautivo" },
+                            { m: 24, c: 65.22,  tna: "39,90%", cft: "60,53%", ltv: 80, g: 6, seguro: "Cautivo" },
+                            { m: 36, c: 56.62,  tna: "45,90%", cft: "72,10%", ltv: 80, g: 6, seguro: "Cautivo" }
+                        ]
+                    }
+                ]
+            }
         }
     },
 
