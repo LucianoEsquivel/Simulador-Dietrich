@@ -1546,9 +1546,6 @@ function verDetalleBNA(tipo) {
             </p>
 
             <div style="display: flex; flex-direction: column; gap: 15px; max-width: 400px; margin: 0 auto;">
-                <a href="pdf/${info.pdf}" target="_blank" class="btn-pdf-descarga" style="text-decoration: none; width: 100%;">
-                    📄 DESCARGAR INSTRUCTIVO (PDF)
-                </a>
                 <a href="https://wa.me/${info.wa}" target="_blank" class="btn-whatsapp" style="text-decoration: none; justify-content: center; width: 100%;">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" style="width:20px;">
                     CONSULTAR REFERENTE
