@@ -38,7 +38,7 @@ const bancos = {
                         gastos: 2, 
                         seguro: "Cautivo", 
                         baseCalculo: 1000000, 
-                        descripcion: "Aplica para toda la gama, seguro cautivo",
+                        descripcion: "Aplica para toda las marcas, seguro cautivo (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares).",
                         utilPara: "todas las marcas",
                         plazos: [{m:12, c:94530}, {m:18, c:66639}, {m:24, c:52775}, {m:36, c:39073}, {m:48, c:32381}, {m:60, c:28490}] 
                     },
@@ -48,7 +48,7 @@ const bancos = {
                         ltv: 80, 
                         seguro: "A DEFINIR", 
                         baseCalculo: 1000000, 
-                        descripcion: "Linea UVA con quebranto",
+                        descripcion: "Linea UVA con quebranto, aplica para todas las marcas (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares).",
                         utilPara: "todas las marcas",
                         plazos: [
                             { m: 12, c: 83334, tna: "0%", cft: "0%", g: 14, info: "TNA 0%" }, 
@@ -98,7 +98,7 @@ const bancos = {
                         gastos: 12, 
                         seguro: "Cautivo", 
                         baseCalculo: 1000000, 
-                        descripcion: "Línea tradicional en pesos con tasa fija con quebranto.",
+                        descripcion: "Línea tradicional en pesos con tasa fija con quebranto, aplica para todas las marcas (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares).",
                         utilPara: "Todas las marcas",
                         plazos: [
                             { m: 12, c: 99568, tna: "28,50%", cft: "40,49%" }, 
@@ -118,7 +118,7 @@ const bancos = {
                         gastos: 2, 
                         seguro: "A DEFINIR", 
                         baseCalculo: 1000000, 
-                        descripcion: "Línea tradicional en pesos con tasa fija.",
+                        descripcion: "Línea tradicional en pesos con tasa fija, aplica para todas las marcas (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares).",
                         utilPara: "Todas las marcas",
                         plazos: [{m:12, c:111366}, {m:18, c:83851}, {m:24, c:70542}, {m:36, c:58086}, {m:48, c:52364}, {m:60, c:49900}] 
                     },
