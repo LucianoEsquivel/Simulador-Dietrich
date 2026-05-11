@@ -740,7 +740,7 @@ const marcasConfig = {
     },
     byd: { 
         nombre: "BYD", 
-        directo: { banco: 'santander', cat: 'byd' } 
+        bancos: ["santander-general", "santander-byd"] 
     },
     kia: { 
         nombre: "KIA", 
