@@ -1344,25 +1344,32 @@ function descargarPDF() {
 
 /* - Función para obligar la descarga de la última versión */
 async function forzarActualizacion() {
-    // 1. Intentamos actualizar el registro del Service Worker
+    // Avisamos de inmediato para que el usuario sepa que algo está pasando
+    console.log("Iniciando actualización forzada...");
+    
     if ('serviceWorker' in navigator) {
-        const registrations = await navigator.serviceWorker.getRegistrations();
-        for (let registration of registrations) {
-            await registration.update();
-        }
-        
-        // 2. Limpiamos todos los cachés guardados (fotos, css, js antiguos)
-        const cacheNames = await caches.keys();
-        await Promise.all(
-            cacheNames.map(name => caches.delete(name))
-        );
+        try {
+            // 1. Buscamos el registro y lo actualizamos
+            const registrations = await navigator.serviceWorker.getRegistrations();
+            for (let registration of registrations) {
+                await registration.update();
+            }
+            
+            // 2. Limpiamos TODOS los cachés (esto borra las fotos y archivos viejos)
+            const cacheNames = await caches.keys();
+            await Promise.all(
+                cacheNames.map(name => caches.delete(name))
+            );
 
-        // 3. Notificamos al usuario y forzamos recarga dura (Hard Reload)
-        alert("Buscando actualizaciones... El cotizador se reiniciará para aplicar los cambios.");
-        window.location.reload(true); 
+            alert("Actualización completada. El cotizador se reiniciará.");
+            // 3. Forzamos la recarga añadiendo un parámetro para engañar al navegador
+            window.location.href = window.location.pathname + '?v=' + Date.now();
+        } catch (err) {
+            console.error("Error al actualizar:", err);
+            window.location.reload();
+        }
     } else {
-        // Si no hay service worker (navegador viejo), solo recargamos
-        window.location.reload(true);
+        window.location.reload();
     }
 }
 
