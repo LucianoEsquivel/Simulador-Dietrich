@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dietrich-unificado-V11.5.2026.12.53'; // Nueva versión unificada
+const CACHE_NAME = 'dietrich-unificado-V14.5.2026.12.40'; // Nueva versión unificada
 
 const assets = [
   // --- ARCHIVOS SIMULADOR (RAÍZ) ---
@@ -26,7 +26,6 @@ const assets = [
   './img/santander.png',
   './img/volkswagen.png',
   'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js',
-
   // --- ARCHIVOS COMPETITIVO (SUB-CARPETA) ---
   './competitivo/index.html',
   './competitivo/style.css',

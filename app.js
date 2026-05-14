@@ -170,12 +170,12 @@ const bancos = {
                         plazos: [{ m: 12, c: 88822, g: 5 }, { m: 18, c: 60947, g: 6 }, { m: 24, c: 47030, g: 7 }] 
                     },
                     { 
-                        nombre: "Línea UVA 19,90%", 
+                        nombre: "Línea UVA 14,90%", 
                         destacado: false,
                         tna: "14,90%", cft: "19,60%", ltv: 80, gastos: 6, seguro: "Cautivo", baseCalculo: 1000000, 
                         descripcion: "Financiacion exclusiva para unidades BYD",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 91655 }, { m: 18, c: 63762 }, { m: 24, c: 49861 }, { m: 36, c: 36052 }, { m: 48, c: 29239 }, { m: 60, c: 25222 }] 
+                        plazos: [{ m: 12, c: 91655 }, { m: 18, c: 63762 }, { m: 24, c: 49861 }, { m: 36, c: 36052 }, { m: 48, c: 29239 },] 
                     },
                     { 
                         nombre: "Línea Tradicional ByD", 
@@ -774,7 +774,7 @@ const bancos = {
 let bancoActual = null;
 let financiacionActual = null;
 let origenNavegacion = 'inicio'; 
-let vistaActual = 'vista-inicio'; // Nueva variable para seguimiento
+let vistaActual = 'vista-inicio'; 
 let historialNavegacion = [];
 
 const marcasConfig = {
@@ -1077,7 +1077,7 @@ function abrirFormulario(plan) {
 }
 
 /* ==========================================================================
-   4. MOTOR DE CÁLCULO (CORREGIDO)
+   4. MOTOR DE CÁLCULO
    ========================================================================== */
 
 function calcularSimulacion() {
@@ -1197,7 +1197,7 @@ function vincularEventosCalculo() {
         }
     });
 
-    // Evento para Bloque 2 (Monto Directo) - AQUÍ ESTABA EL ERROR
+    // Evento para Bloque 2 (Monto Directo)
     const elDirecto = document.getElementById(inputBloque2);
     if (elDirecto) {
         elDirecto.oninput = (e) => {
@@ -1466,32 +1466,6 @@ window.addEventListener('appinstalled', (evt) => {
     if (btnInstalar) btnInstalar.style.display = 'none';
 });
 
-/* =========================================
-   LÓGICA PARA EL MENÚ DE CONSULTAS
-   ========================================= */
-
-window.toggleMenuConsultas = () => {
-    const lista = document.getElementById('lista-consultas');
-    if (lista) {
-        // Esto quita o pone la clase que maneja la visibilidad
-        lista.classList.toggle('hidden-consultas');
-    }
-};
-
-
-
-
-
-// Cierra el menú si el usuario hace clic afuera de los contactos
-document.addEventListener('click', (e) => {
-    const contenedor = document.querySelector('.contenedor-consultas');
-    const lista = document.getElementById('lista-consultas');
-    
-    // Si el clic NO fue dentro del botón o la lista, cerramos el menú
-    if (contenedor && !contenedor.contains(e.target)) {
-        if (lista) lista.classList.add('hidden-consultas');
-    }
-});
 
 
 /* =========================================
