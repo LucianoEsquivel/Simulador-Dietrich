@@ -239,7 +239,7 @@ main {
 .f-k3 { background-image: url('img/k3.jpeg'); }
 .f-q1 { background-image: url('img/q1.jpeg'); }
 .f-banco { 
-    background-image: url('img/bancos.jpeg') !important; 
+    background-image: url('img/bancos.jpeg'); 
     background-size: cover;
     background-position: center;
     /* Eliminamos cualquier filtro heredado */
@@ -1009,6 +1009,29 @@ main {
         min-height: 200px;
         width: 100%;
     }
+
+
+    /* AGREGADO EL 14/05 - REPARACIÓN DE FOTO DE BANCOS EN MOBILE */
+    section#vista-inicio #hero-bancos {
+        height: 200px; 
+        min-height: 200px;
+        position: relative; /* Base para la foto absoluta */
+    }
+
+    /* La foto de bancos ahora se expande sin romper el slider de marcas */
+    #hero-bancos .foto-fondo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('img/bancos.jpeg') !important;
+        background-size: cover;
+        background-position: center;
+    }
+
+/* HASTA ACA EL ARREGLO MENCIONADO */
+    
 
     section#vista-inicio .overlay-hero span { 
         font-size: 1.1em; 
