@@ -1558,3 +1558,18 @@ function verDetalleBNA(tipo) {
         </div>
     `;
 }
+
+// Detectar si es iOS y mostrar instrucciones manuales
+const esIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+const estaEnNavegador = !window.navigator.standalone; // Detecta si NO está instalado ya
+
+if (esIOS && estaEnNavegador) {
+    // Mostramos el mensaje de iOS después de 3 segundos para no asustar al usuario
+    setTimeout(() => {
+        document.getElementById('ios-install-prompt').classList.remove('hidden');
+    }, 3000);
+}
+
+function cerrarPromptIOS() {
+    document.getElementById('ios-install-prompt').classList.add('hidden');
+}
