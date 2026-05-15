@@ -19,15 +19,15 @@ const bancos = {
                     { 
                         nombre: "Especial Pickups UVA", 
                         destacado: true,
-                        tna: "12,90%", 
-                        cft: "16,78%", 
+                        tna: "14,90%", 
+                        cft: "19,60%", 
                         ltv: 80, 
                         gastos: 2, 
                         seguro: "Cautivo", 
                         baseCalculo: 1000000, 
                         descripcion: "Financiacion exclusiva para pickups (Ranger, Maverick, Amarok)",
                         utilPara: "Pickups",
-                        plazos: [{m:12, c:90517}, {m:18, c:62628}, {m:24, c:48719}, {m:36, c:34878}, {m:48, c:28026}, {m:60, c:23969}, {m:72, c:21309}] 
+                        plazos: [{m:12, c:91655}, {m:18, c:63762}, {m:24, c:49861}, {m:36, c:36052}, {m:48, c:29239}, {m:60, c:25222}, {m:72, c:22603}] 
                     },
                     { 
                         nombre: "Línea UVA",
@@ -52,7 +52,7 @@ const bancos = {
                         utilPara: "todas las marcas",
                         plazos: [
                             { m: 12, c: 83334, tna: "0%", cft: "0%", g: 14, info: "TNA 0%" }, 
-                            { m: 18, c: 60947, tna: "9,90%", cft: "12,66%", g: 11, info: "TNA 9,9%" }, 
+                            { m: 18, c: 60947, tna: "9,90%", cft: "12,66%", g: 12, info: "TNA 9,9%" }, 
                             { m: 24, c: 47030, tna: "9,90%", cft: "12,66%", g: 15, info: "TNA 9,9%" }
                         ] 
                     },
@@ -66,19 +66,9 @@ const bancos = {
                         baseCalculo: 1000000, 
                         descripcion: "Línea Pickups con tasa UVA (aplica para Ranger, Maverick, Amarok)",
                         utilPara: "Pickups",
-                        plazos: [{m:12, c:83334, g:10}, {m:18, c:55556, g:12}, {m:24, c:41667, g:15}] 
+                        plazos: [{m:12, c:83334, g:10}, {m:18, c:55556, g:13}, {m:24, c:41667, g:16}] 
                     },
-                    { 
-                        nombre: "Santander dolares", 
-                        destacado: true, 
-                        ltv: 80, 
-                        seguro: "Cautivo", 
-                        moneda: "USD",
-                        baseCalculo: 10000, 
-                        descripcion: "linea en dolares para personas (fisicas/juridicas) que generen dolares",
-                        utilPara: "Toda las marcas",
-                        plazos: [{m:24, c:465, tna: "8,90%", cft: "11,32%", g:2}, {m:36, c:329, tna:"9,50%", cft:"12,12%", g:2}, {m:48, c:263, tna:"9,90%", cft:"12,66%", g:2},{m:60, c:227, tna:"10,90%", cft:"14,02%", g:2},{m:72, c:204, tna:"11,50%", cft:"14,84", g:2},] 
-                    },
+                    
                     { 
                         nombre: "UVA Quebranto Pickups (TNA 9,9%)", 
                         destacado: false,
@@ -89,7 +79,19 @@ const bancos = {
                         baseCalculo: 1000000, 
                         descripcion: "Línea Pickups con tasa UVA (aplica para Ranger, Maverick, Amarok)",
                         utilPara: "Pickups",
-                        plazos: [{m:12, c:88822, g:7.1}, {m:18, c:60947, g:9.3}, {m:24, c:47030, g:11.3}] 
+                        plazos: [{m:12, c:88822, g:5}, {m:18, c:60947, g:6}, {m:24, c:47030, g:7}] 
+                    },
+
+                    { 
+                        nombre: "Santander dolares", 
+                        destacado: true, 
+                        ltv: 80, 
+                        seguro: "Cautivo", 
+                        moneda: "USD",
+                        baseCalculo: 10000, 
+                        descripcion: "linea en dolares para personas (fisicas/juridicas) que generen dolares",
+                        utilPara: "Toda las marcas",
+                        plazos: [{m:24, c:465, tna: "8,90%", cft: "11,32%", g:2}, {m:36, c:329, tna:"9,50%", cft:"12,12%", g:2}, {m:48, c:263, tna:"9,90%", cft:"12,66%", g:2},{m:60, c:227, tna:"10,90%", cft:"14,02%", g:2},{m:72, c:204, tna:"11,50%", cft:"14,84", g:2},] 
                     },
                     { 
                         nombre: "Línea Fija con Quebranto", 
