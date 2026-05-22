@@ -490,7 +490,7 @@ const bancos = {
                         nombre: "Autos financia mas", 
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Tera Highline y Outfit, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos Highline y Highline Bi Tono y Nivus Highline y Nivus Outfit Vigencia: desde el 7/05/2026 hasta el 31/05/2026, Disponible: Persona física, jurídica y venta directa, Seguro cautivo de VW Broker",
+                        descripcion: "Tera (todas las versiones), T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos Highline y Highline Bi Tono y Nivus Highline y Nivus Outfit Vigencia: desde el 22/05/2026 hasta el 31/05/2026, Disponible: Persona física, jurídica y venta directa, Seguro cautivo de VW Broker",
                         utilPara: "Tera, T-Cross, Polo, Taos, Nivus",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",    g: 11.075, ltv: 28000000 },
@@ -503,7 +503,7 @@ const bancos = {
                         nombre: "Autos sin quebranto", 
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Tera Highline y Outfit, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos Highline y Highline Bi Tono y Nivus Highline y Nivus Outfit Vigencia: desde el 7/05/2026 hasta el 31/05/2026, Disponible: Persona física, jurídica y venta directa, Seguro cautivo de VW Broker",
+                        descripcion: "Tera (todas las versiones), T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos Highline y Highline Bi Tono y Nivus Highline y Nivus Outfit Vigencia: desde el 22/05/2026 hasta el 31/05/2026, Disponible: Persona física, jurídica y venta directa, Seguro cautivo de VW Broker",
                         utilPara: "Tera, T-Cross, Polo, Taos, Nivus",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",   g: 2,   ltv: 17000000 },
