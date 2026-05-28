@@ -35,12 +35,12 @@ export const financiaciones = [
     
     // Tabla de plazos completa y detallada
         cuotasPorMillon: [
-            { plazo: "12 meses", valor: "$94.530", tna: "14,90%", cft: "19,60%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
-            { plazo: "18 meses", valor: "$66.639", tna: "14,90%", cft: "19,60%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
-            { plazo: "24 meses", valor: "$52.775", tna: "14,90%", cft: "19,60%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
-            { plazo: "36 meses", valor: "$39.073", tna: "14,90%", cft: "19,60%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
-            { plazo: "48 meses", valor: "$32.381", tna: "14,90%", cft: "19,60%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
-            { plazo: "60 meses", valor: "$28.490", tna: "14,90%", cft: "19,60%", ltv: "80%", gastos: "2%", seguro: "Cautivo" }
+            { plazo: "12 meses", valor: "$94.530", tna: "19,90%", cft: "26,92%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
+            { plazo: "18 meses", valor: "$66.639", tna: "19,90%", cft: "26,92%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
+            { plazo: "24 meses", valor: "$52.775", tna: "19,90%", cft: "26,92%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
+            { plazo: "36 meses", valor: "$39.073", tna: "19,90%", cft: "26,92%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
+            { plazo: "48 meses", valor: "$32.381", tna: "19,90%", cft: "26,92%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
+            { plazo: "60 meses", valor: "$28.490", tna: "19,90%", cft: "26,92%", ltv: "80%", gastos: "2%", seguro: "Cautivo" }
         ]
     },
 
