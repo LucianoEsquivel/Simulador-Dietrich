@@ -305,7 +305,7 @@ const bancos = {
                         plazos: [{ m: 24, c: 441.28, tna: "45,90%", cft: "63,25%", g: 6, ltv: 25, info: "4 Cuotas - LTV hasta 25%" }, { m: 24, c: 441.28, tna: "45,90%", cft: "63,25%", g: 17, ltv: 80, info: "4 Cuotas - LTV 26% al 80%" }] 
                     },
                     { 
-                        nombre: "Especial Transit 24/36", 
+                        nombre: "Especial UVA Transit 24/36", 
                         destacado: false,
                         gastos: 8.05, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: 02/06/2026, aplica para todas las versiones de Transit, excepto las E-Transit, para personas fisicas, seguro liberado, la cuota incluye capital, intereses e IVA",
