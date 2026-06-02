@@ -444,6 +444,7 @@ main {
 .santander::after { background-image: url('img/santander.png'); }
 .icbc::after      { background-image: url('img/icbc.png'); }
 .vw::after        { background-image: url('img/volkswagen.png'); }
+.BBVA::after      { background-image: url('img/bbva.png'); }
 .galicia::after   { background-image: url('img/galicia.png'); width: 100px; height: 100px; transform-origin: bottom left; /* Asegura que respete el mismo eje de crecimiento que los demás */ }
 
 /* --- EFECTOS HOVER (ESTÁTICO Y COLORIDO) --- */

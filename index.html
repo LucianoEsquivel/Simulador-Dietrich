@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cotizador de Créditos - Dietrich</title>
-    <link rel="stylesheet" href="style.css?v=11.04">
+    <link rel="stylesheet" href="style.css?v=16.36">
     <link rel="manifest" href="./manifest.json">
     <meta name="theme-color" content="#333333">
     <link rel="apple-touch-icon" href="img/icon-192.png">
@@ -27,11 +27,11 @@
                 <div class="seccion-texto">
                     <h4>📢 COMUNICADOS DEL MES</h4>
                     <div class="contenido-comunicado">
-                        <p><strong>Actualización Mayo 2026:</strong></p>
+                        <p><strong>Actualización Junio 2026:</strong></p>
                         <ul>
+                            <li>✅ <strong>BBVA</strong> Se agrego el banco BBVA, por el momento las tasas solo sirven para ByD, proximamente se incluira a mas marcas</li>
                             <li>✅ <strong>Santander</strong> Bajaron los quebrantos de: Linea UVA c/quebranto y UVA Pickups</li>
                             <li>✅ <strong>VW Financiera</strong> A las tasas "Autos financia mas" y "Autos sin quebranto" se les agrego la posibilidad de financiar todas las versiones de Tera</li>
-                            <li>✅ <strong>Santander</strong> Se actualizaron los quebrantos de las tasas UVA Pickups y Linea UVA c/quebranto</li>
                         </ul>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
             <button class="btn-competitivo-dietrich" onclick="window.location.href='./competitivo/index.html'">
                 COMPETITIVO
             </button>
-            <p class="footer-interno">Cotizador exclusivo para uso interno - Grupo Dietrich 1/6/2026 11:04</p>
+            <p class="footer-interno">Cotizador exclusivo para uso interno - Grupo Dietrich 2/6/2026 16:36</p>
 
             <button id="btnInstalar" class="btn-pwa-footer" style="display: none;">
                 <span>📥</span>
@@ -157,6 +157,11 @@
                 <div class="card-banco supervielle" onclick="mostrarCategorias('supervielle')">
                     <span class="nombre-banco">Supervielle</span>
                 </div>
+
+                <div class="card-banco BBVA" onclick="mostrarCategorias('BBVA')">
+                    <span class="nombre-banco">BBVA</span>
+                </div>
+
                 <!-- BANNER DE USADOS (NUEVO) -->
                 <div class="banner-usados" onclick="mostrarCategorias('usados')">
                     <div class="texto-banner">

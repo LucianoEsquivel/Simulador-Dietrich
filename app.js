@@ -707,6 +707,52 @@ const bancos = {
             }
         }
     },
+
+    BBVA: {
+        nombre: "BBVA",
+        categorias: {
+            prendarios_byd: {
+                nombre: "BBVA ByD",
+                planes: [
+                    { 
+                        nombre: "Tasa Fija 0km ByD",
+                        destacado: true, 
+                        tna: "35,90%", cft: "53,22%", ltv: 70, gastos: 2, seguro: "Cautivo", baseCalculo: 100000, 
+                        descripcion: "Crédito prendario BBVA cuota fija, aclaracion importante: el maximo a financiar es el 70% y hasta $80.000.000 vigencia: 13/05/2026",
+                        utilPara: "ByD",
+                        plazos: [{ m: 12, c: 10399 }, { m: 18, c: 7624 }, { m: 24, c: 6263 }, { m: 36, c: 4952 }, { m: 48, c: 4344 }, { m: 60, c: 4014 }] 
+                    },
+                    { 
+                        nombre: "Prendario UVA 0km byD", 
+                        destacado: true,
+                        tna: "UVA + 11,90%", cft: "15,39%", ltv: 70, gastos: 2, valorUVA: 1706.43, baseCalculo: 100000, esUVA: true, 
+                        descripcion: "Credito prendario de BBVA para ByD, aclaracion importante: el maximo a financiar es el 70% y hasta $80.000.000 vigencia: 13/05/2026",
+                        utilPara: "ByD",
+                        plazos: [{ m: 12, c: 8995 }, { m: 18, c: 6206 }, { m: 24, c: 4815 }, { m: 36, c: 3429 }, { m: 48, c: 2742 }] 
+                    },
+
+                    { 
+                        nombre: "Tasa 0% + UVA c/quebranto", 
+                        destacado: true,
+                        tna: "UVA + 0%", cft: "0%", ltv: 70, valorUVA: 1706.43, baseCalculo: 100000, esUVA: true, 
+                        descripcion: "Credito prendario de BBVA para ByD, aclaracion importante: el maximo a financiar es el 70% y hasta $80.000.000 vigencia: 13/05/2026",
+                        utilPara: "ByD",
+                        plazos: [{ m: 12, c: 8333, g:6 }, { m: 18, c: 5555, g:8 }, { m: 24, c: 4166, g:11 }, { m: 36, c: 2777, g: 20 }] 
+                    },
+
+                    { 
+                        nombre: "Tasa 9,90% + UVA c/quebranto", 
+                        destacado: true,
+                        tna: "UVA + 9,90%", cft: "12,66%", ltv: 70, valorUVA: 1706.43, baseCalculo: 100000, esUVA: true, 
+                        descripcion: "Credito prendario de BBVA para ByD, aclaracion importante: el maximo a financiar es el 70% y hasta $80.000.000 vigencia: 13/05/2026",
+                        utilPara: "ByD",
+                        plazos: [{ m: 12, c: 8882, g:3 }, { m: 18, c: 6094, g:4 }, { m: 24, c: 4702, g:2.5 }, { m: 36, c: 3315, g: 6 }] 
+                    },
+                ]
+            },
+            
+        }
+    },
     
     usados: {
         nombre: "Tasas para usados",
@@ -790,7 +836,7 @@ const marcasConfig = {
     },
     byd: { 
         nombre: "BYD", 
-        bancos: ["santander-general", "santander-byd"] 
+        bancos: ["santander-general", "santander-byd", "BBVA-prendarios_byd"] 
     },
     kia: { 
         nombre: "KIA", 
