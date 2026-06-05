@@ -541,25 +541,26 @@ const bancos = {
                 nombre: "Audi",
                 planes: [
                     { 
-                        nombre: "Audi A1 y Q2", 
+                        nombre: "Audi A1", 
                         destacado: true,
-                        tna: "0% / 9,9%", seguro: "CAUTIVO", gastos: 13.495, baseCalculo: 1000, 
-                        descripcion: "Para los modelos Audi A1 y Q2, vigencia: 1/05/2026-31/05/2026, persona fisica y juridica, seguro cautivo de VW Broker",
-                        utilPara: "A1 y Q2",
+                        tna: "0% / 9,9%", seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Para los modelos Audi A1  vigencia: 5/06/2026-30/06/2026, persona fisica y juridica, seguro cautivo de VW Broker",
+                        utilPara: "A1",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",   ltv: 20000000, g: 13.495 }, 
-                            { m: 12, c: 88.82, tna: "9.9%", ltv: 30500000, g: 13.495 }
+                            { m: 12, c: 83.33, tna: "0%",   ltv: 20000000, g: 14.1 }, 
+                            { m: 12, c: 88.82, tna: "9.9%", ltv: 30000000, g: 14.1 }
                         ] 
                     },
 
                     { 
-                        nombre: "UVA Audi", 
+                        nombre: "Audi A3", 
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", gastos: 2, baseCalculo: 1000, 
-                        descripcion: "Para los A1 y Q2, vigencia: 1/05/2026-31/05/2026, para persona fisica, seguro cautivo de VW Broker",
-                        utilPara: "A1 y Q2",
+                        descripcion: "Disponible para A3 1.4 Sedan y Sportback, vigencia: 5/06/2026-30/06/2026, para persona fisica y juridica, seguro cautivo de VW Broker",
+                        utilPara: "A3",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",   ltv: 20000000, g: 2 }, 
+                            { m: 12, c: 83.33, tna: "0%",   ltv: 25500000, g: 13.495 },
+                             { m: 18, c: 60.95, tna: "9.9%", ltv: 22500000, g: 13.495 }
                         ] 
                     }
                 ]
