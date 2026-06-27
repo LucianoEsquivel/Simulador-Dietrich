@@ -29,6 +29,7 @@ const bancos = {
                         utilPara: "Pickups",
                         plazos: [{m:12, c:90517}, {m:18, c:62628}, {m:24, c:48719}, {m:36, c:34878}, {m:48, c:28026}, {m:60, c:23969}, {m:72, c:21309}] 
                     },
+
                     { 
                         nombre: "Línea UVA",
                         destacado: true, 
@@ -42,6 +43,7 @@ const bancos = {
                         utilPara: "todas las marcas",
                         plazos: [{m:12, c:94530}, {m:18, c:66639}, {m:24, c:52775}, {m:36, c:39073}, {m:48, c:32381}, {m:60, c:28490}] 
                     },
+                    
                     { 
                         nombre: "Línea UVA con Quebranto", 
                         destacado: true,
@@ -81,6 +83,8 @@ const bancos = {
                         utilPara: "Pickups",
                         plazos: [{m:12, c:88822, g:4}, {m:18, c:60947, g:5}, {m:24, c:47030, g:6}] 
                     },
+
+                   
 
                     { 
                         nombre: "Santander dolares", 
@@ -235,6 +239,20 @@ const bancos = {
             minorista: {
                 nombre: "ICBC Minorista",
                 planes: [
+
+                     
+                    { 
+                        nombre: "Ranger Test Drive Day", 
+                        destacado: true,
+                        tna: "9,90%", 
+                        descripcion: "Aplica solo para Ranger (excepto Raptor) vigencia: 27/06/2026 - 30/06/2026, esta linea de financiacion aplica exclusivamente a clientes que asistan y participen del Test Drive",
+                        ltv: 35000000, 
+                        seguro: "Cautivo", 
+                        baseCalculo: 1000000,
+                        utilPara: "Ranger (Excepto Raptor)",
+                        plazos: [ {m:24, c:47030, g:14}] 
+                    },
+                    
                     { 
                         nombre: "Everest", 
                         destacado: true,

@@ -339,7 +339,6 @@ export const financiaciones = [
         factorCalculo: 1000, 
         vehiculosIds: [31, 32, 33, 34, 36, 38, 39], 
         
-        // Tabla de plazos en formato compacto
         cuotasPorMillon: [
             // Opciones Seguro Cautivo
             { plazo: "12 meses", valor: "$83,33", tna: "0,0%", cft: "0,0%", ltv: "60%", gastos: "2%", seguro: "Cautivo" },
@@ -363,7 +362,6 @@ export const financiaciones = [
         factorCalculo: 1000, 
         vehiculosIds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42] , 
         
-        // Tabla de plazos en formato compacto
         cuotasPorMillon: [
             // Opciones Seguro Cautivo
             { plazo: "12 meses", valor: "$112,45", tna: "47,90%", cft: "71,96%", ltv: "75%", gastos: "2%", seguro: "Cautivo" },
@@ -389,7 +387,6 @@ export const financiaciones = [
         aplicaATodo: false, 
         vehiculosIds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 
         
-        // Tabla de plazos en formato compacto
         cuotasPorMillon: [
             { plazo: "24 meses", valor: "$54,93", tna: "23,90%", cft: "29,37%", ltv: "50%", gastos: "2%", seguro: "Cautivo" },
             { plazo: "36 meses", valor: "$45,72", tna: "30,90%", cft: "38,94%", ltv: "60%", gastos: "2%", seguro: "Cautivo" },
@@ -406,7 +403,6 @@ export const financiaciones = [
         aplicaATodo: false, 
         vehiculosIds: [31, 32, 33, 34, 36, 38, 39], 
         
-        // Tabla de plazos en formato compacto
         cuotasPorMillon: [
             { plazo: "24 meses", valor: "$54,93", tna: "23,90%", cft: "29,37%", ltv: "50%", gastos: "2%", seguro: "Cautivo" },
             { plazo: "36 meses", valor: "$45,72", tna: "30,90%", cft: "38,94%", ltv: "60%", gastos: "2%", seguro: "Cautivo" },
@@ -423,7 +419,6 @@ export const financiaciones = [
         aplicaATodo: false, 
         vehiculosIds: [31, 32, 33, 34, 36, 38, 39], 
         
-        // Tabla de plazos en formato compacto
         cuotasPorMillon: [
             { plazo: "24 meses", valor: "$47,23", tna: "10%", cft: "12,79%", ltv: "60%", gastos: "2%", seguro: "Liberado" },
             { plazo: "36 meses", valor: "$33,21", tna: "10%", cft: "12,79%", ltv: "60%", gastos: "2%", seguro: "Liberado" }
@@ -440,7 +435,6 @@ export const financiaciones = [
         aplicaATodo: false, 
         vehiculosIds: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], 
         
-        // Tabla de plazos en formato compacto
         cuotasPorMillon: [
             { plazo: "12 meses", valor: "$94,01", tna: "19%", cft: "25,57%", ltv: "60%", gastos: "2%", seguro: "Liberado" },
             { plazo: "24 meses", valor: "$52,24", tna: "19%", cft: "25,57%", ltv: "60%", gastos: "2%", seguro: "Liberado" },
@@ -460,7 +454,6 @@ export const financiaciones = [
         aplicaATodo: false, 
         vehiculosIds: [30], 
         
-        // Tabla de plazos en formato compacto
         cuotasPorMillon: [
             { plazo: "18 meses", valor: "$55,56", tna: "0%", cft: "0%", ltv: "$30.000.000", gastos: "17%", seguro: "Cautivo" },
             { plazo: "24 meses", valor: "$49,86", tna: "14,90%", cft: "19,60%", ltv: "$30.000.000", gastos: "17%", seguro: "Cautivo" }
@@ -477,7 +470,6 @@ export const financiaciones = [
         aplicaATodo: false, 
         vehiculosIds: [17, 18, 19], 
         
-        // Tabla de plazos en formato compacto
         cuotasPorMillon: [
             { plazo: "18 meses", valor: "$55,56", tna: "0%", cft: "0%", ltv: "$15.000.000", gastos: "17%", seguro: "Cautivo" }
         ]
@@ -493,7 +485,6 @@ export const financiaciones = [
         aplicaATodo: false, 
         vehiculosIds: [25], 
         
-        // Tabla de plazos en formato compacto
         cuotasPorMillon: [
             { plazo: "18 meses", valor: "$55,56", tna: "0%", cft: "0%", ltv: "$25.000.000", gastos: "17%", seguro: "Cautivo" }
         ]
@@ -774,8 +765,6 @@ export const financiaciones = [
         aplicaATodo: false, 
         vehiculosIds: [130, 131, 132, 133, 134, 135, 136, 137], 
 
-        
-        // Tabla de plazos en formato compacto
         cuotasPorMillon: [
             { plazo: "12 meses", valor: "$8.995", tna: "11,90%", cft: "15,39%", ltv: "70%", gastos: "2%", seguro: "Cautivo" },
             { plazo: "18 meses", valor: "$6.206", tna: "11,90%", cft: "15,39%", ltv: "70%", gastos: "2%", seguro: "Cautivo" },
@@ -798,7 +787,7 @@ export const financiaciones = [
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
-            { plazo: "12 meses", valor: "$10.399", tna: "35,90%", cft: "53,22%", ltv: "70%", gastos: "2%", seguro: "Cautivo" },
+            { plazo: "12 meses", valor: "$10.399",tna: "35,90%", cft: "53,22%", ltv: "70%", gastos: "2%", seguro: "Cautivo" },
             { plazo: "18 meses", valor: "$7.624", tna: "35,90%", cft: "53,22%", ltv: "70%", gastos: "2%", seguro: "Cautivo" },
             { plazo: "24 meses", valor: "$6.263", tna: "35,90%", cft: "53,22%", ltv: "70%", gastos: "2%", seguro: "Cautivo" },
             { plazo: "36 meses", valor: "$4.952", tna: "35,90%", cft: "53,22%", ltv: "70%", gastos: "2%", seguro: "Cautivo" },
@@ -928,7 +917,6 @@ export const vehiculos = [
     { id: 72, marca: "Audi", modelo: "Q8", version: "55 TFSI quattro", tags: [] },
     { id: 73, marca: "Audi", modelo: "RS Q8", version: "Performance", tags: [] },
     
-
 /******************************** Volkswagen ******************************************/
     { id: 74, marca: "Volkswagen", modelo: "Amarok", version: "Trendline TDI MT 4x2 G2", tags: [] },
     { id: 75, marca: "Volkswagen", modelo: "Amarok", version: "Trendline TDI MT 4x4 G2", tags: [] },
@@ -946,7 +934,6 @@ export const vehiculos = [
     { id: 87, marca: "Volkswagen", modelo: "Amarok", version: "Black Style V6 AT 4x4 G2", tags: [] },
     { id: 88, marca: "Volkswagen", modelo: "Amarok", version: "Black Style V6 AT 4x4 SE G2", tags: [] },
 
-
     { id: 89, marca: "Volkswagen", modelo: "Nivus", version: "170  TSI", tags: [] },
     { id: 90, marca: "Volkswagen", modelo: "Nivus", version: "Trendile 200 TSI", tags: [] },
     { id: 91, marca: "Volkswagen", modelo: "Nivus", version: "Comfortline 200 TSI", tags: [] },
@@ -957,12 +944,10 @@ export const vehiculos = [
     { id: 95, marca: "Volkswagen", modelo: "Polo", version: "Comfortline", tags: [] },
     { id: 96, marca: "Volkswagen", modelo: "Polo", version: "Highline", tags: [] },
 
-
     { id: 97, marca: "Volkswagen", modelo: "Tera", version: "Trend", tags: [] },
     { id: 98, marca: "Volkswagen", modelo: "Tera", version: "Comfort", tags: [] },
     { id: 99, marca: "Volkswagen", modelo: "Tera", version: "High", tags: [] },
     { id: 100, marca: "Volkswagen", modelo: "Tera", version: "Outfit", tags: [] },
-
 
     { id: 101, marca: "Volkswagen", modelo: "T-Cross", version: "Trendline 170 TSI MT", tags: [] },
     { id: 102, marca: "Volkswagen", modelo: "T-Cross", version: "Trendline 200 TSI AT", tags: [] },
@@ -971,8 +956,8 @@ export const vehiculos = [
     { id: 105, marca: "Volkswagen", modelo: "T-Cross", version: "Extreme 200 TSI AT", tags: [] },
 
     { id: 106, marca: "Volkswagen", modelo: "Taos", version: "Comfortline 250 TSI AT", tags: [] },
-    { id: 107, marca: "Volkswagen", modelo: "Taos", version: "HIghline 250 TSI AT", tags: [] },
-    { id: 108, marca: "Volkswagen", modelo: "Taos", version: "HIghline BiTono 250 TSI AT", tags: [] },
+    { id: 107, marca: "Volkswagen", modelo: "Taos", version: "Highline 250 TSI AT", tags: [] },
+    { id: 108, marca: "Volkswagen", modelo: "Taos", version: "Highline BiTono 250 TSI AT", tags: [] },
 
     { id: 109, marca: "Volkswagen", modelo: "Tiguan", version: "Life", tags: [] },
     { id: 110, marca: "Volkswagen", modelo: "Tiguan", version: "R-Line", tags: [] },
@@ -988,7 +973,6 @@ export const vehiculos = [
     { id: 117, marca: "Volkswagen", modelo: "Saveiro", version: "CS Trendline", tags: [] },
     { id: 118, marca: "Volkswagen", modelo: "Saveiro", version: "CD Comfortline", tags: [] },
     { id: 119, marca: "Volkswagen", modelo: "Saveiro", version: "CD Extreme", tags: [] },
-
 
 /******************************** KIA ******************************************/
 
