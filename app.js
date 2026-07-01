@@ -240,17 +240,7 @@ const bancos = {
                 nombre: "ICBC Minorista",
                 planes: [
 
-                     { 
-                        nombre: "Ranger Test Drive Day", 
-                        destacado: true,
-                        tna: "9,90%", 
-                        descripcion: "Aplica solo para Ranger (excepto Raptor) vigencia: 27/06/2026 - 30/06/2026, esta linea de financiacion aplica exclusivamente a clientes que asistan y participen del Test Drive",
-                        ltv: 35000000, 
-                        seguro: "Cautivo", 
-                        baseCalculo: 1000000,
-                        utilPara: "Ranger (Excepto Raptor)",
-                        plazos: [ {m:24, c:47030, g:14}] 
-                    },
+                    
                     
                     { 
                         nombre: "Everest", 
