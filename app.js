@@ -450,14 +450,14 @@ const bancos = {
                     }
                 ]
             },
-                   /* ByD: {
+                    ByD: {
                 nombre: "ICBC ByD",
                 planes: [
                     { 
                         nombre: "Tasa especial Dolphin mini GL 0km", 
                         destacado: true,
                         gastos: 7, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: --/--/---- aplica para Dolphin mini GL",
+                        descripcion: "Fecha de vigencia: 06/07/2026 aplica para Dolphin mini GL",
                         utilPara: "DOLPHIN MINI GL",
                         plazos: [{ m: 12, tna: "0%", cft: "0,00%", ltv: 11000000, c: 83.33, g: 7 }, { m: 18, tna: "0,00%", cft: "0,00%", ltv: 8000000, c: 55.56, g: 7 }] 
                     },
@@ -466,7 +466,7 @@ const bancos = {
                         nombre: "Tasa especial SONG GL 0km", 
                         destacado: true,
                         gastos: 7, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: --/--/---- aplica para SONG GL",
+                        descripcion: "Fecha de vigencia: 06/07/2026 aplica para SONG GL",
                         utilPara: "SONG GL",
                         plazos: [{ m: 12, tna: "0%", cft: "0,00%", ltv: 16000000, c: 83.33, g: 7 }, { m: 18, tna: "0,00%", cft: "0,00%", ltv: 11500000, c: 55.56, g: 7 }] 
                     },
@@ -475,7 +475,7 @@ const bancos = {
                         nombre: "Tasa especial UVA Dolphin mini GL 0km", 
                         destacado: true,
                         gastos: 7, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: --/--/---- aplica para Dolphin mini GL",
+                        descripcion: "Fecha de vigencia: 06/07/2026 aplica para Dolphin mini GL",
                         utilPara: "DOLPHIN MINI GL",
                         plazos: [{ m: 12, tna: "0%", cft: "0,00%", ltv: 22000000, c: 83.33, g: 7 }, { m: 18, tna: "0,00%", cft: "0,00%", ltv: 20000000, c: 55.56, g: 7 }] 
                     },
@@ -484,7 +484,7 @@ const bancos = {
                         nombre: "Tasa especial UVA SONG GL 0km", 
                         destacado: true,
                         gastos: 7, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: --/--/---- aplica para SONG GL",
+                        descripcion: "Fecha de vigencia: 06/07/2026 aplica para SONG GL",
                         utilPara: "SONG GL",
                         plazos: [{ m: 12, tna: "0%", cft: "0,00%", ltv: 32000000, c: 83.33, g: 7 }, { m: 18, tna: "0,00%", cft: "0,00%", ltv: 28000000, c: 55.56, g: 7 }] 
                     },
@@ -493,7 +493,7 @@ const bancos = {
                         nombre: "Tasa GREEN ByD 0km y usados", 
                         destacado: true,
                         gastos: 7, seguro: "CAUTIVO", baseCalculo: 1000,  tna: "42,90%", ltv: 80,
-                        descripcion: "Fecha de vigencia: --/--/---- aplica para todos los vehiculos electricos e hibridos",
+                        descripcion: "Fecha de vigencia: 06/07/2026 aplica para todos los vehiculos electricos e hibridos",
                         utilPara: "Vehiculos electricos e hibridos",
                         plazos: [{ m: 12, c: 108.27, g: 7 }, { m: 24, c: 67.19, g: 7 }, { m: 36, c: 54.45, g: 7 }, { m: 48, c: 48.72, g: 7 }, { m: 60, c: 45.74, g: 7 },] 
                     },
@@ -502,7 +502,7 @@ const bancos = {
                         nombre: "Tasa GREEN PROMOCIONAL ByD 0km y usados", 
                         destacado: false,
                         gastos: 7, seguro: "CAUTIVO", baseCalculo: 1000,  tna: "50,90%", ltv: 80,
-                        descripcion: "Fecha de vigencia: --/--/---- aplica para todos los vehiculos electricos e hibridos",
+                        descripcion: "Fecha de vigencia: 06/07/2026 aplica para todos los vehiculos electricos e hibridos",
                         utilPara: "Vehiculos electricos e hibridos",
                         plazos: [{ m: 12, c: 113.24, g: 7 }, { m: 24, c: 72.59, g: 7 }, { m: 36, c: 60.32, g: 7 }, { m: 48, c: 55.04, g: 7 }, { m: 60, c: 52.45, g: 7 },] 
                     },
@@ -511,7 +511,7 @@ const bancos = {
                         nombre: "Tasa GREEN OPORTUNIDAD 0km y usados", 
                         destacado: false,
                         gastos: 7, seguro: "CAUTIVO", baseCalculo: 1000,  tna: "47,90%", ltv: 80,
-                        descripcion: "Fecha de vigencia: --/--/---- aplica para todos los vehiculos",
+                        descripcion: "Fecha de vigencia: 06/07/2026 aplica para todos los vehiculos",
                         utilPara: "Todos los vehiculos",
                         plazos: [{ m: 12, c: 111.37, g: 7 }, { m: 24, c: 70.54, g: 7 }, { m: 36, c: 58.09, g: 7 }, { m: 48, c: 52.63, g: 7 }, { m: 60, c: 49.90, g: 7 },] 
                     },
@@ -520,7 +520,7 @@ const bancos = {
                         nombre: "Tasa GREEN OPORTUNIDAD", 
                         destacado: false,
                         gastos: 7, seguro: "CAUTIVO", baseCalculo: 1000,  tna: "55,90%", ltv: 80,
-                        descripcion: "Fecha de vigencia: --/--/---- aplica para todos los vehiculos",
+                        descripcion: "Fecha de vigencia: 06/07/2026 aplica para todos los vehiculos",
                         utilPara: "Todos los vehiculos",
                         plazos: [{ m: 12, c: 116.40, g: 7 }, { m: 24, c: 76.05, g: 7 }, { m: 36, c: 64.11, g: 7 }, { m: 48, c: 59.13, g: 7 }, { m: 60, c: 56.79, g: 7 },] 
                     },
@@ -529,13 +529,13 @@ const bancos = {
                         nombre: "Tasa UVAS ByD 0km y usados", 
                         destacado: false,
                         gastos: 7, seguro: "CAUTIVO", baseCalculo: 1000,  tna: "14,00%", ltv: 60,
-                        descripcion: "Fecha de vigencia: --/--/---- aplica para todos los vehiculos",
+                        descripcion: "Fecha de vigencia: 06/07/2026 aplica para todos los vehiculos",
                         utilPara: "Todos los vehiculos",
                         plazos: [{ m: 12, c: 91.14, g: 7 }, { m: 24, c: 45.35, g: 7 }, { m: 36, c: 35.52, g: 7 }, { m: 48, c: 28.69, g: 7 }, { m: 60, c: 24.65, g: 7 },] 
                     },
                 ]
             },    
-            */
+            
         }
     },
     vw_financial: {

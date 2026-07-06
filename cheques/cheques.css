@@ -1,0 +1,63 @@
+.contenedor-cheques {
+    padding: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.grid-plazos-cheques {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-chq {
+    background-color: #f8f9fa;
+    border: 2px solid #e9ecef;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-chq:hover, .btn-chq:active {
+    background-color: #ff6b00; /* Naranja Dietrich */
+    border-color: #ff6b00;
+    color: white;
+}
+
+.alerta-gerencia {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.85em;
+    text-align: center;
+}
+
+.tabla-chq {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tabla-chq th, .tabla-chq td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.tabla-chq th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.fila-destacada {
+    font-weight: bold;
+    color: #ff6b00;
+    background-color: #fff9f5;
+}
