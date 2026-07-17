@@ -624,14 +624,54 @@ const bancos = {
                     },
                     
                     { 
-                        nombre: "Autos largo plazo", 
-                        destacado: false,
+                        nombre: "Autos largo plazo 18.5 millones Polo Track", 
+                        destacado: true,
                         tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para todos los modelos excepto Amarok, disponible para persona fisica, juridica y venta directa, seguro cautivo de BW Broker, vigencia: 08/07/2026-31/07/2026",
-                        utilPara: "Todos los modelos excepto Amarok",
+                        descripcion: "Aplica para Polo Track , linea SIN demostracion de ingresos, disponible para persona fisica, juridica y venta directa, seguro cautivo de BW Broker, vigencia: 17/07/2026-31/07/2026",
+                        utilPara: "Polo Track",
                         plazos: [
-                            { m: 36, c: 45.47, tna: "29,9%",    g: 13.495, ltv: 32000000 },
-                            { m: 48, c: 39.12, tna: "29,9%",    g: 14.1, ltv: 32000000 }
+                            { m: 36, c: 36.41, tna: "15,5%",    g: 14.1, ltv: 18500000 },
+                            { m: 48, c: 32.77, tna: "20,5%",    g: 14.1, ltv: 18500000 },
+                            { m: 60, c: 30.96, tna: "23,5%",    g: 14.1, ltv: 18500000 },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Autos largo plazo 20 millones Polo Track", 
+                        destacado: true,
+                        tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para Polo Track , linea CON demostracion de ingresos, disponible para persona fisica, juridica y venta directa, seguro cautivo de BW Broker, vigencia: 17/07/2026-31/07/2026",
+                        utilPara: "Polo Track",
+                        plazos: [
+                            { m: 36, c: 36.41, tna: "15,5%",    g: 14.1, ltv: 20000000 },
+                            { m: 48, c: 32.77, tna: "20,5%",    g: 14.1, ltv: 20000000 },
+                            { m: 60, c: 30.96, tna: "23,5%",    g: 14.1, ltv: 20000000 },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Autos largo plazo", 
+                        destacado: true,
+                        tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para Polo Comfortline y Highline y Tera Comfortline, Highline y Outfit, disponible para persona fisica, juridica y venta directa, seguro cautivo de BW Broker, vigencia: 17/07/2026-31/07/2026",
+                        utilPara: "Polo y Tera",
+                        plazos: [
+                            { m: 36, c: 36.41, tna: "15,5%",    g: 14.1, ltv: 20000000 },
+                            { m: 48, c: 32.77, tna: "20,5%",    g: 14.1, ltv: 20000000 },
+                            { m: 60, c: 30.96, tna: "23,5%",    g: 14.1, ltv: 20000000 },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Autos largo plazo 24 millones", 
+                        destacado: true,
+                        tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para Polo Comfortline y Highline y Tera Comfortline, Highline y Outfit, disponible para persona fisica, juridica y venta directa, seguro cautivo de BW Broker, vigencia: 17/07/2026-31/07/2026",
+                        utilPara: "Polo y Tera",
+                        plazos: [
+                            { m: 36, c: 38.83, tna: "19,5%",    g: 14.1, ltv: 24000000 },
+                            { m: 48, c: 35.01, tna: "23,5%",    g: 14.1, ltv: 24000000 },
+                            { m: 60, c: 33.09, tna: "26,5%",    g: 14.1, ltv: 24000000 },
                         ] 
                     },
 
