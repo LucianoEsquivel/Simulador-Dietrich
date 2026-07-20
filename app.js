@@ -33,15 +33,15 @@ const bancos = {
                     { 
                         nombre: "Línea UVA",
                         destacado: true, 
-                        tna: "19,90%", 
-                        cft: "26,92%", 
+                        tna: "17,50%", 
+                        cft: "23,36%", 
                         ltv: 80, 
                         gastos: 2, 
                         seguro: "Cautivo", 
                         baseCalculo: 1000000, 
                         descripcion: "Aplica para toda las marcas, seguro cautivo (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares) Vigencia: a partir del 01/06/2024.",
                         utilPara: "todas las marcas",
-                        plazos: [{m:12, c:94530}, {m:18, c:66639}, {m:24, c:52775}, {m:36, c:39073}, {m:48, c:32381}, {m:60, c:28490}] 
+                        plazos: [{m:12, c:93145}, {m:18, c:65250}, {m:24, c:51366}, {m:36, c:37608}, {m:48, c:30853}, {m:60, c:26898}] 
                     },
                     
                     { 
@@ -53,9 +53,9 @@ const bancos = {
                         descripcion: "Linea UVA con quebranto, aplica para todas las marcas (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares) Vigencia: a partir del 01/06/2024.",
                         utilPara: "todas las marcas",
                         plazos: [
-                            { m: 12, c: 83334, tna: "0%", cft: "0%", g: 13, info: "TNA 0%" }, 
-                            { m: 18, c: 60947, tna: "9,90%", cft: "12,66%", g: 11, info: "TNA 9,9%" }, 
-                            { m: 24, c: 47030, tna: "9,90%", cft: "12,66%", g: 14, info: "TNA 9,9%" }
+                            { m: 12, c: 83334, tna: "0%", cft: "0%", g: 12, info: "TNA 0%" }, 
+                            { m: 18, c: 60947, tna: "9,90%", cft: "12,66%", g: 10, info: "TNA 9,9%" }, 
+                            { m: 24, c: 47030, tna: "9,90%", cft: "12,66%", g: 12, info: "TNA 9,9%" }
                         ] 
                     },
                     { 
@@ -118,15 +118,15 @@ const bancos = {
                     { 
                         nombre: "Tasa Fija 0km", 
                         destacado: false,
-                        tna: "47,90%", 
-                        cft: "76,13%", 
+                        tna: "42,90%", 
+                        cft: "66,23%", 
                         ltv: 80, 
                         gastos: 2, 
                         seguro: "A DEFINIR", 
                         baseCalculo: 1000000, 
                         descripcion: "Línea tradicional en pesos con tasa fija, aplica para todas las marcas (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares). Vigencia: a partir del 01/06/2024",
                         utilPara: "Todas las marcas",
-                        plazos: [{m:12, c:111366}, {m:18, c:83851}, {m:24, c:70542}, {m:36, c:58086}, {m:48, c:52364}, {m:60, c:49900}] 
+                        plazos: [{m:12, c:108269}, {m:18, c:80643}, {m:24, c:67195}, {m:36, c:54445}, {m:48, c:48718}, {m:60, c:45742}] 
                     },
                     { 
                         nombre: "Tasa Fija Eléctricos", 
