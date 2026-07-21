@@ -675,6 +675,32 @@ const bancos = {
                         ] 
                     },
 
+                    { 
+                        nombre: "Rentadoras AUTOS", 
+                        destacado: true,
+                        tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Todas las versiones excepto Amarok, disponible para persona fisica, juridica y venta directa, seguro liberado (COMPLETAR DDJJ LIBERACION SEGURO), vigencia: 21/07/2026-31/07/2026",
+                        utilPara: "Todas, excepto Amarok",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0,00%",    g: 16.52, ltv: 26000000 },
+                            { m: 18, c: 63.80, tna: "15,00%",    g: 15.31, ltv: 26000000 },
+                            { m: 24, c: 53.96, tna: "21,90%",    g: 15.31, ltv: 26000000 },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Rentadoras Amarok", 
+                        destacado: true,
+                        tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Todas las versiones de Amarok, disponible para persona fisica, juridica y venta directa, seguro liberado (COMPLETAR DDJJ LIBERACION SEGURO), vigencia: 21/07/2026-31/07/2026",
+                        utilPara: "Amarok",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0,00%",    g: 16.52, ltv: 32000000 },
+                            { m: 18, c: 63.53, tna: "14,50%",    g: 15.31, ltv: 32000000 },
+                            { m: 24, c: 53.72, tna: "21,50%",    g: 15.31, ltv: 32000000 },
+                        ] 
+                    },
+
                 ]
             },
             audi: {
