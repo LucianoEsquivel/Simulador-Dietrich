@@ -190,7 +190,43 @@ const bancos = {
                         descripcion: "Crédito prendario tradicional a tasa fija para unidades BYD.",
                         utilPara: "ByD",
                         plazos: [{ m: 12, c: 105819 }, { m: 18, c: 78118 }, { m: 24, c: 64570 }, { m: 36, c: 51606 }, { m: 48, c: 45672 }, { m: 60, c: 42509 }] 
-                    }
+                    },
+
+                    { 
+                        nombre: "Dolphin GL (UVA)", 
+                        destacado: true,
+                        tna: "0%", cft: "0%", seguro: "Cautivo", baseCalculo: 1000000, 
+                        descripcion: "Financiacion exclusiva para Dolphin GL BYD",
+                        utilPara: "Dolphin GL",
+                        plazos: [{ m: 12, c: 83334, g: 11, ltv: 22000000 }, { m: 18, c: 55556, g: 14.7 , ltv: 20000000 }] 
+                    },
+
+                    { 
+                        nombre: "Song PRO GL (UVA)", 
+                        destacado: true,
+                        tna: "0%", cft: "0%", seguro: "Cautivo", baseCalculo: 1000000, 
+                        descripcion: "Financiacion exclusiva para Song PRO GL BYD",
+                        utilPara: "Song PRO GL",
+                        plazos: [{ m: 12, c: 83334, g: 11, ltv: 32000000 }, { m: 18, c: 55556, g: 14.7, ltv: 28000000 }] 
+                    },
+
+                    { 
+                        nombre: "Dolphin GL (FIJA)", 
+                        destacado: true,
+                        tna: "0%", cft: "0%", seguro: "Cautivo", baseCalculo: 1000000, 
+                        descripcion: "Financiacion exclusiva para Dolphin GL BYD",
+                        utilPara: "Dolphin GL",
+                        plazos: [{ m: 12, c: 83334, g: 23, ltv: 11000000 }, { m: 18, c: 55556, g: 31.1 , ltv: 8000000 }] 
+                    },
+
+                    { 
+                        nombre: "Song PRO GL (FIJA)", 
+                        destacado: true,
+                        tna: "0%", cft: "0%", seguro: "Cautivo", baseCalculo: 1000000, 
+                        descripcion: "Financiacion exclusiva para Song PRO GL BYD",
+                        utilPara: "Song PRO GL",
+                        plazos: [{ m: 12, c: 83334, g: 23, ltv: 16000000 }, { m: 18, c: 55556, g: 31.1, ltv: 11000000 }] 
+                    },
                 ]
             },
             kia: {
@@ -202,24 +238,43 @@ const bancos = {
                         tna: "0%", cft: "-", seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Financiación especial para KIA Seltos con Tasa 0%.",
                         utilPara: "Seltos",
-                        plazos: [{ m: 12, c: 83.33, g: 14.85, ltv: 24000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 19.26, ltv: 16500000, info: "TNA 0%" }] 
+                        plazos: [{ m: 12, c: 83.33, g: 11.08, ltv: 27500000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 16, ltv: 19000000, info: "TNA 0%" }] 
                     },
-                    
                     { 
                         nombre: "K2500 UVA", 
                         destacado: true,
                         tna: "0%", cft: "-", seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Línea comercial para KIA K2500 tasa 0%.",
                         utilPara: "K2500",
-                        plazos: [{ m: 12, c: 83.33, g: 14.85, ltv: 23000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 19.26, ltv: 16000000, info: "TNA 0%" }] 
+                        plazos: [{ m: 12, c: 83.33, g: 11.1, ltv: 24000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 15.1, ltv: 17000000, info: "TNA 0%" }] 
                     },
+                    { 
+                        nombre: "TASMAN X-PRO UVA", 
+                        destacado: true,
+                        tna: "0%", cft: "-", seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Línea comercial para TASMAN X-PRO tasa 0%.",
+                        utilPara: "TASMAN X-PRO",
+                        plazos: [{ m: 12, c: 83.33, g: 10.1, ltv: 66000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 13.5, ltv: 46500000, info: "TNA 0%" }] 
+                    },
+                    { 
+                        nombre: "TASMAN DIESEL/NAFTA UVA", 
+                        destacado: true,
+                        tna: "0%", cft: "-", seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Línea comercial para TASMAN DIESEL/NAFTA tasa 0%.",
+                        utilPara: "TASMAN DIESEL/NAFTA",
+                        plazos: [{ m: 12, c: 83.33, g: 10.1, ltv: 66000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 13.5, ltv: 46500000, info: "TNA 0%" }] 
+                    },
+
+
+
+
                     { 
                         nombre: "Seltos tasa fija", 
                         destacado: true,
                         tna: "0%", cft: "-", seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Linea Tasa Fija, 0%, con quebranto",
                         utilPara: "Seltos",
-                        plazos: [{ m: 12, c: 83.33, g: 29.93, ltv: 19500000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 39.12, ltv: 14500000, info: "TNA 0%" }] 
+                        plazos: [{ m: 12, c: 83.33, g: 25.5, ltv: 17000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 33.46, ltv: 12000000, info: "TNA 0%" }] 
                     },
                     { 
                         nombre: "K 2500 Fija", 
@@ -227,7 +282,23 @@ const bancos = {
                         tna: "0%", cft: "-", seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Linea tasa fija Tasa 0%, con quebranto.",
                         utilPara: "K2500",
-                        plazos: [{ m: 12, c: 83.33, g: 28.84, ltv: 19000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 37.67, ltv: 14500000, info: "TNA 0%" }] 
+                        plazos: [{ m: 12, c: 83.33, g: 21.6, ltv: 17000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 29.2, ltv: 12500000, info: "TNA 0%" }] 
+                    },
+                    { 
+                        nombre: "TASMAN X-PRO FIJA", 
+                        destacado: true,
+                        tna: "0%", cft: "-", seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Línea comercial para TASMAN X-PRO tasa 0%.",
+                        utilPara: "TASMAN X-PRO",
+                        plazos: [{ m: 12, c: 83.33, g: 21.6, ltv: 27000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 29.2, ltv: 19500000, info: "TNA 0%" }] 
+                    },
+                    { 
+                        nombre: "TASMAN DIESEL/NAFTA FIJA", 
+                        destacado: true,
+                        tna: "0%", cft: "-", seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Línea comercial para TASMAN DIESEL/NAFTA tasa 0%.",
+                        utilPara: "TASMAN DIESEL/NAFTA",
+                        plazos: [{ m: 12, c: 83.33, g: 21.6, ltv: 27000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 29.2, ltv: 19500000, info: "TNA 0%" }] 
                     },
                 ]
             }
