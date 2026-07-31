@@ -35,12 +35,12 @@ export const financiaciones = [
     
     // Tabla de plazos completa y detallada
         cuotasPorMillon: [
-            { plazo: "12 meses", valor: "$94.530", tna: "19,90%", cft: "26,92%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
-            { plazo: "18 meses", valor: "$66.639", tna: "19,90%", cft: "26,92%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
-            { plazo: "24 meses", valor: "$52.775", tna: "19,90%", cft: "26,92%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
-            { plazo: "36 meses", valor: "$39.073", tna: "19,90%", cft: "26,92%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
-            { plazo: "48 meses", valor: "$32.381", tna: "19,90%", cft: "26,92%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
-            { plazo: "60 meses", valor: "$28.490", tna: "19,90%", cft: "26,92%", ltv: "80%", gastos: "2%", seguro: "Cautivo" }
+            { plazo: "12 meses", valor: "$93.145", tna: "17,50%", cft: "23,36%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
+            { plazo: "18 meses", valor: "$65.250", tna: "17,50%", cft: "23,36%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
+            { plazo: "24 meses", valor: "$51.366", tna: "17,50%", cft: "23,36%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
+            { plazo: "36 meses", valor: "$37.608", tna: "17,50%", cft: "23,36%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
+            { plazo: "48 meses", valor: "$30.853", tna: "17,50%", cft: "23,36%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
+            { plazo: "60 meses", valor: "$26.898", tna: "17,50%", cft: "23,36%", ltv: "80%", gastos: "2%", seguro: "Cautivo" }
         ]
     },
 
@@ -56,9 +56,9 @@ export const financiaciones = [
         
         // Tabla de plazos completa y detallada
         cuotasPorMillon: [
-            { plazo: "12 meses", valor: "$83.334", tna: "0%", cft: "0%", ltv: "80%", gastos: "13%", seguro: "Cautivo" },
-            { plazo: "18 meses", valor: "$60.947", tna: "9,90%", cft: "12,66%", ltv: "80%", gastos: "12%", seguro: "Cautivo" },
-            { plazo: "24 meses", valor: "$47.030", tna: "9,90%", cft: "12,66%", ltv: "80%", gastos: "14%", seguro: "Cautivo" }
+            { plazo: "12 meses", valor: "$83.334", tna: "0%", cft: "0%", ltv: "80%", gastos: "12%", seguro: "Cautivo" },
+            { plazo: "18 meses", valor: "$60.947", tna: "9,90%", cft: "12,66%", ltv: "80%", gastos: "10%", seguro: "Cautivo" },
+            { plazo: "24 meses", valor: "$47.030", tna: "9,90%", cft: "12,66%", ltv: "80%", gastos: "12%", seguro: "Cautivo" }
         ]
     },
 
@@ -77,7 +77,7 @@ export const financiaciones = [
             // Opción con TNA 9,90%
             { plazo: "12 meses (Tasa 9,9%)", valor: "$88.822", tna: "9,90%", cft: "12,66%", ltv: "80%", gastos: "4%", seguro: "Cautivo" },
             { plazo: "18 meses (Tasa 9,9%)", valor: "$60.947", tna: "9,90%", cft: "12,66%", ltv: "80%", gastos: "5%", seguro: "Cautivo" },
-            { plazo: "24 meses (Tasa 9,9%)", valor: "$47.030", tna: "9,90%", cft: "12,66%", ltv: "80%", gastos: "7%", seguro: "Cautivo" },
+            { plazo: "24 meses (Tasa 9,9%)", valor: "$47.030", tna: "9,90%", cft: "12,66%", ltv: "80%", gastos: "6%", seguro: "Cautivo" },
             
             // Opción con TNA 0%
             { plazo: "12 meses (Tasa 0%)", valor: "$83.334", tna: "0%", cft: "0%", ltv: "80%", gastos: "9%", seguro: "Cautivo" },
@@ -119,12 +119,12 @@ export const financiaciones = [
         
         // Tabla de plazos completa y detallada
         cuotasPorMillon: [
-            { plazo: "12 meses", valor: "$111.366", tna: "47,90%", cft: "76,13%", ltv: "80%", gastos: "4%", seguro: "Cautivo" },
-            { plazo: "18 meses", valor: "$83.851", tna: "47,90%", cft: "76,13%", ltv: "80%", gastos: "4%", seguro: "Cautivo" },
-            { plazo: "24 meses", valor: "$70.542", tna: "47,90%", cft: "76,13%", ltv: "80%", gastos: "4%", seguro: "Cautivo" },
-            { plazo: "36 meses", valor: "$58.086", tna: "47,90%", cft: "76,13%", ltv: "80%", gastos: "4%", seguro: "Cautivo" },
-            { plazo: "48 meses", valor: "$52.364", tna: "47,90%", cft: "76,13%", ltv: "80%", gastos: "4%", seguro: "Cautivo" },
-            { plazo: "60 meses", valor: "$49.900", tna: "47,90%", cft: "76,13%", ltv: "80%", gastos: "4%", seguro: "Cautivo" }
+            { plazo: "12 meses", valor: "$108.269", tna: "42,90%", cft: "66,23%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
+            { plazo: "18 meses", valor: "$80.643", tna: "42,90%", cft: "66,23%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
+            { plazo: "24 meses", valor: "$67.195", tna: "42,90%", cft: "66,23%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
+            { plazo: "36 meses", valor: "$54.445", tna: "42,90%", cft: "66,23%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
+            { plazo: "48 meses", valor: "$48.718", tna: "42,90%", cft: "66,23%", ltv: "80%", gastos: "2%", seguro: "Cautivo" },
+            { plazo: "60 meses", valor: "$45.742", tna: "42,90%", cft: "66,23%", ltv: "80%", gastos: "2%", seguro: "Cautivo" }
         ]
     },
 
@@ -188,9 +188,9 @@ export const financiaciones = [
             { plazo: "24 meses (Tasa 9,9%)", valor: "$47.030", tna: "9,90%", cft: "12,66%", ltv: "80%", gastos: "7%", seguro: "Cautivo" },
             
             // Opciones con TNA 0%
-            { plazo: "12 meses (Tasa 0%)", valor: "$83.334", tna: "0%", cft: "0%", ltv: "80%", gastos: "10%", seguro: "Cautivo" },
-            { plazo: "18 meses (Tasa 0%)", valor: "$55.556", tna: "0%", cft: "0%", ltv: "80%", gastos: "13%", seguro: "Cautivo" },
-            { plazo: "24 meses (Tasa 0%)", valor: "$41.667", tna: "0%", cft: "0%", ltv: "80%", gastos: "16%", seguro: "Cautivo" }
+            { plazo: "12 meses (Tasa 0%)", valor: "$83.334", tna: "0%", cft: "0%", ltv: "80%", gastos: "12%", seguro: "Cautivo" },
+            { plazo: "18 meses (Tasa 0%)", valor: "$55.556", tna: "0%", cft: "0%", ltv: "80%", gastos: "15%", seguro: "Cautivo" },
+            { plazo: "24 meses (Tasa 0%)", valor: "$41.667", tna: "0%", cft: "0%", ltv: "80%", gastos: "19%", seguro: "Cautivo" }
         ]
     },
 
@@ -239,6 +239,70 @@ export const financiaciones = [
     {
         idPlan: 12,
         banco: "Santander",
+        nombre: "Dolphin GL (UVA)",
+        descripcion: "Financiacion exclusiva para Dolphin GL",
+        tipoPersona: "Ambas", // O "Física" o "Ambas"
+        factorCalculo: 1000000,
+        aplicaATodo: false, 
+        vehiculosIds: [130], 
+        
+        cuotasPorMillon: [
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "0%", ltv: "$22.000.000", gastos: "11%", seguro: "Cautivo" },
+            { plazo: "18 meses", valor: "$55,55", tna: "0%", cft: "0%", ltv: "$20.000.000", gastos: "14,7%", seguro: "Cautivo" },
+        ]
+    },
+
+    {
+        idPlan: 13,
+        banco: "Santander",
+        nombre: "Song PRO GL (UVA)",
+        descripcion: "Financiacion exclusiva para Song PRO GL",
+        tipoPersona: "Ambas", // O "Física" o "Ambas"
+        factorCalculo: 1000000,
+        aplicaATodo: false, 
+        vehiculosIds: [134], 
+        
+        cuotasPorMillon: [
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "0%", ltv: "$32.000.000", gastos: "11%", seguro: "Cautivo" },
+            { plazo: "18 meses", valor: "$55,55", tna: "0%", cft: "0%", ltv: "$28.000.000", gastos: "14,7%", seguro: "Cautivo" },
+        ]
+    },
+
+    {
+        idPlan: 14,
+        banco: "Santander",
+        nombre: "Dolphin GL (FIJA)",
+        descripcion: "Financiacion exclusiva para Dolphin GL",
+        tipoPersona: "Ambas", // O "Física" o "Ambas"
+        factorCalculo: 1000000,
+        aplicaATodo: false, 
+        vehiculosIds: [130], 
+        
+        cuotasPorMillon: [
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "0%", ltv: "$11.000.000", gastos: "23%", seguro: "Cautivo" },
+            { plazo: "18 meses", valor: "$55,55", tna: "0%", cft: "0%", ltv: "$8.000.000", gastos: "31,1%", seguro: "Cautivo" },
+        ]
+    },
+
+    {
+        idPlan: 15,
+        banco: "Santander",
+        nombre: "Song PRO GL (FIJA)",
+        descripcion: "Financiacion exclusiva para Song PRO GL",
+        tipoPersona: "Ambas", // O "Física" o "Ambas"
+        factorCalculo: 1000000,
+        aplicaATodo: false, 
+        vehiculosIds: [134], 
+        
+        cuotasPorMillon: [
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "0%", ltv: "$16.000.000", gastos: "23%", seguro: "Cautivo" },
+            { plazo: "18 meses", valor: "$55,55", tna: "0%", cft: "0%", ltv: "$11.000.000", gastos: "31,1%", seguro: "Cautivo" },
+        ]
+    },
+
+    {
+        idPlan: 16,
+        banco: "Santander",
         nombre: "Seltos UVA",
         descripcion: "financiacion exclusiva para KIA Seltos",
         tipoPersona: "Ambas", // O "Jurídica" o "Ambas"
@@ -248,13 +312,13 @@ export const financiaciones = [
         
         // Tabla de plazos en formato compacto (un objeto por línea)
         cuotasPorMillon: [
-            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$24.000.000", gastos: "12%", seguro: "Cautivo" },
-            { plazo: "18 meses", valor: "$55,55", tna: "0%", cft: "S/D", ltv: "$17.000.000", gastos: "16,50%", seguro: "Cautivo" }
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$27.500.000", gastos: "12%", seguro: "Cautivo" },
+            { plazo: "18 meses", valor: "$55,55", tna: "0%", cft: "S/D", ltv: "$19.000.000", gastos: "16,50%", seguro: "Cautivo" }
         ]
     },
 
     {
-        idPlan: 13,
+        idPlan: 17,
         banco: "Santander",
         nombre: "k2500 UVA",
         descripcion: "financiacion exclusiva para KIA K2500",
@@ -265,13 +329,30 @@ export const financiaciones = [
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
-            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$24.000.000", gastos: "12%", seguro: "Cautivo" },
-            { plazo: "18 meses", valor: "$55,55", tna: "0%", cft: "S/D", ltv: "$16.000.000", gastos: "14,5%", seguro: "Cautivo" }
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$24.000.000", gastos: "11%", seguro: "Cautivo" },
+            { plazo: "18 meses", valor: "$55,55", tna: "0%", cft: "S/D", ltv: "$17.000.000", gastos: "15,1%", seguro: "Cautivo" }
         ]
     },
 
     {
-        idPlan: 14,
+        idPlan: 18,
+        banco: "Santander",
+        nombre: "Tasman X-PRO UVA",
+        descripcion: "financiacion exclusiva para Tasman X-PRO",
+        tipoPersona: "Ambas", // O "Jurídica" o "Ambas"
+        factorCalculo: 1000000,
+        aplicaATodo: false, 
+        vehiculosIds: [137], 
+        
+        // Tabla de plazos en formato compacto
+        cuotasPorMillon: [
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$66.000.000", gastos: "10.1%", seguro: "Cautivo" },
+            { plazo: "18 meses", valor: "$55,55", tna: "0%", cft: "S/D", ltv: "$46.500.000", gastos: "13,5%", seguro: "Cautivo" }
+        ]
+    },
+
+    {
+        idPlan: 19,
         banco: "Santander",
         nombre: "Seltos Tasa Fija",
         descripcion: "financiacion exclusiva para Seltos",
@@ -282,13 +363,13 @@ export const financiaciones = [
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
-            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$20.000.000", gastos: "12%", seguro: "Cautivo" },
-            { plazo: "18 meses", valor: "$55,55", tna: "0%", cft: "S/D", ltv: "$14.000.000", gastos: "16,50%", seguro: "Cautivo" }
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$17.000.000", gastos: "25%", seguro: "Cautivo" },
+            { plazo: "18 meses", valor: "$55,55", tna: "0%", cft: "S/D", ltv: "$12.000.000", gastos: "33,46%", seguro: "Cautivo" }
         ]
     },
 
     {
-        idPlan: 15,
+        idPlan: 20,
         banco: "Santander",
         nombre: "k2500 Tasa fija",
         descripcion: "financiacion exclusiva para K2500",
@@ -299,13 +380,30 @@ export const financiaciones = [
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
-            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$20.000.000", gastos: "12%", seguro: "Cautivo" },
-            { plazo: "18 meses", valor: "$55,55", tna: "0%", cft: "S/D", ltv: "$14.000.000", gastos: "16,50%", seguro: "Cautivo" }
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$17.000.000", gastos: "21,6%", seguro: "Cautivo" },
+            { plazo: "18 meses", valor: "$55,55", tna: "0%", cft: "S/D", ltv: "$12.000.000", gastos: "29,2%", seguro: "Cautivo" }
         ]
     },
 
     {
-        idPlan: 18,
+        idPlan: 21,
+        banco: "Santander",
+        nombre: "Tasman X-PRO FIJA",
+        descripcion: "financiacion exclusiva para Tasman X-PRO",
+        tipoPersona: "Ambas", // O "Jurídica" o "Ambas"
+        factorCalculo: 1000000,
+        aplicaATodo: false, 
+        vehiculosIds: [137], 
+        
+        // Tabla de plazos en formato compacto
+        cuotasPorMillon: [
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$27.000.000", gastos: "21.6%", seguro: "Cautivo" },
+            { plazo: "18 meses", valor: "$55,55", tna: "0%", cft: "S/D", ltv: "$10.500.000", gastos: "29,2%", seguro: "Cautivo" }
+        ]
+    },
+
+    {
+        idPlan: 22,
         banco: "ICBC",
         nombre: "Especial Ranger XL y XLS (mayorista)",
         descripcion: "Financiacion exclusiva para Ranger XL y XLS",
@@ -330,7 +428,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 19,
+        idPlan: 23,
         banco: "ICBC",
         nombre: "Transit lib. y caut. (mayorista)",
         descripcion: "Financiacion exclusiva para Transit menos E-Transit",
@@ -353,7 +451,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 20,
+        idPlan: 24,
         banco: "ICBC",
         nombre: "General (liberado, cautivo) (mayorista)",
         descripcion: "Financiacion exclusiva para toda la gama Ford",
@@ -378,7 +476,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 21,
+        idPlan: 25,
         banco: "ICBC",
         nombre: "Especial Mi Pyme Ranger (mayorista)",
         descripcion: "Financiacion exclusiva para Ranger (excepto Raptor)",
@@ -394,7 +492,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 22,
+        idPlan: 26,
         banco: "ICBC",
         nombre: "Especial mi Pyme transit (mayorista)",
         descripcion: "Financiacion exclusiva para Transit (excepto e-transit)",
@@ -410,7 +508,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 23,
+        idPlan: 27,
         banco: "ICBC",
         nombre: "tasa especial transit UVA (mayorista)",
         descripcion: "Financiacion exclusiva para Transit (excepto e-transit)",
@@ -426,7 +524,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 24,
+        idPlan: 28,
         banco: "ICBC",
         nombre: "Especial Ranger UVA (lib) (mayorista)",
         descripcion: "Financiacion exclusiva para Ranger",
@@ -445,7 +543,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 25,
+        idPlan: 29,
         banco: "ICBC",
         nombre: "Everest (minorista)",
         descripcion: "Financiacion exclusiva para Everest",
@@ -461,14 +559,14 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 26,
+        idPlan: 30,
         banco: "ICBC",
-        nombre: "maverick (minorista)",
-        descripcion: "Financiacion exclusiva para Maverick",
+        nombre: "Bronco Sport (minorista)",
+        descripcion: "Financiacion exclusiva para Bronco Sport",
         tipoPersona: "Física", // O "Jurídica" o "Ambas"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [17, 18, 19], 
+        vehiculosIds: [26, 27], 
         
         cuotasPorMillon: [
             { plazo: "18 meses", valor: "$55,56", tna: "0%", cft: "0%", ltv: "$15.000.000", gastos: "17%", seguro: "Cautivo" }
@@ -476,7 +574,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 27,
+        idPlan: 31,
         banco: "ICBC",
         nombre: "Territory Titanium (minorista)",
         descripcion: "Financiacion exclusiva para Territory Titanium",
@@ -491,7 +589,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 28,
+        idPlan: 32,
         banco: "ICBC",
         nombre: "Territory (minorista)",
         descripcion: "Financiacion exclusiva para Territory",
@@ -508,7 +606,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 31,
+        idPlan: 33,
         banco: "ICBC",
         nombre: "tasa especial uva ranger (minorista)",
         descripcion: "Financiacion exclusiva para Ranger, excepto Raptor",
@@ -525,7 +623,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 32,
+        idPlan: 34,
         banco: "ICBC",
         nombre: "tasa especial ranger (minorista)",
         descripcion: "Financiacion exclusiva para Ranger, excepto Raptor",
@@ -536,8 +634,8 @@ export const financiaciones = [
         
         // Tabla de plazos compacta - Ordenada por combinación de Tasa/Gastos
         cuotasPorMillon: [
-            { plazo: "12 meses (Tasa 0% - Gtos 2%)", valor: "$83,33", tna: "0%", cft: "0%", ltv: "25%", gastos: "6%", seguro: "Cautivo" },
-            { plazo: "24 meses (Tasa 19% - Gtos 6%)", valor: "$52,77", tna: "19,90%", cft: "26,92%", ltv: "25%", gastos: "6%", seguro: "Cautivo" },
+            { plazo: "12 meses (Tasa 0% - Gtos 2%)", valor: "$83,33", tna: "0%", cft: "0%", ltv: "25%", gastos: "2%", seguro: "Cautivo" },
+            { plazo: "24 meses (Tasa 19% - Gtos 6%)", valor: "$52,77", tna: "19,90%", cft: "26,92%", ltv: "25%", gastos: "2%", seguro: "Cautivo" },
             { plazo: "12 meses (Tasa 19% - Gtos 17%)", valor: "$94,53", tna: "19%", cft: "26,92%", ltv: "$25.000.000", gastos: "17%", seguro: "Cautivo" },
             { plazo: "18 meses (Tasa 0% - Gtos 17%)", valor: "$55,56", tna: "0%", cft: "0%", ltv: "$30.000.000", gastos: "17%", seguro: "Cautivo" },
             { plazo: "12 meses (Tasa 0% - Gtos 17%)", valor: "$83,33", tna: "0%", cft: "0%", ltv: "80%", gastos: "17%", seguro: "Cautivo" },
@@ -547,7 +645,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 33,
+        idPlan: 35,
         banco: "ICBC",
         nombre: "nueva tasa transit UVA (minorista)",
         descripcion: "Financiacion exclusiva para Transit (excepto e-transit)",
@@ -564,7 +662,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 34,
+        idPlan: 36,
         banco: "ICBC",
         nombre: "tasa especial transit (minorista)",
         descripcion: "Financiacion exclusiva para Transit (excepto e-transit)",
@@ -582,60 +680,212 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 35,
-        banco: "Galicia",
-        nombre: "prendario tasa fija",
-        descripcion: "Financiacion exclusiva para toda la gama",
+        idPlan: 37,
+        banco: "ICBC",
+        nombre: "Tasa especial Dolphin mini GL 0km",
+        descripcion: "Aplica para Dolphin mini GL",
         tipoPersona: "Física", // O "Jurídica" o "Ambas"
         factorCalculo: 1000,
-        aplicaATodo: true, 
-        vehiculosIds: [], 
+        aplicaATodo: false, 
+        vehiculosIds: [130], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
-            { plazo: "12 meses", valor: "$141,53", tna: "71%", cft: "129,27%", ltv: "80%", gastos: "6%", seguro: "Cautivo" },
-            { plazo: "24 meses", valor: "$94,25", tna: "71%", cft: "129,27%", ltv: "80%", gastos: "6%", seguro: "Cautivo" },
-            { plazo: "36 meses", valor: "$80,72", tna: "71%", cft: "129,27%", ltv: "80%", gastos: "6%", seguro: "Cautivo" },
-            { plazo: "48 meses", valor: "$75,30", tna: "71%", cft: "129,27%", ltv: "80%", gastos: "6%", seguro: "Cautivo" },
-            { plazo: "60 meses", valor: "$72,84", tna: "71%", cft: "129,27%", ltv: "80%", gastos: "6%", seguro: "Cautivo" }
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "0%", ltv: "$11.000.000", gastos: "7%", seguro: "Liberado" },
+            { plazo: "18 meses", valor: "$55,56", tna: "0%", cft: "0%", ltv: "$8.000.000", gastos: "7%", seguro: "Liberado" }
         ]
     },
 
     {
-        idPlan: 36,
+        idPlan: 38,
+        banco: "ICBC",
+        nombre: "Tasa especial Song GL 0km",
+        descripcion: "Aplica para Song GL 0km",
+        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        factorCalculo: 1000,
+        aplicaATodo: false, 
+        vehiculosIds: [134], 
+        
+        // Tabla de plazos en formato compacto
+        cuotasPorMillon: [
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "0%", ltv: "$16.000.000", gastos: "7%", seguro: "Liberado" },
+            { plazo: "18 meses", valor: "$55,56", tna: "0%", cft: "0%", ltv: "$11.500.000", gastos: "7%", seguro: "Liberado" }
+        ]
+    },
+
+    {
+        idPlan: 39,
+        banco: "ICBC",
+        nombre: "Tasa especial UVA Dolphin mini GL 0km",
+        descripcion: "Aplica para Dolphin mini GL 0km",
+        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        factorCalculo: 1000,
+        aplicaATodo: false, 
+        vehiculosIds: [130], 
+        
+        // Tabla de plazos en formato compacto
+        cuotasPorMillon: [
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "0%", ltv: "$22.000.000", gastos: "7%", seguro: "Liberado" },
+            { plazo: "18 meses", valor: "$55,56", tna: "0%", cft: "0%", ltv: "$20.000.000", gastos: "7%", seguro: "Liberado" }
+        ]
+    },
+
+    {
+        idPlan: 40,
+        banco: "ICBC",
+        nombre: "Tasa especial UVA SONG GL 0km",
+        descripcion: "Aplica para Song GL 0km",
+        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        factorCalculo: 1000,
+        aplicaATodo: false, 
+        vehiculosIds: [134], 
+        
+        // Tabla de plazos en formato compacto
+        cuotasPorMillon: [
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "0%", ltv: "$32.000.000", gastos: "7%", seguro: "Liberado" },
+            { plazo: "18 meses", valor: "$55,56", tna: "0%", cft: "0%", ltv: "$28.000.000", gastos: "7%", seguro: "Liberado" }
+        ]
+    },
+
+     {
+        idPlan: 41,
+        banco: "ICBC",
+        nombre: "Tasa GREEN ByD 0km y usados",
+        descripcion: "Aplica para todos los vehiculos electricos e hibridos de la marca BYD",
+        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        factorCalculo: 1000,
+        aplicaATodo: false, 
+        vehiculosIds: [130, 131, 132, 133, 134, 135, 136, 137, 139, 140], 
+        
+        // Tabla de plazos en formato compacto
+        cuotasPorMillon: [
+            { plazo: "12 meses", valor: "$108,27", tna: "42,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "24 meses", valor: "$67,19", tna: "42,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "36 meses", valor: "$54,45", tna: "42,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "48 meses", valor: "$48,72", tna: "42,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "60 meses", valor: "$45,74", tna: "42,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+        ]
+    },
+
+    {
+        idPlan: 42,
+        banco: "ICBC",
+        nombre: "Tasa GREEN PROMOCIONAL ByD 0km y usados",
+        descripcion: "Aplica para todos los vehiculos electricos e hibridos de la marca BYD",
+        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        factorCalculo: 1000,
+        aplicaATodo: false, 
+        vehiculosIds: [130, 131, 132, 133, 134, 135, 136, 137, 139, 140], 
+        
+        // Tabla de plazos en formato compacto
+        cuotasPorMillon: [
+            { plazo: "12 meses", valor: "$113,24", tna: "50,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "24 meses", valor: "$72,59", tna: "50,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "36 meses", valor: "$60,32", tna: "50,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "48 meses", valor: "$55,04", tna: "50,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "60 meses", valor: "$52,45", tna: "50,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+        ]
+    },
+
+    {
+        idPlan: 43,
+        banco: "ICBC",
+        nombre: "Tasa GREEN OPORTUNIDAD 0km y usados",
+        descripcion: "Aplica para todos los vehiculos electricos e hibridos de la marca BYD",
+        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        factorCalculo: 1000,
+        aplicaATodo: false, 
+        vehiculosIds: [130, 131, 132, 133, 134, 135, 136, 137, 139, 140], 
+        
+        // Tabla de plazos en formato compacto
+        cuotasPorMillon: [
+            { plazo: "12 meses", valor: "$111,37", tna: "47,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "24 meses", valor: "$70,54", tna: "47,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "36 meses", valor: "$58,09", tna: "47,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "48 meses", valor: "$52,63", tna: "47,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "60 meses", valor: "$49,90", tna: "47,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+        ]
+    },
+
+    {
+        idPlan: 44,
+        banco: "ICBC",
+        nombre: "Tasa GREEN OPORTUNIDAD",
+        descripcion: "Aplica para todos los vehiculos electricos e hibridos de la marca BYD",
+        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        factorCalculo: 1000,
+        aplicaATodo: false, 
+        vehiculosIds: [130, 131, 132, 133, 134, 135, 136, 137, 139, 140], 
+        
+        // Tabla de plazos en formato compacto
+        cuotasPorMillon: [
+            { plazo: "12 meses", valor: "$116,40", tna: "55,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "24 meses", valor: "$76,05", tna: "55,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "36 meses", valor: "$64,11", tna: "55,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "48 meses", valor: "$59,13", tna: "55,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "60 meses", valor: "$56,79", tna: "55,90%", cft: "S/D", ltv: "80%", gastos: "7%", seguro: "Liberado" },
+        ]
+    },
+
+    {
+        idPlan: 45,
+        banco: "ICBC",
+        nombre: "Tasa UVAS ByD 0km y usados",
+        descripcion: "Aplica para todos los vehiculos electricos e hibridos de la marca BYD",
+        tipoPersona: "Física", // O "Jurídica" o "Ambas"
+        factorCalculo: 1000,
+        aplicaATodo: false, 
+        vehiculosIds: [130, 131, 132, 133, 134, 135, 136, 137, 139, 140], 
+        
+        // Tabla de plazos en formato compacto
+        cuotasPorMillon: [
+            { plazo: "12 meses", valor: "$91,14", tna: "14,90%", cft: "S/D", ltv: "60%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "24 meses", valor: "$45,35", tna: "14,90%", cft: "S/D", ltv: "60%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "36 meses", valor: "$35,52", tna: "14,90%", cft: "S/D", ltv: "60%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "48 meses", valor: "$28,69", tna: "14,90%", cft: "S/D", ltv: "60%", gastos: "7%", seguro: "Liberado" },
+            { plazo: "60 meses", valor: "$24,65", tna: "14,90%", cft: "S/D", ltv: "60%", gastos: "7%", seguro: "Liberado" },
+        ]
+    },
+
+
+
+
+    {
+        idPlan: 46,
         banco: "Volkswagen Financiera",
-        nombre: "Audi A1 y Q2",
-        descripcion: "Financiacion exclusiva para Audi A1 y Q2",
+        nombre: "Audi A1",
+        descripcion: "Financiacion exclusiva para Audi A1",
         tipoPersona: "Ambas", // O "Jurídica" o "Física"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [43, 59, 60], 
+        vehiculosIds: [43], 
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
-            { plazo: "12 meses (Tasa 0%)", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$20.000.000", gastos: "13,495%", seguro: "Cautivo" },
-            { plazo: "12 meses (Tasa 9.9%)", valor: "$88,82", tna: "9,90%", cft: "S/D", ltv: "$30.500.000", gastos: "13,495%", seguro: "Cautivo" }
+            { plazo: "12 meses (Tasa 0%)", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$20.000.000", gastos: "14,1%", seguro: "Cautivo" },
+            { plazo: "12 meses (Tasa 9.9%)", valor: "$88,82", tna: "9,90%", cft: "S/D", ltv: "$30.000.000", gastos: "14,1%", seguro: "Cautivo" }
         ]
     },
 
     {
-        idPlan: 37,
+        idPlan: 47,
         banco: "Volkswagen Financiera",
         nombre: "UVA Audi",
-        descripcion: "Financiacion exclusiva para audi A1 y Q2",
+        descripcion: "Financiacion exclusiva para audi A3",
         tipoPersona: "Fisica", // O "Jurídica" o "Física"
         factorCalculo: 1000,
         aplicaATodo: false, 
-        vehiculosIds: [43, 59, 60],
+        vehiculosIds: [44, 45, 46, 47, 48, 49],
         
         // Tabla de plazos en formato compacto
         cuotasPorMillon: [
-            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$20.000.000", gastos: "2%", seguro: "Cautivo" }
+            { plazo: "12 meses", valor: "$83,33", tna: "0%", cft: "S/D", ltv: "$25.500.000", gastos: "13,5%", seguro: "Cautivo" },
+            { plazo: "18 meses", valor: "$60,95", tna: "0%", cft: "S/D", ltv: "$25.500.000", gastos: "13,5%", seguro: "Cautivo" },
         ]
     },
 
     {
-        idPlan: 38, //cambiar id luego
+        idPlan: 48, //cambiar id luego
         banco: "Volkswagen Financiera",
         nombre: "Amarok financia mas",
         descripcion: "Financiacion exclusiva para amarok",
@@ -653,7 +903,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 39, // cambiar id luego
+        idPlan: 49, // cambiar id luego
         banco: "Volkswagen Financiera",
         nombre: "Amarok sin quebranto",
         descripcion: "Financiacion exclusiva para amarok",
@@ -669,7 +919,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 40, // cambiar id luego
+        idPlan: 50, // cambiar id luego
         banco: "Volkswagen Financiera",
         nombre: "UVA Amarok (24)",
         descripcion: "Financiacion exclusiva para amarok",
@@ -686,7 +936,7 @@ export const financiaciones = [
 
 
     {
-        idPlan: 42, // cambiar id luego
+        idPlan: 51, // cambiar id luego
         banco: "Volkswagen Financiera",
         nombre: "Autos sin quebranto",
         descripcion: "Tera Highline y Outfit, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos Highline y Highline Bi Tono y Nivus Highline y Nivus Outfit Vigencia: desde el 7/05/2026, Disponible: Persona física, jurídica y venta directa ",
@@ -702,7 +952,7 @@ export const financiaciones = [
     },
     
     {
-        idPlan: 43, // cambiar id luego
+        idPlan: 52, // cambiar id luego
         banco: "Volkswagen Financiera",
         nombre: "UVA Autos",
         descripcion: "Tera Highline y Outfit, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline y Taos Highline y Highline Bi Tono y Nivus Highline y Nivus Outfit Vigencia: desde el 7/05/2026 hasta el 31/05/2026, Disponible: Persona física ",
@@ -718,7 +968,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 44,
+        idPlan: 53,
         banco: "Volkswagen Financiera",
         nombre: "Especial autos",
         descripcion: "Financiacion exclusiva para volkswagen, excepto amarok",
@@ -737,7 +987,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 45,
+        idPlan: 54,
         banco: "Volkswagen Financiera",
         nombre: "Autos largo plazo",
         descripcion: "Financiacion exclusiva para volkswagen, excepto amarok",
@@ -756,7 +1006,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 46,
+        idPlan: 55,
         banco: "BBVA",
         nombre: "Tasa UVA ByD",
         descripcion: "Financiacion exclusiva para ByD",
@@ -775,7 +1025,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 47,
+        idPlan: 56,
         banco: "BBVA",
         nombre: "Tasa Tradicional ByD",
         descripcion: "Financiacion exclusiva para ByD",
@@ -797,7 +1047,7 @@ export const financiaciones = [
     },
 
     {
-        idPlan: 48,
+        idPlan: 57,
         banco: "BBVA",
         nombre: "Tasa 0% + UVA c/quebranto ByD",
         descripcion: "Financiacion exclusiva para ByD",
@@ -990,7 +1240,7 @@ export const vehiculos = [
     { id: 128, marca: "KIA", modelo: "Sportage", version: "Carnival SX 2.2 R A/T", tags: [] },
 
     { id: 129, marca: "KIA", modelo: "K2500", version: "K2500", tags: [] },
-   
+    { id: 138, marca: "KIA", modelo: "TASMAN", version: "X-PRO", tags: [] },
 
 /******************************** ByD ******************************************/
 
@@ -1002,5 +1252,6 @@ export const vehiculos = [
     { id: 135, marca: "ByD", modelo: "SONG", version: "Pro GS", tags: [] },
     { id: 136, marca: "ByD", modelo: "ATTO 2 DM-i", version: "GS", tags: [] },
     { id: 137, marca: "ByD", modelo: "SHARK", version: "Shark", tags: [] },
+    { id: 140, marca: "ByD", modelo: "SEAL", version: "U DM-I", tags: [] },
 
 ];
