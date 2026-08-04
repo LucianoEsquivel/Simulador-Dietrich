@@ -810,26 +810,31 @@ const bancos = {
                 nombre: "Audi",
                 planes: [
                     { 
-                        nombre: "Audi A1", 
+                        nombre: "Audi A3", 
                         destacado: true,
-                        tna: "0% / 9,9%", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Para los modelos Audi A1  vigencia: 1/07/2026-31/07/2026, persona fisica y juridica, seguro cautivo de VW Broker",
-                        utilPara: "A1",
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Para los modelos Audi A3  vigencia: 04/08/2026-31/08/2026, persona fisica, seguro cautivo de VW Broker",
+                        utilPara: "A3",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",   ltv: 20000000, g: 14.1 }, 
-                            { m: 12, c: 88.82, tna: "9.9%", ltv: 30000000, g: 14.1 }
+                            { m: 12, c: 83.33, tna: "0%",   ltv: 28500000, g: 11.68 }, 
+                            { m: 18, c: 60.95, tna: "9.9%", ltv: 26500000, g: 11.68 },
+                            { m: 12, c: 83.33, tna: "0%", ltv: 16800000, g: 2 },
                         ] 
                     },
 
                     { 
-                        nombre: "Audi A3", 
+                        nombre: "Audi unica", 
                         destacado: true,
-                        tna: "0%", seguro: "CAUTIVO", gastos: 2, baseCalculo: 1000, 
-                        descripcion: "Disponible para A3 1.4 Sedan y Sportback, vigencia: 1/07/2026-31/07/2026, para persona fisica y juridica, seguro cautivo de VW Broker",
-                        utilPara: "A3",
+                        seguro: "CAUTIVO", gastos: 2, baseCalculo: 1000, 
+                        descripcion: "Disponible para Audi, vigencia: 04/08/2026-31/08/2026, para persona fisica y juridica, seguro cautivo de VW Broker",
+                        utilPara: "Audi",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",   ltv: 25500000, g: 13.495 },
-                             { m: 18, c: 60.95, tna: "9.9%", ltv: 22500000, g: 13.495 }
+                            { m: 12, c: 109.50, tna: "44,9%", ltv: 70, g: 2 },
+                            { m: 18, c: 81.92, tna: "44,9%", ltv: 70, g: 2 },
+                            { m: 24, c: 68.53, tna: "44,9%", ltv: 70, g: 2 },
+                            { m: 36, c: 55.89, tna: "44,9%", ltv: 70, g: 2 },
+                            { m: 48, c: 50.27, tna: "44,9%", ltv: 70, g: 2 },
+                            { m: 60, c: 47.39, tna: "44,9%", ltv: 70, g: 2 },
                         ] 
                     }
                 ]
