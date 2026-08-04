@@ -344,7 +344,7 @@ const bancos = {
                     { 
                         nombre: "Territory", 
                         destacado: true,
-                        ltv: 15000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: 03/08/2026, Aplica para: Territory SEL, Territory Titanium, Territory HEV, la cuota incluye capital, intereses e IVA",
                         utilPara: "Todas las Territory",
                         plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 15000000, info: "TNA 0%" }, { m: 18, c: 55.56, tna: "0%", cft: "0%", ltv: 25000000, info: "TNA 0%" }] 
