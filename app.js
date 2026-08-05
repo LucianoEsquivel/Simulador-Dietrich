@@ -1048,7 +1048,7 @@ const bancos = {
                         tna: "UVA + 0%", cft: "0%", ltv: 70, valorUVA: 1706.43, baseCalculo: 100000, esUVA: true, 
                         descripcion: "Credito prendario de BBVA para ByD, aclaracion importante: el maximo a financiar es el 70% y hasta $80.000.000 vigencia: 13/05/2026",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 8333, g:9 }, { m: 18, c: 5555, g:12 }, { m: 24, c: 4166, g:15 }, { m: 36, c: 2777, g: 23 },] 
+                        plazos: [{ m: 12, c: 8333, g:10 }, { m: 18, c: 5555, g:14 }, { m: 24, c: 4166, g:16 }, { m: 36, c: 2777, g: 25 },] 
                     },
 
                     { 
