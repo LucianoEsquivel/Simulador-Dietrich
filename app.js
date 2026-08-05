@@ -806,6 +806,78 @@ const bancos = {
 
                 ]
             },
+
+            ducati: {
+                nombre: "Ducati",
+                planes: [
+                    { 
+                        nombre: "Scrambler Tasa fija sin quebranto", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Para los modelos Ducati Scrambler vigencia: 04/08/2026-31/08/2026, persona fisica, seguro cautivo de VW Broker",
+                        utilPara: "Ducati Scrambler",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0%",   ltv: 8000000, g: 2 }, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Scrambler Tasa fija con quebranto", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Para los modelos Ducati Scrambler  vigencia: 04/08/2026-31/08/2026, persona fisica, seguro cautivo de VW Broker",
+                        utilPara: "Ducati Scrambler",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0%",   ltv: 16000000, g: 6.84 }, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Scrambler UVA", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Para los modelos Ducati Scrambler  vigencia: 04/08/2026-31/08/2026, persona fisica, seguro cautivo de VW Broker",
+                        utilPara: "Ducati Scrambler",
+                        plazos: [
+                            { m: 18, c: 55.56, tna: "0%",   ltv: 16000000, g: 2 }, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Multistrada V2/S y Desert X Sin quebranto", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Para los modelos Ducati Multistrada V2/S y Desert X  vigencia: 04/08/2026-31/08/2026, persona fisica, seguro cautivo de VW Broker",
+                        utilPara: "Ducati Multistrada V2/S y Desert X",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0%",   ltv: 12000000, g: 2 }, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Multistrada V2/S y Desert X Tasa Fija", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Para los modelos Ducati Multistrada V2/S y Desert X  vigencia: 04/08/2026-31/08/2026, persona fisica, seguro cautivo de VW Broker",
+                        utilPara: "Ducati Multistrada V2/S y Desert X",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0%",   ltv: 16000000, g: 6.86 }, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Multistrada V2/S y Desert X UVA", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Para los modelos Ducati Multistrada V2/S y Desert X  vigencia: 04/08/2026-31/08/2026, persona fisica, seguro cautivo de VW Broker",
+                        utilPara: "Ducati Multistrada V2/S y Desert X",
+                        plazos: [
+                            { m: 18, c: 55.56, tna: "0%",   ltv: 16000000, g: 2 }, 
+                        ] 
+                    },
+                ],
+            },
+
             audi: {
                 nombre: "Audi",
                 planes: [
@@ -1084,6 +1156,10 @@ const marcasConfig = {
     audi: {
         nombre: "Audi",
         bancos: ["vw_financial-audi", "santander-general", "galicia-prendarios", "supervielle-prendarios"]
+    },
+    ducati: {
+        nombre: "Ducati",
+        bancos: ["vw_financial-ducati"]
     }
 };
 
