@@ -1029,7 +1029,7 @@ const bancos = {
                         tna: "UVA + 0%", cft: "0%", ltv: 100, valorUVA: 1706.43, baseCalculo: 100000, esUVA: true, 
                         descripcion: "Credito prendario de BBVA para ByD, vigencia: 10/08/2026",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 8333, g: 6.5 }, { m: 18, c: 5555, g: 9.5 }, { m: 24, c: 4166, g: 12.5 }, { m: 36, c: 2777, g: 21 },{ m: 48, c: 2083, g: 27 }] 
+                        plazos: [{ m: 12, c: 8333, g: 10 }, { m: 18, c: 5555, g: 14 }, { m: 24, c: 4166, g: 18 }, { m: 36, c: 2777, g: 25 },{ m: 48, c: 2083, g: 30 }] 
                     },
 
                     { 
@@ -1038,7 +1038,7 @@ const bancos = {
                         tna: "UVA + 9,90%", cft: "12,66%", ltv: 100, valorUVA: 1706.43, baseCalculo: 100000, esUVA: true, 
                         descripcion: "Credito prendario de BBVA para ByD, vigencia: 10/08/2026",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 8882, g: 1.70 }, { m: 18, c: 6094, g: 2.8 }, { m: 24, c: 4702, g: 4.4 }, { m: 36, c: 3315, g: 8 }, { m: 48, c: 2712, g: 11 }] 
+                        plazos: [{ m: 12, c: 8882, g: 4 }, { m: 18, c: 6094, g: 7 }, { m: 24, c: 4702, g: 10 }, { m: 36, c: 3315, g: 12 }, { m: 48, c: 2712, g: 15}] 
                     },
 
                     { 
@@ -1047,7 +1047,7 @@ const bancos = {
                         tna: "0%", cft: "0%", ltv: 100, seguro: "Cautivo", baseCalculo: 100000, 
                         descripcion: "Crédito prendario BBVA cuota fija, vigencia: 10/08/2026",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 8333, g: 16.7 }, { m: 18, c: 5555, g: 23 }, { m: 24, c: 4166, g: 29 }, { m: 36, c: 2777, g: 39.70 }, { m: 48, c: 2083, g: 48.3 },] 
+                        plazos: [{ m: 12, c: 8333, g: 21 }, { m: 18, c: 5555, g: 27 }, { m: 24, c: 4166, g: 33 }, { m: 36, c: 2777, g: 44 }, { m: 48, c: 2083, g: 53 },] 
                     },
                 ]
             },
