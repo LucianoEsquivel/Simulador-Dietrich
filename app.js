@@ -159,6 +159,15 @@ const bancos = {
             byd: {
                 nombre: "Santander ByD",
                 planes: [
+
+                    { 
+                        nombre: "Línea FIJA ByD (TNA 0%)", 
+                        destacado: true,
+                        tna: "0%", cft: "0%", ltv: 80, seguro: "Cautivo", baseCalculo: 1000000, 
+                        descripcion: "Financiacion exclusiva para unidades BYD con tasa 0%",
+                        utilPara: "ByD",
+                        plazos: [{ m: 12, c: 83334, g: 18 }, { m: 18, c: 55556, g: 25 }, { m: 24, c: 41667, g: 30 }] 
+                    },
                     { 
                         nombre: "Línea UVA ByD (TNA 0%)", 
                         destacado: true,
@@ -176,20 +185,20 @@ const bancos = {
                         plazos: [{ m: 12, c: 88822, g: 5 }, { m: 18, c: 60947, g: 6 }, { m: 24, c: 47030, g: 7 }] 
                     },
                     { 
-                        nombre: "Línea UVA 14,90%", 
+                        nombre: "Línea UVA 12,50%", 
                         destacado: false,
-                        tna: "14,90%", cft: "19,60%", ltv: 80, gastos: 6, seguro: "Cautivo", baseCalculo: 1000000, 
+                        tna: "12,50%", cft: "16,22%", ltv: 80, gastos: 4, seguro: "Cautivo", baseCalculo: 1000000, 
                         descripcion: "Financiacion exclusiva para unidades BYD",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 91655 }, { m: 18, c: 63762 }, { m: 24, c: 49861 }, { m: 36, c: 36052 }, { m: 48, c: 29239 },] 
+                        plazos: [{ m: 12, c: 90290 }, { m: 18, c: 62403 }, { m: 24, c: 48492 }, { m: 36, c: 34646 }, { m: 48, c: 27787 },{ m: 60, c: 23723 }] 
                     },
                     { 
                         nombre: "Línea Tradicional ByD", 
                         destacado: false,
-                        tna: "38,90%", cft: "58,68%", ltv: 80, gastos: 6, seguro: "Cautivo", baseCalculo: 1000000, 
+                        tna: "32,90%", cft: "47,94%", ltv: 80, gastos: 6, seguro: "Cautivo", baseCalculo: 1000000, 
                         descripcion: "Crédito prendario tradicional a tasa fija para unidades BYD.",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 105819 }, { m: 18, c: 78118 }, { m: 24, c: 64570 }, { m: 36, c: 51606 }, { m: 48, c: 45672 }, { m: 60, c: 42509 }] 
+                        plazos: [{ m: 12, c: 102192 }, { m: 18, c: 74401 }, { m: 24, c: 60724 }, { m: 36, c: 47474 }, { m: 48, c: 41257 }, { m: 60, c: 37830 }] 
                     },
 
                     { 
@@ -1000,16 +1009,16 @@ const bancos = {
                     { 
                         nombre: "Tasa Fija 0km ByD",
                         destacado: true, 
-                        tna: "35,90%", cft: "53,22%", ltv: 70, gastos: 2, seguro: "Cautivo", baseCalculo: 100000, 
-                        descripcion: "Crédito prendario BBVA cuota fija, aclaracion importante: el maximo a financiar es el 70% y hasta $80.000.000 vigencia: 13/05/2026",
+                        tna: "34,90%", cft: "51,44%", ltv: 100, gastos: 2, seguro: "Cautivo", baseCalculo: 100000, 
+                        descripcion: "Crédito prendario BBVA cuota fija, vigencia: 10/08/2026",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 10399 }, { m: 18, c: 7624 }, { m: 24, c: 6263 }, { m: 36, c: 4952 }, { m: 48, c: 4344 }, { m: 60, c: 4014 }] 
+                        plazos: [{ m: 12, c: 10339 }, { m: 18, c: 7563 }, { m: 24, c: 6199 }, { m: 36, c: 4883 }, { m: 48, c: 4345 }, { m: 60, c: 4024 }] 
                     },
                     { 
                         nombre: "Prendario UVA 0km byD", 
                         destacado: true,
-                        tna: "UVA + 11,90%", cft: "15,39%", ltv: 70, gastos: 2, valorUVA: 1706.43, baseCalculo: 100000, esUVA: true, 
-                        descripcion: "Credito prendario de BBVA para ByD, aclaracion importante: el maximo a financiar es el 70% y hasta $80.000.000 vigencia: 13/05/2026",
+                        tna: "UVA + 11,90%", cft: "15,39%", ltv: 100, gastos: 2, valorUVA: 1706.43, baseCalculo: 100000, esUVA: true, 
+                        descripcion: "Credito UVA de BBVA para ByD, vigencia: 10/08/2026",
                         utilPara: "ByD",
                         plazos: [{ m: 12, c: 8995 }, { m: 18, c: 6206 }, { m: 24, c: 4815 }, { m: 36, c: 3429 }, { m: 48, c: 2742 }] 
                     },
@@ -1017,19 +1026,28 @@ const bancos = {
                     { 
                         nombre: "Tasa 0% + UVA c/quebranto", 
                         destacado: true,
-                        tna: "UVA + 0%", cft: "0%", ltv: 70, valorUVA: 1706.43, baseCalculo: 100000, esUVA: true, 
-                        descripcion: "Credito prendario de BBVA para ByD, aclaracion importante: el maximo a financiar es el 70% y hasta $80.000.000 vigencia: 13/05/2026",
+                        tna: "UVA + 0%", cft: "0%", ltv: 100, valorUVA: 1706.43, baseCalculo: 100000, esUVA: true, 
+                        descripcion: "Credito prendario de BBVA para ByD, vigencia: 10/08/2026",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 8333, g:10 }, { m: 18, c: 5555, g:14 }, { m: 24, c: 4166, g:16 }, { m: 36, c: 2777, g: 25 },] 
+                        plazos: [{ m: 12, c: 8333, g: 6.5 }, { m: 18, c: 5555, g: 9.5 }, { m: 24, c: 4166, g: 12.5 }, { m: 36, c: 2777, g: 21 },{ m: 48, c: 2083, g: 27 }] 
                     },
 
                     { 
                         nombre: "Tasa 9,90% + UVA c/quebranto", 
                         destacado: true,
-                        tna: "UVA + 9,90%", cft: "12,66%", ltv: 70, valorUVA: 1706.43, baseCalculo: 100000, esUVA: true, 
-                        descripcion: "Credito prendario de BBVA para ByD, aclaracion importante: el maximo a financiar es el 70% y hasta $80.000.000 vigencia: 13/05/2026",
+                        tna: "UVA + 9,90%", cft: "12,66%", ltv: 100, valorUVA: 1706.43, baseCalculo: 100000, esUVA: true, 
+                        descripcion: "Credito prendario de BBVA para ByD, vigencia: 10/08/2026",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 8882, g:3 }, { m: 18, c: 6094, g:4 }, { m: 24, c: 4702, g:2.5 }, { m: 36, c: 3315, g: 6 }] 
+                        plazos: [{ m: 12, c: 8882, g: 1.70 }, { m: 18, c: 6094, g: 2.8 }, { m: 24, c: 4702, g: 4.4 }, { m: 36, c: 3315, g: 8 }, { m: 48, c: 2712, g: 11 }] 
+                    },
+
+                    { 
+                        nombre: "Tasa 0% + tradicional c/quebranto",
+                        destacado: true, 
+                        tna: "0%", cft: "0%", ltv: 100, seguro: "Cautivo", baseCalculo: 100000, 
+                        descripcion: "Crédito prendario BBVA cuota fija, vigencia: 10/08/2026",
+                        utilPara: "ByD",
+                        plazos: [{ m: 12, c: 8333, g: 16.7 }, { m: 18, c: 5555, g: 23 }, { m: 24, c: 4166, g: 29 }, { m: 36, c: 2777, g: 39.70 }, { m: 48, c: 2083, g: 48.3 },] 
                     },
                 ]
             },
