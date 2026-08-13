@@ -166,7 +166,7 @@ const bancos = {
                         tna: "0%", cft: "0%", ltv: 80, seguro: "Cautivo", baseCalculo: 1000000, 
                         descripcion: "Financiacion exclusiva para unidades BYD con tasa 0%",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 83334, g: 18 }, { m: 18, c: 55556, g: 25 }, { m: 24, c: 41667, g: 30 },{ m: 36, c: 27778, g: 37 },{ m: 48, c: 20834, g: 44.8 },] 
+                        plazos: [{ m: 12, c: 83334, g: 21 }, { m: 18, c: 55556, g: 27 }, { m: 24, c: 41667, g: 33 },{ m: 36, c: 27778, g: 42 },{ m: 48, c: 20834, g: 49 },] 
                     },
                     { 
                         nombre: "Línea UVA ByD (TNA 0%)", 
@@ -174,7 +174,7 @@ const bancos = {
                         tna: "0%", cft: "0%", ltv: 80, seguro: "Cautivo", baseCalculo: 1000000, 
                         descripcion: "Financiacion exclusiva para unidades BYD con tasa 0%",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 83334, g: 12 }, { m: 18, c: 55556, g: 15 }, { m: 24, c: 41667, g: 19 },{ m: 36, c: 27778, g: 17 },{ m: 48, c: 20834, g: 21.6 },] 
+                        plazos: [{ m: 12, c: 83334, g: 12 }, { m: 18, c: 55556, g: 15 }, { m: 24, c: 41667, g: 19 },{ m: 36, c: 27778, g: 22 },{ m: 48, c: 20834, g: 27 },] 
                     },
                     { 
                         nombre: "Línea UVA ByD (TNA 9,9%)", 
@@ -182,7 +182,7 @@ const bancos = {
                         tna: "9,90%", cft: "12,66%", ltv: 80, seguro: "Cautivo", baseCalculo: 1000000, 
                         descripcion: "Financiacion exclusiva para unidades BYD",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 88822, g: 5 }, { m: 18, c: 60947, g: 6 }, { m: 24, c: 47030, g: 7 },{ m: 36, c: 33153, g: 3.7 },{ m: 48, c: 26256, g: 4.8 },] 
+                        plazos: [{ m: 12, c: 88822, g: 6 }, { m: 18, c: 60947, g: 7 }, { m: 24, c: 47030, g: 8 },{ m: 36, c: 33153, g: 9 },{ m: 48, c: 26256, g: 10 },] 
                     },
                     { 
                         nombre: "Línea UVA 12,50%", 
