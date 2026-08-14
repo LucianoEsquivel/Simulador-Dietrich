@@ -337,9 +337,6 @@ const bancos = {
                         utilPara: "Everest",
                         plazos: [{ m: 18, tna: "0%", cft: "0%", ltv: 30000000, c: 55.56, g: 17 }, { m: 24, tna: "14,90%", cft: "19,60%", ltv: 30000000, c: 49.86, g: 17 }] 
                     },
-                
-                    /* Maverick Eliminado */
-
 
                     { 
                         nombre: "Territory Titanium", 
