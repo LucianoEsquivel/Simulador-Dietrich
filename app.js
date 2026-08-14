@@ -565,85 +565,86 @@ const bancos = {
                 nombre: "ICBC ByD",
                 planes: [
                     { 
-                        nombre: "Tasa especial Dolphin mini GL 0km", 
+                        nombre: "Tasa especial ByD Dolphin MINI GL y ATTO 2 (Tasa fija)", 
                         destacado: true,
-                        gastos: 7, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: 05/08/2026 aplica para Dolphin mini GL",
-                        utilPara: "DOLPHIN MINI GL",
-                        plazos: [{ m: 12, tna: "0%", cft: "0,00%", ltv: 11000000, c: 83.33, g: 12 }, { m: 18, tna: "0,00%", cft: "0,00%", ltv: 8000000, c: 55.56, g: 15 }] 
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "TASA FIJA, Fecha de vigencia: 14/08/2026 aplica para Dolphin mini GL y ATTO 2, la cuota incluye intereses e IVA",
+                        utilPara: "DOLPHIN MINI GL y ATTO 2",
+                        plazos: [{ m: 12, tna: "19,9%", cft: "26,92%", ltv: 25000000, c: 94.53, g: 7 }, { m: 18, tna: "19,9%", cft: "26,92%", ltv: 20000000, c: 66.54, g: 7}] 
                     },
 
                     { 
-                        nombre: "Tasa especial SONG GL 0km", 
+                        nombre: "Tasa especial ByD Dolphin MINI GL y ATTO 2 (Tasa UVA)", 
                         destacado: true,
-                        gastos: 7, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: 05/08/2026 aplica para SONG GL",
-                        utilPara: "SONG GL",
-                        plazos: [{ m: 12, tna: "0%", cft: "0,00%", ltv: 16000000, c: 83.33, g: 12 }, { m: 18, tna: "0,00%", cft: "0,00%", ltv: 11500000, c: 55.56, g: 15 }] 
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "TASA UVA, Fecha de vigencia: 14/08/2026 aplica para Dolphin mini GL y ATTO 2, la cuota incluye intereses e IVA",
+                        utilPara: "DOLPHIN MINI GL y ATTO 2",
+                        plazos: [{ m: 12, tna: "0,0%", cft: "0,0%", ltv: 20000000, c: 83.33, g: 7 }, { m: 18, tna: "2,90%", cft: "3,57%", ltv: 20000000, c: 57.11, g: 7}] 
+                    },
+
+                   /* { 
+                        nombre: "Tasa reducidas ByD 0% (Tasa fija)", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "TASA FIJA, Fecha de vigencia: 14/08/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
+                        utilPara: "Todos los modelos de ByD",
+                        plazos: [{ m: 12, tna: "0%", cft: "0%", ltv: 80, c: 83.33, g: 16.56 }, { m: 18, tna: "0%", cft: "0%", ltv: 80, c: 55.56, g: 22.96}] 
                     },
 
                     { 
-                        nombre: "Tasa especial UVA Dolphin mini GL 0km", 
+                        nombre: "Tasa reducidas (Tasa fija)", 
                         destacado: true,
-                        gastos: 7, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: 05/08/2026 aplica para Dolphin mini GL",
-                        utilPara: "DOLPHIN MINI GL",
-                        plazos: [{ m: 12, tna: "0%", cft: "0,00%", ltv: 22000000, c: 83.33, g: 12 }, { m: 18, tna: "0,00%", cft: "0,00%", ltv: 20000000, c: 55.56, g: 15 }] 
+                        seguro: "CAUTIVO", baseCalculo: 1000, ltv: 80,
+                        descripcion: "Tasa fija, Fecha de vigencia: 14/08/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
+                        utilPara: "Todos los modelos de ByD",
+                        plazos: [{ m: 12, c: 88.88, tna: "10,00%", cft: "12,79%", g: 12.37 }, { m: 18, c: 91.27, tna: "20,00%", cft: "31,67%", g: 11.30 }, { m: 24, c: 55.62, tna: "23,00%", cft: "31,67%", g: 12 }, { m: 36, c: 43.57, tna: "27,00%", cft: "38,03%", g: 12.23 }, { m: 48, c: 38.49, tna: "29,00%", cft: "41,32%", g: 12.42 },{ m: 60, c: 35.65, tna: "30,00%", cft: "42,99%", g: 12.86 },] 
                     },
 
                     { 
-                        nombre: "Tasa especial UVA SONG GL 0km", 
+                        nombre: "Tasa reducidas 0% ByD (Tasa UVA)", 
                         destacado: true,
-                        gastos: 7, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Fecha de vigencia: 05/08/2026 aplica para SONG GL",
-                        utilPara: "SONG GL",
-                        plazos: [{ m: 12, tna: "0%", cft: "0,00%", ltv: 32000000, c: 83.33, g: 12 }, { m: 18, tna: "0,00%", cft: "0,00%", ltv: 28000000, c: 55.56, g: 15 }] 
+                        seguro: "CAUTIVO", baseCalculo: 1000, ltv: 60,
+                        descripcion: "Tasa UVA, Fecha de vigencia: 14/08/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
+                        utilPara: "Todos los modelos de ByD",
+                        plazos: [{ m: 12, c: 83.33, tna: "0,0%", cft: "0,0%", g: 6.63 }, { m: 18, c: 55.56, tna: "0,0%", cft: "0.0%", g: 9.5 }, { m: 24, c: 41.67, tna: "0,0%", cft: "0.0%", g: 12.24 }] 
+                    },
+                    
+                    { 
+                        nombre: "Tasa reducidas (Tasa UVA)", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, ltv: 60, tna: "9,90%", cft: "12,66%",
+                        descripcion: "Tasa UVA, Fecha de vigencia: 14/08/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
+                        utilPara: "Todos los modelos de ByD",
+                        plazos: [{ m: 12, c: 88.82, g: 1.97 }, { m: 18, c: 60.95 , g: 2.84 }, { m: 24, c: 47.03, g: 3.69 }, { m: 36, c: 33.15,  g: 5.32 }, { m: 48, c: 26.26, g: 6.87 },{ m: 60, c: 22.15, g: 8.32 },] 
                     },
 
                     { 
-                        nombre: "Tasa GREEN ByD 0km y usados", 
-                        destacado: true,
-                        gastos: 7, seguro: "CAUTIVO", baseCalculo: 1000,  tna: "37,90%", ltv: 80,
-                        descripcion: "Fecha de vigencia: 05/08/2026 aplica para todos los vehiculos electricos e hibridos",
-                        utilPara: "Vehiculos electricos e hibridos",
-                        plazos: [{ m: 12, c: 105.21, g: 7 }, { m: 24, c: 63.92, g: 7 }, { m: 36, c: 50.91, g: 7 }, { m: 48, c: 44.92, g: 7 }, { m: 60, c: 41.71, g: 7 },] 
-                    },
-
-                    { 
-                        nombre: "Tasa GREEN PROMOCIONAL ByD 0km y usados", 
+                        nombre: "Tasa GREEN BYD", 
                         destacado: false,
-                        gastos: 7, seguro: "CAUTIVO", baseCalculo: 1000,  tna: "45.90%", ltv: 80,
-                        descripcion: "Fecha de vigencia: 05/08/2026 aplica para todos los vehiculos electricos e hibridos",
-                        utilPara: "Vehiculos electricos e hibridos",
-                        plazos: [{ m: 12, c: 110.12, g: 7 }, { m: 24, c: 69.19, g: 7 }, { m: 36, c: 56.62, g: 7 }, { m: 48, c: 51.05, g: 7 }, { m: 60, c: 48.22, g: 7 },] 
+                        seguro: "CAUTIVO", baseCalculo: 1000,  tna: "35,90%", cft: "53,22%", ltv: 80,
+                        descripcion: " Tasa fija Fecha de vigencia: 05/08/2026 aplica para todos los vehiculos",
+                        utilPara: "Todos los vehiculos de ByD",
+                        plazos: [{ m: 12, c: 104, g: 2 }, { m: 24, c: 62.63, g: 2 }, { m: 36, c: 49.52, g: 2 }, { m: 48, c: 43.44, g: 2 }, { m: 60, c: 40.14, g: 2 },] 
                     },
 
                     { 
-                        nombre: "Tasa GREEN OPORTUNIDAD 0km y usados", 
+                        nombre: "Tasa GREEN Promocional ByD", 
                         destacado: false,
-                        gastos: 7, seguro: "CAUTIVO", baseCalculo: 1000,  tna: "43,90%", ltv: 80,
-                        descripcion: "Fecha de vigencia: 05/08/2026 aplica para todos los vehiculos",
+                        seguro: "CAUTIVO", baseCalculo: 1000,  tna: "43,90%", cft: "68,16%", ltv: 80,
+                        descripcion: " Tasa fija, Fecha de vigencia: 05/08/2026 aplica para todos los vehiculos",
+                        utilPara: "Todos los vehiculos de ByD",
+                        plazos: [{ m: 12, c: 108.89, g: 2 }, { m: 24, c: 67.86, g: 2 }, { m: 36, c: 55.17, g: 2 }, { m: 48, c: 49.49, g: 2 }, { m: 60, c: 46.56, g: 2 },] 
+                    },
+
+                    { 
+                        nombre: "Tasa GREEN BYD UVA", 
+                        destacado: false,
+                        seguro: "CAUTIVO", baseCalculo: 1000,  tna: "12,90%", cft: "16,78%", ltv: 60,
+                        descripcion: " Tasa UVA Fecha de vigencia: 05/08/2026 aplica para todos los vehiculos",
                         utilPara: "Todos los vehiculos",
-                        plazos: [{ m: 12, c: 108.89, g: 7 }, { m: 24, c: 67.86, g: 7 }, { m: 36, c: 55.17, g: 7 }, { m: 48, c: 49.49, g: 7 }, { m: 60, c: 46.56, g: 7 },] 
-                    },
+                        plazos: [{ m: 12, c: 90.52, g: 2 }, { m: 24, c: 48.72, g: 2 }, { m: 36, c: 34.88, g: 2 }, { m: 48, c: 28.03, g: 2 }, { m: 60, c: 23.97, g: 2 },] 
+                    },*/
 
-                    { 
-                        nombre: "Tasa GREEN OPORTUNIDAD", 
-                        destacado: false,
-                        gastos: 7, seguro: "CAUTIVO", baseCalculo: 1000,  tna: "51,90%", ltv: 80,
-                        descripcion: "Fecha de vigencia: 05/08/2026 aplica para todos los vehiculos",
-                        utilPara: "Todos los vehiculos",
-                        plazos: [{ m: 12, c: 113.87, g: 7 }, { m: 24, c: 73.27, g: 7 }, { m: 36, c: 61.07, g: 7 }, { m: 48, c: 55.85, g: 7 }, { m: 60, c: 53.31, g: 7 },] 
-                    },
-
-                    { 
-                        nombre: "Tasa UVAS ByD 0km y usados", 
-                        destacado: false,
-                        gastos: 7, seguro: "CAUTIVO", baseCalculo: 1000,  tna: "14,00%", ltv: 60,
-                        descripcion: "Fecha de vigencia: 06/07/2026 aplica para todos los vehiculos",
-                        utilPara: "Todos los vehiculos",
-                        plazos: [{ m: 12, c: 91.14, g: 7 }, { m: 24, c: 49.35, g: 7 }, { m: 36, c: 35.52, g: 7 }, { m: 48, c: 28.69, g: 7 }, { m: 60, c: 24.65, g: 7 },] 
-                    },
                 ]
             },    
             
