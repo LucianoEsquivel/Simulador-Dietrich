@@ -160,6 +160,15 @@ const bancos = {
                 nombre: "Santander ByD",
                 planes: [
 
+
+                    { 
+                        nombre: "Linea Fija Green 19,9%", 
+                        destacado: true,
+                        tna: "19,90%", seguro: "Cautivo", baseCalculo: 1000000, 
+                        descripcion: "Financiacion exclusiva para Dolphin MINI GL y Atto 2",
+                        utilPara: "Dolphin GL y Atto 2",
+                        plazos: [{ m: 12, c: 94530, g: 10, ltv:25000000}, { m: 18, c: 66639, g: 14, ltv: 20000000 }, { m: 24, c: 52775, g:16, ltv: 15000000 },{ m: 36, c: 39073, g: 20, ltv: 10000000 },] 
+                    },
                     { 
                         nombre: "Línea FIJA ByD (TNA 0%)", 
                         destacado: true,
