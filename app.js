@@ -283,9 +283,6 @@ const bancos = {
                         plazos: [{ m: 12, c: 83.33, g: 10.1, ltv: 66000000, info: "TNA 0%" }, { m: 18, c: 55.55, g: 13.5, ltv: 46500000, info: "TNA 0%" }] 
                     },
 
-
-
-
                     { 
                         nombre: "Seltos tasa fija", 
                         destacado: true,
@@ -663,6 +660,31 @@ const bancos = {
                 nombre: "Volkswagen",
                 planes: [
 
+                    { 
+                        nombre: "Amarok largo plazo 40 millones", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para Amarok Highline AT y todas las versiones de Amarok V6, seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 22/08/2026 hasta el 31/08/2026",
+                        utilPara: "Amarok Highline AT y Amarok V6",
+                        plazos: [
+                            { m: 36, c: 43.50, tna: "26,9%",   g: 14.1, ltv: 40000000 },
+                            { m: 48, c: 39.12, tna: "29,9%",   g: 14.1, ltv: 40000000 },
+                            { m: 60, c: 37.07, tna: "31,9%",   g: 14.1, ltv: 40000000 },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Amarok largo plazo 25 millones", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para Amarok Highline AT y todas las versiones de Amarok V6, seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 22/08/2026 hasta el 31/08/2026",
+                        utilPara: "Amarok Highline AT y Amarok V6",
+                        plazos: [
+                            { m: 36, c: 38.83, tna: "19,5%",   g: 14.1, ltv: 25000000 },
+                            { m: 48, c: 35.07, tna: "24,0%",   g: 14.1, ltv: 25000000 },
+                            { m: 60, c: 33.09, tna: "26,5%",   g: 14.1, ltv: 25000000 },
+                        ] 
+                    },
                     { 
                         nombre: "Amarok financia mas", 
                         destacado: true,
