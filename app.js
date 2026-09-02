@@ -327,6 +327,15 @@ const bancos = {
                 planes: [
 
                     { 
+                        nombre: "Ranger V6", 
+                        destacado: true,
+                        gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Fecha de vigencia: 02/09/2026, Esta tasa aplica para: Ranger XLS V6, XLT V6 y LTD+ V6, la cuota incluye capital, intereses e IVA",
+                        utilPara: "Ranger V6",
+                        plazos: [{ m: 18, c: 55.56, tna: "0%", cft: "0%", ltv: 40000000, info: "TNA 0%" }] 
+                    },
+
+                    { 
                         nombre: "Bronco", 
                         destacado: true,
                         ltv: 15000000, gastos: 17, seguro: "CAUTIVO", baseCalculo: 1000, 
