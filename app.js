@@ -159,15 +159,18 @@ const bancos = {
             byd: {
                 nombre: "Santander ByD",
                 planes: [
-
-
                     { 
                         nombre: "Linea Fija Green 19,9%", 
                         destacado: true,
                         tna: "19,90%", seguro: "Cautivo", baseCalculo: 1000000, 
                         descripcion: "Financiacion exclusiva para Dolphin MINI GL y Atto 2",
                         utilPara: "Dolphin GL y Atto 2",
-                        plazos: [{ m: 12, c: 94530, g: 10, ltv:25000000}, { m: 18, c: 66639, g: 14, ltv: 20000000 }, { m: 24, c: 52775, g:16, ltv: 15000000 },{ m: 36, c: 39073, g: 20, ltv: 10000000 },] 
+                        plazos: [
+                                    { m: 12, c: 96069, g: 11, ltv:25000000}, 
+                                    { m: 18, c: 68198, g: 14, ltv: 20000000 }, 
+                                    { m: 24, c: 54329, g: 16, ltv: 15000000 },
+                                    { m: 36, c: 40595, g: 20, ltv: 10000000 },
+                        ] 
                     },
                     { 
                         nombre: "Línea FIJA ByD (TNA 0%)", 
@@ -175,7 +178,13 @@ const bancos = {
                         tna: "0%", cft: "0%", ltv: 80, seguro: "Cautivo", baseCalculo: 1000000, 
                         descripcion: "Financiacion exclusiva para unidades BYD con tasa 0%",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 83334, g: 21 }, { m: 18, c: 55556, g: 27 }, { m: 24, c: 41667, g: 33 },{ m: 36, c: 27778, g: 42 },{ m: 48, c: 20834, g: 49 },] 
+                        plazos: [
+                            { m: 12, c: 83334, g: 20 }, 
+                            { m: 18, c: 55556, g: 25 }, 
+                            { m: 24, c: 41667, g: 32 },
+                            { m: 36, c: 27778, g: 41 },
+                            { m: 48, c: 20834, g: 49 },
+                        ] 
                     },
                     { 
                         nombre: "Línea UVA ByD (TNA 0%)", 
@@ -183,7 +192,13 @@ const bancos = {
                         tna: "0%", cft: "0%", ltv: 80, seguro: "Cautivo", baseCalculo: 1000000, 
                         descripcion: "Financiacion exclusiva para unidades BYD con tasa 0%",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 83334, g: 12 }, { m: 18, c: 55556, g: 15 }, { m: 24, c: 41667, g: 19 },{ m: 36, c: 27778, g: 22 },{ m: 48, c: 20834, g: 27 },] 
+                        plazos: [
+                            { m: 12, c: 83334, g: 11 }, 
+                            { m: 18, c: 55556, g: 14 }, 
+                            { m: 24, c: 41667, g: 16 },
+                            { m: 36, c: 27778, g: 21 },
+                            { m: 48, c: 20834, g: 26 },
+                        ] 
                     },
                     { 
                         nombre: "Línea UVA ByD (TNA 9,9%)", 
@@ -191,32 +206,41 @@ const bancos = {
                         tna: "9,90%", cft: "12,66%", ltv: 80, seguro: "Cautivo", baseCalculo: 1000000, 
                         descripcion: "Financiacion exclusiva para unidades BYD",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 88822, g: 6 }, { m: 18, c: 60947, g: 7 }, { m: 24, c: 47030, g: 8 },{ m: 36, c: 33153, g: 9 },{ m: 48, c: 26256, g: 10 },] 
+                        plazos: [
+                            { m: 12, c: 88822, g: 6 },
+                            { m: 18, c: 60947, g: 7 },
+                            { m: 24, c: 47030, g: 8 },
+                            { m: 36, c: 33153, g: 9 },
+                            { m: 48, c: 26256, g: 10 },
+                        ]
                     },
                     { 
                         nombre: "Línea UVA 12,50%", 
                         destacado: false,
-                        tna: "12,50%", cft: "16,22%", ltv: 80, gastos: 4, seguro: "Cautivo", baseCalculo: 1000000, 
+                        tna: "12,50%", cft: "16,22%", ltv: 85, gastos: 4, seguro: "Cautivo", baseCalculo: 1000000, 
                         descripcion: "Financiacion exclusiva para unidades BYD",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 90290 }, { m: 18, c: 62403 }, { m: 24, c: 48492 }, { m: 36, c: 34646 }, { m: 48, c: 27787 },{ m: 60, c: 23723 }] 
+                        plazos: [
+                            { m: 12, c: 90290 },
+                            { m: 18, c: 62403 },
+                            { m: 24, c: 48492 },
+                            { m: 36, c: 34646 },
+                            { m: 48, c: 27787 },
+                        ]
                     },
                     { 
-                        nombre: "Línea Tradicional ByD", 
+                        nombre: "Línea FIJA 32,90%", 
                         destacado: false,
-                        tna: "32,90%", cft: "47,94%", ltv: 80, gastos: 6, seguro: "Cautivo", baseCalculo: 1000000, 
+                        tna: "32,90%", cft: "47,94%", ltv: 90, gastos: 4, seguro: "Cautivo", baseCalculo: 1000000, 
                         descripcion: "Crédito prendario tradicional a tasa fija para unidades BYD.",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 102192 }, { m: 18, c: 74401 }, { m: 24, c: 60724 }, { m: 36, c: 47474 }, { m: 48, c: 41257 }, { m: 60, c: 37830 }] 
-                    },
-
-                    { 
-                        nombre: "Dolphin GL (UVA)", 
-                        destacado: true,
-                        tna: "0%", cft: "0%", seguro: "Cautivo", baseCalculo: 1000000, 
-                        descripcion: "Financiacion exclusiva para Dolphin GL BYD",
-                        utilPara: "Dolphin GL",
-                        plazos: [{ m: 12, c: 83334, g: 11, ltv: 22000000 }, { m: 18, c: 55556, g: 14.7 , ltv: 20000000 }] 
+                        plazos: [
+                            { m: 12, c: 102192 },
+                            { m: 18, c: 74401 },
+                            { m: 24, c: 60724 },
+                            { m: 36, c: 47474 },
+                            { m: 48, c: 41257 }
+                        ]
                     },
 
                     { 
@@ -225,25 +249,38 @@ const bancos = {
                         tna: "0%", cft: "0%", seguro: "Cautivo", baseCalculo: 1000000, 
                         descripcion: "Financiacion exclusiva para Song PRO GL BYD",
                         utilPara: "Song PRO GL",
-                        plazos: [{ m: 12, c: 83334, g: 11, ltv: 32000000 }, { m: 18, c: 55556, g: 14.7, ltv: 28000000 }] 
+                        plazos: [{ m: 24, c: 41667, g: 16, ltv: 50 }] 
                     },
 
                     { 
-                        nombre: "Dolphin GL (FIJA)", 
+                        nombre: "Línea UVA 14,5%", 
                         destacado: true,
-                        tna: "0%", cft: "0%", seguro: "Cautivo", baseCalculo: 1000000, 
-                        descripcion: "Financiacion exclusiva para Dolphin GL BYD",
-                        utilPara: "Dolphin GL",
-                        plazos: [{ m: 12, c: 83334, g: 23, ltv: 11000000 }, { m: 18, c: 55556, g: 31.1 , ltv: 8000000 }] 
+                        tna: "14,5%",cft: "19,03%", gastos: 4, ltv: 85, seguro: "Cautivo", baseCalculo: 1000000, 
+                        descripcion: "Financiacion exclusiva para unidades BYD con tasa 14,5%",
+                        utilPara: "ByD",
+                        plazos: [
+                            { m: 12, c: 91427,}, 
+                            { m: 18, c: 63535,}, 
+                            { m: 24, c: 49632,},
+                            { m: 36, c: 35816,},
+                            { m: 48, c: 28994,},
+                        ] 
                     },
 
-                    { 
-                        nombre: "Song PRO GL (FIJA)", 
+                     { 
+                        nombre: "Línea FIJA 34,9%", 
                         destacado: true,
-                        tna: "0%", cft: "0%", seguro: "Cautivo", baseCalculo: 1000000, 
-                        descripcion: "Financiacion exclusiva para Song PRO GL BYD",
-                        utilPara: "Song PRO GL",
-                        plazos: [{ m: 12, c: 83334, g: 23, ltv: 16000000 }, { m: 18, c: 55556, g: 31.1, ltv: 11000000 }] 
+                        tna: "34,9%",cft: "51,44%", gastos: 4, ltv: 90, seguro: "Cautivo", baseCalculo: 1000000, 
+                        descripcion: "Financiacion exclusiva para unidades BYD con tasa 34,9%",
+                        utilPara: "ByD",
+                        plazos: [
+                            { m: 12, c: 103395,}, 
+                            { m: 18, c: 75630,}, 
+                            { m: 24, c: 61994,},
+                            { m: 36, c: 48834,},
+                            { m: 48, c: 42707,},
+                            { m: 60, c: 39366,},
+                        ] 
                     },
                 ]
             },
