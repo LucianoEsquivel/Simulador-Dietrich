@@ -115,6 +115,7 @@ const bancos = {
                             { m: 60, c: 45824, tna: "43,00%", cft: "66,42%" }
                         ] 
                     },
+
                     { 
                         nombre: "Tasa Fija 0km", 
                         destacado: false,
@@ -468,8 +469,32 @@ const bancos = {
                         gastos: 2, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: 02/09/2026, Seguro liberado para Transit. aplica para todos los modelos de Transit, excepto E-Transit. la cuota incluye capital, intereses e IVA",
                         utilPara: "Transit excepto E-Transit",
-                        plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 60, info: "LTV Máx 60%" }, { m: 24, c: 52.77, tna: "19,90%", cft: "26,92%", ltv: 75, info: "LTV Máx 75%" }, { m: 36, c: 45.53, tna: "30%", cft: "42,99%", ltv: 75, info: "LTV Máx 75%" }] 
-                    }
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 60, info: "LTV Máx 60%" }, 
+                            { m: 24, c: 52.77, tna: "19,90%", cft: "26,92%", ltv: 75, info: "LTV Máx 75%" }, 
+                            { m: 36, c: 45.53, tna: "30%", cft: "42,99%", ltv: 75, info: "LTV Máx 75%" }
+                        ] 
+                    },
+
+
+/*
+                  { 
+                        nombre: "UVA Promocional", 
+                        destacado: true,
+                        tna: "14%",cft: "16,94%", gastos: 2, ltv: 60, seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Todos los vehiculos",
+                        utilPara: "Todos los vehiculos",
+                        plazos: [
+                            { m: 12, c: 91.14,}, 
+                            { m: 18, c: 63.25,}, 
+                            { m: 24, c: 49.35,},
+                            { m: 36, c: 35.52,},
+                            { m: 48, c: 28.69,},
+                            { m: 60, c: 24.65,},
+                        ] 
+                    },
+
+*/
                     
                 ]
             },
@@ -523,6 +548,7 @@ const bancos = {
                         utilPara: "Transit excepto E-Transit",
                         plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 60, info: "LTV Máx 60%" }, { m: 24, c: 50.74, tna: "17,90%", cft: "21,67%", ltv: 75, info: "LTV Máx 75%" }, { m: 36, c: 43.99, tna: "30,00%", cft: "38,68%", ltv: 75, info: "LTV Máx 75%" },] 
                     },
+
                     { 
                         nombre: "Especial Transit (liberado)", 
                         destacado: false,
@@ -539,6 +565,7 @@ const bancos = {
                         utilPara: "Kuga, Maverick, F-150, Mustang, Ranger, Territory, Bronco, Transit",
                         plazos: [{ m: 12, c: 107.82, cft: "64,83%" }, { m: 24, c: 66.77, cft: "64,82%" }, { m: 36, c: 54.03, cft: "64,80%" }, { m: 48, c: 48.30, cft: "64,79%" }] 
                     },
+
                     { 
                         nombre: "Generales Canal Comercial (liberado)", 
                         destacado: true,
@@ -556,6 +583,7 @@ const bancos = {
                         utilPara: "Kuga, Maverick, F-150, Mustang, Ranger, Territory, Bronco, Transit",
                         plazos: [{ m: 24, c: 60.86, cft: "48,34%" }, { m: 36, c: 47.64, cft: "48,33%" }, { m: 48, c: 41.45, cft: "48,32%" }, { m: 60, c: 38.05, cft: "48,31%" }] 
                     },
+
                     { 
                         nombre: "Generales Canal MiPyme (liberado)", 
                         destacado: true,
@@ -564,6 +592,7 @@ const bancos = {
                         utilPara: "Kuga, Maverick, F-150, Mustang, Ranger, Territory, Bronco, Transit",
                         plazos: [{ m: 24, c: 62.62, cft: "53,17%" }, { m: 36, c: 49.53, cft: "53,15%" }, { m: 48, c: 43.80, cft: "53,14%" }, { m: 60, c: 40.20, cft: "53,13%" }] 
                     },
+
                     { 
                         nombre: "Mi Pyme - Ranger", 
                         destacado: false,
@@ -572,6 +601,7 @@ const bancos = {
                         utilPara: "Ranger excepto Raptor",
                         plazos: [{ m: 24, c: 54.93, tna: "23,90%", cft: "29,37%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 45.72, tna: "30,90%", cft: "38,94%", ltv: 60, info: "LTV Máx 60%" },] 
                     },
+
                     { 
                         nombre: "Mi Pyme - Transit", 
                         destacado: false,
@@ -580,6 +610,7 @@ const bancos = {
                         utilPara: "Transit excepto E-Transit",
                         plazos: [{ m: 24, c: 54.93, tna: "23,90%", cft: "29,37%", ltv: 50, info: "LTV Máx 50%" }, { m: 36, c: 45.72, tna: "30,90%", cft: "38,94%", ltv: 60, info: "LTV Máx 60%" },] 
                     },
+
                     { 
                         nombre: "Especial UVA Transit", 
                         destacado: false,
