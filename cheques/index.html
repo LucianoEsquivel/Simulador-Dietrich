@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Cheques Diferidos</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#2563eb">
+    
+    <!-- Vinculación de iconos para PWA -->
+    <link rel="icon" sizes="192x192" href="img/icon-192.png">
+    <link rel="apple-touch-icon" href="img/icon-512.png">
+    
+    <!-- LIBRERÍA PARA GENERAR PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Banner Global Grupo Dietrich -->
+    <div class="banner-container no-print">
+        <img src="img/dietrich.png" alt="Grupo Dietrich" class="dietrich-banner">
+    </div>
+
+    <!-- Pantalla 1: Selección de Marca (Centrada) -->
+    <div id="brandSelectionView" class="view-container centered-view">
+        <div class="card brand-card">
+            <h2>Bienvenido</h2>
+            <p>Seleccione la marca para ingresar al simulador:</p>
+            <div class="input-group">
+                <select id="marcaSelectInit">
+                    <option value="" disabled selected>Elegir marca...</option>
+                    <option value="ford">Ford</option>
+                    <option value="volkswagen">Volkswagen</option>
+                    <option value="kia">KIA</option>
+                    <option value="audi">Audi</option>
+                    <option value="byd">ByD</option>
+                    <option value="ducati">Ducati</option>
+                </select>
+            </div>
+            <button id="btnContinuar" class="btn-primary" disabled>Ingresar al Simulador</button>
+        </div>
+    </div>
+
+    <!-- Pantalla 2: Simulador (Oculta al inicio) -->
+    <div id="simulatorView" class="app-container" style="display: none;">
+        
+        <!-- Contenedor que será convertido a PDF -->
+        <div id="pdf-content">
+            
+            <!-- Encabezado con control de marca agrupado -->
+            <header class="app-header">
+                <div class="header-top no-print">
+                    <div class="marca-control-group">
+                        <img id="logoMarcaActiva" src="" alt="Logo" class="logo-marca" style="display: none;">
+                        <span id="marcaActiva" class="badge-marca">Marca: -</span>
+                        <button id="btnCambiarMarca" class="btn-text">Cambiar de marca</button>
+                    </div>
+                </div>
+                
+                <!-- Encabezado exclusivo para PDF -->
+                <div class="pdf-only pdf-header">
+                    <img src="img/dietrich.png" alt="Grupo Dietrich" class="pdf-logo">
+                    <h2>Simulación de Operación</h2>
+                </div>
+
+                <h1 class="no-print">Simulador de Cheques Diferidos</h1>
+                <p class="no-print">Calculadora de opciones de financiación por plazos</p>
+                
+                <!-- Info de Tasas -->
+                <div class="tasas-info-bar">
+                    <span id="displayTasaAnual">Tasa Anual: -</span>
+                    <span class="separator">|</span>
+                    <span id="displayTasaMensual">Tasa Mensual: -</span>
+                </div>
+            </header>
+
+            <!-- Panel de Entradas -->
+            <section class="card input-section no-print">
+                <h2>Parámetros de la Operación</h2>
+                
+                <!-- Selector de Moneda -->
+                <div class="currency-toggle">
+                    <input type="radio" id="currencyARS" name="currency" value="ARS" checked>
+                    <label for="currencyARS">ARS ($)</label>
+                    
+                    <input type="radio" id="currencyUSD" name="currency" value="USD">
+                    <label for="currencyUSD">USD (U$S)</label>
+                </div>
+
+                <!-- Contenedor Cotización (Oculto por defecto) -->
+                <div id="cotizacionContainer" class="input-group" style="display: none;">
+                    <label for="cotizacionDolar">Cotización del Dólar ($):</label>
+                    <input type="text" id="cotizacionDolar" class="formatted-input" placeholder="$ 0,00">
+                </div>
+
+                <!-- Input Principal -->
+                <div class="input-group">
+                    <label for="totalOperacion" id="labelTotalOperacion">Total de la Operación ($):</label>
+                    <input type="text" id="totalOperacion" class="formatted-input" placeholder="$ 0,00">
+                </div>
+                <button id="btnSimular" class="btn-primary">Calcular Opciones</button>
+            </section>
+
+            <!-- Resultados / Comparativa de Opciones -->
+            <section class="results-section">
+                <!-- Información resumen para el PDF (Oculta en la web) -->
+                <div id="pdfResumenOperacion" class="pdf-only pdf-resumen">
+                    <p><strong>Monto Total de la Operación:</strong> <span id="pdfMontoTotal"></span></p>
+                </div>
+
+                <h2 class="no-print">Opciones de Financiación</h2>
+                <div id="opcionesContainer" class="grid-options">
+                    <p class="placeholder-text" id="msjPlaceholder">Ingresa el total de la operación y presiona "Calcular Opciones" para ver el detalle.</p>
+                </div>
+            </section>
+            
+        </div> <!-- Fin de #pdf-content -->
+        
+        <!-- Botón para descargar PDF (Aparece tras simular) -->
+        <div id="descargaContainer" style="display: none; text-align: center; margin-top: 1rem; margin-bottom: 1rem;">
+             <button id="btnDescargarPDF" class="btn-primary" style="background-color: #10b981; max-width: 300px; margin: 0 auto;">
+                📥 Descargar Propuesta en PDF
+            </button>
+        </div>
+
+        <!-- Contenedor para el aviso y botones (se mostrará tras simular) -->
+        <div id="contactoContainer" class="contacto-section no-print" style="display: none;">
+            <div class="aviso-gerencia">
+                <p class="plazo-largo"><strong>Por opciones con plazo más largo contactar al gerente de finanzas al correo:</strong> <br><a href="mailto:tdavila@grupodietrich.com">tdavila@grupodietrich.com</a></p>
+                <hr class="divider">
+                <p>Para avanzar con las operaciones se necesita <strong>aprobación crediticia</strong>.</p>
+                <a id="btnWppGerente" href="#" target="_blank" class="btn-wpp">Contactar al Gerente de la Marca</a>
+            </div>
+            
+            <div class="soporte-tecnico">
+                <p class="small-text">Para cuestiones técnicas:</p>
+                <a id="btnWppLuciano" href="#" target="_blank" class="btn-wpp btn-wpp-alt">Consultas</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

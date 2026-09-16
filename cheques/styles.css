@@ -1,0 +1,549 @@
+/* Variables y Reseteo */
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #cbd5e1;
+    --accent-bg: #eff6ff;
+    --wpp-color: #25D366;
+    --wpp-hover: #1DA851;
+    --radius: 12px;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.5;
+}
+
+/* Banner Superior Dietrich */
+.banner-container {
+    background-color: var(--card-bg);
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.dietrich-banner {
+    max-height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Pantalla de Selección (Centrada) */
+.centered-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 82px);
+    padding: 20px;
+}
+
+.brand-card {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.brand-card h2 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.brand-card p {
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+}
+
+/* Contenedor Principal Simulador */
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado y Control de Marca */
+.header-top {
+    margin-bottom: 1.5rem;
+}
+
+.marca-control-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: var(--card-bg);
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    box-shadow: var(--shadow);
+    margin: 0 auto;
+    width: fit-content;
+    border: 1px solid var(--border-color);
+}
+
+.logo-marca {
+    max-height: 25px;
+    width: auto;
+}
+
+.badge-marca {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-main);
+}
+
+.btn-text {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.875rem;
+    padding-left: 0.5rem;
+    border-left: 1px solid var(--border-color);
+}
+
+.btn-text:hover {
+    color: var(--primary-hover);
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.app-header h1 {
+    font-size: 1.875rem;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+}
+
+.app-header p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Barra de Tasas */
+.tasas-info-bar {
+    display: inline-block;
+    background-color: var(--accent-bg);
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.tasas-info-bar .separator {
+    margin: 0 0.75rem;
+    color: var(--border-color);
+}
+
+/* Tarjetas y Secciones */
+.card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+.input-section {
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+}
+
+.input-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+}
+
+/* Selector de Moneda (Toggle) */
+.currency-toggle {
+    display: flex;
+    margin-bottom: 1.5rem;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.currency-toggle input[type="radio"] {
+    display: none;
+}
+
+.currency-toggle label {
+    flex: 1;
+    text-align: center;
+    padding: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: all 0.2s;
+}
+
+.currency-toggle input[type="radio"]:checked + label {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Inputs Formateados */
+.input-group {
+    margin-bottom: 1.25rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+.input-group input, 
+.input-group select {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: white;
+}
+
+.input-group input[type=number]::-webkit-inner-spin-button, 
+.input-group input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.input-group input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background-color: var(--primary-hover);
+}
+
+.btn-primary:disabled {
+    background-color: var(--border-color);
+    cursor: not-allowed;
+}
+
+/* Sección de Resultados */
+.results-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.placeholder-text {
+    text-align: center;
+    color: var(--text-muted);
+    grid-column: 1 / -1;
+    padding: 2rem;
+}
+
+/* Grilla de Opciones */
+.grid-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.option-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    border-top: 4px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.option-card h3 {
+    font-size: 1.125rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.option-details {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.option-details li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.option-details li span:first-child {
+    color: var(--text-muted);
+}
+
+.option-details li span:last-child {
+    font-weight: 600;
+    color: var(--text-main);
+    text-align: right;
+}
+
+/* Estilos para el Input del Anticipo y Remanente */
+.anticipo-row span:first-child {
+    font-weight: 600;
+    color: var(--text-main) !important;
+}
+
+.input-anticipo-tarjeta {
+    width: 150px;
+    text-align: right;
+    padding: 0.35rem 0.5rem;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.2s;
+    background-color: var(--accent-bg);
+}
+
+.input-anticipo-tarjeta:focus {
+    border-color: var(--primary-color);
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.remanente-row {
+    background-color: var(--bg-color);
+    padding: 0.35rem 0.5rem;
+    border-radius: 6px;
+    margin-bottom: 1rem !important;
+    border-left: 3px solid var(--text-muted);
+}
+
+.option-details .total-row {
+    border-top: 1px dashed var(--border-color);
+    padding-top: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.option-details .total-row span {
+    font-size: 1rem;
+    color: var(--primary-color) !important;
+}
+
+/* Sección de Contacto (Aviso y Botones) */
+.contacto-section {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: var(--shadow);
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 1.5rem 0;
+}
+
+.aviso-gerencia {
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+}
+
+.plazo-largo {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.aviso-gerencia p {
+    margin-bottom: 1rem;
+}
+
+.soporte-tecnico {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px dashed var(--border-color);
+}
+
+.small-text {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.btn-wpp {
+    display: inline-block;
+    background-color: var(--wpp-color);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.btn-wpp:hover {
+    background-color: var(--wpp-hover);
+}
+
+.btn-wpp-alt {
+    background-color: var(--text-muted);
+    max-width: 280px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.btn-wpp-alt:hover {
+    background-color: var(--text-main);
+}
+
+/* --- ESTILOS EXCLUSIVOS PARA LA GENERACIÓN DEL PDF --- */
+
+/* Elementos que solo deben verse en el PDF, los ocultamos en la web normal */
+.pdf-only {
+    display: none;
+}
+
+/* 
+   Cuando html2pdf.js agrega temporalmente la clase .pdf-mode al body, 
+   aplicamos estos estilos para limpiar la vista.
+*/
+body.pdf-mode .no-print {
+    display: none !important;
+}
+
+body.pdf-mode .pdf-only {
+    display: block !important;
+}
+
+/* Ajustes de fondo y layout para el PDF */
+body.pdf-mode #pdf-content {
+    background-color: white;
+    padding: 0;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+body.pdf-mode .app-header {
+    margin-bottom: 2rem;
+}
+
+/* CLAVE: Cambiamos de Grid a Block para que el salto de página funcione perfecto */
+body.pdf-mode .grid-options {
+    display: block; 
+    width: 100%;
+}
+
+body.pdf-mode .option-card {
+    border: 1px solid var(--border-color);
+    box-shadow: none; 
+    page-break-inside: avoid; /* Evitar que una tarjeta se corte a la mitad */
+    break-inside: avoid;      /* Soporte moderno para evitar corte */
+    margin-bottom: 25px;
+    background-color: #fcfcfc; 
+    width: 100%;
+}
+
+/* Hacer que los inputs de anticipo se vean como texto plano y alineado */
+body.pdf-mode .input-anticipo-tarjeta {
+    border: none;
+    background: transparent;
+    padding: 0;
+    text-align: right;
+    box-shadow: none;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    width: auto;
+}
+
+body.pdf-mode .remanente-row {
+    background-color: transparent;
+    border-left: none;
+    border-bottom: 1px dotted var(--border-color);
+    border-radius: 0;
+    padding-left: 0;
+    margin-bottom: 0.75rem !important;
+}
+
+/* Cabecera especial del PDF */
+body.pdf-mode .pdf-header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 15px;
+}
+
+body.pdf-mode .pdf-logo {
+    max-height: 45px;
+    margin-bottom: 10px;
+}
+
+body.pdf-mode .pdf-header h2 {
+    color: var(--text-main);
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+body.pdf-mode .pdf-resumen {
+    background-color: var(--accent-bg);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+}
