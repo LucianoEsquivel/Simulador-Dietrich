@@ -160,6 +160,32 @@ const bancos = {
             byd: {
                 nombre: "Santander ByD",
                 planes: [
+
+                    { 
+                        nombre: "UVA Especial Septiembre (Novedad!)", 
+                        destacado: true,
+                        tna: "0%", cft: "0%", seguro: "Cautivo", baseCalculo: 1000000, 
+                        descripcion: "Financiacion exclusiva para unidades BYD con tasa 0%",
+                        utilPara: "ByD",
+                        plazos: [
+                            { m: 12, c: 83334, g: 6, ltv: 25000000 }, 
+                            { m: 18, c: 55556, g: 6, ltv: 17000000 },   
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Fija Especial Septiembre (Novedad!)", 
+                        destacado: true,
+                        seguro: "Cautivo", baseCalculo: 1000000, 
+                        descripcion: "Financiacion exclusiva para unidades BYD con tasa 0%",
+                        utilPara: "ByD",
+                        plazos: [
+                            { m: 12, c: 83334, tna: "0%",   g: 6, ltv: 10000000 }, 
+                            { m: 12, c: 88822, tna: "9,9%", g: 6, ltv: 15000000 }, 
+                            { m: 18, c: 63535, tna: "14,9%",g: 6, ltv: 13000000 },   
+                        ] 
+                    },
+
                     { 
                         nombre: "Linea Fija Green 19,9%", 
                         destacado: true,
@@ -648,22 +674,42 @@ const bancos = {
             ByD: {
                 nombre: "ICBC ByD",
                 planes: [
-                    { 
-                        nombre: "Tasa especial ByD Dolphin MINI GL y ATTO 2 (Tasa fija)", 
+
+
+                     { 
+                        nombre: "Tasa tradicional TNA 0% (Novedad!)", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "TASA FIJA, Fecha de vigencia: 14/08/2026 aplica para Dolphin mini GL y ATTO 2, la cuota incluye intereses e IVA",
-                        utilPara: "DOLPHIN MINI GL y ATTO 2",
-                        plazos: [{ m: 12, tna: "19,9%", cft: "26,92%", ltv: 25000000, c: 94.53, g: 7 }, { m: 18, tna: "19,9%", cft: "26,92%", ltv: 20000000, c: 66.54, g: 7}] 
+                        descripcion: "TASA FIJA, Fecha de vigencia: 17/09/2026 aplica para Dolphin mini GL y GS, ATTO 2 y Song PRO GL y GS, la cuota incluye intereses e IVA",
+                        utilPara: "DOLPHIN MINI GL, GS, ATTO 2 y Song PRO GL y GS",
+                        plazos: [
+                                { m: 12, tna: "0,0%", ltv: 10000000, c: 83.33, g: 6 }, 
+                                { m: 18, tna: "0,0%", ltv: 8000000,  c: 55.56, g: 6}
+                            ] 
                     },
 
                     { 
-                        nombre: "Tasa especial ByD Dolphin MINI GL y ATTO 2 (Tasa UVA)", 
+                        nombre: "Tasa tradicional (19,9%) (Novedad!)", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "TASA UVA, Fecha de vigencia: 14/08/2026 aplica para Dolphin mini GL y ATTO 2, la cuota incluye intereses e IVA",
-                        utilPara: "DOLPHIN MINI GL y ATTO 2",
-                        plazos: [{ m: 12, tna: "0,0%", cft: "0,0%", ltv: 20000000, c: 83.33, g: 7 }, { m: 18, tna: "2,90%", cft: "3,57%", ltv: 20000000, c: 57.11, g: 7}] 
+                        descripcion: "TASA FIJA, Fecha de vigencia: 17/09/2026 aplica para Dolphin mini GL y GS, ATTO 2 y Song PRO GL y GS, la cuota incluye intereses e IVA",
+                        utilPara: "DOLPHIN MINI GL, GS, ATTO 2 y Song PRO GL y GS",
+                        plazos: [
+                                    { m: 12, tna: "19,9%", ltv: 25000000, c: 94.53, g: 6}, 
+                                    { m: 18, tna: "19,9%", ltv: 20000000, c: 66.54, g: 6},
+                                ] 
+                    },
+
+                    { 
+                        nombre: "Tasa UVA (Novedad!)", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "TASA UVA, Fecha de vigencia: 17/09/2026 aplica para Dolphin mini GL y GS, ATTO 2 y Song PRO GL y GS, la cuota incluye intereses e IVA",
+                        utilPara: "DOLPHIN MINI GL, GS, ATTO 2 y Song PRO GL y GS",
+                        plazos: [
+                            { m: 12, tna: "0,0%",  ltv: 20000000, c: 83.33, g: 6}, 
+                            { m: 18, tna: "2,90%", ltv: 20000000, c: 57.11, g: 6}
+                        ] 
                     },
 
                    /* { 
