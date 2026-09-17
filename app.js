@@ -787,6 +787,19 @@ const bancos = {
                 nombre: "Volkswagen",
                 planes: [
 
+
+                    { 
+                        nombre: "Leasing", 
+                        destacado: true,
+                        gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Requiere un anticipo minimo del 5%, Destinos aceptados: Uso comercial estándar por parte de personas jurídicas. Destinos NO aceptados: Transporte de pasajeros, turistas y/o escolares; traslado de pacientes, ambulancias o autos funerarios. Cargas peligrosas: Autorizado sujeto a cupos.",
+                        utilPara: "Todos los vehiculos de Volkswagen",
+                        plazos: [
+                            { m: 31, c: 47.76, tna: "33,9%", ltv: 100, g: 2 },
+                            { m: 36, c: 44.33, tna: "34,9%", ltv: 100, g: 2 },
+                            { m: 48, c: 39.01, tna: "45,9%", ltv: 100, g: 2 },
+                        ] 
+                    },
                     { 
                         nombre: "Amarok Trendline", 
                         destacado: true,
