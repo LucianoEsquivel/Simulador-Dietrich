@@ -671,6 +671,73 @@ const bancos = {
                     }
                 ]
             },
+
+            vwbuses: {
+                nombre: "VW Buses",
+                planes: [
+                    { 
+                        nombre: "Tasa General B&T (Seguro cautivo)", 
+                        destacado: true,
+                        tna: "43,90%", cft: "50,92%", gastos: 2, ltv: 65, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Seguro de vida 0,20% de sobre saldo, vigencia: 20/09/2026",
+                        utilPara: "VW Buses",
+                        plazos: [
+                            { m: 12, c: 105.04},
+                            { m: 18, c: 80.21},
+                            { m: 24, c: 66.77},
+                            { m: 36, c: 54.03},
+                            { m: 48, c: 48.30},
+                            { m: 60, c: 45.32}, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa General B&T (Seguro liberado)", 
+                        destacado: true,
+                        tna: "46,90%", cft: "54,23%", gastos: 2, ltv: 65, seguro: "LIBERADO", baseCalculo: 1000, 
+                        descripcion: "Seguro de vida 0,20% de sobre saldo, vigencia: 20/09/2026",
+                        utilPara: "VW Buses",
+                        plazos: [
+                            { m: 12, c: 109.52},
+                            { m: 18, c: 81.97},
+                            { m: 24, c: 68.61},
+                            { m: 36, c: 56.03},
+                            { m: 48, c: 50.46},
+                            { m: 60, c: 47.62}, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa especial MIPYME (Seguro cautivo)", 
+                        destacado: true,
+                        tna: "34,00%",  gastos: 2, ltv: 75, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Seguro de vida 0,20% de sobre saldo, vigencia: 20/09/2026, aplica para personas fisicas y juridicas, solo para 0km, seguro cautivo para camiones y utilitarios, seguro liberado para buses",
+                        utilPara: "VW Buses",
+                        plazos: [
+                            { m: 24, c: 60.86, cft: "43,18%",},
+                            { m: 36, c: 47.64, cft: "43,18%",},
+                            { m: 48, c: 41.45, cft: "43,17%",},
+                            { m: 60, c: 38.05, cft: "43,18%",}, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa especial MIPYME (Seguro liberado)", 
+                        destacado: true,
+                        tna: "37,00%",  gastos: 2, ltv: 75, seguro: "LIBERADO", baseCalculo: 1000, 
+                        descripcion: "Seguro de vida 0,20% de sobre saldo, vigencia: 20/09/2026, aplica para personas fisicas y juridicas, solo para 0km, seguro liberado para buses",
+                        utilPara: "VW Buses",
+                        plazos: [
+                            { m: 24, c: 62.62, cft: "47,40%",},
+                            { m: 36, c: 49.53, cft: "47,40%",},
+                            { m: 48, c: 43.48, cft: "47,40%",},
+                            { m: 60, c: 40.20, cft: "47,39%",}, 
+                        ] 
+                    },
+
+                ],
+            },
+
             ByD: {
                 nombre: "ICBC ByD",
                 planes: [
@@ -1323,6 +1390,10 @@ const marcasConfig = {
     ducati: {
         nombre: "Ducati",
         bancos: ["vw_financial-ducati"]
+    },
+    vwbuses: {
+        nombre: "VW Buses",
+        bancos: ["icbc-vwbuses"]
     }
 };
 
