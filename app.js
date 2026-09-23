@@ -1008,7 +1008,7 @@ const bancos = {
 
                     { 
                         nombre: "Autos largo plazo 20 millones", 
-                        destacado: true,
+                        destacado: false,
                         tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Aplica para Polo Comfortline y Highline, Tera Comfortline, Highline y Outfit, Nivus todas las versiones y Virts Sense, disponible para persona fisica, juridica y venta directa, seguro cautivo de BW Broker, vigencia: 08/09/2026-30/09/2026",
                         utilPara: "Polo, Tera, Nivus y Virtus",
@@ -1021,7 +1021,7 @@ const bancos = {
 
                     { 
                         nombre: "Autos largo plazo 18.5 millones Polo Track", 
-                        destacado: true,
+                        destacado: false,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Aplica para Polo Track, disponible para persona fisica, juridica y venta directa, seguro cautivo de BW Broker, vigencia: 08/09/2026-30/09/2026",
                         utilPara: "Polo Track",
@@ -1034,7 +1034,7 @@ const bancos = {
 
                     { 
                         nombre: "Autos largo plazo 24 millones", 
-                        destacado: true,
+                        destacado: false,
                         tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Aplica para Polo Comfortline y Highline y Tera Comfortline, Highline y Outfit y Nivus (todas las versiones), disponible para persona fisica, juridica y venta directa, seguro cautivo de BW Broker, vigencia: 07/08/2026-31/08/2026",
                         utilPara: "Polo, Tera y Nivus",
