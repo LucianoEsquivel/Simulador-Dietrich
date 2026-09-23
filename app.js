@@ -754,7 +754,7 @@ const bancos = {
                                 { m: 18, tna: "0,0%", ltv: 8000000,  c: 55.56, g: 4}
                             ] 
                     },
-
+/*
                     { 
                         nombre: "Tasa tradicional (19,9%) (Novedad!)", 
                         destacado: true,
@@ -766,7 +766,7 @@ const bancos = {
                                     { m: 18, tna: "19,9%", ltv: 20000000, c: 66.54, g: 4},
                                 ] 
                     },
-
+*/
                     { 
                         nombre: "Tasa UVA (Novedad!)", 
                         destacado: true,
