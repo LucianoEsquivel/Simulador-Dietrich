@@ -754,7 +754,7 @@ const bancos = {
                                 { m: 18, tna: "0,0%", ltv: 8000000,  c: 55.56, g: 4}
                             ] 
                     },
-/*
+
                     { 
                         nombre: "Tasa tradicional (19,9%) (Novedad!)", 
                         destacado: true,
@@ -762,11 +762,11 @@ const bancos = {
                         descripcion: "TASA FIJA, Fecha de vigencia: 17/09/2026 aplica para Dolphin mini GL y GS, ATTO 2 y Song PRO GL y GS, la cuota incluye intereses e IVA",
                         utilPara: "DOLPHIN MINI GL, GS, ATTO 2 y Song PRO GL y GS",
                         plazos: [
-                                    { m: 12, tna: "19,9%", ltv: 25000000, c: 94.53, g: 4}, 
-                                    { m: 18, tna: "19,9%", ltv: 20000000, c: 66.54, g: 4},
+                                    { m: 12, tna: "19,9%", ltv: 25000000, c: 92.90, g: 4}, 
+                                    { m: 18, tna: "19,9%", ltv: 20000000, c: 66.64, g: 4},
                                 ] 
                     },
-*/
+
                     { 
                         nombre: "Tasa UVA (Novedad!)", 
                         destacado: true,
