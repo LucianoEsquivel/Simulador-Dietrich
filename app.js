@@ -875,9 +875,9 @@ const bancos = {
                         descripcion: "Vigencia 22/09 - 30/09/2026, Aplica para Tera Comfort 170 AT, Nivus Trendline 200 TSI AT y Nivus Comfortline 200 TSI AT, disponible para persona fisica, juridica y venta directa, seguro cautivo de VW Broker",
                         utilPara: "Amarok Trendline",
                         plazos: [
-                            { m: 12, c: 83.33, ltv: 23000000, g: 8.05 },
-                            { m: 18, c: 55.56, ltv: 23000000, g: 16 },
-                            { m: 24, c: 28.78, ltv: 12000000, g: 16.53 },
+                            { m: 12, c: 83.33, tna: "0%", ltv: 23000000, g: 8.05 },
+                            { m: 18, c: 55.56, tna: "0%", ltv: 23000000, g: 16 },
+                            { m: 24, c: 28.78, tna: "0%", ltv: 12000000, g: 16.53 },
                         ] 
                     },
 
@@ -888,7 +888,7 @@ const bancos = {
                         descripcion: "Vigencia 22/09 - 30/09/2026, Aplica para Tera Comfort 170 AT, Nivus Trendline 200 TSI AT y Nivus Comfortline 200 TSI AT, disponible para persona fisica, juridica y venta directa, seguro cautivo de VW Broker",
                         utilPara: "Amarok Trendline",
                         plazos: [
-                            { m: 12, c: 83.33, ltv: 18000000, g: 2 },
+                            { m: 12, c: 83.33, tna: "0%", ltv: 18000000, g: 2 },
                         ] 
                     },
 
