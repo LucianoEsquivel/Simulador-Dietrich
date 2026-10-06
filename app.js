@@ -972,6 +972,7 @@ const bancos = {
                             { m: 60, c: 27.89 }
                         ] 
                     },
+
                     { 
                         nombre: "Ranger USD 12/24", 
                         destacado: false,
@@ -984,6 +985,7 @@ const bancos = {
                             { m: 24, c: 44.91, tna: "4,50%", cft: "7,38%", info: "TNA 4,5% USD" }
                         ] 
                     },
+                    
                     { 
                         nombre: "Ranger USD", 
                         destacado: false,
@@ -1192,29 +1194,29 @@ const bancos = {
                         plazos: [
                             { m: 31, c: 47.76, tna: "33,9%", ltv: 100, g: 2 },
                             { m: 36, c: 44.33, tna: "34,9%", ltv: 100, g: 2 },
-                            { m: 48, c: 39.01, tna: "45,9%", ltv: 100, g: 2 },
+                            { m: 48, c: 39.01, tna: "35,9%", ltv: 100, g: 2 },
                         ] 
                     },
 
                     { 
-                        nombre: "Tasa 0% Tera y Nivus (Novedad!)", 
+                        nombre: "Tasa 0% Tera, Nivus y T-Cross", 
                         destacado: true,
-                        tna: "0%", gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Vigencia 22/09 - 30/09/2026, Aplica para Tera Comfort 170 AT, Nivus Trendline 200 TSI AT y Nivus Comfortline 200 TSI AT, disponible para persona fisica, juridica y venta directa, seguro cautivo de VW Broker",
-                        utilPara: "Amarok Trendline",
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "¡Aclaracion! esta tasa tiene la opcion de 24 meses, pero vino mal desde la circular, en cuanto se corrija se agregara, Esta tasa aplica para Tera Comfort 170 TSI AT, Nivus Comfortline 200 TSI AT y Nivus Trenline 200 TSI AT, T-Cross Trendline AT, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica solo se utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
+                        utilPara: "Tera Comfort, Nivus Comfortline, Trenline y T-Cross Trendline",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%", ltv: 23000000, g: 8.05 },
                             { m: 18, c: 55.56, tna: "0%", ltv: 23000000, g: 16 },
-                            { m: 36, c: 27.78, tna: "0%", ltv: 12000000, g: 16.53 },
+                            { m: 36, c: 27.78, tna: "0%", ltv: 12000000, g: 16.52 },
                         ] 
                     },
 
                     { 
-                        nombre: "Tera y Nivus (Novedad!)", 
+                        nombre: "Tera, Nivus y T-Cross", 
                         destacado: true,
-                        tna: "0%", gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Vigencia 22/09 - 30/09/2026, Aplica para Tera Comfort 170 AT, Nivus Trendline 200 TSI AT y Nivus Comfortline 200 TSI AT, disponible para persona fisica, juridica y venta directa, seguro cautivo de VW Broker",
-                        utilPara: "Amarok Trendline",
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para Tera Comfort 170 TSI AT, Nivus Comfortline 200 TSI AT y Nivus Trenline 200 TSI AT, T-Cross Trendline AT, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica solo se utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
+                        utilPara: "Tera Comfort, Nivus Comfortline, Trenline y T-Cross Trendline",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%", ltv: 18000000, g: 2 },
                         ] 
@@ -1223,50 +1225,37 @@ const bancos = {
                     { 
                         nombre: "Amarok Trendline", 
                         destacado: true,
-                        gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Amarok Trendline, seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 08/09/2026 hasta el 30/09/2026",
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para Amarok (Solo versiones Trendline), vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica, para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
                         utilPara: "Amarok Trendline",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",     ltv: 26500000, g: 14.1 },
-                            { m: 24, c: 48.15, tna: "11,90%", ltv: 20000000, g: 15.31 },
+                            { m: 12, c: 83.33, tna: "0,0%",     ltv: 26500000, g: 14.1 },
+                            { m: 24, c: 48.15, tna: "11,90%",   ltv: 20000000, g: 15.31 },
                         ] 
                     },
 
                     { 
                         nombre: "Amarok financia mas", 
                         destacado: true,
-                        tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Amarok (excepto Trendline), seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 07/09/2026 hasta el 30/09/2026",
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para todas las Amarok excepto Trendline, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto de persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
                         utilPara: "Amarok (excepto Trendline)",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",      g: 15.915, ltv: 36500000 },
                             { m: 18, c: 55.56, tna: "0%",      g: 16.52,  ltv: 24500000 },
                             { m: 24, c: 41.67, tna: "0%",      g: 15.31,  ltv: 16500000 },
-                            { m: 18, c: 58.19, tna: "4,90%",   g: 15.915, ltv: 28000000 },
-                            { m: 24, c: 47.03, tna: "9,90%",   g: 15.31,  ltv: 23000000 },
                         ] 
                     },
 
                     { 
                         nombre: "Amarok sin quebranto", 
                         destacado: true,
-                        gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Amarok (excepto Trendline), seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 08/09/2026 hasta el 30/09/2026",
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para todas las Amarok excepto Trendline, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto de persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
                         utilPara: "Amarok (excepto Trendline)",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",    ltv: 18500000, g: 2 },
-                            { m: 12, c: 88.32, tna: "9,00%", ltv: 20000000, g: 2 },
-                        ] 
-                    },
-
-                    { 
-                        nombre: "UVA Amarok (24)", 
-                        destacado: true,
-                        tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Amarok (excepto Trendline), para persona fisica, seguro cautivo de VW Broker, vigencia: 08/09/2026-30/09/2026",
-                        utilPara: "Amarok (excepto Trendline)",
-                        plazos: [
-                            { m: 24, c: 41.67, tna: "0%", g: 2, ltv: 19500000 },
+                            { m: 12, c: 83.33, tna: "0,0%",    ltv: 18500000, g: 2 },
+                            { m: 12, c: 88.32, tna: "19,9%",   ltv: 28000000, g: 2 },
                         ] 
                     },
 
@@ -1274,7 +1263,7 @@ const bancos = {
                         nombre: "Amarok largo plazo 40 millones", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Amarok todas las versiones de Amarok V6, seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 08/09/2026 hasta el 30/09/2026",
+                        descripcion: "Aplica para Amarok Highline AT, Amarok V6 (Todas las versiones), vigencia 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto de persona fisica, como de juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
                         utilPara: "Amarok Highline AT y Amarok V6",
                         plazos: [
                             { m: 36, c: 43.50, tna: "26,9%",   g: 14.1, ltv: 40000000 },
@@ -1284,23 +1273,10 @@ const bancos = {
                     },
 
                     { 
-                        nombre: "Amarok largo plazo 25 millones", 
-                        destacado: true,
-                        seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Amarok Highline AT y todas las versiones de Amarok V6, seguro cautivo de VW Broker, disponible para persona juridica, fisica y venta directa, disponible de 08/09/2026 hasta el 30/09/2026",
-                        utilPara: "Amarok Highline AT y Amarok V6",
-                        plazos: [
-                            { m: 36, c: 38.83, tna: "19,5%",   g: 14.1, ltv: 25000000 },
-                            { m: 48, c: 35.07, tna: "24,0%",   g: 14.1, ltv: 25000000 },
-                            { m: 60, c: 33.09, tna: "26,5%",   g: 14.1, ltv: 25000000 },
-                        ] 
-                    },
-
-                    { 
                         nombre: "Especial Autos", 
                         destacado: false,
                         tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para todos los modelos excepto Amarok, disponible para persona fisica, juridica y venta directa, seguro cautivo de BW Broker, vigencia: 08/09/2026-30/09/2026",
+                        descripcion: "Aplica para todos los modelos excepto Amarok, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
                         utilPara: "Todos los modelos excepto Amarok",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",      g: 14.705, ltv: 23000000 },
@@ -1313,22 +1289,22 @@ const bancos = {
                         nombre: "Autos sin quebranto", 
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Virtus Sense, Tera Comfort, Highline y Outfit, Nivus todas las versiones, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline, Taos Highline y Highline Bi Tono y Tiguan Life Vigencia: desde el 08/09/2026 hasta el 30/09/2026, Disponible: Persona física, jurídica y venta directa, Seguro cautivo de VW Broker",
+                        descripcion: "Aplica para los modelos Virtus Sense, Polo Comfortline y Highline, Tera Comfort, Highline y Outfit, Nivus (Todas las versiones), T-Cross Comfortline, Highline y Extreme, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canala de venta por concesionario, para venta directa tanto de persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
                         utilPara: "Tera, T-Cross, Polo, Taos, Nivus, Tiguan, Virtus",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",   g: 2,   ltv: 15000000 },
-                            { m: 12, c: 86.09, tna: "5%",   g: 2,   ltv: 17000000 },
+                            { m: 12, c: 83.33, tna: "0,00%",   g: 2,   ltv: 15000000 },
+                            { m: 12, c: 94.53, tna: "19,90%",   g: 2,   ltv: 26000000 },
                         ] 
                     },
                     
                     { 
                         nombre: "Autos financia mas", 
                         destacado: true,
-                        tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Virtus Sense, Tera Comfort, Highline y Outfit, Nivus todas las versiones, T-Cross Comfortline, Highline y Extreme, Polo Comfortline y Highline, Taos Highline y Highline Bi Tono y Tiguan Life Vigencia: desde el 08/09/2026 hasta el 30/09/2026, Disponible: Persona física, jurídica y venta directa, Seguro cautivo de VW Broker",
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para Virtus Sense, Polo Comfortline y Highline, Tera Comfort, Highline y Outfit, Nivus (Todas las versiones), T-Cross COmfortline, Highline y Extreme, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
                         utilPara: "Tera, T-Cross, Polo, Taos, Nivus, Tiguan, Virtus",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0%",    g: 12.89, ltv: 28000000 },
+                            { m: 12, c: 83.33, tna: "0%",    g: 12.9, ltv: 28000000 },
                             { m: 18, c: 55.56, tna: "0%",    g: 15.31, ltv: 20000000 },
                             { m: 24, c: 41.67, tna: "0%",    g: 17.2, ltv: 17000000 }
                         ] 
@@ -1338,7 +1314,7 @@ const bancos = {
                         nombre: "Autos largo plazo 20 millones", 
                         destacado: false,
                         tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Polo Comfortline y Highline, Tera Comfortline, Highline y Outfit, Nivus todas las versiones y Virts Sense, disponible para persona fisica, juridica y venta directa, seguro cautivo de BW Broker, vigencia: 08/09/2026-30/09/2026",
+                        descripcion: "Aplica para Polo Comfortline, Highline, Tera Comfortline, Highline y Iutfit, Nivus (Todas las versiones) y Virtus Sense, vigencia desde el 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
                         utilPara: "Polo, Tera, Nivus y Virtus",
                         plazos: [
                             { m: 36, c: 37.91, tna: "18,00%",    g: 14.1, ltv: 20000000 },
@@ -1348,11 +1324,11 @@ const bancos = {
                     },                    
 
                     { 
-                        nombre: "Autos largo plazo 18.5 millones Polo Track", 
+                        nombre: "Autos largo plazo 18.5 millones Polo Track/Robust", 
                         destacado: false,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Polo Track, disponible para persona fisica, juridica y venta directa, seguro cautivo de BW Broker, vigencia: 08/09/2026-30/09/2026",
-                        utilPara: "Polo Track",
+                        descripcion: "Aplica para Polo Track y Robust, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica, para el canal de venta por cocnesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
+                        utilPara: "Polo Track y Robust",
                         plazos: [
                             { m: 36, c: 37.91, tna: "18,00%",    g: 14.1, ltv: 18500000 },
                             { m: 48, c: 34.41, tna: "23,00%",    g: 14.1, ltv: 18500000 },
@@ -1364,8 +1340,8 @@ const bancos = {
                         nombre: "Autos largo plazo 24 millones", 
                         destacado: false,
                         tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Polo Comfortline y Highline y Tera Comfortline, Highline y Outfit y Nivus (todas las versiones), disponible para persona fisica, juridica y venta directa, seguro cautivo de BW Broker, vigencia: 07/08/2026-31/08/2026",
-                        utilPara: "Polo, Tera y Nivus",
+                        descripcion: "Aplica para Polo Comfortline y Highline, Tera Comfortline, Highline y Outifit, Nivus (Todas las versiones) y Virtus Sense, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
+                        utilPara: "Polo, Tera, Nivus y Virtus",
                         plazos: [
                             { m: 36, c: 40.06, tna: "21,50%",    g: 14.1, ltv: 24000000 },
                             { m: 48, c: 36.35, tna: "25,90%",    g: 14.1, ltv: 24000000 },
