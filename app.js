@@ -1077,11 +1077,11 @@ const bancos = {
                         nombre: "Tasa tradicional TNA 0% (Novedad!)", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "TASA FIJA, Fecha de vigencia: 17/09/2026 aplica para Dolphin mini GL y GS, ATTO 2 y Song PRO GL y GS, la cuota incluye intereses e IVA",
+                        descripcion: "TASA FIJA, Fecha de vigencia: 07/10/2026 aplica para Dolphin mini GL y GS, ATTO 2 y Song PRO GL y GS, la cuota incluye intereses e IVA",
                         utilPara: "DOLPHIN MINI GL, GS, ATTO 2 y Song PRO GL y GS",
                         plazos: [
-                                { m: 12, tna: "0,0%", ltv: 10000000, c: 83.33, g: 4}, 
-                                { m: 18, tna: "0,0%", ltv: 8000000,  c: 55.56, g: 4}
+                                { m: 12, tna: "0,00%", ltv: 10000000, c: 83.33, g: 4}, 
+                                { m: 18, tna: "0,00%", ltv: 8000000,  c: 55.56, g: 4},
                             ] 
                     },
 
@@ -1089,11 +1089,11 @@ const bancos = {
                         nombre: "Tasa tradicional (19,9%) (Novedad!)", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "TASA FIJA, Fecha de vigencia: 17/09/2026 aplica para Dolphin mini GL y GS, ATTO 2 y Song PRO GL y GS, la cuota incluye intereses e IVA",
+                        descripcion: "TASA FIJA, Fecha de vigencia: 07/10/2026 aplica para Dolphin mini GL y GS, ATTO 2 y Song PRO GL y GS, la cuota incluye intereses e IVA",
                         utilPara: "DOLPHIN MINI GL, GS, ATTO 2 y Song PRO GL y GS",
                         plazos: [
-                                    { m: 12, tna: "19,9%", ltv: 25000000, c: 94.53, g: 4}, 
-                                    { m: 18, tna: "19,9%", ltv: 20000000, c: 66.64, g: 4},
+                                    { m: 12, tna: "19,90%", ltv: 25000000, c: 94.53, g: 4}, 
+                                    { m: 18, tna: "19,90%", ltv: 20000000, c: 66.64, g: 4},
                                 ] 
                     },
 
@@ -1289,7 +1289,7 @@ const bancos = {
                         nombre: "Autos sin quebranto", 
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para los modelos Virtus Sense, Polo Comfortline y Highline, Tera Comfort, Highline y Outfit, Nivus (Todas las versiones), T-Cross Comfortline, Highline y Extreme, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canala de venta por concesionario, para venta directa tanto de persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
+                        descripcion: "Aplica para los modelos Virtus Sense, Polo Comfortline y Highline, Tera Comfort, Highline y Outfit, Nivus (Todas las versiones), T-Cross Comfortline, Highline y Extreme, Taos Highline y Taos Highline bitono, Tiguan Life, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canala de venta por concesionario, para venta directa tanto de persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
                         utilPara: "Tera, T-Cross, Polo, Taos, Nivus, Tiguan, Virtus",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0,00%",   g: 2,   ltv: 15000000 },
@@ -1301,7 +1301,7 @@ const bancos = {
                         nombre: "Autos financia mas", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Virtus Sense, Polo Comfortline y Highline, Tera Comfort, Highline y Outfit, Nivus (Todas las versiones), T-Cross COmfortline, Highline y Extreme, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
+                        descripcion: "Aplica para Virtus Sense, Polo Comfortline y Highline, Tera Comfort, Highline y Outfit, Nivus (Todas las versiones), T-Cross COmfortline, Highline y Extreme, Taos Highline y Taos Highline bitono, Tiguan Life, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
                         utilPara: "Tera, T-Cross, Polo, Taos, Nivus, Tiguan, Virtus",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",    g: 12.9, ltv: 28000000 },
