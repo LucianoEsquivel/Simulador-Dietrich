@@ -1003,11 +1003,79 @@ const bancos = {
             },
 
             vwbuses: {
-                nombre: "VW Buses",
+                nombre: "ICBC Buses",
                 planes: [
+
+                    { 
+                        nombre: "Tasa General con quebranto (Seguro cautivo)", 
+                        destacado: true,
+                        tna: "43,90%", cft: "50,92%", gastos: 2, ltv: 65, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Seguro de vida 0,20% de sobre saldo, vigencia: 20/09/2026",
+                        utilPara: "VW Buses",
+                        plazos: [
+                            { m: 12, c: 105.04, tna: "43,90%",},
+                            { m: 18, c: 80.21, tna: "43,90%", },
+                            { m: 24, c: 66.77, tna: "43,90%", },
+                            { m: 36, c: 54.03, tna: "43,90%", },
+                            { m: 48, c: 48.30, tna: "43,90%", },
+                            { m: 60, c: 45.32, tna: "43,90%", },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa General con quebranto (Seguro liberado)", 
+                        destacado: true,
+                        tna: "43,90%", cft: "50,92%", gastos: 2, ltv: 65, seguro: "LIBERADO", baseCalculo: 1000, 
+                        descripcion: "Seguro de vida 0,20% de sobre saldo, vigencia: 20/09/2026",
+                        utilPara: "VW Buses",
+                        plazos: [
+                            { m: 12, c: 105.04, tna: "43,90%",},
+                            { m: 18, c: 80.21, tna: "43,90%", },
+                            { m: 24, c: 66.77, tna: "43,90%", },
+                            { m: 36, c: 54.03, tna: "43,90%", },
+                            { m: 48, c: 48.30, tna: "43,90%", },
+                            { m: 60, c: 45.32, tna: "43,90%", }, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa MiPyme con quebranto (Seguro cautivo)", 
+                        destacado: true,
+                        tna: "43,90%", cft: "50,92%", gastos: 2, ltv: 65, seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Seguro de vida 0,20% de sobre saldo, vigencia: 20/09/2026",
+                        utilPara: "VW Buses",
+                        plazos: [
+                            { m: 12, c: 105.04, tna: "43,90%",},
+                            { m: 18, c: 80.21, tna: "43,90%", },
+                            { m: 24, c: 66.77, tna: "43,90%", },
+                            { m: 36, c: 54.03, tna: "43,90%", },
+                            { m: 48, c: 48.30, tna: "43,90%", },
+                            { m: 60, c: 45.32, tna: "43,90%", }, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa MiPyme con quebranto (Seguro liberado)", 
+                        destacado: true,
+                        tna: "43,90%", cft: "50,92%", gastos: 2, ltv: 65, seguro: "LIBERADO", baseCalculo: 1000, 
+                        descripcion: "Seguro de vida 0,20% de sobre saldo, vigencia: 08/10/2026",
+                        utilPara: "VW Buses",
+                        plazos: [
+                            { m: 12, c: 105.04, tna: "43,90%",},
+                            { m: 18, c: 80.21, tna: "43,90%",},
+                            { m: 24, c: 66.77, tna: "43,90%",},
+                            { m: 36, c: 54.03, tna: "43,90%",},
+                            { m: 48, c: 48.30, tna: "43,90%",},
+                            { m: 60, c: 45.32, tna: "43,90%",}, 
+                        ] 
+                    },
+
+
+
+
                     { 
                         nombre: "Tasa General B&T (Seguro cautivo)", 
-                        destacado: true,
+                        destacado: false,
                         tna: "43,90%", cft: "50,92%", gastos: 2, ltv: 65, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Seguro de vida 0,20% de sobre saldo, vigencia: 20/09/2026",
                         utilPara: "VW Buses",
@@ -1023,7 +1091,7 @@ const bancos = {
 
                     { 
                         nombre: "Tasa General B&T (Seguro liberado)", 
-                        destacado: true,
+                        destacado: false,
                         tna: "46,90%", cft: "54,23%", gastos: 2, ltv: 65, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Seguro de vida 0,20% de sobre saldo, vigencia: 20/09/2026",
                         utilPara: "VW Buses",
@@ -1039,7 +1107,7 @@ const bancos = {
 
                     { 
                         nombre: "Tasa especial MIPYME (Seguro cautivo)", 
-                        destacado: true,
+                        destacado: false,
                         tna: "34,00%",  gastos: 2, ltv: 75, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Seguro de vida 0,20% de sobre saldo, vigencia: 20/09/2026, aplica para personas fisicas y juridicas, solo para 0km, seguro cautivo para camiones y utilitarios, seguro liberado para buses",
                         utilPara: "VW Buses",
@@ -1053,7 +1121,7 @@ const bancos = {
 
                     { 
                         nombre: "Tasa especial MIPYME (Seguro liberado)", 
-                        destacado: true,
+                        destacado: false,
                         tna: "37,00%",  gastos: 2, ltv: 75, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Seguro de vida 0,20% de sobre saldo, vigencia: 20/09/2026, aplica para personas fisicas y juridicas, solo para 0km, seguro liberado para buses",
                         utilPara: "VW Buses",
@@ -1566,6 +1634,35 @@ const bancos = {
                         plazos: [{ m: 12, c: 70.52 }, { m: 24, c: 41.61 }, { m: 36, c: 32.39 }, { m: 48, c: 28.07 }, { m: 60, c: 25.69 }] 
                     }
                 ]
+            },
+            buses: {
+                nombre: "VW BUSES",
+                planes: [
+                    { 
+                        nombre: "Tasa fija",
+                        destacado: true, 
+                        ltv: 70, gastos: 16, seguro: "A DEFINIR", baseCalculo: 1000, //sistema aleman
+                        descripcion: "Crédito prendario Galicia tasa fija. LTV hasta 70%.",
+                        utilPara: "VW camiones",
+                        plazos: [
+                            { m: 24, c: 94.25, tna: "17,50%" }, 
+                            { m: 36, c: 80.72, tna: "21,70%" }, 
+                            { m: 48, c: 75.30, tna: "25,25%" }, 
+                        ] 
+                    },
+                    { 
+                        nombre: "Linea MI PYME", 
+                        destacado: true,
+                        ltv: 70, gastos: 16, baseCalculo: 1000, //sistema aleman
+                        descripcion: "VW camiones",
+                        utilPara: "vw camiones",
+                        plazos: [
+                            { m: 24, c: 70.52, tna: "15,00%" },
+                            { m: 36, c: 32.39, tna: "19,25%" }, 
+                            { m: 48, c: 28.07, tna: "21,75%" }, 
+                        ] 
+                    }
+                ]
             }
         }
     },
@@ -1723,7 +1820,7 @@ const marcasConfig = {
     },
     vwbuses: {
         nombre: "VW Buses",
-        bancos: ["icbc-vwbuses", "santander-buses"]
+        bancos: ["icbc-vwbuses", "santander-buses", "galicia-buses",]
     }
 };
 
