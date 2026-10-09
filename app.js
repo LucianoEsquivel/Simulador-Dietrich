@@ -386,220 +386,152 @@ const bancos = {
                 nombre: "Santander Buses",
                 planes: [
                     { 
-                        nombre: "Tradicional Volkswagen camiones y buses (37,90%)", 
+                        nombre: "Linea UVA Buses", 
                         destacado: true,
-                        tna: "37,90%", gastos: 2, ltv: 90, seguro: "Cautivo", baseCalculo: 1000, 
-                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen.Podría aplicar pricing.",
+                        gastos: 2, tna: "12,90%", ltv: 70, seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen.",
                         utilPara: "Camiones y buses de VW",
                         plazos: 
                         [
-                            { m: 12, c: 6,}, 
-                            { m: 18, c: 5,},
-                            { m: 24, c: 63.92,},
-                            { m: 36, c: 48.90,},
-                            { m: 48, c: 5,},
-                            { m: 60, c: 5,},
+                            { m: 12, c: 90.52,}, 
+                            { m: 18, c: 62.63,},
+                            { m: 24, c: 48.72,},
+                            { m: 36, c: 34.88,},
+                            { m: 48, c: 28.03,},
+                            { m: 60, c: 23.97,},
                         ] 
                     },
 
                     { 
-                        nombre: "Tradicional con quebranto 16%", 
+                        nombre: "Linea UVA con quebranto", 
                         destacado: true,
                         gastos: 16, ltv: 70, seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen.",
                         utilPara: "Camiones y buses de VW",
                         plazos: 
                         [
-                            { m: 12, c: 8, tna: "8,50%",}, 
-                            { m: 18, c: 5, tna: "17,50%",},
-                            { m: 24, c: 5, tna: "22,00%",},
-                            { m: 36, c: 5, tna: "26,50%",},
-                            { m: 48, c: 5, tna: "28,50%",},
-                            { m: 60, c: 5, tna: "20,00%",},
+                            { m: 12, c: 83.33, tna: "0,0%", g: 9,}, 
+                            { m: 18, c: 55.56, tna: "0,0%", g: 9,},
+                            { m: 24, c: 41.67, tna: "0,0%", g: 9,},
+                            { m: 36, c: 29.09, tna: "2,5%", g: 16,},
+                            { m: 48, c: 23.49, tna: "5,0%", g: 16,},
+                            { m: 60, c: 19.89, tna: "6,0%", g: 16,},
                         ] 
                     },
 
                     { 
-                        nombre: "Tradicional con quebranto 13%", 
+                        nombre: "Linea MyPyme especial", 
                         destacado: true,
-                        gastos: 13, ltv: 90, seguro: "Cautivo", baseCalculo: 1000, 
-                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen.",
+                        gastos: 4, ltv: 70, seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen. podria aplicar pricing",
                         utilPara: "Camiones y buses de VW",
                         plazos: 
                         [
-                            { m: 12, c: 8, tna: "15,00%",}, 
-                            { m: 18, c: 5, tna: "22,00%",},
-                            { m: 24, c: 5, tna: "25,50%",},
-                            { m: 36, c: 5, tna: "28,90%",},
-                            { m: 48, c: 5, tna: "30,50%",},
-                            { m: 60, c: 5, tna: "31,50%",},
+                            { m: 12, c: 101.59,tna: "31,90%",}, 
+                            { m: 18, c: 73.79, tna: "31,90%",},
+                            { m: 24, c: 60.72, tna: "32,90%",},
+                            { m: 36, c: 47.47, tna: "32,90%",},
+                            { m: 48, c: 41.69, tna: "33,50%",},
+                            { m: 60, c: 38.29, tna: "33,50%",},
                         ] 
                     },
 
                     { 
-                        nombre: "USD", 
-                        destacado: true,
-                        gastos: 2, ltv: 90, seguro: "Cautivo", baseCalculo: 1000, 
-                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen.",
-                        utilPara: "Camiones y buses de VW",
-                        plazos: 
-                        [
-                            { m: 24, c: 5, tna: "9,50%",},
-                            { m: 36, c: 5, tna: "9,90%",},
-                            { m: 48, c: 5, tna: "10,50%",},
-                            { m: 60, c: 5, tna: "11,50%",},
-                            { m: 72, c: 5, tna: "11,90%",},
-                        ] 
-                    },
-
-                    { 
-                        nombre: "USD (con quebranto 16% / LTV 70%)", 
-                        destacado: true,
-                        gastos: 16, ltv: 70, seguro: "Cautivo", baseCalculo: 1000, 
-                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen.",
-                        utilPara: "Camiones y buses de VW",
-                        plazos: 
-                        [
-                            { m: 24, c: 5, tna: "0,0%",},
-                            { m: 36, c: 5, tna: "0,0%",},
-                            { m: 48, c: 5, tna: "2,50%",},
-                            { m: 60, c: 5, tna: "4,50%",},
-                            { m: 72, c: 5, tna: "6,50%",},
-                        ] 
-                    },
-
-                     { 
-                        nombre: "USD (con quebranto 13% / LTV 90%)", 
-                        destacado: true,
-                        gastos: 13, ltv: 90, seguro: "Cautivo", baseCalculo: 1000, 
-                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen.",
-                        utilPara: "Camiones y buses de VW",
-                        plazos: 
-                        [
-                            { m: 24, c: 5, tna: "0,0%",},
-                            { m: 36, c: 5, tna: "2,0%",},
-                            { m: 48, c: 5, tna: "4,50%",},
-                            { m: 60, c: 5, tna: "6,50%",},
-                            { m: 72, c: 5, tna: "7,50%",},
-                        ] 
-                    },
-
-                    { 
-                        nombre: "UVA", 
-                        destacado: true,
-                        gastos: 2, tna: "12,90%", ltv: 80, seguro: "Cautivo", baseCalculo: 1000, 
-                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen.",
-                        utilPara: "Camiones y buses de VW",
-                        plazos: 
-                        [
-                            { m: 12, c: 90.52, }, 
-                            { m: 18, c: 5, },
-                            { m: 24, c: 48.72, },
-                            { m: 36, c: 34.88, },
-                            { m: 48, c: 28.03, },
-                            { m: 60, c: 23.97, },
-                        ] 
-                    },
-
-                    { 
-                        nombre: "UVA con quebranto 16%", 
-                        destacado: true,
-                        gastos: 16, ltv: 70, seguro: "Cautivo", baseCalculo: 1000, 
-                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen.",
-                        utilPara: "Camiones y buses de VW",
-                        plazos: 
-                        [
-                            { m: 12, c: 83.33, tna: "0,00%", g:16}, 
-                            { m: 18, c: 55.56, tna: "0,00%", g:16},
-                            { m: 24, c: 41.67, tna: "0,00%", g:16},
-                            { m: 36, c: 5, tna: "2,50%",     g:16},
-                            { m: 48, c: 5, tna: "5,00%",     g:16},
-                            { m: 60, c: 5, tna: "6,00%",     g:16},
-                        ] 
-                    },
-
-                    { 
-                        nombre: "UVA con quebranto 13%", 
-                        destacado: true,
-                        gastos: 13, ltv: 80, seguro: "Cautivo", baseCalculo: 1000, 
-                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen.",
-                        utilPara: "Camiones y buses de VW",
-                        plazos: 
-                        [
-                            { m: 12, c: 83.33, tna: "0,00%", g:13}, 
-                            { m: 18, c: 55.56, tna: "0,00%", g:13},
-                            { m: 24, c: 5, tna: "1,00%",     g:13},
-                            { m: 36, c: 5, tna: "5,00%",     g:13},
-                            { m: 48, c: 5, tna: "6,50%",     g:13},
-                            { m: 60, c: 5, tna: "7,50%",     g:13},
-                        ] 
-                    },
-
-                    { 
-                        nombre: "MiPyme", 
-                        destacado: true,
-                        gastos: 2, ltv: 90, seguro: "Cautivo", baseCalculo: 1000, 
-                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen. Podría aplicar pricing",
-                        utilPara: "Camiones y buses de VW",
-                        plazos: 
-                        [
-                            { m: 12, c: 8, tna: "31,90%",}, 
-                            { m: 18, c: 5, tna: "31,90%",},
-                            { m: 24, c: 5, tna: "32,90%",},
-                            { m: 36, c: 5, tna: "32,90%",},
-                            { m: 48, c: 5, tna: "32,90%",},
-                            { m: 60, c: 5, tna: "33,50%",},
-                            { m: 72, c: 5, tna: "33,50%",},
-                        ] 
-                    },
-
-                    { 
-                        nombre: "MiPyme quebranto 16%", 
-                        destacado: true,
-                        gastos: 16, ltv: 70, seguro: "Cautivo", baseCalculo: 1000, 
-                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen. Podría aplicar pricing",
-                        utilPara: "Camiones y buses de VW",
-                        plazos: 
-                        [
-                            { m: 12, c: 8, tna: "2,90%",}, 
-                            { m: 18, c: 5, tna: "11,50%",},
-                            { m: 24, c: 5, tna: "16,90%",},
-                            { m: 36, c: 5, tna: "21,50%",},
-                            { m: 48, c: 5, tna: "23,75%",},
-                            { m: 60, c: 5, tna: "25,75%",},
-                            { m: 72, c: 5, tna: "26,50%",},
-                        ] 
-                    },
-
-                    { 
-                        nombre: "MiPyme quebranto 13%", 
-                        destacado: true,
-                        gastos: 13, ltv: 70, seguro: "Cautivo", baseCalculo: 1000, 
-                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen. Podría aplicar pricing",
-                        utilPara: "Camiones y buses de VW",
-                        plazos: 
-                        [
-                            { m: 12, c: 8, tna: "9,50%",}, 
-                            { m: 18, c: 5, tna: "16,00%",},
-                            { m: 24, c: 5, tna: "20,50%",},
-                            { m: 36, c: 5, tna: "24,00%",},
-                            { m: 48, c: 5, tna: "25,75%",},
-                            { m: 60, c: 5, tna: "27,50%",},
-                            { m: 72, c: 5, tna: "28,50%",},
-                        ] 
-                    },
-
-                    { 
-                        nombre: "MiPyme quebranto 18% LTV 50%", 
+                        nombre: "Linea MyPyme especial (LTV 50%)", 
                         destacado: true,
                         gastos: 18, ltv: 50, seguro: "Cautivo", baseCalculo: 1000, 
-                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen. Podría aplicar pricing",
+                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen. podria aplicar pricing",
                         utilPara: "Camiones y buses de VW",
                         plazos: 
                         [
-                            { m: 12, c: 83.33, tna: "0,00%",}, 
+                            { m: 12, c: 83.33, tna: "0,00%",},
                         ] 
                     },
+
+                    { 
+                        nombre: "Linea MyPyme especial (LTV 70%)", 
+                        destacado: true,
+                        gastos: 16, ltv: 70, seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen",
+                        utilPara: "Camiones y buses de VW",
+                        plazos: 
+                        [
+                            { m: 12, c: 84.92, tna: "2,90%",}, 
+                            { m: 18, c: 61.84, tna: "11,50%",},
+                            { m: 24, c: 51.02, tna: "16,90%",},
+                            { m: 36, c: 40.06, tna: "21,50%",},
+                            { m: 48, c: 24.91, tna: "23,75%",},
+                            { m: 60, c: 32.55, tna: "25,75%",},
+                            { m: 72, c: 30.80, tna: "26,50%",},
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Linea MyPyme especial FIJA (LTV 90%)", 
+                        destacado: true,
+                        gastos: 13, ltv: 90, seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen",
+                        utilPara: "Camiones y buses de VW",
+                        plazos: 
+                        [
+                            { m: 12, c: 88.60, tna: "9,50%",}, 
+                            { m: 18, c: 64.39, tna: "16,00%",},
+                            { m: 24, c: 53.13, tna: "20,50%",},
+                            { m: 36, c: 41.96, tna: "24,50%",},
+                            { m: 48, c: 26.25, tna: "25,75%",},
+                            { m: 60, c: 33.81, tna: "27,50%",},
+                            { m: 72, c: 32.32, tna: "28,50%",},
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Linea USD 0km", 
+                        destacado: true,
+                        gastos: 13, ltv: 80, seguro: "Cautivo", baseCalculo: 1000, moneda: "USD",
+                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen",
+                        utilPara: "Camiones y buses de VW",
+                        plazos: 
+                        [
+                            { m: 24, c: 46.81, tna: "9,50%",},
+                            { m: 36, c: 33.15, tna: "9,90%",},
+                            { m: 48, c: 26.61, tna: "10,50%",},
+                            { m: 60, c: 23.11, tna: "11,50%",},
+                            { m: 72, c: 20.68, tna: "11,90%",},
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Linea USD 0km 70%", 
+                        destacado: true,
+                        ltv: 80, seguro: "Cautivo", baseCalculo: 1000, moneda: "USD",
+                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen",
+                        utilPara: "Camiones y buses de VW",
+                        plazos: 
+                        [
+                            { m: 24, c: 41.67, tna: "0,00%", g: 11,},
+                            { m: 36, c: 27.78, tna: "0,00%", g: 11,},
+                            { m: 48, c: 22.14, tna: "2,50%", g: 12,},
+                            { m: 60, c: 19.06, tna: "4,50%", g: 16,},
+                            { m: 72, c: 17.42, tna: "6,50%", g: 16,},
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Linea USD 0km 90% FIJIA", 
+                        destacado: true,
+                        ltv: 80, seguro: "Cautivo", baseCalculo: 1000, moneda: "USD",
+                        descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen",
+                        utilPara: "Camiones y buses de VW",
+                        plazos: 
+                        [
+                            { m: 24, c: 41.67, tna: "0,00%", g: 11,},
+                            { m: 36, c: 28.82, tna: "2,00%", g: 11,},
+                            { m: 48, c: 23.22, tna: "4,50%", g: 13,},
+                            { m: 60, c: 20.18, tna: "6,50%", g: 13,},
+                            { m: 72, c: 18.00, tna: "7,50%", g: 13,},
+                        ] 
+                    },
+
                 ]
             }, 
         }
@@ -1638,7 +1570,7 @@ const bancos = {
                 ]
             },
             buses: {
-                nombre: "VW BUSES",
+                nombre: "VW BUSES Galicia",
                 planes: [
                     { 
                         nombre: "Tasa fija",
@@ -1647,9 +1579,9 @@ const bancos = {
                         descripcion: "Crédito prendario Galicia tasa fija. LTV hasta 70%.",
                         utilPara: "VW camiones",
                         plazos: [
-                            { m: 24, c: 94.25, tna: "17,50%" }, 
-                            { m: 36, c: 80.72, tna: "21,70%" }, 
-                            { m: 48, c: 75.30, tna: "25,25%" }, 
+                            { m: 24, c: 50.86, tna: "17,50%" }, 
+                            { m: 36, c: 39.02, tna: "21,70%" }, 
+                            { m: 48, c: 28.68, tna: "25,25%" }, 
                         ] 
                     },
                     { 
@@ -1659,9 +1591,9 @@ const bancos = {
                         descripcion: "VW camiones",
                         utilPara: "vw camiones",
                         plazos: [
-                            { m: 24, c: 70.52, tna: "15,00%" },
-                            { m: 36, c: 32.39, tna: "19,25%" }, 
-                            { m: 48, c: 28.07, tna: "21,75%" }, 
+                            { m: 24, c: 49.54, tna: "15,00%" },
+                            { m: 36, c: 37.75, tna: "19,25%" }, 
+                            { m: 48, c: 32.03, tna: "21,75%" }, 
                         ] 
                     }
                 ]
