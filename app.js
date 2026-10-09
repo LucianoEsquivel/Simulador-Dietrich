@@ -487,7 +487,7 @@ const bancos = {
                     { 
                         nombre: "Linea USD 0km", 
                         destacado: true,
-                        gastos: 13, ltv: 80, seguro: "Cautivo", baseCalculo: 1000, moneda: "USD",
+                        gastos: 13, ltv: 80, seguro: "Cautivo", baseCalculo: 1000,
                         descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen",
                         utilPara: "Camiones y buses de VW",
                         plazos: 
@@ -503,7 +503,7 @@ const bancos = {
                     { 
                         nombre: "Linea USD 0km 70%", 
                         destacado: true,
-                        ltv: 80, seguro: "Cautivo", baseCalculo: 1000, moneda: "USD",
+                        ltv: 80, seguro: "Cautivo", baseCalculo: 1000,
                         descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen",
                         utilPara: "Camiones y buses de VW",
                         plazos: 
@@ -519,7 +519,7 @@ const bancos = {
                     { 
                         nombre: "Linea USD 0km 90% FIJIA", 
                         destacado: true,
-                        ltv: 80, seguro: "Cautivo", baseCalculo: 1000, moneda: "USD",
+                        ltv: 80, seguro: "Cautivo", baseCalculo: 1000,
                         descripcion: "Se aplicará un diferencial de tasa de +2 ptos a las operaciones que avancen sin seguro en la plataforma Kaizen",
                         utilPara: "Camiones y buses de VW",
                         plazos: 
