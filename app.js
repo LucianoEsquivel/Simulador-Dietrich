@@ -732,6 +732,7 @@ const bancos = {
                             { m: 36, c: 48.90, tna: "37,90%", cft: "50,93%", ltv: 50, info: "LTV Máx 50%" }
                         ] 
                     },
+
                     { 
                         nombre: "Comercial Ranger XL/XLS (liberado)", 
                         destacado: true,
@@ -773,6 +774,7 @@ const bancos = {
                             { m: 36, c: 45.21, tna: "32,00%", cft: "41,69%", ltv: 75, info: "LTV Máx 75%" }
                         ]
                     },
+
                     { 
                         nombre: "Generales Canal Comercial (cautivo)", 
                         destacado: true,
@@ -871,6 +873,7 @@ const bancos = {
                             { m: 36, c: 33.21 }
                         ] 
                     },
+
                     { 
                         nombre: "General UVA Ranger", 
                         destacado: false,
@@ -1179,6 +1182,55 @@ const bancos = {
                             { m: 48, c: 39.01, tna: "35,9%", ltv: 100, g: 2 },
                         ] 
                     },
+
+
+                    { 
+                        nombre: "Semana 0km Amarok (NOVEDAD!)", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Vigencia: 19/10/2026 - 24/10/2026, Aplica para Amarok excepto Trendline 4x2 y 4x4, disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
+                        utilPara: "Amarok (excepto Trendline)",
+                        plazos: [
+                            { m: 18, c: 55.66, tna: "0%", ltv: 15500000, g: 2 },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Semana 0km Autos (NOVEDAD!)", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Vigencia: 19/10/2026 - 24/10/2026, Aplica para Tera (todas las versiones), Nivus Trendline AT, Nivus Comfortline 200 TSI AT, T-Cross Trendline MT/AT y Comfortline AT, Taos Higline y Highline Bitono, disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
+                        utilPara: "Tera, Nivus y T-Cross",
+                        plazos: [
+                            { m: 18, c: 55.66, tna: "0%", ltv: 13500000, g: 2 },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Semana 0km POLO (NOVEDAD!)", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Vigencia: 19/10/2026 - 24/10/2026, Aplica para Polo (Todas las versiones), disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
+                        utilPara: "Polo",
+                        plazos: [
+                            { m: 36, c: 27.78, tna: "0%",  ltv: 14000000, g: 17.12 },
+                            
+                        ] 
+                    },
+
+                    { 
+                        nombre: "LARGO PLAZO AUTOS $26MM (NOVEDAD!)", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Vigencia: 19/10/2026 - 24/10/2026, Aplica para Polo (Comfortline y Highline), Nivus (todas las versiones), Tera (todas las versiones), T-Cross Trendline MT/AT y Comfortline AT, disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
+                        utilPara: "Polo, Tera, Nivus y T-Cross",
+                        plazos: [
+                            { m: 36, c: 40.06, tna: "21,5%",  ltv: 26000000, g: 14.1 },
+                            { m: 48, c: 36.35, tna: "25,90%", ltv: 26000000, g: 14.1 },
+                        ] 
+                    },
+
+
 
                     { 
                         nombre: "Tasa 0% Tera, Nivus y T-Cross", 
