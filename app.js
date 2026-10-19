@@ -1199,7 +1199,7 @@ const bancos = {
                         nombre: "Semana 0km Autos (NOVEDAD!)", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Vigencia: 19/10/2026 - 24/10/2026, Aplica para Tera (todas las versiones), Nivus Trendline AT, Nivus Comfortline 200 TSI AT, T-Cross Trendline MT/AT y Comfortline AT, Taos Higline y Highline Bitono, disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
+                        descripcion: "Vigencia: 19/10/2026 - 24/10/2026, Aplica para Virtus (todas las versiones),Tera (todas las versiones), Nivus Trendline AT, Nivus Comfortline 200 TSI AT, T-Cross Trendline MT/AT y Comfortline AT, Taos Higline y Highline Bitono, disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
                         utilPara: "Tera, Nivus y T-Cross",
                         plazos: [
                             { m: 18, c: 55.66, tna: "0%", ltv: 13500000, g: 2 },
@@ -1227,6 +1227,7 @@ const bancos = {
                         plazos: [
                             { m: 36, c: 40.06, tna: "21,5%",  ltv: 26000000, g: 14.1 },
                             { m: 48, c: 36.35, tna: "25,90%", ltv: 26000000, g: 14.1 },
+                            { m: 60, c: 34.54, tna: "28,50%", ltv: 26000000, g: 14.1 },
                         ] 
                     },
 
