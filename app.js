@@ -16,144 +16,199 @@ const bancos = {
             general: {
                 nombre: "Santander General",
                 planes: [
+
                     { 
-                        nombre: "Especial Pickups UVA", 
+                        nombre: "Línea UVA con Quebranto 12%", 
                         destacado: true,
-                        tna: "12,90%", 
-                        cft: "16,78%", 
-                        ltv: 80, 
-                        gastos: 2, 
+                        ltv: 75,
+                        gastos: 12, 
                         seguro: "Cautivo", 
                         baseCalculo: 1000000, 
-                        descripcion: "Financiacion exclusiva para pickups (Ranger, Maverick, Amarok) Vigencia: a partir del 01/06/2024",
-                        utilPara: "Pickups",
-                        plazos: [{m:12, c:90517}, {m:18, c:62628}, {m:24, c:48719}, {m:36, c:34878}, {m:48, c:28026}, {m:60, c:23969}, {m:72, c:21309}] 
+                        descripcion: "Linea UVA con quebranto, aplica para todas las marcas (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares) Vigencia: a partir del 20/10/2026.",
+                        utilPara: "Todas las marcas",
+                        plazos: [
+                            { m: 12, c: 83334, tna: "0,00%",}, 
+                            { m: 18, c: 56171, tna: "1,00%",}, 
+                            { m: 24, c: 44125, tna: "4,00%",},
+                            { m: 36, c: 32673, tna: "7,50%",},
+                            { m: 48, c: 26460, tna: "9,00%",},
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Línea Fija con Quebranto 12%", 
+                        destacado: true,
+                        ltv: 80, 
+                        gastos: 12, 
+                        seguro: "Cautivo", 
+                        baseCalculo: 1000000, 
+                        descripcion: "Línea tradicional en pesos con tasa fija con quebranto, aplica para todas las marcas (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares). Vigencia: a partir del 20/10/2026",
+                        utilPara: "Todas las marcas",
+                        plazos: [
+                            { m: 12, c: 97379, tna: "21,90%",}, 
+                            { m: 18, c: 73573, tna: "28,00%",}, 
+                            { m: 24, c: 62200, tna: "31,50%",}, 
+                            { m: 36, c: 50991, tna: "34,50%",}, 
+                            { m: 48, c: 45799, tna: "35,90%",}, 
+                            { m: 60, c: 43173, tna: "36,90%",}
+                        ] 
                     },
 
                     { 
                         nombre: "Línea UVA",
                         destacado: true, 
-                        tna: "17,50%", 
-                        cft: "23,36%", 
-                        ltv: 80, 
+                        tna: "17,50%",  
+                        ltv: 75, 
                         gastos: 2, 
                         seguro: "Cautivo", 
                         baseCalculo: 1000000, 
-                        descripcion: "Aplica para toda las marcas, seguro cautivo (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares) Vigencia: a partir del 01/06/2024.",
-                        utilPara: "todas las marcas",
-                        plazos: [{m:12, c:93145}, {m:18, c:65250}, {m:24, c:51366}, {m:36, c:37608}, {m:48, c:30853}, {m:60, c:26898}] 
-                    },
-                    
-                    { 
-                        nombre: "Línea UVA con Quebranto", 
-                        destacado: true,
-                        ltv: 80, 
-                        seguro: "A DEFINIR", 
-                        baseCalculo: 1000000, 
-                        descripcion: "Linea UVA con quebranto, aplica para todas las marcas (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares) Vigencia: a partir del 01/06/2024.",
+                        descripcion: "Aplica para toda las marcas, seguro cautivo (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares) Vigencia: a partir del 20/10/2026.",
                         utilPara: "todas las marcas",
                         plazos: [
-                            { m: 12, c: 83334, tna: "0%", cft: "0%", g: 12, info: "TNA 0%" }, 
-                            { m: 18, c: 60947, tna: "9,90%", cft: "12,66%", g: 10, info: "TNA 9,9%" }, 
-                            { m: 24, c: 47030, tna: "9,90%", cft: "12,66%", g: 12, info: "TNA 9,9%" }
-                        ] 
-                    },
-                    { 
-                        nombre: "UVA Quebranto Pickups (TNA 0%)", 
-                        destacado: true,
-                        tna: "0,00%", 
-                        cft: "0,00%", 
-                        ltv: 80, 
-                        seguro: "Cautivo", 
-                        baseCalculo: 1000000, 
-                        descripcion: "Línea Pickups con tasa UVA (aplica para Ranger, Maverick, Amarok) Vigencia: a partir del 01/06/2024",
-                        utilPara: "Pickups",
-                        plazos: [{m:12, c:83334, g:9}, {m:18, c:55556, g:12}, {m:24, c:41667, g:15}] 
-                    },
-                    
-                    { 
-                        nombre: "UVA Quebranto Pickups (TNA 9,9%)", 
-                        destacado: false,
-                        tna: "9,90%", 
-                        cft: "12,66%", 
-                        ltv: 80, 
-                        seguro: "Cautivo", 
-                        baseCalculo: 1000000, 
-                        descripcion: "Línea Pickups con tasa UVA (aplica para Ranger, Maverick, Amarok) Vigencia: a partir del 01/06/2024",
-                        utilPara: "Pickups",
-                        plazos: [{m:12, c:88822, g:4}, {m:18, c:60947, g:5}, {m:24, c:47030, g:6}] 
-                    },
-
-                   
-
-                    { 
-                        nombre: "Santander dolares", 
-                        destacado: true, 
-                        ltv: 80, 
-                        seguro: "Cautivo", 
-                        moneda: "USD",
-                        baseCalculo: 10000, 
-                        descripcion: "linea en dolares para personas (fisicas/juridicas) que generen dolares Vigencia: a partir del 01/06/2024",
-                        utilPara: "Toda las marcas",
-                        plazos: [{m:24, c:465, tna: "8,90%", cft: "11,32%", g:2}, {m:36, c:329, tna:"9,50%", cft:"12,12%", g:2}, {m:48, c:263, tna:"9,90%", cft:"12,66%", g:2},{m:60, c:227, tna:"10,90%", cft:"14,02%", g:2},{m:72, c:204, tna:"11,50%", cft:"14,84", g:2},] 
-                    },
-                    { 
-                        nombre: "Línea Fija con Quebranto", 
-                        destacado: false,
-                        ltv: 80, 
-                        gastos: 12, 
-                        seguro: "Cautivo", 
-                        baseCalculo: 1000000, 
-                        descripcion: "Línea tradicional en pesos con tasa fija con quebranto, aplica para todas las marcas (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares). Vigencia: a partir del 01/06/2024",
-                        utilPara: "Todas las marcas",
-                        plazos: [
-                            { m: 12, c: 99568, tna: "28,50%", cft: "40,49%" }, 
-                            { m: 18, c: 75384, tna: "34,50%", cft: "50,73%" }, 
-                            { m: 24, c: 63663, tna: "37,50%", cft: "56,11%" }, 
-                            { m: 36, c: 53088, tna: "41,00%", cft: "62,60%" }, 
-                            { m: 48, c: 48026, tna: "42,00%", cft: "64,50%" }, 
-                            { m: 60, c: 45824, tna: "43,00%", cft: "66,42%" }
+                            {m:12, c:94505}, 
+                            {m:18, c:66630}, 
+                            {m:24, c:52745}, 
+                            {m:36, c:38965}, 
+                            {m:48, c:32177}, 
                         ] 
                     },
 
                     { 
                         nombre: "Tasa Fija 0km", 
-                        destacado: false,
+                        destacado: true,
                         tna: "42,90%", 
-                        cft: "66,23%", 
                         ltv: 80, 
                         gastos: 2, 
                         seguro: "A DEFINIR", 
                         baseCalculo: 1000000, 
-                        descripcion: "Línea tradicional en pesos con tasa fija, aplica para todas las marcas (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares). Vigencia: a partir del 01/06/2024",
+                        descripcion: "Línea tradicional en pesos con tasa fija, aplica para todas las marcas (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares). Vigencia: a partir del 20/10/2026",
                         utilPara: "Todas las marcas",
-                        plazos: [{m:12, c:108269}, {m:18, c:80643}, {m:24, c:67195}, {m:36, c:54445}, {m:48, c:48718}, {m:60, c:45742}] 
+                        plazos: [
+                            {m:12, c:111449}, 
+                            {m:18, c:83796}, 
+                            {m:24, c:70272}, 
+                            {m:36, c:58324}, 
+                            {m:48, c:51386}, 
+                            {m:60, c:48204},
+                        ] 
                     },
+
+
+                    { 
+                        nombre: "Especial Pickups UVA", 
+                        destacado: true,
+                        tna: "12,90%",  
+                        ltv: 75, 
+                        gastos: 2, 
+                        seguro: "Cautivo", 
+                        baseCalculo: 1000000, 
+                        descripcion: "Financiacion exclusiva para pickups (Ranger, Maverick, Amarok) Vigencia: a partir del 20/10/2026",
+                        utilPara: "Pickups",
+                        plazos: [
+                            {m:12, c:91524}, 
+                            {m:18, c:63658}, 
+                            {m:24, c:49752}, 
+                            {m:36, c:35903}, 
+                            {m:48, c:29035}, 
+                            {m:60, c:24959}, 
+                        ] 
+                    },
+                    
+                    { 
+                        nombre: "Línea FIJA MiPyme 0km", 
+                        destacado: false,
+                        ltv: 80, 
+                        gastos: 2, 
+                        seguro: "Cautivo", 
+                        baseCalculo: 1000000, 
+                        descripcion: "Línea tradicional en pesos con tasa fija para Pymes, aplica para todas las marcas (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares). Vigencia: a partir del 20/10/2026",
+                        utilPara: "Todas las marcas",
+                        plazos: [
+                            { m: 12, c: 105079, tna: "33,50%",}, 
+                            { m: 18, c: 77297, tna: "33,50%",}, 
+                            { m: 24, c: 64293, tna: "34,50%",}, 
+                            { m: 36, c: 50991, tna: "34,50%",}, 
+                            { m: 48, c: 45096, tna: "35,00%",}, 
+                            { m: 60, c: 41615, tna: "35,00%",}
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa UVAs utilitarios", 
+                        destacado: false,
+                        tna: "14,90%", 
+                        ltv: 75, 
+                        gastos: 2, 
+                        seguro: "A DEFINIR", 
+                        baseCalculo: 1000000, 
+                        descripcion: "Financiación UVA exclusiva para unidades vehiculos utilirarios. Vigencia: a partir del 20/10/2026",
+                        utilPara: "Utilitarios",
+                        plazos: [
+                            {m:12, c:92819}, 
+                            {m:18, c:64945}, 
+                            {m:24, c:51047}, 
+                            {m:36, c:37224}, 
+                            {m:48, c:30388}, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa FIJA con FEE 4%", 
+                        destacado: true,
+                        tna: "49,90%", 
+                        ltv: 80, 
+                        gastos: 2, 
+                        seguro: "A DEFINIR", 
+                        baseCalculo: 1000000, 
+                        descripcion: "Financiación Fija para todas las marcas Vigencia: a partir del 20/10/2026",
+                        utilPara: "Todos los vehiculos",
+                        plazos: [
+                            {m:12, c:116266}, 
+                            {m:18, c:88746}, 
+                            {m:24, c:75387}, 
+                            {m:36, c:62785}, 
+                            {m:48, c:57168},
+                            {m:60, c:54267}, 
+                        ] 
+                    },
+
+                    
+
                     { 
                         nombre: "Tasa Fija Eléctricos", 
                         destacado: false,
-                        tna: "41,90%", 
-                        cft: "64,31%", 
+                        tna: "37,90%", 
                         ltv: 80, 
                         gastos: 2, 
                         seguro: "A DEFINIR", 
                         baseCalculo: 1000000, 
-                        descripcion: "Financiación UVA exclusiva para unidades de movilidad eléctrica. Vigencia: a partir del 01/06/2024",
+                        descripcion: "Financiación Fija para unidades de movilidad eléctrica. Vigencia: a partir del 20/10/2026",
                         utilPara: "100% Electricos",
-                        plazos: [{m:12, c:107654}, {m:18, c:80008}, {m:24, c:66534}, {m:36, c:53729}, {m:48, c:47949}, {m:60, c:44926}] 
+                        plazos: [
+                            {m:12, c:108046}, 
+                            {m:18, c:80318}, 
+                            {m:24, c:66692}, 
+                            {m:36, c:53525}, 
+                            {m:48, c:47375}, 
+                        ] 
                     },
                     { 
                         nombre: "Tasa UVA Eléctricos", 
                         destacado: false,
-                        tna: "21,00%", 
-                        cft: "28,59%", 
-                        ltv: 80, 
-                        gastos: 6, 
+                        tna: "14,90%", 
+                        ltv: 75, 
+                        gastos: 2, 
                         seguro: "A DEFINIR", 
                         baseCalculo: 1000000, 
-                        descripcion: "Financiación UVA exclusiva para unidades de movilidad eléctrica. Vigencia: a partir del 01/06/2024",
+                        descripcion: "Financiación UVA exclusiva para unidades de movilidad eléctrica. Vigencia: a partir del 20/10/2026",
                         utilPara: "100% Electricos",
-                        plazos: [{m:12, c:95168}, {m:18, c:67280}, {m:24, c:53427}, {m:36, c:39753}, {m:48, c:33093}, {m:60, c:29235}] 
+                        plazos: [
+                            {m:12, c:92819}, 
+                            {m:18, c:64945}, 
+                            {m:24, c:51047}, 
+                            {m:36, c:37224}, 
+                            {m:48, c:30388},
+                        ] 
                     }
                 ]
             },
