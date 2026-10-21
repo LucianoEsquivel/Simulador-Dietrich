@@ -1329,7 +1329,7 @@ const bancos = {
                         nombre: "Amarok financia mas", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para todas las Amarok excepto Trendline, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto de persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
+                        descripcion: "Aplica para todas las Amarok excepto Trendline, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica y juridica, para venta directa tanto para persona fisica como juridica, sin restriccion de unidades para las versiones Amarok CL 4x2 manual, Cl 4x2 AT y Highline 4x2 AT, las demas versiones de Amarok solo se pueden utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
                         utilPara: "Amarok (excepto Trendline)",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",      g: 15.915, ltv: 36500000 },
