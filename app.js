@@ -1697,49 +1697,102 @@ const bancos = {
             prendarios_byd: {
                 nombre: "BBVA ByD",
                 planes: [
+
                     { 
-                        nombre: "Tasa Fija 0km ByD",
-                        destacado: true, 
-                        tna: "34,90%", cft: "51,44%", ltv: 100, gastos: 2, seguro: "Cautivo", baseCalculo: 100000, 
-                        descripcion: "Crédito prendario BBVA cuota fija, vigencia: 10/08/2026",
-                        utilPara: "ByD",
-                        plazos: [{ m: 12, c: 10339 }, { m: 18, c: 7563 }, { m: 24, c: 6199 }, { m: 36, c: 4883 }, { m: 48, c: 4345 }, { m: 60, c: 4024 }] 
-                    },
-                    { 
-                        nombre: "Prendario UVA 0km byD", 
+                        nombre: "BYD Exlusivo Tradicional 32,90%", 
                         destacado: true,
-                        tna: "UVA + 11,90%", cft: "15,39%", ltv: 100, gastos: 2, valorUVA: 1706.43, baseCalculo: 100000, esUVA: true, 
-                        descripcion: "Credito UVA de BBVA para ByD, vigencia: 10/08/2026",
+                        tna: "32,90%", cft: "47,94%%", gastos: 2, ltv: 100, baseCalculo: 100000, 
+                        descripcion: "Credito prendario de BBVA para ByD, vigencia: 22/10/2026",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 8995 }, { m: 18, c: 6206 }, { m: 24, c: 4815 }, { m: 36, c: 3429 }, { m: 48, c: 2742 }] 
+                        plazos: [
+                            { m: 12, c: 10219.22,}, 
+                            { m: 18, c: 7440.06,}, 
+                            { m: 24, c: 6072.38,}, 
+                            { m: 36, c: 4747.38,},
+                            { m: 48, c: 4125.66,},
+                            { m: 60, c: 3783.00,}, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "BYD Exlusivo UVA 11,90%", 
+                        destacado: true,
+                        tna: "11,90%", cft: "15,39%%", gastos: 2, ltv: 100, baseCalculo: 100000, 
+                        descripcion: "Credito prendario de BBVA para ByD, vigencia: 22/10/2026",
+                        utilPara: "ByD",
+                        plazos: [
+                            { m: 12, c: 8995.04,}, 
+                            { m: 18, c: 6206.54,}, 
+                            { m: 24, c: 4815.24,}, 
+                            { m: 36, c: 3429.82,},
+                            { m: 48, c: 2742.96,},
+                            { m: 60, c: 2335.47,}, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa 0%, TRADICIONAL c/quebranto",
+                        destacado: true, 
+                        tna: "0%", cft: "0%", ltv: 100, seguro: "Cautivo", baseCalculo: 100000, 
+                        descripcion: "Crédito prendario BBVA cuota fija, vigencia: 21/10/2026",
+                        utilPara: "ByD",
+                        plazos: [
+                            { m: 12, c: 8333.33, g: 20 }, 
+                            { m: 18, c: 5555.56, g: 25 }, 
+                            { m: 24, c: 4166.67, g: 32 }, 
+                            { m: 36, c: 2777.78, g: 41 }, 
+                            { m: 48, c: 2083.33, g: 49 }, 
+                        ] 
                     },
 
                     { 
                         nombre: "Tasa 0% + UVA c/quebranto", 
                         destacado: true,
-                        tna: "UVA + 0%", cft: "0%", ltv: 100, valorUVA: 1706.43, baseCalculo: 100000, esUVA: true, 
-                        descripcion: "Credito prendario de BBVA para ByD, vigencia: 10/08/2026",
+                        tna: "UVA + 0%", cft: "0%", ltv: 100, baseCalculo: 100000, 
+                        descripcion: "Credito prendario de BBVA para ByD, vigencia: 21/10/2026",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 8333, g: 10 }, { m: 18, c: 5555, g: 14 }, { m: 24, c: 4166, g: 18 }, { m: 36, c: 2777, g: 25 },{ m: 48, c: 2083, g: 30 }] 
+                        plazos: [
+                            { m: 12, c: 8333.33, g: 11 }, 
+                            { m: 18, c: 5555.56, g: 14 }, 
+                            { m: 24, c: 4166.67, g: 16 }, 
+                            { m: 36, c: 2777.78, g: 21 },
+                            { m: 48, c: 2083.33, g: 26 } 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa 9,90% TRADICIONALc/quebranto", 
+                        destacado: true,
+                        tna: "UVA + 9,90%", cft: "12,66%", ltv: 100, valorUVA: 1706.43, baseCalculo: 100000, esUVA: true, 
+                        descripcion: "Credito prendario de BBVA para ByD, vigencia: 21/10/2026",
+                        utilPara: "ByD",
+                        plazos: [
+                            { m: 12, c: 8882.20, g: 16 }, 
+                            { m: 18, c: 6094.67, g: 20 }, 
+                            { m: 24, c: 4702.95, g: 24 }, 
+                            { m: 36, c: 3315.32, g: 32 }, 
+                            { m: 48, c: 2625.56, g: 39 }
+                        ] 
                     },
 
                     { 
                         nombre: "Tasa 9,90% + UVA c/quebranto", 
                         destacado: true,
-                        tna: "UVA + 9,90%", cft: "12,66%", ltv: 100, valorUVA: 1706.43, baseCalculo: 100000, esUVA: true, 
-                        descripcion: "Credito prendario de BBVA para ByD, vigencia: 10/08/2026",
+                        tna: "UVA + 9,90%", cft: "12,66%", ltv: 100, baseCalculo: 100000,
+                        descripcion: "Credito prendario de BBVA para ByD, vigencia: 21/10/2026",
                         utilPara: "ByD",
-                        plazos: [{ m: 12, c: 8882, g: 4 }, { m: 18, c: 6094, g: 7 }, { m: 24, c: 4702, g: 10 }, { m: 36, c: 3315, g: 12 }, { m: 48, c: 2712, g: 15}] 
+                        plazos: [
+                            { m: 12, c: 8882.20, g: 5}, 
+                            { m: 18, c: 6094.67, g: 6}, 
+                            { m: 24, c: 4702.95, g: 7}, 
+                            { m: 36, c: 3315.32, g: 8}, 
+                            { m: 48, c: 2625.56, g: 9}
+                        ] 
                     },
 
-                    { 
-                        nombre: "Tasa 0% + tradicional c/quebranto",
-                        destacado: true, 
-                        tna: "0%", cft: "0%", ltv: 100, seguro: "Cautivo", baseCalculo: 100000, 
-                        descripcion: "Crédito prendario BBVA cuota fija, vigencia: 10/08/2026",
-                        utilPara: "ByD",
-                        plazos: [{ m: 12, c: 8333, g: 21 }, { m: 18, c: 5555, g: 27 }, { m: 24, c: 4166, g: 33 }, { m: 36, c: 2777, g: 44 }, { m: 48, c: 2083, g: 53 },] 
-                    },
+                    
+
+                    
                 ]
             },
             
