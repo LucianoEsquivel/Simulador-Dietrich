@@ -1694,6 +1694,138 @@ const bancos = {
     BBVA: {
         nombre: "BBVA",
         categorias: {
+
+            prendarios_ford: {
+                nombre: "BBVA Ford",
+                planes: [
+
+                    { 
+                        nombre: "Ford Exlusivo Tradicional 32,90% FEE 4%", 
+                        destacado: true,
+                        tna: "41,90%", cft: "64,31%", gastos: 2, ltv: 70, baseCalculo: 100000, 
+                        descripcion: "Credito prendario de BBVA para Ford, vigencia: 22/10/2026",
+                        utilPara: "Ford",
+                        plazos: [
+                            { m: 12, c: 10765.42,}, 
+                            { m: 18, c: 8000.83,}, 
+                            { m: 24, c: 6653.42,}, 
+                            { m: 36, c: 5372.91,},
+                            { m: 48, c: 4794.91,},
+                            { m: 60, c: 4492.58,}, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Ford Exlusivo UVA 14,90% FEE 4%", 
+                        destacado: true,
+                        tna: "14,90%", cft: "19,60%", gastos: 2, ltv: 70, baseCalculo: 100000, 
+                        descripcion: "Credito prendario UVAs de BBVA para Ford, vigencia: 22/10/2026",
+                        utilPara: "Ford",
+                        plazos: [
+                            { m: 12, c: 9165.55,}, 
+                            { m: 18, c: 6376.20,}, 
+                            { m: 24, c: 4986.14,}, 
+                            { m: 36, c: 3605.25,},
+                            { m: 48, c: 2923.89,}, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa Tradicional 38,90% FEE 4% (Electricos e hibridos)", 
+                        destacado: true,
+                        tna: "38,90%", cft: "58,68%", gastos: 2, ltv: 70, baseCalculo: 100000, 
+                        descripcion: "Credito prendario de BBVA para Ford, vigencia: 22/10/2026",
+                        utilPara: "Ford",
+                        plazos: [
+                            { m: 12, c: 10581.94,}, 
+                            { m: 18, c: 7811.82,}, 
+                            { m: 24, c: 6457.01,}, 
+                            { m: 36, c: 5160.58,},
+                            { m: 48, c: 4567.19,},
+                            { m: 60, c: 4250.91,}, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa UVA 13.90% FEE 4% (Electricos e hibridos)", 
+                        destacado: true,
+                        tna: "13,90%", cft: "18,18%", gastos: 2, ltv: 70, baseCalculo: 100000, 
+                        descripcion: "Credito prendario de BBVA para Ford, vigencia: 22/10/2026",
+                        utilPara: "Ford",
+                        plazos: [
+                            { m: 12, c: 9108.55,}, 
+                            { m: 18, c: 6319.40,}, 
+                            { m: 24, c: 4928.84,}, 
+                            { m: 36, c: 3546.29,},
+                            { m: 48, c: 2862.94,}, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa tradicional 37,90%", 
+                        destacado: false,
+                        tna: "37,90%", cft: "56,84%", gastos: 2, ltv: 70, baseCalculo: 100000, 
+                        descripcion: "Credito prendario de BBVA para Ford, vigencia: 22/10/2026",
+                        utilPara: "Ford",
+                        plazos: [
+                            { m: 12, c: 10521.09,}, 
+                            { m: 18, c: 7749.28,}, 
+                            { m: 24, c: 6392.15,}, 
+                            { m: 36, c: 5090.64,},
+                            { m: 48, c: 4492.29,},
+                            { m: 60, c: 4171.46,},  
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa UVA 13,90%", 
+                        destacado: false,
+                        tna: "13,90%", cft: "18,18%", gastos: 2, ltv: 70, baseCalculo: 100000, 
+                        descripcion: "Credito prendario de BBVA para Ford, vigencia: 22/10/2026",
+                        utilPara: "Ford",
+                        plazos: [
+                            { m: 12, c: 9108.55,}, 
+                            { m: 18, c: 6319.40,}, 
+                            { m: 24, c: 4928.84,}, 
+                            { m: 36, c: 3546.29,},
+                            { m: 48, c: 2862.94,},
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa tradicional 34,90% (Electricos e hibridos)", 
+                        destacado: false,
+                        tna: "34,90%", cft: "51,44%", gastos: 2, ltv: 70, baseCalculo: 100000, 
+                        descripcion: "Credito prendario de BBVA para Ford, vigencia: 22/10/2026",
+                        utilPara: "Ford",
+                        plazos: [
+                            { m: 12, c: 10339.49,}, 
+                            { m: 18, c: 7463.03,}, 
+                            { m: 24, c: 6199.37,}, 
+                            { m: 36, c: 4883.38,},
+                            { m: 48, c: 4270.72,},
+                            { m: 60, c: 3936.58,},  
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa UVA 12,90% (Electricos e hibridos)", 
+                        destacado: false,
+                        tna: "12,90%", cft: "16.78%", gastos: 2, ltv: 70, baseCalculo: 100000, 
+                        descripcion: "Credito prendario de BBVA para Ford, vigencia: 22/10/2026",
+                        utilPara: "Ford",
+                        plazos: [
+                            { m: 12, c: 9051.71,}, 
+                            { m: 18, c: 6262.85,}, 
+                            { m: 24, c: 4871.88,}, 
+                            { m: 36, c: 3487.81,},
+                            { m: 48, c: 2802.62,},
+                        ] 
+                    },
+
+
+                ]
+            },
             prendarios_byd: {
                 nombre: "BBVA ByD",
                 planes: [
@@ -1873,7 +2005,7 @@ let historialNavegacion = [];
 const marcasConfig = {
     ford: { 
         nombre: "Ford", 
-        bancos: ["santander-general", "icbc-minorista", "icbc-comercial", "galicia-prendarios", "supervielle-prendarios"] 
+        bancos: ["santander-general", "icbc-minorista", "icbc-comercial", "galicia-prendarios", "supervielle-prendarios", "BBVA-prendarios_ford"] 
     },
     vw: { 
         nombre: "Volkswagen", 
