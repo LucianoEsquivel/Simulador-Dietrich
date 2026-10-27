@@ -1228,7 +1228,7 @@ const bancos = {
 
                     { 
                         nombre: "Rentadoras Autos (Solo canal corporativo)", 
-                        destacado: true,
+                        destacado: false,
                         seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Canal Corporativo, Vigencia: 08/10 - 31/10, Aplica para todos los modelos excepto Amarok, Saveiro, Polo Track, Polo Robust y Nivus Sense Disponible para venta directa, tanto persona fisica, juridica, solo se puede utilizar financiando un minumo de 3 unidades y haciendo uso de la misma campaña, seguro liberado (Completar DDJJ liberacion de seguro)",
                         utilPara: "Todos los vehiculos de Volkswagen excepto Amarok, Saveiro, Polo y Nivus",
@@ -1241,7 +1241,7 @@ const bancos = {
 
                     { 
                         nombre: "Rentadoras Amarok (Solo canal corporativo)", 
-                        destacado: true,
+                        destacado: false,
                         seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Canal Corporativo, Vigencia: 08/10 - 31/10, Aplica para todas las versiones de Amarok, excepto Trendline, Disponible para venta directa, tanto persona fisica, juridica, solo se puede utilizar financiando un minumo de 3 unidades y haciendo uso de la misma campaña, seguro liberado (Completar DDJJ liberacion de seguro)",
                         utilPara: "Amarok, excepto Trendline",
@@ -1254,7 +1254,7 @@ const bancos = {
 
                     { 
                         nombre: "Leasing", 
-                        destacado: true,
+                        destacado: false,
                         gastos: 2, seguro: "CAUTIVO", baseCalculo: 1000, 
                         descripcion: "Requiere un anticipo minimo del 5%, Destinos aceptados: Uso comercial estándar por parte de personas jurídicas. Destinos NO aceptados: Transporte de pasajeros, turistas y/o escolares; traslado de pacientes, ambulancias o autos funerarios. Cargas peligrosas: Autorizado sujeto a cupos.",
                         utilPara: "Todos los vehiculos de Volkswagen",
@@ -1265,15 +1265,14 @@ const bancos = {
                         ] 
                     },
 
-
                     { 
-                        nombre: "Semana 0km Amarok (NOVEDAD!)", 
+                        nombre: "Nueva semana Tera, Nivus y T-Cross (NOVEDAD!)", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Vigencia: 19/10/2026 - 24/10/2026, Aplica para Amarok excepto Trendline 4x2 y 4x4, disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
-                        utilPara: "Amarok (excepto Trendline)",
+                        descripcion: "Vigencia: 28/10/2026 - 29/10/2026 o hasta agotar cupos, Aplica para, Tera (todas las versiones), Nivus Trendline y Comfortline 200 TSI AT, T-Cross Trendline AT,disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
+                        utilPara: "Tera, Nivus y T-Cross",
                         plazos: [
-                            { m: 18, c: 55.66, tna: "0%", ltv: 15500000, g: 2 },
+                            { m: 36, c: 27.78, tna: "0%", ltv: 12000000, g: 16.53 },
                         ] 
                     },
 
@@ -1281,7 +1280,7 @@ const bancos = {
                         nombre: "Semana 0km Autos (NOVEDAD!)", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Vigencia: 19/10/2026 - 24/10/2026, Aplica para Virtus (todas las versiones),Tera (todas las versiones), Nivus Trendline AT, Nivus Comfortline 200 TSI AT, T-Cross Trendline MT/AT y Comfortline AT, Taos Higline y Highline Bitono, disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
+                        descripcion: "Vigencia: 28/10/2026 - 29/10/2026 o hasta agotar cupos, Aplica para Tera (todas las versiones), Nivus Trendline AT, Nivus Comfortline 200 TSI AT, T-Cross Trendline MT/AT y Comfortline AT, Taos Highline y Highline Bitono, Virtus (todas las veriones) disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
                         utilPara: "Tera, Nivus y T-Cross",
                         plazos: [
                             { m: 18, c: 55.66, tna: "0%", ltv: 13500000, g: 2 },
@@ -1292,28 +1291,36 @@ const bancos = {
                         nombre: "Semana 0km POLO (NOVEDAD!)", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Vigencia: 19/10/2026 - 24/10/2026, Aplica para Polo (Todas las versiones), disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
+                        descripcion: "Vigencia: 28/10/2026 - 29/10/2026 o hasta agotar cupos, Aplica para Polo (Todas las versiones), disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
                         utilPara: "Polo",
                         plazos: [
-                            { m: 36, c: 27.78, tna: "0%",  ltv: 14000000, g: 17.12 },
+                            { m: 36, c: 27.78, tna: "0%",  ltv: 14000000, g: 17.2 },
                             
                         ] 
                     },
 
+
                     { 
-                        nombre: "LARGO PLAZO AUTOS $26MM (NOVEDAD!)", 
+                        nombre: "Semana 0km Amarok $26MM (NOVEDAD!)", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Vigencia: 19/10/2026 - 24/10/2026, Aplica para Polo (Comfortline y Highline), Nivus (todas las versiones), Tera (todas las versiones), T-Cross Trendline MT/AT y Comfortline AT, disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
-                        utilPara: "Polo, Tera, Nivus y T-Cross",
+                        descripcion: "Vigencia: 28/10/2026 - 29/10/2026 o hasta agotar cupos, Aplica para Amarok excepto Trendline 4x4, disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
+                        utilPara: "Amarok (excepto Trendline 4x4)",
                         plazos: [
-                            { m: 36, c: 40.06, tna: "21,5%",  ltv: 26000000, g: 14.1 },
-                            { m: 48, c: 36.35, tna: "25,90%", ltv: 26000000, g: 14.1 },
-                            { m: 60, c: 34.54, tna: "28,50%", ltv: 26000000, g: 14.1 },
+                            { m: 18, c: 55.66, tna: "0%", ltv: 26500000, g: 16.52 },
                         ] 
                     },
 
-
+                     { 
+                        nombre: "Semana 0km Amarok $20MM (NOVEDAD!)", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Vigencia: 28/10/2026 - 29/10/2026 o hasta agotar cupos, Aplica para Amarok excepto Trendline 4x4, disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
+                        utilPara: "Amarok (excepto Trendline 4x4)",
+                        plazos: [
+                            { m: 18, c: 55.66, tna: "0%", ltv: 20000000, g: 9.9 },
+                        ] 
+                    },
 
                     { 
                         nombre: "Tasa 0% Tera, Nivus y T-Cross", 
