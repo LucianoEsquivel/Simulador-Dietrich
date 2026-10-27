@@ -1225,6 +1225,33 @@ const bancos = {
                 planes: [
 
 
+
+                    { 
+                        nombre: "Rentadoras Autos (Solo canal corporativo)", 
+                        destacado: true,
+                        seguro: "LIBERADO", baseCalculo: 1000, 
+                        descripcion: "Canal Corporativo, Vigencia: 08/10 - 31/10, Aplica para todos los modelos excepto Amarok, Saveiro, Polo Track, Polo Robust y Nivus Sense Disponible para venta directa, tanto persona fisica, juridica, solo se puede utilizar financiando un minumo de 3 unidades y haciendo uso de la misma campaña, seguro liberado (Completar DDJJ liberacion de seguro)",
+                        utilPara: "Todos los vehiculos de Volkswagen excepto Amarok, Saveiro, Polo y Nivus",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0,00%",  ltv: 26000000, g: 16.7 },
+                            { m: 18, c: 63.82, tna: "15,00%", ltv: 26000000, g: 15.5 },
+                            { m: 24, c: 53.96, tna: "21,90%", ltv: 26000000, g: 15.5 },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Rentadoras Amarok (Solo canal corporativo)", 
+                        destacado: true,
+                        seguro: "LIBERADO", baseCalculo: 1000, 
+                        descripcion: "Canal Corporativo, Vigencia: 08/10 - 31/10, Aplica para todas las versiones de Amarok, excepto Trendline, Disponible para venta directa, tanto persona fisica, juridica, solo se puede utilizar financiando un minumo de 3 unidades y haciendo uso de la misma campaña, seguro liberado (Completar DDJJ liberacion de seguro)",
+                        utilPara: "Amarok, excepto Trendline",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0,00%",  ltv: 32000000, g: 16.5 },
+                            { m: 18, c: 63.53, tna: "14,50%", ltv: 32000000, g: 15.5 },
+                            { m: 24, c: 53.72, tna: "21,50%", ltv: 32000000, g: 15.6 },
+                        ] 
+                    },
+
                     { 
                         nombre: "Leasing", 
                         destacado: true,
