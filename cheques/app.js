@@ -1,5 +1,5 @@
 // --- CONFIGURACIÓN DE TASA Y CONTACTOS ---
-const TASA_ANUAL = 0.35; 
+const TASA_ANUAL = 0.37; 
 
 // ¡IMPORTANTE! Reemplaza este número por el tuyo real (Ej: 5491100000000)
 const NUMERO_LUCIANO = "5492804006499"; 
