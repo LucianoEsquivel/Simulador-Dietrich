@@ -1224,34 +1224,147 @@ const bancos = {
                 nombre: "Volkswagen",
                 planes: [
 
-
-
                     { 
-                        nombre: "Rentadoras Autos (Solo canal corporativo)", 
-                        destacado: false,
-                        seguro: "LIBERADO", baseCalculo: 1000, 
-                        descripcion: "Canal Corporativo, Vigencia: 08/10 - 31/10, Aplica para todos los modelos excepto Amarok, Saveiro, Polo Track, Polo Robust y Nivus Sense Disponible para venta directa, tanto persona fisica, juridica, solo se puede utilizar financiando un minumo de 3 unidades y haciendo uso de la misma campaña, seguro liberado (Completar DDJJ liberacion de seguro)",
-                        utilPara: "Todos los vehiculos de Volkswagen excepto Amarok, Saveiro, Polo y Nivus",
+                        nombre: "Amarok financia mas", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para todas las Amarok excepto Trendline, vigencia: 02/11/2026 - 30/11/2026, disponible para persona fisica y juridica, para venta directa tanto para persona fisica como juridica, sin restriccion de unidades para las versiones Amarok CL 4x2 manual, Cl 4x2 AT y Highline 4x2 AT, las demas versiones de Amarok solo se pueden utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
+                        utilPara: "Amarok (excepto Trendline)",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0,00%",  ltv: 26000000, g: 16.7 },
-                            { m: 18, c: 63.82, tna: "15,00%", ltv: 26000000, g: 15.5 },
-                            { m: 24, c: 53.96, tna: "21,90%", ltv: 26000000, g: 15.5 },
+                            { m: 12, c: 83.33, tna: "0%",  g: 16, ltv: 36500000 },
+                            { m: 18, c: 55.56, tna: "0%",  g: 16.5,   ltv: 24500000 },
+                            { m: 24, c: 41.67, tna: "0%",  g: 15.3,   ltv: 16500000 },
                         ] 
                     },
 
                     { 
-                        nombre: "Rentadoras Amarok (Solo canal corporativo)", 
-                        destacado: false,
-                        seguro: "LIBERADO", baseCalculo: 1000, 
-                        descripcion: "Canal Corporativo, Vigencia: 08/10 - 31/10, Aplica para todas las versiones de Amarok, excepto Trendline, Disponible para venta directa, tanto persona fisica, juridica, solo se puede utilizar financiando un minumo de 3 unidades y haciendo uso de la misma campaña, seguro liberado (Completar DDJJ liberacion de seguro)",
-                        utilPara: "Amarok, excepto Trendline",
+                        nombre: "Amarok sin quebranto", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para todas las Amarok excepto Trendline, vigencia: 02/11/2026 - 30/11/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto de persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
+                        utilPara: "Amarok (excepto Trendline)",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0,00%",  ltv: 32000000, g: 16.5 },
-                            { m: 18, c: 63.53, tna: "14,50%", ltv: 32000000, g: 15.5 },
-                            { m: 24, c: 53.72, tna: "21,50%", ltv: 32000000, g: 15.6 },
+                            { m: 12, c: 83.33, tna: "0,0%",    ltv: 18500000, g: 2 },
+                            { m: 12, c: 94.53, tna: "19,9%",   ltv: 28000000, g: 2 },
                         ] 
                     },
-
+                    { 
+                        nombre: "Amarok largo plazo 40 millones", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para Amarok Highline AT, Amarok V6 (Todas las versiones), vigencia 02/11/2026 - 30/11/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto de persona fisica, como de juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
+                        utilPara: "Amarok Highline AT y Amarok V6",
+                        plazos: [
+                            { m: 36, c: 43.50, tna: "26,9%",   g: 14.1, ltv: 40000000 },
+                            { m: 48, c: 39.54, tna: "30,5%",   g: 14.1, ltv: 40000000 },
+                            { m: 60, c: 37.53, tna: "32,5%",   g: 14.1, ltv: 40000000 },
+                        ] 
+                    },
+                    { 
+                        nombre: "Amarok Trendline", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para Amarok (Solo versiones Trendline), vigencia: 02/11/2026 - 30/11/2026, disponible para persona fisica, juridica, para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
+                        utilPara: "Amarok Trendline",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0,0%",     ltv: 26500000, g: 14.1 },
+                            { m: 24, c: 48.15, tna: "11,90%",   ltv: 20000000, g: 15.31 },
+                        ] 
+                    },
+                    { 
+                        nombre: "Especial Autos", 
+                        destacado: false,
+                        tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para todos los modelos excepto Amarok, vigencia: 02/11/2026 - 30/11/2026, disponible para persona fisica, para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
+                        utilPara: "Todos los modelos excepto Amarok",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0%",      g: 14.705, ltv: 23000000 },
+                            { m: 18, c: 55.56, tna: "0%",      g: 16.9,  ltv: 15500000 },
+                            { m: 24, c: 47.93, tna: "11,50%",  g: 15.52,  ltv: 17000000 }
+                        ] 
+                    },
+                    { 
+                        nombre: "Autos sin quebranto", 
+                        destacado: true,
+                        tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para los modelos Virtus Sense, Polo Comfortline y Highline, Tera Comfort, Highline y Outfit, Nivus (Todas las versiones), T-Cross Comfortline, Highline y Extreme, Taos Highline y Taos Highline bitono, Tiguan Life, vigencia: 02/11/2026 - 30/11/2026, disponible para persona fisica, juridica para el canala de venta por concesionario, para venta directa tanto de persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
+                        utilPara: "Tera, T-Cross, Polo, Taos, Nivus, Tiguan, Virtus",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0,00%",   g: 2,   ltv: 15000000 },
+                            { m: 12, c: 94.53, tna: "19,90%",   g: 2,   ltv: 26000000 },
+                        ] 
+                    },
+                    { 
+                        nombre: "Autos financia mas", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para Virtus Sense, Polo Comfortline y Highline, Tera Comfort, Highline y Outfit, Nivus (Todas las versiones), T-Cross COmfortline, Highline y Extreme y Tiguan Life, vigencia: 02/11/2026 - 30/11/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
+                        utilPara: "Tera, T-Cross, Polo, Taos, Nivus, Tiguan, Virtus",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0%",    g: 12.9, ltv: 28000000 },
+                            { m: 18, c: 55.56, tna: "0%",    g: 15.31, ltv: 20000000 },
+                            { m: 24, c: 41.67, tna: "0%",    g: 17.2, ltv: 17000000 }
+                        ] 
+                    },
+                    { 
+                        nombre: "Tasa 0% Tera, Nivus y T-Cross", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Modelos: (12, 18 y 24 meses) Tera Confort, Nivus Comfortlien, Nivus Trendline, T-Cross Trendline, Modelos (36 meses) Tera (Todas las versioens), Nivus Comfortline, Nivus Trendlune, T-Cross Trendline, Vigencia 02/11/2026 - 30/11/2026, disponible para persona juridica y fisica, para venta directa, tanto de persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciedno uso de la misma campaña",
+                        utilPara: "Tera Comfort, Nivus Comfortline, Trenline y T-Cross Trendline",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0%", ltv: 23000000, g: 8.5 },
+                            { m: 18, c: 55.56, tna: "0%", ltv: 23000000, g: 16 },
+                            { m: 24, c: 41.67, tna: "0%", ltv: 17500000, g: 17.1 },
+                            { m: 36, c: 27.78, tna: "0%", ltv: 12000000, g: 16.5 },
+                        ] 
+                    },
+                    { 
+                        nombre: "Tera, Nivus y T-Cross", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Vigencia: 02/11/2026 - 30/11/2026, Aplica para: Tera Comfort, Nivus Comfortline, Nivus Trendline, T-Cross Trendline, disponible para persona fisica y juridica, para venta directa, tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña, seguro cautivo (VW Broker)",
+                        utilPara: "Tera, Nivus y T-Cross",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0%", ltv: 18000000, g: 2 },
+                        ] 
+                    },
+                    { 
+                        nombre: "Autos largo plazo 20 millones", 
+                        destacado: false,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para Polo Comfortline, Highline, Tera Comfortline, Highline y Outfit, Nivus (Todas las versiones) y Virtus Sense, vigencia desde el 02/11/2026 - 30/11/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
+                        utilPara: "Polo, Tera, Nivus y Virtus",
+                        plazos: [
+                            { m: 36, c: 37.91, tna: "18,00%",    g: 14.1, ltv: 20000000 },
+                            { m: 48, c: 34.41, tna: "23,00%",    g: 14.1, ltv: 20000000 },
+                            { m: 60, c: 32.73, tna: "26,00%",    g: 14.1, ltv: 20000000 },
+                        ] 
+                    },  
+                    { 
+                        nombre: "Autos largo plazo 18.5 millones Polo Track/Robust", 
+                        destacado: false,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para Polo Track y Robust, vigencia: 02/11/2026 - 30/11/2026, disponible para persona fisica, juridica, para el canal de venta por cocnesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
+                        utilPara: "Polo Track y Robust",
+                        plazos: [
+                            { m: 36, c: 37.91, tna: "18,00%",    g: 14.1, ltv: 18500000 },
+                            { m: 48, c: 34.41, tna: "23,00%",    g: 14.1, ltv: 18500000 },
+                            { m: 60, c: 32.73, tna: "26,00%",    g: 14.1, ltv: 18500000 },
+                        ] 
+                    },  
+                    { 
+                        nombre: "Autos largo plazo 24 millones", 
+                        destacado: false,
+                        tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Aplica para Polo Comfortline y Highline, Tera Comfortline, Highline y Outifit, Nivus (Todas las versiones) y Virtus Sense, vigencia: 02/11/2026 - 30/11/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
+                        utilPara: "Polo, Tera, Nivus y Virtus",
+                        plazos: [
+                            { m: 36, c: 40.06, tna: "21,50%",    g: 14.1, ltv: 24000000 },
+                            { m: 48, c: 36.35, tna: "25,90%",    g: 14.1, ltv: 24000000 },
+                            { m: 60, c: 34.54, tna: "28,50%",    g: 14.1, ltv: 24000000 },
+                        ] 
+                    },
                     { 
                         nombre: "Leasing", 
                         destacado: false,
@@ -1262,215 +1375,6 @@ const bancos = {
                             { m: 31, c: 47.76, tna: "33,9%", ltv: 100, g: 2 },
                             { m: 36, c: 44.33, tna: "34,9%", ltv: 100, g: 2 },
                             { m: 48, c: 39.01, tna: "35,9%", ltv: 100, g: 2 },
-                        ] 
-                    },
-
-                    { 
-                        nombre: "Nueva semana Tera, Nivus y T-Cross (NOVEDAD!)", 
-                        destacado: true,
-                        seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Vigencia: 28/10/2026 - 29/10/2026 o hasta agotar cupos, Aplica para, Tera (todas las versiones), Nivus Trendline y Comfortline 200 TSI AT, T-Cross Trendline AT,disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
-                        utilPara: "Tera, Nivus y T-Cross",
-                        plazos: [
-                            { m: 36, c: 27.78, tna: "0%", ltv: 12000000, g: 16.53 },
-                        ] 
-                    },
-
-                    { 
-                        nombre: "Semana 0km Autos (NOVEDAD!)", 
-                        destacado: true,
-                        seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Vigencia: 28/10/2026 - 29/10/2026 o hasta agotar cupos, Aplica para Tera (todas las versiones), Nivus Trendline AT, Nivus Comfortline 200 TSI AT, T-Cross Trendline MT/AT y Comfortline AT, Taos Highline y Highline Bitono, Virtus (todas las veriones) disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
-                        utilPara: "Tera, Nivus y T-Cross",
-                        plazos: [
-                            { m: 18, c: 55.66, tna: "0%", ltv: 13500000, g: 2 },
-                        ] 
-                    },
-
-                    { 
-                        nombre: "Semana 0km POLO (NOVEDAD!)", 
-                        destacado: true,
-                        seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Vigencia: 28/10/2026 - 29/10/2026 o hasta agotar cupos, Aplica para Polo (Todas las versiones), disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
-                        utilPara: "Polo",
-                        plazos: [
-                            { m: 36, c: 27.78, tna: "0%",  ltv: 14000000, g: 17.2 },
-                            
-                        ] 
-                    },
-
-
-                    { 
-                        nombre: "Semana 0km Amarok $26MM (NOVEDAD!)", 
-                        destacado: true,
-                        seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Vigencia: 28/10/2026 - 29/10/2026 o hasta agotar cupos, Aplica para Amarok excepto Trendline 4x4, disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
-                        utilPara: "Amarok (excepto Trendline 4x4)",
-                        plazos: [
-                            { m: 18, c: 55.66, tna: "0%", ltv: 26500000, g: 16.52 },
-                        ] 
-                    },
-
-                     { 
-                        nombre: "Semana 0km Amarok $20MM (NOVEDAD!)", 
-                        destacado: true,
-                        seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Vigencia: 28/10/2026 - 29/10/2026 o hasta agotar cupos, Aplica para Amarok excepto Trendline 4x4, disponible para persona fisica y juridica, seguro cautivo (VW Broker)",
-                        utilPara: "Amarok (excepto Trendline 4x4)",
-                        plazos: [
-                            { m: 18, c: 55.66, tna: "0%", ltv: 20000000, g: 9.9 },
-                        ] 
-                    },
-
-                    { 
-                        nombre: "Tasa 0% Tera, Nivus y T-Cross", 
-                        destacado: true,
-                        seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "¡Aclaracion! esta tasa tiene la opcion de 24 meses, pero vino mal desde la circular, en cuanto se corrija se agregara, Esta tasa aplica para Tera Comfort 170 TSI AT, Nivus Comfortline 200 TSI AT y Nivus Trenline 200 TSI AT, T-Cross Trendline AT, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica solo se utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
-                        utilPara: "Tera Comfort, Nivus Comfortline, Trenline y T-Cross Trendline",
-                        plazos: [
-                            { m: 12, c: 83.33, tna: "0%", ltv: 23000000, g: 8.05 },
-                            { m: 18, c: 55.56, tna: "0%", ltv: 23000000, g: 16 },
-                            { m: 24, c: 41.67, tna: "0%", ltv: 17500000, g: 17.25 },
-                            { m: 36, c: 27.78, tna: "0%", ltv: 12000000, g: 16.52 },
-                        ] 
-                    },
-
-                    { 
-                        nombre: "Tera, Nivus y T-Cross", 
-                        destacado: true,
-                        seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Tera Comfort 170 TSI AT, Nivus Comfortline 200 TSI AT y Nivus Trenline 200 TSI AT, T-Cross Trendline AT, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica solo se utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
-                        utilPara: "Tera Comfort, Nivus Comfortline, Trenline y T-Cross Trendline",
-                        plazos: [
-                            { m: 12, c: 83.33, tna: "0%", ltv: 18000000, g: 2 },
-                        ] 
-                    },
-
-                    { 
-                        nombre: "Amarok Trendline", 
-                        destacado: true,
-                        seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Amarok (Solo versiones Trendline), vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica, para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
-                        utilPara: "Amarok Trendline",
-                        plazos: [
-                            { m: 12, c: 83.33, tna: "0,0%",     ltv: 26500000, g: 14.1 },
-                            { m: 24, c: 48.15, tna: "11,90%",   ltv: 20000000, g: 15.31 },
-                        ] 
-                    },
-
-                    { 
-                        nombre: "Amarok financia mas", 
-                        destacado: true,
-                        seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para todas las Amarok excepto Trendline, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica y juridica, para venta directa tanto para persona fisica como juridica, sin restriccion de unidades para las versiones Amarok CL 4x2 manual, Cl 4x2 AT y Highline 4x2 AT, las demas versiones de Amarok solo se pueden utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
-                        utilPara: "Amarok (excepto Trendline)",
-                        plazos: [
-                            { m: 12, c: 83.33, tna: "0%",      g: 15.915, ltv: 36500000 },
-                            { m: 18, c: 55.56, tna: "0%",      g: 16.52,  ltv: 24500000 },
-                            { m: 24, c: 41.67, tna: "0%",      g: 15.31,  ltv: 16500000 },
-                        ] 
-                    },
-
-                    { 
-                        nombre: "Amarok sin quebranto", 
-                        destacado: true,
-                        seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para todas las Amarok excepto Trendline, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto de persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
-                        utilPara: "Amarok (excepto Trendline)",
-                        plazos: [
-                            { m: 12, c: 83.33, tna: "0,0%",    ltv: 18500000, g: 2 },
-                            { m: 12, c: 88.32, tna: "19,9%",   ltv: 28000000, g: 2 },
-                        ] 
-                    },
-
-                    { 
-                        nombre: "Amarok largo plazo 40 millones", 
-                        destacado: true,
-                        seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Amarok Highline AT, Amarok V6 (Todas las versiones), vigencia 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto de persona fisica, como de juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
-                        utilPara: "Amarok Highline AT y Amarok V6",
-                        plazos: [
-                            { m: 36, c: 43.50, tna: "26,9%",   g: 14.1, ltv: 40000000 },
-                            { m: 48, c: 39.54, tna: "30,5%",   g: 14.1, ltv: 40000000 },
-                            { m: 60, c: 37.53, tna: "32,5%",   g: 14.1, ltv: 40000000 },
-                        ] 
-                    },
-
-                    { 
-                        nombre: "Especial Autos", 
-                        destacado: false,
-                        tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para todos los modelos excepto Amarok, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
-                        utilPara: "Todos los modelos excepto Amarok",
-                        plazos: [
-                            { m: 12, c: 83.33, tna: "0%",      g: 14.705, ltv: 23000000 },
-                            { m: 18, c: 55.56, tna: "0%",      g: 16.9,  ltv: 15500000 },
-                            { m: 24, c: 47.93, tna: "11,50%",  g: 15.91,  ltv: 17000000 }
-                        ] 
-                    },
-
-                    { 
-                        nombre: "Autos sin quebranto", 
-                        destacado: true,
-                        tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para los modelos Virtus Sense, Polo Comfortline y Highline, Tera Comfort, Highline y Outfit, Nivus (Todas las versiones), T-Cross Comfortline, Highline y Extreme, Taos Highline y Taos Highline bitono, Tiguan Life, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canala de venta por concesionario, para venta directa tanto de persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
-                        utilPara: "Tera, T-Cross, Polo, Taos, Nivus, Tiguan, Virtus",
-                        plazos: [
-                            { m: 12, c: 83.33, tna: "0,00%",   g: 2,   ltv: 15000000 },
-                            { m: 12, c: 94.53, tna: "19,90%",   g: 2,   ltv: 26000000 },
-                        ] 
-                    },
-                    
-                    { 
-                        nombre: "Autos financia mas", 
-                        destacado: true,
-                        seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Virtus Sense, Polo Comfortline y Highline, Tera Comfort, Highline y Outfit, Nivus (Todas las versiones), T-Cross COmfortline, Highline y Extreme, Taos Highline y Taos Highline bitono, Tiguan Life, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
-                        utilPara: "Tera, T-Cross, Polo, Taos, Nivus, Tiguan, Virtus",
-                        plazos: [
-                            { m: 12, c: 83.33, tna: "0%",    g: 12.9, ltv: 28000000 },
-                            { m: 18, c: 55.56, tna: "0%",    g: 15.31, ltv: 20000000 },
-                            { m: 24, c: 41.67, tna: "0%",    g: 17.2, ltv: 17000000 }
-                        ] 
-                    },
-
-                    { 
-                        nombre: "Autos largo plazo 20 millones", 
-                        destacado: false,
-                        tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Polo Comfortline, Highline, Tera Comfortline, Highline y Iutfit, Nivus (Todas las versiones) y Virtus Sense, vigencia desde el 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
-                        utilPara: "Polo, Tera, Nivus y Virtus",
-                        plazos: [
-                            { m: 36, c: 37.91, tna: "18,00%",    g: 14.1, ltv: 20000000 },
-                            { m: 48, c: 34.41, tna: "23,00%",    g: 14.1, ltv: 20000000 },
-                            { m: 60, c: 32.73, tna: "26,00%",    g: 14.1, ltv: 20000000 },
-                        ] 
-                    },                    
-
-                    { 
-                        nombre: "Autos largo plazo 18.5 millones Polo Track/Robust", 
-                        destacado: false,
-                        seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Polo Track y Robust, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica, para el canal de venta por cocnesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
-                        utilPara: "Polo Track y Robust",
-                        plazos: [
-                            { m: 36, c: 37.91, tna: "18,00%",    g: 14.1, ltv: 18500000 },
-                            { m: 48, c: 34.41, tna: "23,00%",    g: 14.1, ltv: 18500000 },
-                            { m: 60, c: 32.73, tna: "26,00%",    g: 14.1, ltv: 18500000 },
-                        ] 
-                    },                
-
-                    { 
-                        nombre: "Autos largo plazo 24 millones", 
-                        destacado: false,
-                        tna: "varios",  seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Polo Comfortline y Highline, Tera Comfortline, Highline y Outifit, Nivus (Todas las versiones) y Virtus Sense, vigencia: 06/10/2026 - 31/10/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
-                        utilPara: "Polo, Tera, Nivus y Virtus",
-                        plazos: [
-                            { m: 36, c: 40.06, tna: "21,50%",    g: 14.1, ltv: 24000000 },
-                            { m: 48, c: 36.35, tna: "25,90%",    g: 14.1, ltv: 24000000 },
-                            { m: 60, c: 34.54, tna: "28,50%",    g: 14.1, ltv: 24000000 },
                         ] 
                     },
                 ]
