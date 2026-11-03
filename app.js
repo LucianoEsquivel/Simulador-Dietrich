@@ -1287,8 +1287,8 @@ const bancos = {
                         nombre: "Autos sin quebranto", 
                         destacado: true,
                         tna: "0%", seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para los modelos Virtus Sense, Polo Comfortline y Highline, Tera Comfort, Highline y Outfit, Nivus (Todas las versiones), T-Cross Comfortline, Highline y Extreme, Tiguan Life, vigencia: 02/11/2026 - 30/11/2026, disponible para persona fisica, juridica para el canala de venta por concesionario, para venta directa tanto de persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
-                        utilPara: "Tera, T-Cross, Polo, Nivus, Tiguan, Virtus",
+                        descripcion: "Aplica para los modelos Virtus Sense, Polo Comfortline y Highline, Tera Comfort, Highline y Outfit, Nivus (Todas las versiones), T-Cross Comfortline, Highline y Extreme, Taos Highline y Bitono, Tiguan Life, vigencia: 02/11/2026 - 30/11/2026, disponible para persona fisica, juridica para el canala de venta por concesionario, para venta directa tanto de persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma camapaña",
+                        utilPara: "Tera, T-Cross, Polo, Nivus, Taos, Tiguan, Virtus",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0,00%",   g: 2,   ltv: 15000000 },
                             { m: 12, c: 94.53, tna: "19,90%",   g: 2,   ltv: 26000000 },
@@ -1298,8 +1298,8 @@ const bancos = {
                         nombre: "Autos financia mas", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Aplica para Virtus Sense, Polo Comfortline y Highline, Tera Comfort, Highline y Outfit, Nivus (Todas las versiones), T-Cross COmfortline, Highline y Extreme y Tiguan Life, vigencia: 02/11/2026 - 30/11/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
-                        utilPara: "Tera, T-Cross, Polo, Nivus, Tiguan, Virtus",
+                        descripcion: "Aplica para Virtus Sense, Polo Comfortline y Highline, Tera Comfort, Highline y Outfit, Nivus (Todas las versiones), T-Cross COmfortline, Highline y Extreme y Tiguan Life, Taos Highline y Bitono vigencia: 02/11/2026 - 30/11/2026, disponible para persona fisica, juridica para el canal de venta por concesionario, para venta directa tanto persona fisica como juridica, solo se puede utilizar financiando un minimo de 3 unidades y haciendo uso de la misma campaña",
+                        utilPara: "Tera, T-Cross, Polo, Nivus, Taos,Tiguan, Virtus",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",    g: 12.9, ltv: 28000000 },
                             { m: 18, c: 55.56, tna: "0%",    g: 15.31, ltv: 20000000 },
