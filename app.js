@@ -1489,30 +1489,40 @@ const bancos = {
                         nombre: "Audi A3", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Para las versiones con motor 1.4 TFSI del modelo Audi A3  vigencia: 08/10/2026-31/10/2026, persona fisica, seguro cautivo de VW Broker",
+                        descripcion: "Para las versiones con motor 1.4 TFSI del modelo Audi A3  vigencia: 05/11/2026-30/11/2026, persona fisica, seguro cautivo de VW Broker",
                         utilPara: "A3",
                         plazos: [
-                            { m: 12, c: 88.32, tna: "9,9%",   ltv: 28500000, g: 6.84 }, 
-                            { m: 18, c: 62.63, tna: "12,9%",  ltv: 23000000, g: 7.45 },
-                            { m: 12, c: 83.33, tna: "0%",     ltv: 17250000, g: 2 },
+                            { m: 12, c: 88.32, tna: "9,90%",   ltv: 28500000, g: 6.84 }, 
+                            { m: 18, c: 62.63, tna: "12,90%",  ltv: 23000000, g: 7.45 },
+                            { m: 12, c: 83.33, tna: "0,00%",     ltv: 17250000, g: 2 },
                         ] 
                     },
 
                     { 
                         nombre: "Audi unica", 
                         destacado: true,
-                        seguro: "CAUTIVO", gastos: 2, baseCalculo: 1000, 
-                        descripcion: "Disponible para Audi, vigencia: 08/10/2026-31/10/2026, para persona fisica y juridica, seguro cautivo de VW Broker",
+                        seguro: "CAUTIVO", ltv: 70, tna: "43,90%", gastos: 2, baseCalculo: 1000, 
+                        descripcion: "Disponible para Audi, vigencia: 05/11/2026-30/11/2026, para persona fisica y juridica, seguro cautivo de VW Broker",
                         utilPara: "Audi",
                         plazos: [
-                            { m: 12, c: 108.89, tna:"43,9%", ltv: 75, g: 2 },
-                            { m: 18, c: 81.28, tna: "43,9%", ltv: 75, g: 2 },
-                            { m: 24, c: 68.53, tna: "44,9%", ltv: 75, g: 2 },
-                            { m: 36, c: 55.89, tna: "44,9%", ltv: 75, g: 2 },
-                            { m: 48, c: 51.05, tna: "45,9%", ltv: 75, g: 2 },
-                            { m: 60, c: 48.22, tna: "45,9%", ltv: 75, g: 2 },
+                            { m: 36, c: 55.89, g: 2 },
+                            { m: 48, c: 51.05, g: 2 },
+                            { m: 60, c: 48.22, g: 2 },
                         ] 
-                    }
+                    },
+
+                    { 
+                        nombre: "Audi Leasing", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, ltv: 95,
+                        descripcion: "Para vehiculos Audi 0km, vigencia: 05/11/2026-30/11/2026, persona juridica, seguro cautivo de VW Broker",
+                        utilPara: "Audi",
+                        plazos: [
+                            { m: 31, c: 47.76, tna: "33,90%",   g: 2 }, 
+                            { m: 36, c: 44.39, tna: "34,90%",   g: 2 },
+                            { m: 48, c: 39.01, tna: "35,90%",   g: 2 },
+                        ] 
+                    },
                 ]
             }
         }
