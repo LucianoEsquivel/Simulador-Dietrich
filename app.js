@@ -1224,6 +1224,29 @@ const bancos = {
                 nombre: "Volkswagen",
                 planes: [
 
+
+                    { 
+                        nombre: "Amarok 0km Combo", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Vigencia: 05/11/2026 - 30/11/2026, Aplica para: Amarok todas las versiones, disponible para persona fisica,",
+                        utilPara: "Amarok",
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0%", ltv: 16500000, g: 2 },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Autos 0km Combo", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Vigencia: 05/11/2026 - 30/11/2026, Aplica para: Todos los modelos excepto Amarok, disponible para persona fisica,",
+                        utilPara: "Todos los modelos excepto Amarok",
+                        plazos: [
+                            { m: 18, c: 55.56, tna: "0%", ltv: 13500000, g: 16.82 },
+                        ] 
+                    },
+
                     { 
                         nombre: "Amarok financia mas", 
                         destacado: true,
