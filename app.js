@@ -1114,34 +1114,23 @@ const bancos = {
 
 
                      { 
-                        nombre: "Tasa tradicional TNA 0% (Novedad!)", 
+                        nombre: "Tasas especiales ByD (Novedad!)", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "TASA FIJA, Fecha de vigencia: 07/10/2026 aplica para Dolphin mini, Yuan Pro, Song Pro y SEAL 5, la cuota incluye intereses e IVA",
-                        utilPara: "DOLPHIN MINI GL, GS, ATTO 2 y Song PRO GL y GS",
+                        descripcion: "TASA FIJA, Fecha de vigencia: 07/11/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
+                        utilPara: "Todos los modelos de ByD",
                         plazos: [
-                                { m: 12, tna: "0,00%", ltv: 10000000, c: 83.33, g: 4}, 
-                                { m: 18, tna: "0,00%", ltv: 8000000,  c: 55.56, g: 4},
+                                { m: 12, tna: "0,00%", ltv:  20000000, c: 83.33, g: 4}, 
+                                { m: 18, tna: "9,90%", ltv:  25000000,  c: 60.95, g: 4},
+                                { m: 24, tna: "19,90%", ltv: 30000000,  c: 52.77, g: 4},
                             ] 
-                    },
-
-                    { 
-                        nombre: "Tasa tradicional (19,9%) (Novedad!)", 
-                        destacado: true,
-                        seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "TASA FIJA, Fecha de vigencia: 07/10/2026 aplica para Dolphin mini, Yuan Pro, Song Pro y SEAL 5, la cuota incluye intereses e IVA",
-                        utilPara: "Dolphin mini, Yuan Pro, Song Pro y SEAL 5",
-                        plazos: [
-                                    { m: 12, tna: "19,90%", ltv: 25000000, c: 94.53, g: 4}, 
-                                    { m: 18, tna: "19,90%", ltv: 20000000, c: 66.64, g: 4},
-                                ] 
                     },
 
                     { 
                         nombre: "Tasa UVA (Novedad!)", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "TASA UVA, Fecha de vigencia: 17/09/2026 aplica para Dolphin mini, Yuan Pro, Song Pro y SEAL 5, la cuota incluye intereses e IVA",
+                        descripcion: "TASA UVA, Fecha de vigencia: 07/11/2026 aplica para Dolphin mini, Yuan Pro, Song Pro y SEAL 5, la cuota incluye intereses e IVA",
                         utilPara: "Dolphin mini, Yuan Pro, Song Pro y SEAL 5",
                         plazos: [
                             { m: 12, tna: "0,0%",  ltv: 20000000, c: 83.33, g: 4}, 
@@ -1149,32 +1138,71 @@ const bancos = {
                         ] 
                     },
 
-                   /* { 
+                    { 
                         nombre: "Tasa reducidas ByD 0% (Tasa fija)", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "TASA FIJA, Fecha de vigencia: 14/08/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
+                        descripcion: "TASA FIJA, Fecha de vigencia: 07/11/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
                         utilPara: "Todos los modelos de ByD",
-                        plazos: [{ m: 12, tna: "0%", cft: "0%", ltv: 80, c: 83.33, g: 16.56 }, { m: 18, tna: "0%", cft: "0%", ltv: 80, c: 55.56, g: 22.96}] 
+                        plazos: [
+                            { m: 12, tna: "0%", cft: "0%", ltv: 80, c: 83.33, g: 21 },
+                            { m: 18, tna: "0%", cft: "0%", ltv: 80, c: 55.56, g: 27}
+                        ] 
+                    },
+
+                    
+                    { 
+                        nombre: "Tasa reducidas 0% ByD", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, ltv: 80,
+                        descripcion: "Fecha de vigencia: 07/11/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
+                        utilPara: "Todos los modelos de ByD",
+                        plazos: [
+                            { m: 12, c: 88.88, tna: "10,00%", cft: "12,79%", g: 17 }, 
+                            { m: 18, c: 91.27, tna: "20,00%", cft: "31,67%", g: 16 }, 
+                            { m: 24, c: 54.62, tna: "23,00%", cft: "31,67%", g: 16.5},
+                            { m: 36, c: 43.57, tna: "27,00%", cft: "38,03%", g: 17},
+                            { m: 48, c: 38.49, tna: "29,00%", cft: "41,32%", g: 17.5},
+                            { m: 60, c: 35.65, tna: "30.00%", cft: "42,99%", g: 18},
+                        ] 
                     },
 
                     { 
-                        nombre: "Tasa reducidas (Tasa fija)", 
+                        nombre: "Tasa reducidas 0% ByD", 
                         destacado: true,
-                        seguro: "CAUTIVO", baseCalculo: 1000, ltv: 80,
-                        descripcion: "Tasa fija, Fecha de vigencia: 14/08/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
+                        seguro: "CAUTIVO", baseCalculo: 1000, ltv: 60,
+                        descripcion: "Fecha de vigencia: 07/11/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
                         utilPara: "Todos los modelos de ByD",
-                        plazos: [{ m: 12, c: 88.88, tna: "10,00%", cft: "12,79%", g: 12.37 }, { m: 18, c: 91.27, tna: "20,00%", cft: "31,67%", g: 11.30 }, { m: 24, c: 55.62, tna: "23,00%", cft: "31,67%", g: 12 }, { m: 36, c: 43.57, tna: "27,00%", cft: "38,03%", g: 12.23 }, { m: 48, c: 38.49, tna: "29,00%", cft: "41,32%", g: 12.42 },{ m: 60, c: 35.65, tna: "30,00%", cft: "42,99%", g: 12.86 },] 
+                        plazos: [
+                            { m: 12, c: 83.33, tna: "0,0%", cft: "0,0%", g: 6.63 }, 
+                            { m: 18, c: 55.56, tna: "0,0%", cft: "0.0%", g: 9.5 }, 
+                            { m: 24, c: 41.67, tna: "0,0%", cft: "0.0%", g: 12.24 }
+                        ] 
                     },
 
                     { 
                         nombre: "Tasa reducidas 0% ByD (Tasa UVA)", 
                         destacado: true,
-                        seguro: "CAUTIVO", baseCalculo: 1000, ltv: 60,
-                        descripcion: "Tasa UVA, Fecha de vigencia: 14/08/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
+                        seguro: "CAUTIVO", baseCalculo: 1000, ltv: 80,
+                        descripcion: "Tasa UVA,Fecha de vigencia: 07/11/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
                         utilPara: "Todos los modelos de ByD",
-                        plazos: [{ m: 12, c: 83.33, tna: "0,0%", cft: "0,0%", g: 6.63 }, { m: 18, c: 55.56, tna: "0,0%", cft: "0.0%", g: 9.5 }, { m: 24, c: 41.67, tna: "0,0%", cft: "0.0%", g: 12.24 }] 
+                        plazos: [
+                            { m: 12, c: 88.82, tna: "9,90%", cft: "12,66%", g: 6 }, 
+                            { m: 18, c: 60.95, tna: "9,90%", cft: "12,66%", g: 7 }, 
+                            { m: 24, c: 47.03, tna: "9,90%", cft: "12,66%", g: 8},
+                            { m: 36, c: 33.15, tna: "9,90%", cft: "12,66%", g: 11},
+                            { m: 48, c: 26.26, tna: "9,90%", cft: "12,66%", g: 12},
+                            { m: 60, c: 22.15, tna: "9,90%", cft: "12,66%", g: 13},
+                        ] 
                     },
+                    
+
+                   /* 
+
+                    
+                    },
+
+                    
                     
                     { 
                         nombre: "Tasa reducidas (Tasa UVA)", 
