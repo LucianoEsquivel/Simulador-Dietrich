@@ -1438,7 +1438,7 @@ const bancos = {
                         nombre: "Scrambler Tasa fija sin quebranto", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Para los modelos Ducati Scrambler vigencia: 09/10/2026-31/10/2026, persona fisica, seguro cautivo de VW Broker",
+                        descripcion: "Para los modelos Ducati Scrambler vigencia: 11/11/2026-30/11/2026, persona fisica, seguro cautivo de VW Broker",
                         utilPara: "Ducati Scrambler",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",   ltv: 8000000, g: 2 }, 
@@ -1449,12 +1449,11 @@ const bancos = {
                         nombre: "Scrambler Tasa fija con quebranto", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Para los modelos Ducati Scrambler  vigencia: 09/10/2026-31/10/2026, persona fisica, seguro cautivo de VW Broker",
+                        descripcion: "Para los modelos Ducati Scrambler  vigencia: 11/11/2026-30/11/2026, persona fisica, seguro cautivo de VW Broker",
                         utilPara: "Ducati Scrambler",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0,0%",   ltv: 11000000, g: 8.66 },
                             { m: 12, c: 87.14, tna: "6,9%",   ltv: 15000000, g: 8.66 }, 
-                            { m: 18, c: 62.40, tna: "12,5%",  ltv: 12500000, g: 8.66 },
                             { m: 24, c: 52.77, tna: "19,9%",  ltv: 12500000, g: 8.66 }, 
                         ] 
                     },
@@ -1463,7 +1462,7 @@ const bancos = {
                         nombre: "Scrambler UVA", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Para los modelos Ducati Scrambler  vigencia: 09/10/2026-31/10/2026, persona fisica, seguro cautivo de VW Broker",
+                        descripcion: "Para los modelos Ducati Scrambler  vigencia: 11/11/2026-30/11/2026, persona fisica, seguro cautivo de VW Broker",
                         utilPara: "Ducati Scrambler",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%", ltv: 16000000, g: 4.3 }, 
@@ -1475,7 +1474,7 @@ const bancos = {
                         nombre: "Multistrada V2/S y Desert X Sin quebranto", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Para los modelos Ducati Multistrada V2/S y Desert X  vigencia: 09/10/2026-31/10/2026, persona fisica, seguro cautivo de VW Broker",
+                        descripcion: "Para los modelos Ducati Multistrada V2/S y Desert X  vigencia: 11/11/2026-30/11/2026, persona fisica, seguro cautivo de VW Broker",
                         utilPara: "Ducati Multistrada V2/S y Desert X",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",   ltv: 12500000, g: 2 }, 
@@ -1486,7 +1485,7 @@ const bancos = {
                         nombre: "Multistrada V2/S y Desert X Tasa Fija", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Para los modelos Ducati Multistrada V2/S y Desert X  vigencia: 09/10/2026-31/10/2026, persona fisica, seguro cautivo de VW Broker",
+                        descripcion: "Para los modelos Ducati Multistrada V2/S y Desert X  vigencia: 11/11/2026-30/11/2026, persona fisica, seguro cautivo de VW Broker",
                         utilPara: "Ducati Multistrada V2/S y Desert X",
                         plazos: [
                             { m: 12, c: 88.33, tna: "0,0%",   ltv: 18000000, g: 8.66 },
@@ -1500,7 +1499,7 @@ const bancos = {
                         nombre: "Multistrada V2/S y Desert X UVA", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "Para los modelos Ducati Multistrada V2/S y Desert X  vigencia: 09/10/2026-31/10/2026, persona fisica, seguro cautivo de VW Broker",
+                        descripcion: "Para los modelos Ducati Multistrada V2/S y Desert X  vigencia: 11/11/2026-30/11/2026, persona fisica, seguro cautivo de VW Broker",
                         utilPara: "Ducati Multistrada V2/S y Desert X",
                         plazos: [
                             { m: 12, c: 83.33, tna: "0%",   ltv: 27000000, g: 5.6 },
