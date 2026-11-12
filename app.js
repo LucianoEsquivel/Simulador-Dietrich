@@ -1117,7 +1117,7 @@ const bancos = {
                         nombre: "Tasas especiales ByD (Novedad!)", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "TASA FIJA, Fecha de vigencia: 07/11/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
+                        descripcion: "¡IMPORTANTE!los quebrantos/gastos ademas del 4%, se le suma 1050 USD para 12 meses, 1250 USD para 18 y 1400 USD para 24 meses, TASA FIJA, Fecha de vigencia: 07/11/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
                         utilPara: "Todos los modelos de ByD",
                         plazos: [
                                 { m: 12, tna: "0,00%", ltv:  20000000, c: 83.33, g: 4}, 
