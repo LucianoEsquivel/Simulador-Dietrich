@@ -217,27 +217,27 @@ const bancos = {
                 planes: [
 
                     { 
-                        nombre: "UVA Especial Octubre (Novedad!)", 
+                        nombre: "UVA Especial Noviembre (Novedad!)", 
                         destacado: true,
                         tna: "0%", cft: "0%", seguro: "Cautivo", baseCalculo: 1000000, 
-                        descripcion: "Financiacion exclusiva para Dolphin mini, Song Pro, Yuan Pro, SEAL 5, ATTO 2",
+                        descripcion: "Financiacion exclusiva para todas las unidades de ByD",
                         utilPara: "Dolphin mini, Song Pro, Yuan Pro, SEAL 5, ATTO 2",
                         plazos: [
-                            { m: 12, c: 83333, g: 4, ltv: 25000000 }, 
-                            { m: 18, c: 55556, g: 4, ltv: 17000000 },   
+                            { m: 12, c: 83333, g: 10, ltv: 25000000 }, 
+                            { m: 18, c: 55556, g: 14, ltv: 17000000 },   
                         ] 
                     },
 
                     { 
-                        nombre: "Fija Especial OCtubre (Novedad!)", 
+                        nombre: "Fija Especial Noviembre (Novedad!)", 
                         destacado: true,
                         seguro: "Cautivo", baseCalculo: 1000000, 
-                        descripcion: "Financiacion exclusiva para Dolphin mini, Song Pro, Yuan Pro, SEAL 5, ATTO 2",
+                        descripcion: "Financiacion exclusiva para todas las unidades de ByD",
                         utilPara: "Dolphin mini, Song Pro, Yuan Pro, SEAL 5, ATTO 2",
                         plazos: [
-                            { m: 12, c: 83334, tna: "0%",   g: 4, ltv: 10000000 }, 
-                            { m: 12, c: 89602, tna: "9,9%", g: 4, ltv: 15000000 }, 
-                            { m: 18, c: 64945, tna: "14,9%",g: 4, ltv: 13000000 },   
+                            { m: 12, c: 83334, tna: "0%",   g: 20, ltv: 20000000 }, 
+                            { m: 12, c: 89602, tna: "9,9%", g: 19, ltv: 25000000 }, 
+                            { m: 18, c: 64945, tna: "19,9%",g: 15, ltv: 30000000 },   
                         ] 
                     },
 
