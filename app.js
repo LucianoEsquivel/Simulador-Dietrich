@@ -646,7 +646,7 @@ const bancos = {
                     },
 
                     { 
-                        nombre: "Tasa Especial Ranger (19,9% / 29,9%)", 
+                        nombre: "Tasa Especial Ranger (LTV 80% / tasa 0%)", 
                         destacado: false,
                         ltv: 60, seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: 02/11/2026, aplica para todas las versiones de Ranger, excepto Raptor, la cuota incluye capital, intereses e IVA",
