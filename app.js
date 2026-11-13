@@ -1117,12 +1117,12 @@ const bancos = {
                         nombre: "Tasas especiales ByD (Novedad!)", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
-                        descripcion: "¡IMPORTANTE!los quebrantos/gastos ademas del 4%, se le suma 1050 USD para 12 meses, 1250 USD para 18 y 1400 USD para 24 meses, TASA FIJA, Fecha de vigencia: 07/11/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
+                        descripcion: "TASA FIJA, Fecha de vigencia: 07/11/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
                         utilPara: "Todos los modelos de ByD",
                         plazos: [
-                                { m: 12, tna: "0,00%", ltv:  20000000, c: 83.33, g: 4}, 
-                                { m: 18, tna: "9,90%", ltv:  25000000,  c: 60.95, g: 4},
-                                { m: 24, tna: "19,90%", ltv: 30000000,  c: 52.77, g: 4},
+                                { m: 12, tna: "0,00%", ltv:  20000000, c: 83.33, g: 20}, 
+                                { m: 18, tna: "9,90%", ltv:  25000000,  c: 60.95, g: 20.5},
+                                { m: 24, tna: "19,90%", ltv: 30000000,  c: 52.77, g: 10.5},
                             ] 
                     },
 
@@ -1133,8 +1133,8 @@ const bancos = {
                         descripcion: "TASA UVA, Fecha de vigencia: 07/11/2026 aplica para Dolphin mini, Yuan Pro, Song Pro y SEAL 5, la cuota incluye intereses e IVA",
                         utilPara: "Dolphin mini, Yuan Pro, Song Pro y SEAL 5",
                         plazos: [
-                            { m: 12, tna: "0,0%",  ltv: 20000000, c: 83.33, g: 4}, 
-                            { m: 18, tna: "2,90%", ltv: 20000000, c: 57.11, g: 4}
+                            { m: 12, tna: "0,0%",  ltv: 20000000, c: 83.33, g: 8}, 
+                            { m: 18, tna: "2,90%", ltv: 20000000, c: 57.11, g: 9},
                         ] 
                     },
 
