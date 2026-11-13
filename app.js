@@ -1254,6 +1254,61 @@ const bancos = {
 
 
                     { 
+                        nombre: "Black Days VW Autos", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Vigencia: 14/11/2026 - 21/11/2026, Aplica para: Tera (todas las versiones), Nivus Trendline AT, Nivus Comfortline 200 TSI AT, T-Cross Trendline MT/AT y Comfortline AT - Taos Highline y Highline BiTono, Virtus (Todas las versiones), disponible para persona fisica y juridica, seguro cautivo de VW Broker",
+                        utilPara: "Tera, Nivus, T-Cross, Taos, Virtus",
+                        plazos: [
+                            { m: 18, c: 55.56, tna: "0%", ltv: 13500000, g: 2 },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tera, Nivus, T-Cross, Taos Tasa 0%", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Vigencia: 14/11/2026 - 21/11/2026, Aplica para: Tera Comfort 170 TSI AT, Nivus Comfortline 200 TSI AT, Nivus Trendline 200 TSI AT, T-Cross Trendline Comfortline, Highline, Highline BiTono, Taos Highline y Highline BiTono, disponible para persona fisica y juridica, seguro cautivo de VW Broker",
+                        utilPara: "Tera, Nivus, T-Cross, Taos",
+                        plazos: [
+                            { m: 18, c: 55.56, tna: "0%", ltv: 23000000, g: 15.92 },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Black Days VW Polo", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Vigencia: 14/11/2026 - 21/11/2026, Aplica para: Polo (todas las versiones), disponible para persona fisica y juridica, seguro cautivo de VW Broker",
+                        utilPara: "Polo",
+                        plazos: [
+                            { m: 36, c: 27.78, tna: "0%", ltv: 14000000, g: 17.13 },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Black Days VW Amarok $26,5MM", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Vigencia: 14/11/2026 - 21/11/2026, Aplica para: Amarok todas las versiones (Excepto Trendline 4x4), disponible para persona fisica y juridica, seguro cautivo de VW Broker",
+                        utilPara: "Amarok (Excepto Trendline 4x4)",
+                        plazos: [
+                            { m: 18, c: 55.56, tna: "0%", ltv: 26500000, g: 16.6 },
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Black Days VW Amarok $20MM", 
+                        destacado: true,
+                        seguro: "CAUTIVO", baseCalculo: 1000, 
+                        descripcion: "Vigencia: 14/11/2026 - 21/11/2026, Aplica para: Amarok todas las versiones (Excepto Trendline 4x4), disponible para persona fisica y juridica, seguro cautivo de VW Broker",
+                        utilPara: "Amarok (Excepto Trendline 4x4)",
+                        plazos: [
+                            { m: 18, c: 55.56, tna: "0%", ltv: 20000000, g: 10 },
+                        ] 
+                    },
+
+                    { 
                         nombre: "Amarok 0km Combo", 
                         destacado: true,
                         seguro: "CAUTIVO", baseCalculo: 1000, 
