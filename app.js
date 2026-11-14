@@ -235,9 +235,9 @@ const bancos = {
                         descripcion: "Financiacion exclusiva para todas las unidades de ByD",
                         utilPara: "Dolphin mini, Song Pro, Yuan Pro, SEAL 5, ATTO 2",
                         plazos: [
-                            { m: 12, c: 83334, tna: "0%",   g: 20, ltv: 20000000 }, 
-                            { m: 12, c: 89602, tna: "9,9%", g: 19, ltv: 25000000 }, 
-                            { m: 18, c: 64945, tna: "19,9%",g: 15, ltv: 30000000 },   
+                            { m: 12, c: 83334, tna: "0%",   g: 13, ltv: 20000000 }, 
+                            { m: 18, c: 89602, tna: "9,9%", g: 14, ltv: 25000000 }, 
+                            { m: 24, c: 64945, tna: "19,9%",g: 22, ltv: 30000000 },   
                         ] 
                     },
 
@@ -1120,9 +1120,9 @@ const bancos = {
                         descripcion: "TASA FIJA, Fecha de vigencia: 07/11/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
                         utilPara: "Todos los modelos de ByD",
                         plazos: [
-                                { m: 12, tna: "0,00%", ltv:  20000000, c: 83.33, g: 20}, 
-                                { m: 18, tna: "9,90%", ltv:  25000000,  c: 60.95, g: 20.5},
-                                { m: 24, tna: "19,90%", ltv: 30000000,  c: 52.77, g: 10.5},
+                                { m: 12, tna: "0,00%", ltv:  20000000, c: 83.33, g: 13}, 
+                                { m: 18, tna: "9,90%", ltv:  25000000,  c: 60.95, g: 14},
+                                { m: 24, tna: "19,90%", ltv: 30000000,  c: 52.77, g: 15},
                             ] 
                     },
 
@@ -1149,7 +1149,6 @@ const bancos = {
                             { m: 18, tna: "0%", cft: "0%", ltv: 80, c: 55.56, g: 27}
                         ] 
                     },
-
                     
                     { 
                         nombre: "Tasa reducidas 0% ByD", 
@@ -1158,12 +1157,12 @@ const bancos = {
                         descripcion: "Fecha de vigencia: 07/11/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
                         utilPara: "Todos los modelos de ByD",
                         plazos: [
-                            { m: 12, c: 88.88, tna: "10,00%", cft: "12,79%", g: 17 }, 
-                            { m: 18, c: 91.27, tna: "20,00%", cft: "31,67%", g: 16 }, 
-                            { m: 24, c: 54.62, tna: "23,00%", cft: "31,67%", g: 16.5},
+                            { m: 12, c: 88.88, tna: "10,00%", cft: "12,79%", g: 17}, 
+                            { m: 18, c: 91.27, tna: "20,00%", cft: "31,67%", g: 16}, 
+                            { m: 24, c: 54.62, tna: "23,00%", cft: "31,67%", g: 16},
                             { m: 36, c: 43.57, tna: "27,00%", cft: "38,03%", g: 17},
-                            { m: 48, c: 38.49, tna: "29,00%", cft: "41,32%", g: 17.5},
-                            { m: 60, c: 35.65, tna: "30.00%", cft: "42,99%", g: 18},
+                            { m: 48, c: 38.49, tna: "29,00%", cft: "41,32%", g: 17},
+                            { m: 60, c: 35.65, tna: "30.00%", cft: "42,99%", g: 17},
                         ] 
                     },
 
@@ -1174,9 +1173,9 @@ const bancos = {
                         descripcion: "Fecha de vigencia: 07/11/2026 aplica para todos los modelos de ByD, la cuota incluye intereses e IVA",
                         utilPara: "Todos los modelos de ByD",
                         plazos: [
-                            { m: 12, c: 83.33, tna: "0,0%", cft: "0,0%", g: 6.63 }, 
-                            { m: 18, c: 55.56, tna: "0,0%", cft: "0.0%", g: 9.5 }, 
-                            { m: 24, c: 41.67, tna: "0,0%", cft: "0.0%", g: 12.24 }
+                            { m: 12, c: 83.33, tna: "0,0%", cft: "0,0%", g: 11 }, 
+                            { m: 18, c: 55.56, tna: "0,0%", cft: "0.0%", g: 14 }, 
+                            { m: 24, c: 41.67, tna: "0,0%", cft: "0.0%", g: 17 }
                         ] 
                     },
 
@@ -1190,8 +1189,8 @@ const bancos = {
                             { m: 12, c: 88.82, tna: "9,90%", cft: "12,66%", g: 6 }, 
                             { m: 18, c: 60.95, tna: "9,90%", cft: "12,66%", g: 7 }, 
                             { m: 24, c: 47.03, tna: "9,90%", cft: "12,66%", g: 8},
-                            { m: 36, c: 33.15, tna: "9,90%", cft: "12,66%", g: 11},
-                            { m: 48, c: 26.26, tna: "9,90%", cft: "12,66%", g: 12},
+                            { m: 36, c: 33.15, tna: "9,90%", cft: "12,66%", g: 10},
+                            { m: 48, c: 26.26, tna: "9,90%", cft: "12,66%", g: 11},
                             { m: 60, c: 22.15, tna: "9,90%", cft: "12,66%", g: 13},
                         ] 
                     },
