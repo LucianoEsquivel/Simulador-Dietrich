@@ -18,6 +18,82 @@ const bancos = {
                 planes: [
 
                     { 
+                        nombre: "Tasa fija especial, quebranto 5% (NOVEDAD!)", 
+                        destacado: true,
+                        ltv: 20000000, 
+                        gastos: 5, 
+                        seguro: "Cautivo", 
+                        baseCalculo: 20000000, 
+                        descripcion: "Línea tradicional en pesos con tasa fija con quebranto, aplica para todas las marcas (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares). Vigencia: a partir del 20/11/2026",
+                        utilPara: "Todas las marcas",
+                        plazos: [
+                            { m: 12, c: 1985445, tna: "28,00%",}, 
+                            { m: 18, c: 1451471, tna: "29,90%",}, 
+                            { m: 24, c: 1196846, tna: "31,50%",}, 
+                            { m: 36, c: 944078, tna: "32,50%",}, 
+                            { m: 48, c: 825132, tna: "32,90%",}, 
+                            { m: 60, c: 758124, tna: "33,00%",}
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa UVA especial, quebranto 5% (NOVEDAD!)", 
+                        destacado: true,
+                        ltv: 20000000, 
+                        gastos: 5, 
+                        seguro: "Cautivo", 
+                        baseCalculo: 20000000, 
+                        descripcion: "Línea tradicional en pesos con tasa UVA con quebranto, aplica para todas las marcas (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares). Vigencia: a partir del 20/11/2026",
+                        utilPara: "Todas las marcas",
+                        plazos: [
+                            { m: 12, c: 1698485, tna: "2,90%",}, 
+                            { m: 18, c: 1163866, tna: "4,90%",}, 
+                            { m: 24, c: 907400, tna: "6,90%",}, 
+                            { m: 36, c: 647268, tna: "8,50%",}, 
+                            { m: 48, c: 520480, tna: "9,50%",}, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Linea FIJA Tradicional sin quebranto (Novedad)", 
+                        destacado: true,
+                        ltv: 80, 
+                        gastos: 2, 
+                        seguro: "Cautivo", 
+                        baseCalculo: 20000000, 
+                        descripcion: "Línea tradicional en pesos con tasa fija sin quebranto, aplica para todas las marcas (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares). Vigencia: a partir del 20/11/2026",
+                        utilPara: "Todas las marcas",
+                        plazos: [
+                            { m: 12, c: 2087233, tna: "36,50%",}, 
+                            { m: 18, c: 1532421, tna: "36,50%",}, 
+                            { m: 24, c: 1260369, tna: "36,50%",}, 
+                            { m: 36, c: 998687, tna: "36,50%",}, 
+                            { m: 48, c: 877660, tna: "36,50%",}, 
+                            { m: 60, c: 812238, tna: "36,50%",}
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Linea UVA sin quebranto (Novedad)", 
+                        destacado: true,
+                        ltv: 75, 
+                        gastos: 2, 
+                        seguro: "Cautivo", 
+                        baseCalculo: 20000000, 
+                        descripcion: "Línea tradicional en pesos con tasa uva sin quebranto, aplica para todas las marcas (consultar al referente por vehiculos utilitarios ligeros y vehiculos de transporte de pasajeros ya que tienen requisitos particulares). Vigencia: a partir del 20/11/2026",
+                        utilPara: "Todas las marcas",
+                        plazos: [
+                            { m: 12, c: 1805805, tna: "12,50%",}, 
+                            { m: 18, c: 1248059, tna: "12,50%",}, 
+                            { m: 24, c: 969837, tna: "12,50%",}, 
+                            { m: 36, c: 692911, tna: "12,50%",}, 
+                            { m: 48, c: 555736, tna: "12,50%",},
+                        ] 
+                    },
+
+                    
+
+                    { 
                         nombre: "Línea UVA con Quebranto 12%", 
                         destacado: true,
                         ltv: 75,
