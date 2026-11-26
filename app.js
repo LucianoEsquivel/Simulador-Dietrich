@@ -707,6 +707,15 @@ const bancos = {
                         utilPara: "Todas las Ranger XL",
                         plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 18000000, info: "TNA 0%" }] 
                     },
+
+                    { 
+                        nombre: "Especial Ranger XL ¡NOVEDAD!", 
+                        destacado: true,
+                        gastos: 2, seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Fecha de vigencia: 25/11/2026, aplica para Ranger XL 4x4 MT y Ranger XL CS 4x2, seguro cautivo, seguro de vida 0,20% sobre saldo",
+                        utilPara: "Ranger XL 4x4 MT y Ranger XL CS 4x2",
+                        plazos: [{ m: 18, c: 55.56, tna: "0%", cft: "0%", ltv: 20000000, }] 
+                    },
                      
                     { 
                         nombre: "Especial UVA Ranger", 
@@ -832,22 +841,31 @@ const bancos = {
                     { 
                         nombre: "Especial Ranger XL", 
                         destacado: true,
-                        ltv: 50, gastos: 2, seguro: "Cautivo", baseCalculo: 1000, 
+                        gastos: 2, seguro: "Cautivo", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: 02/11/2026, aplica para Ranger XL 4x2, 4x4 y Chasis, seguro cautivo, seguro de vida 0,20% sobre saldo",
                         utilPara: "Ranger XL",
                         plazos: [{ m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 18000000, }] 
                     },
 
                     { 
+                        nombre: "Especial Ranger XL ¡NOVEDAD!", 
+                        destacado: true,
+                        gastos: 2, seguro: "Cautivo", baseCalculo: 1000, 
+                        descripcion: "Fecha de vigencia: 25/11/2026, aplica para Ranger XL 4x4 MT y Ranger XL CS 4x2, seguro cautivo, seguro de vida 0,20% sobre saldo",
+                        utilPara: "Ranger XL 4x4 MT y Ranger XL CS 4x2",
+                        plazos: [{ m: 18, c: 55.56, tna: "0%", cft: "0%", ltv: 20000000, }] 
+                    },
+
+                    { 
                         nombre: "Especial Ranger Semestral", 
                         destacado: true,
-                        ltv: 50, gastos: 2, seguro: "LIBERADO", baseCalculo: 1000, 
+                        gastos: 2, seguro: "LIBERADO", baseCalculo: 1000, 
                         descripcion: "Fecha de vigencia: 02/11/2026, aplica para Ranger XL y XLS, seguro liberado, sin gastos de otorgamiento, seguro de vida 0,20% sobre saldo",
                         utilPara: "Ranger XL y XLS",
                         plazos: 
                         [
-                            { m: 12, c: 686.52, tna: "39,90%", cft: "54,11%", ltv: 50, info: "2 Cuotas Semestrales" }, 
-                            { m: 24, c: 459.41, tna: "49,90%", cft: "69,49%", ltv: 50, info: "4 Cuotas Semestrales" }
+                            { m: 12, c: 686.52, tna: "39,90%", cft: "54,11%", ltv: 50, }, 
+                            { m: 24, c: 459.41, tna: "49,90%", cft: "69,49%", ltv: 50, }
                         ] 
                     },
                     { 
@@ -858,9 +876,9 @@ const bancos = {
                         utilPara: "Ranger XL y XLS",
                         plazos: 
                         [
-                            { m: 12, c: 90.93, tna: "14,90%", cft: "17,77%", ltv: 40, info: "max 40%" }, 
-                            { m: 24, c: 63.18, tna: "39,90%", cft: "54,19", ltv: 50, info: "LTV Máx 50%" }, 
-                            { m: 36, c: 48.90, tna: "37,90%", cft: "50,93%", ltv: 50, info: "LTV Máx 50%" }
+                            { m: 12, c: 90.93, tna: "14,90%", cft: "17,77%", ltv: 40, }, 
+                            { m: 24, c: 63.18, tna: "39,90%", cft: "54,19", ltv: 50, }, 
+                            { m: 36, c: 48.90, tna: "37,90%", cft: "50,93%", ltv: 50, }
                         ] 
                     },
 
@@ -872,9 +890,22 @@ const bancos = {
                         utilPara: "Ranger XL y XLS",
                         plazos: 
                         [
-                            { m: 12, c: 91.98, tna: "16,90%", cft: "20,36%", ltv: 40, info: "LTV Máx 40%" }, 
-                            { m: 24, c: 64.38, tna: "41,90%", cft: "57,50%", ltv: 50, info: "LTV Máx 50%" }, 
-                            { m: 36, c: 50.18, tna: "39,90%", cft: "54,19%", ltv: 60, info: "LTV Máx 60%" }
+                            { m: 12, c: 91.98, tna: "16,90%", cft: "20,36%", ltv: 40, }, 
+                            { m: 24, c: 64.38, tna: "41,90%", cft: "57,50%", ltv: 50, }, 
+                            { m: 36, c: 50.18, tna: "39,90%", cft: "54,19%", ltv: 60, }
+                        ]
+                    },
+
+                    { 
+                        nombre: "Especial E-Transit (NOVEDAD)", 
+                        destacado: false,
+                        gastos: 2, seguro: "LIBERADO", baseCalculo: 1000, 
+                        descripcion: "Fecha de vigencia: 25/11/2026, aplica para E-Transit, seguro de vida 0,20% sobre saldo, seguro liberado.",
+                        utilPara: "E-Transit",
+                        plazos: 
+                        [ 
+                            { m: 18, c: 55.56, tna: "0,00%",  cft: "0,00%",  ltv: 70000000, }, 
+                            { m: 36, c: 33.73, tna: "11,90%", cft: "13,97%", ltv: 70000000, }
                         ]
                     },
                     
@@ -886,9 +917,9 @@ const bancos = {
                         utilPara: "Transit excepto E-Transit",
                         plazos: 
                         [
-                            { m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 60, info: "LTV Máx 60%" }, 
-                            { m: 24, c: 50.74, tna: "17,90%", cft: "21,67%", ltv: 75, info: "LTV Máx 75%" }, 
-                            { m: 36, c: 43.99, tna: "30,00%", cft: "38,68%", ltv: 75, info: "LTV Máx 75%" }
+                            { m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 60, }, 
+                            { m: 24, c: 50.74, tna: "17,90%", cft: "21,67%", ltv: 75, }, 
+                            { m: 36, c: 43.99, tna: "30,00%", cft: "38,68%", ltv: 75, }
                         ]
                     },
 
@@ -900,9 +931,9 @@ const bancos = {
                         utilPara: "Transit excepto E-Transit",
                         plazos: 
                         [
-                            { m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 60, info: "LTV Máx 60%" }, 
-                            { m: 24, c: 51.81, tna: "19,90%", cft: "24,35%", ltv: 75, info: "LTV Máx 75%" }, 
-                            { m: 36, c: 45.21, tna: "32,00%", cft: "41,69%", ltv: 75, info: "LTV Máx 75%" }
+                            { m: 12, c: 83.33, tna: "0%", cft: "0%", ltv: 60, }, 
+                            { m: 24, c: 51.81, tna: "19,90%", cft: "24,35%", ltv: 75, }, 
+                            { m: 36, c: 45.21, tna: "32,00%", cft: "41,69%", ltv: 75, }
                         ]
                     },
 
@@ -1828,10 +1859,37 @@ const bancos = {
                 planes: [
 
                     { 
+                        nombre: "Tasa Tradicional 32,90%, Especial Black Friday", 
+                        destacado: true,
+                        tna: "32,90%", gastos: 2, ltv: 100, baseCalculo: 100000, 
+                        descripcion: "Credito prendario de BBVA para Ford, vigencia: 26/11/2026 - 30/11/2026",
+                        utilPara: "Ford",
+                        plazos: [
+                            { m: 12, c: 10219.22,}, 
+                            { m: 18, c: 7440.06,}, 
+                            { m: 24, c: 6072.38,}, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa 9,90% UVA, Especial Black Friday", 
+                        destacado: true,
+                        tna: "UVA + 9,90%", ltv: 100, baseCalculo: 100000,
+                        descripcion: "Credito prendario de BBVA para Ford, vigencia: 26/11/2026 - 30/11/2026",
+                        utilPara: "Ford",
+                        plazos: [
+                            { m: 12, c: 8882.20, g: 2}, 
+                            { m: 18, c: 6094.67, g: 2}, 
+                            { m: 24, c: 4702.95, g: 2}, 
+                        ] 
+                    },
+
+
+                    { 
                         nombre: "Ford Exlusivo Tradicional 32,90% FEE 4%", 
                         destacado: true,
-                        tna: "41,90%", cft: "64,31%", gastos: 2, ltv: 70, baseCalculo: 100000, 
-                        descripcion: "Credito prendario de BBVA para Ford, vigencia: 22/10/2026",
+                        tna: "41,90%", cft: "64,31%", gastos: 2, ltv: 80, baseCalculo: 100000, 
+                        descripcion: "Credito prendario de BBVA para Ford, vigencia: 25/11/2026",
                         utilPara: "Ford",
                         plazos: [
                             { m: 12, c: 10765.42,}, 
@@ -1951,12 +2009,37 @@ const bancos = {
                         ] 
                     },
 
-
                 ]
             },
             prendarios_byd: {
                 nombre: "BBVA ByD",
                 planes: [
+
+                    { 
+                        nombre: "Tasa Tradicional 32,90%, Especial Black Friday", 
+                        destacado: true,
+                        tna: "32,90%", gastos: 2, ltv: 100, baseCalculo: 100000, 
+                        descripcion: "Credito prendario de BBVA para ByD, vigencia: 26/11/2026 - 30/11/2026",
+                        utilPara: "ByD",
+                        plazos: [
+                            { m: 12, c: 10219.22,}, 
+                            { m: 18, c: 7440.06,}, 
+                            { m: 24, c: 6072.38,}, 
+                        ] 
+                    },
+
+                    { 
+                        nombre: "Tasa 9,90% UVA, Especial Black Friday", 
+                        destacado: true,
+                        tna: "UVA + 9,90%", ltv: 100, baseCalculo: 100000,
+                        descripcion: "Credito prendario de BBVA para ByD, vigencia: 26/11/2026 - 30/11/2026",
+                        utilPara: "ByD",
+                        plazos: [
+                            { m: 12, c: 8882.20, g: 2}, 
+                            { m: 18, c: 6094.67, g: 2}, 
+                            { m: 24, c: 4702.95, g: 2}, 
+                        ] 
+                    },
 
                     { 
                         nombre: "BYD Exlusivo Tradicional 32,90%", 
